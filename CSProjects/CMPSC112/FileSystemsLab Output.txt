@@ -1,0 +1,22 @@
+The directory we will be working out of is C:\FileSystemsTest
+
+Return the largest file in the given directory: 
+smartnotebook10_7smartproductdrivers10_7sp1patch.exe at
+375.12794494628906 MB
+
+Return the smallest file in the given directory: 
+Image29.gif at
+0.0018177032470703125 MB
+
+NOTE: EDT and EST are the same timezone, one is used to denote daylight savings time from non daylight savings time.
+
+Return the most recently modified file in the given directory: 
+InsaneSaltlickMan.jpg at
+Sun Apr 17 00:54:28 EDT 2011
+
+Return the least recently modified file in the given directory: 
+Cooking Catastrophe Revised.doc at
+Mon Feb 28 18:40:50 EST 2011
+
+Return whether the given file exists or not in the given directory: 
+What is the name of the file you are looking for? 
