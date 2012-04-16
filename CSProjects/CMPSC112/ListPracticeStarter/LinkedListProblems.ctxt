@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=ls
+comment0.target=int\ listSize(LinkedList)
+comment1.params=ls\ target
+comment1.target=int\ count(LinkedList,\ java.lang.Object)
+comment2.params=ls1\ ls2
+comment2.target=LinkedList\ append(LinkedList,\ LinkedList)
+comment3.params=item\ ls
+comment3.target=boolean\ member(java.lang.Object,\ LinkedList)
+comment4.params=ls
+comment4.target=LinkedList\ removeDupes(LinkedList)
+comment5.params=ls
+comment5.target=LinkedList\ reverse(LinkedList)
+numComments=6

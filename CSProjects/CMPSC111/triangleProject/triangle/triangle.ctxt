@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=sideA\ sideB\ sideC
+comment0.target=triangle(int,\ int,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ triangle\n
+comment1.params=
+comment1.target=boolean\ equilateral()
+comment2.params=
+comment2.target=boolean\ isoceles()
+comment3.params=
+comment3.target=boolean\ right()
+numComments=4

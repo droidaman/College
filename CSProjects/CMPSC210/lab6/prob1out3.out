@@ -1,0 +1,13 @@
+Please input the integer to be tested: 10
+Enter the size of the array: 3
+What are the contents of the array? One at a time, hit return after each value: 
+4
+4
+4
+
+The inputs to be used are:
+k: 10
+l: 3
+Array: 4 4 4 
+
+The numbers in the array are all less than the number 10.

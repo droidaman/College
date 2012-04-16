@@ -1,0 +1,15 @@
+Please input the integer to be tested: 10
+Enter the size of the array: 5
+What are the contents of the array? One at a time, hit return after each value: 
+2
+6
+5
+1
+45
+
+The inputs to be used are:
+k: 10
+l: 5
+Array: 2 6 5 1 45 
+
+The numbers in the array aren't all less than the number 10.

@@ -1,0 +1,147 @@
+/**************************************************************************************************
+| F My Script
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2010 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 2.2.1 To 2.2.2
+
+1. Open and Edit /themes/view.tpl
+Find:
+summary:'<a href=\"{/literal}{$baseurl}/view/{$parray[0].name}/{$parray[0].PID}{literal}\" class=\"fmllink\">{/literal}{insert name=strip_special value=a assign=cstory text=$parray[0].story}{$cstory}{literal}</a>',
+
+Replace With:
+summary:'<a href=\"{/literal}{$baseurl}/view/{$parray[0].name}/{$parray[0].PID}{literal}\" class=\"oldlink\">{/literal}{insert name=strip_special value=a assign=cstory text=$parray[0].story}{$cstory}{literal}</a>',
+
+
+Find:
+function Favori(action,id) {
+
+Replace With:
+function AddToFav(action,id) {
+
+
+Find:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"Favori('delete','"+id+"');");
+
+Replace With:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"AddToFav('delete','"+id+"');");
+
+
+Find:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"Favori('add','"+id+"');");
+
+Replace With:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"AddToFav('add','"+id+"');");
+
+
+Find:
+<div class="plus_bouton" onclick="Favori
+
+Replace With:
+<div class="plus_bouton" onclick="AddToFav
+
+
+Find all instances of:
+signaler
+
+Replace With:
+reportcom
+
+
+Find all instances of:
+replyToComment
+
+Replace With:
+comReply
+
+
+Find:
+onclick="VDM
+
+Replace With:
+onclick="VOTEYES
+
+
+Find:
+onclick="VDM_BF
+
+Replace with:
+onclick="VOTENO
+
+
+Find all instances of:
+fmllink
+
+Replace with:
+oldlink
+
+
+Find:
+{insert name=com_count value=var assign=cc PID=$parray[0].PID}
+
+Replace With:
+<a href="{$baseurl}/view/{$parray[0].name|stripslashes}/{$parray[0].PID}"><img src="{$imageurl}/comments.png" /></a> {insert name=com_count value=var assign=cc PID=$parray[0].PID}
+
+
+
+2. Open and Edit /themes/posts_bit.tpl
+Find:
+function Favori(action,id) {
+
+Replace With:
+function AddToFav(action,id) {
+
+
+Find:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"Favori('delete','"+id+"');");
+
+Replace With:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"AddToFav('delete','"+id+"');");
+
+
+Find:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"Favori('add','"+id+"');");
+
+Replace With:
+$('#plus'+id+' .plus_bouton#favori').attr('OnClick',"AddToFav('add','"+id+"');");
+
+
+Find:
+<div class="plus_bouton" onclick="Favori
+
+Replace With:
+<div class="plus_bouton" onclick="AddToFav
+
+
+Find all instances of:
+fmllink
+
+Replace with:
+oldlink
+
+
+Find:
+{insert name=com_count value=var assign=cc PID=$posts[i].PID}
+
+Replace With:
+<a href="{$baseurl}/view/{$posts[i].name|stripslashes}/{$posts[i].PID}"><img src="{$imageurl}/comments.png" /></a> {insert name=com_count value=var assign=cc PID=$posts[i].PID}
+
+
+
+3. Upload the following files to your server from the upload folder of this package:
+- /css/style.php
+- /images/comments.png
+- /themes/rate.tpl
+- /themes/vote_js.tpl
+
+
+
+4. Run the update.sql file in your database management tool such as phpMyAdmin

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Hotline()
+comment1.params=question
+comment1.target=java.lang.String\ getReply(java.lang.String)
+numComments=2

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ resetLists()
+comment1.params=ls\ length\ index
+comment1.target=long\ testTime(List,\ int,\ int)
+comment2.params=ls\ length\ index
+comment2.target=int\ testOps(List,\ int,\ int)
+comment3.params=ls\ length\ index
+comment3.target=long\ testRemoveTime(LinkedList,\ int,\ int)
+comment4.params=ls\ length\ index
+comment4.target=int\ testRemoveOps(LinkedList,\ int,\ int)
+comment5.params=
+comment5.target=void\ runTests()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

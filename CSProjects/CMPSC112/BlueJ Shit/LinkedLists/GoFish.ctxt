@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=GoFish()
+comment0.text=Shuffle\ the\ Deck\ and\ deal\ seven\ Cards\ to\ each\ player.
+comment1.params=
+comment1.target=boolean\ computerTurn()
+comment1.text=\n\ Take\ a\ turn\ for\ the\ computer.\ \ Return\ true\ if\ the\ computer\ has\n\ earned\ a\ bonus\ turn.\n
+comment2.params=
+comment2.target=void\ play()
+comment2.text=Play\ until\ either\ the\ player\ or\ the\ computer\ wins.
+comment3.params=
+comment3.target=boolean\ playerTurn()
+comment3.text=\n\ Take\ a\ turn\ for\ the\ player.\ \ Return\ true\ if\ the\ player\ has\ earned\n\ a\ bonus\ turn.\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment5.text=Create\ and\ play\ the\ game.
+numComments=6

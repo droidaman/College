@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=list
+comment0.target=LinkedListIterator(LinkedList)
+comment0.text=The\ Iterator\ begins\ ready\ to\ visit\ element\ 0.
+comment1.params=
+comment1.target=boolean\ hasNext()
+comment2.params=
+comment2.target=java.lang.Object\ next()
+comment3.params=
+comment3.target=void\ remove()
+numComments=4

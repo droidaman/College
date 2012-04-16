@@ -1,0 +1,5 @@
+What value for x would you like? ffffffff
+What value for y would you like? 12
+What value for p would you like? 14
+What value for n would you like? 7
+setbits(ffffffff, 12, 14, 7) = ffff92ff

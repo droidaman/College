@@ -1,0 +1,260 @@
+/**************************************************************************************************
+| FMyScript
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2010 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 2.4.1 To 2.5
+
+1. Open .htaccess
+Find:
+</IfModule>
+
+Add Above:
+RewriteRule ^mailbox$ /mailbox.php
+
+
+
+2. Open css/style.php
+Find:
+.msg{display:none;padding:10px 10px 2px 10px;width:625px;border-bottom:1px solid #DDD}.result{width:500px;margin:10px auto 10px auto;text-align:center}.liste{text-align:left;font-size:13px;margin:10px 0px 10px 10px}.liste .ligne{float:left;border-bottom:1px solid #DDD;margin-bottom:4px;padding-bottom:3px}.liste .lignetop{float:left;border-bottom:1px solid #DDD;margin-bottom:4px;padding:0 5px 0 5px;background-color:#F6F6F6}.liste .ligne p{float:left;font-size:13px}.liste .lignetop p{float:left;font-size:13px}.liste .lignetop .itemtop{font-weight:bold;color:#424242;padding:2px 0}.liste .ligne .item{line-height:1.0em}.liste .ligne .noitem{text-align:center;width:695px}.date_ask{width:156px}.type_ask{width:386px}.statut_ask{width:105px;text-align:right}.plus_msg{width:26px}.etat_msg{width:36px}.date_msg{width:86px}.pseudo_msg{width:126px}.sujet_msg{ width:306px}.sujet_msg_outbox{width:341px}.outil_msg{width:66px;text-align:right}
+
+Replace With:
+.msg {
+	display:none;
+	padding:10px 10px 2px 10px;
+	width:675px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.result {
+	width:500px;
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+
+.liste{
+	text-align: left;
+	font-size: 13px;
+	margin:10px 0px 10px 10px;
+}
+
+.liste .ligne{
+	float:left;
+	border-bottom: 1px solid #DDDDDD;
+	height: 23px;
+	margin-top:2px; 
+	width:695px; 
+}
+
+.liste .lignetop{
+	float:left;
+	border-bottom: 1px solid #DDDDDD;
+	padding:0 5px 0 5px; 
+	background-color:#F6F6F6;
+}
+
+.liste .ligne p{ 
+	float:left; 
+	font-size: 13px;
+}
+
+.liste .lignetop p{
+	float:left;
+	font-size: 13px;
+}
+
+.liste .lignetop .itemtop {
+	font-weight:bold;
+	color:#424242;
+	padding:2px 0;
+	font-size: 11px;
+}
+
+.liste .ligne .noitem{
+	text-align:center;	
+	width:695px;
+}
+
+.date_ask{
+	width:156px;
+}
+
+.type_ask{
+	width:386px;
+}
+
+.statut_ask{
+	width:105px;
+	text-align:right;
+}
+
+.plus_msg {
+	width:26px;
+}
+
+.etat_msg {
+	width:46px;
+}
+
+.date_msg {
+	width:86px;
+}
+
+.pseudo_msg {
+	width:146px;
+}
+
+.sujet_msg {
+ 	width:316px;
+}
+
+.sujet_msg_outbox {
+	width:361px;
+}
+
+.outil_msg {
+	width:66px;
+	text-align:right;
+}
+
+.newmsg {
+	font-weight:bold;
+}
+
+
+
+3. Open /include/lang/english.php
+Find:
+$lang['214'] =  "";
+
+Replace With:
+$lang['214'] =  "My Messages";
+$lang['215'] =  "Messages";
+$lang['216'] =  "You can freely and privately send messages to other members.";
+$lang['217'] =  "Write a new message";
+$lang['218'] =  "To";
+$lang['219'] =  "Subject";
+$lang['220'] =  "Message";
+$lang['221'] =  "Send";
+$lang['222'] =  "Please enter the username of the person you are sending the message to.";
+$lang['223'] =  "Please enter a subject.";
+$lang['224'] =  "Please enter your message.";
+$lang['225'] =  "Your message has been sent.";
+$lang['226'] =  "The user could not be found.";
+$lang['227'] =  "Received messages";
+$lang['228'] =  "Status";
+$lang['229'] =  "Date";
+$lang['230'] =  "From";
+$lang['231'] =  "Options";
+$lang['232'] =  "Send Message";
+$lang['233'] =  "";
+
+
+
+4. Open /include/lang/french.php
+Find:
+$lang['214'] =  "";
+
+Replace With:
+$lang['214'] =  "Mes Messages";
+$lang['215'] =  "Messages";
+$lang['216'] =  "Vous pouvez librement et envoyer des messages aux autres membres.";
+$lang['217'] =  "Ecrire un nouveau message";
+$lang['218'] =  "A";
+$lang['219'] =  "Sujet";
+$lang['220'] =  "Message";
+$lang['221'] =  "Envoyer";
+$lang['222'] =  "S'il vous plaît entrez le nom de la personne que vous envoyez le message.";
+$lang['223'] =  "S'il vous plaît entrer un objet.";
+$lang['224'] =  "S'il vous plaît entrez votre message.";
+$lang['225'] =  "Votre message a été envoyé.";
+$lang['226'] =  "L'utilisateur n'a pas pu être trouvé.";
+$lang['227'] =  "Les messages reçus";
+$lang['228'] =  "Status";
+$lang['229'] =  "Date";
+$lang['230'] =  "From";
+$lang['231'] =  "Options";
+$lang['232'] =  "Envoyer un message";
+$lang['233'] =  "";
+
+
+
+5. Open /include/lang/spanish.php
+Find:
+$lang['214'] =  "";
+
+Replace With:
+$lang['214'] =  "Mis Mensajes";
+$lang['215'] =  "Mensajes";
+$lang['216'] =  "Usted puede libremente y enviar mensajes privados a otros miembros.";
+$lang['217'] =  "Escribir un mensaje nuevo";
+$lang['218'] =  "A";
+$lang['219'] =  "Asunto";
+$lang['220'] =  "Mensaje";
+$lang['221'] =  "Enviar";
+$lang['222'] =  "Por favor, introduzca el nombre de la persona que está enviando el mensaje.";
+$lang['223'] =  "Por favor, escriba un asunto.";
+$lang['224'] =  "Por favor escriba su mensaje.";
+$lang['225'] =  "Su mensaje ha sido enviado.";
+$lang['226'] =  "El usuario no se pudo encontrar.";
+$lang['227'] =  "Los mensajes recibidos";
+$lang['228'] =  "Estado";
+$lang['229'] =  "Fecha";
+$lang['230'] =  "De";
+$lang['231'] =  "Opciones";
+$lang['232'] =  "Enviar mensaje";
+$lang['233'] =  "";
+
+
+
+6. Open /themes/memberprofile.tpl
+Find:
+<a href="{$membersprofilepicurl}/{$profilepicture}" title="{$profilearray[0].username|stripslashes}" class="thickbox"><img src="{$membersprofilepicurl}/{$profilepicture}" title = "{$profilearray[0].username|stripslashes}" alt="{$profilearray[0].username|stripslashes} {$membersprofilepicurl}/{$profilepicture}" longdesc = "{$membersprofilepicurl}/{$profilepicture}" style="border:1px solid #000;"></a>
+
+Add Below:
+<br /><a href="{$baseurl}/mailbox?sendto={$profilearray[0].username|stripslashes}">{$lang232}</a>
+
+
+
+7. Open /include/functions/main.php
+Find:
+?>
+
+Add Above:
+function insert_total_msgs($a)
+{
+    global $conn;
+	$query = "select count(*) as total from messages_inbox WHERE MSGTO='".mysql_real_escape_string($a[MSGTO])."' and unread='1'"; 
+	$executequery=$conn->execute($query);
+    $total = $executequery->fields['total'];
+	echo $total;
+}
+
+
+
+8. Upload the following files to your server from the upload folder of this package:
+- /images/delete.gif
+- /images/msg_new.gif
+- /images/msg_open.gif
+- /images/toggle_0.gif
+- /themes/account.tpl
+- /themes/login.tpl
+- /themes/mailbox.tpl
+- /themes/right.tpl
+- delmsg.php
+- login.php
+- mailbox.php
+- send.php
+- updateread.php
+
+
+
+9. Run the update.sql file in your database management tool such as phpMyAdmin

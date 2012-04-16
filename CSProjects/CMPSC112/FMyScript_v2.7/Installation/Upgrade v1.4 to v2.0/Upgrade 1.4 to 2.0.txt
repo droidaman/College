@@ -1,0 +1,147 @@
+/**************************************************************************************************
+| F My Script
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2009 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 1.4 To 2.0
+
+1. Open and Edit /include/lang/english.php
+Find:
+$lang['95'] =  "Error: Failed to generate a new password.";
+
+Replace With:
+$lang['92'] =  "Error: Failed to generate a new password.";
+
+
+Find:
+$lang['194'] =  "";
+
+Replace With:
+$lang['194'] =  "Sign up for more!";
+$lang['195'] =  "Share on Facebook";
+$lang['196'] =  "Sort";
+$lang['197'] =  "All Time";
+$lang['198'] =  "Today Only";
+$lang['199'] =  "This Week";
+$lang['200'] =  "This Month";
+$lang['201'] =  "This Year";
+$lang['202'] =  "Skip";
+$lang['203'] =  "You are banned!";
+$lang['204'] =  "If you believe this is an error please contact:";
+$lang['205'] =  "Error: Your story contains banned words!";
+$lang['206'] =  "";
+
+
+
+2. Open and Edit /include/lang/spanish.php
+Find:
+$lang['95'] = "Error: no se puede generar una nueva contraseña.";
+
+Replace With:
+$lang['92'] = "Error: no se puede generar una nueva contraseña.";
+
+
+Find:
+$lang['194'] =  "";
+
+Replace With:
+$lang['194'] =  "Regístrate para más!";
+$lang['195'] =  "Compartir en Facebook";
+$lang['196'] =  "Ordenar";
+$lang['197'] =  "Todos los Tiempos";
+$lang['198'] =  "Hoy en día sólo";
+$lang['199'] =  "Esta Semana";
+$lang['200'] =  "Este Mes";
+$lang['201'] =  "Este Año";
+$lang['202'] =  "Saltar";
+$lang['203'] =  "Está prohibido!";
+$lang['204'] =  "Si usted cree que esto es un error por favor contacte:";
+$lang['205'] =  "Error: Su historia contiene palabras prohibidas!";
+$lang['206'] =  "";
+
+
+
+3. Open and Edit /include/config.php
+Find:
+?>
+
+Add Above:
+if($sban != "1")
+{
+	$bquery = "SELECT count(*) as total from bans_ips WHERE ip='".mysql_real_escape_string($_SERVER['REMOTE_ADDR'])."'";
+	$bresult = $conn->execute($bquery);
+	$bcount = $bresult->fields['total'];
+	if($bcount > "0")
+	{
+		$brdr = $config['baseurl']."/banned.php";
+		header("Location:$brdr");
+	}
+}
+
+
+
+4. Upload and Replace the following files on your website from the upload folder of this package:
+- /administrator/bans_ip.php
+- /administrator/bans_ip_add.php
+- /administrator/bans_words.php
+- /administrator/bans_words_add.php
+- /administrator/settings_general.php
+- /administrator/stories_reported.php
+- /administrator/stories_validate.php
+- /css/jquery.jtip.php
+- /css/style.php
+- /images/arrow_left.gif
+- /images/arrow_right.gif
+- /images/logo.png
+- /images/separ.gif
+- /images/subscribe.png
+- /js/jquery.jtip.js
+- /themes/administrator/bans_ip.tpl
+- /themes/administrator/bans_ip_add.tpl
+- /themes/administrator/bans_words.tpl
+- /themes/administrator/bans_words_add.tpl
+- /themes/administrator/global_header.tpl
+- /themes/administrator/settings_general.tpl
+- /themes/administrator/stories_edit.tpl
+- /themes/administrator/stories_reported.tpl
+- /themes/administrator/stories_validate.tpl
+- /themes/account.tpl
+- /themes/banned.tpl
+- /themes/category.tpl
+- /themes/favorites.tpl
+- /themes/flop.tpl
+- /themes/header.tpl
+- /themes/index.tpl
+- /themes/memberprofile.tpl
+- /themes/moderate.tpl
+- /themes/posts_bit.tpl
+- /themes/random.tpl
+- /themes/search.tpl
+- /themes/top.tpl
+- /themes/view.tpl
+- /themes/viewcomments.tpl
+- banned.php
+- category.php
+- flop.php
+- index.php
+- login.php
+- moderate.php
+- moderate_next.php
+- phpinfo.php
+- random.php
+- rss.php
+- signup_check.php
+- submit.php
+- top.php
+- viewcomments.php
+
+
+5. Run the update.sql file in your database management tool such as phpMyAdmin

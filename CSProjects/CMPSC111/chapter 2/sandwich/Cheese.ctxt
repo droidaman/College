@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cheese()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Cheese\ (default\ value)\n
+comment1.params=cheeseType
+comment1.target=Cheese(java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Cheese\ (user-supplied\ value)\n
+numComments=2

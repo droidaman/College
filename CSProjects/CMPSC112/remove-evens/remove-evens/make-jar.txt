@@ -1,0 +1,1 @@
+jar cvf +libs/midterm.jar edu/allegheny/*.class

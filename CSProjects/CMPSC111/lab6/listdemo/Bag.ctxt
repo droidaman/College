@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bag()
+comment0.text=\n\ Constructor\ --\ an\ initially\ empty\ bag\n
+comment1.params=item
+comment1.target=void\ addItem(Item)
+comment1.text=\n\ Add\ a\ new\ item\ to\ the\ bag.\ (Mutator\ method)\n\n\ @param\ item\ the\ Item\ to\ be\ added\n
+comment2.params=item
+comment2.target=void\ updateWeight(Item)
+comment2.text=\n\ Adjust\ the\ total\ weight\ by\ adding\ in\ the\ weight\ of\ a\n\ new\ item.\n\ \n\ @param\ item\ the\ new\ Item\ being\ added\n
+comment3.params=
+comment3.target=void\ printContents()
+comment3.text=\n\ Print\ the\ bag's\ contents.\n
+comment4.params=p
+comment4.target=void\ findByPrice(int)
+comment4.text=\n\ Prints\ out\ all\ items\ in\ the\ bag\ that\ have\ price\ equal\ to\ p,\ the\n\ paramater.\n\n\ @param\ p\ The\ desired\ price\ to\ be\ searched\ for\n
+comment5.params=
+comment5.target=void\ test()
+comment5.text=\n\ For\ ease\ of\ testing,\ this\ method\ loads\ the\ bag\ with\ several\ items.\n\ It\ is\ just\ a\ programming\ convenience;\ it\ is\ not\ an\ intended\ part\n\ of\ the\ functionality\ of\ the\ Bag\ class,\ and\ can\ be\n\ deleted\ once\ the\ program\ is\ completed\ and\ thoroughly\ debugged.\n
+numComments=6

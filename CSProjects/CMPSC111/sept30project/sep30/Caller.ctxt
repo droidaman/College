@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=h
+comment0.target=Caller(Hotline)
+comment1.params=question
+comment1.target=void\ ask(java.lang.String)
+numComments=2

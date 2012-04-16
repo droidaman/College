@@ -1,0 +1,16 @@
+Please input hex value(s):
+2aF0XError, invalid inputfABoError, invalid inputxError, invalid input27fFfa1234567890abcdef0xError, invalid input1
+  HEX
+-----------------------
+2
+a
+F
+0XfAB
+ox27
+fFfa
+1234567890abcdef
+0x1
+
+  DECIMAL
+-----------------------
+*p

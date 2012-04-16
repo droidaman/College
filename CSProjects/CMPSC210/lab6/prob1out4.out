@@ -1,0 +1,14 @@
+Please input the integer to be tested: 7
+Enter the size of the array: 4
+What are the contents of the array? One at a time, hit return after each value: 
+-5
+1
+-6
+21
+
+The inputs to be used are:
+k: 7
+l: 4
+Array: -5 1 -6 21 
+
+The numbers in the array aren't all less than the number 7.

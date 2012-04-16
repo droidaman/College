@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=rank\ taker
+comment0.target=boolean\ give(int,\ GoFishHand)
+comment0.text=\n\ Remove\ all\ Cards\ of\ the\ specified\ rank\ and\ add\ them\ to\ the\ hand\n\ taker.\ \ Return\ true\ if\ at\ least\ one\ Card\ was\ given.\n
+comment1.params=
+comment1.target=int\ meldSets()
+comment1.text=\n\ Remove\ all\ sets\ of\ four\ same-rank\ Cards\ from\ this\ GoFishHand.\n\ Return\ the\ number\ of\ sets.\n
+numComments=2

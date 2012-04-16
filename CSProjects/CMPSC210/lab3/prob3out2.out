@@ -1,0 +1,5 @@
+What value for x would you like? 00000001
+What value for y would you like? 12345678
+What value for p would you like? 7
+What value for n would you like? 4
+setbits(1, 12345678, 7, 4) = 81

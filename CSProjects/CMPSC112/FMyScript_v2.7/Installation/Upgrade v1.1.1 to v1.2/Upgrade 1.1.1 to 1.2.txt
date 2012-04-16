@@ -1,0 +1,67 @@
+/**************************************************************************************************
+| F My Script
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2009 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 1.1.1 To 1.2
+
+1. Upload the following new files to your website from the upload folder of this package:
+- rss.php
+- vote_no2.php
+- vote_yes2.php
+- /include/captcha.php
+- /include/fonts (directory and all contents)
+- /themes/rate.tpl
+- /themes/vote_js.tpl
+
+
+2. Upload and Replace the following files on your website from the upload folder of this package:
+- submit.php
+- vote_no.php
+- vote_yes.php
+- /administrator/admins_manage.php
+- /themes/account.tpl
+- /themes/category.tpl
+- /themes/favorites.tpl
+- /themes/flop.tpl
+- /themes/footer.tpl
+- /themes/header.tpl
+- /themes/index.tpl
+- /themes/memberprofile.tpl
+- /themes/random.tpl
+- /themes/search.tpl
+- /themes/top.tpl
+- /themes/view.tpl
+
+
+3. Open and edit /include/lang/english.php
+Find:
+$lang['190'] =  "yes you did!";
+
+Add below:
+$lang['191'] =  "Error: Image code wrong, please try again.";
+$lang['192'] =  "Recently Added Stories";
+$lang['193'] =  "Rss Feed";
+$lang['194'] =  "";
+
+
+4. Open and edit /include/lang/spanish.php
+Find:
+$lang['190'] =  "sí lo hizo!";
+
+Add Below:
+$lang['191'] =  "Error: el código de la imagen equivocada, por favor, inténtelo de nuevo.";
+$lang['192'] =  "Recientemente se agregó Historias";
+$lang['193'] =  "Rss Feed";
+$lang['194'] =  "";
+
+
+5. Run the update.sql file in your database management tool such as phpMyAdmin

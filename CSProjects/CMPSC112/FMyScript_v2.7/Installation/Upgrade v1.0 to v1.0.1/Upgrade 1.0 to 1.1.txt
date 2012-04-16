@@ -1,0 +1,35 @@
+/**************************************************************************************************
+| F My Script
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2009 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 1.0 To 1.0.1
+
+1. Upload the following files to your website from the package:
+- themes/editaccount.tpl
+- logout.php
+
+2. Open /include/functions/main.php
+Find:
+<?php
+
+Add Below:
+function escape($data)
+{
+    if (ini_get('magic_quotes_gpc'))
+	{
+    	$data = stripslashes($data);
+    }
+    return mysql_real_escape_string($data);
+}
+
+
+3. Run the update.sql file in your database management tool such as phpMyAdmin

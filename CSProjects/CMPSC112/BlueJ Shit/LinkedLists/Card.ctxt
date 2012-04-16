@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=rank\ suit
+comment0.target=Card(int,\ int)
+comment0.text=Initialize\ the\ rank\ and\ suit.
+comment1.params=that
+comment1.target=boolean\ equals(java.lang.Object)
+comment1.text=\n\ Return\ true\ if\ and\ only\ if\ that\ Card\ has\ the\ same\ rank\ as\n\ this\ one.\ \ Suit\ is\ ignored.\n
+comment2.params=
+comment2.target=int\ getRank()
+comment2.text=Return\ the\ rank\ of\ this\ Card.
+comment3.params=
+comment3.target=int\ getSuit()
+comment3.text=Return\ the\ suit\ of\ this\ Card.
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

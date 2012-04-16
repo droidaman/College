@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Bag()
+comment0.text=\n\ Constructor\ --\ an\ initially\ empty\ bag\n
+comment1.params=item
+comment1.target=void\ addItem(Item)
+comment1.text=\n\ Add\ a\ new\ item\ to\ the\ bag\ unless\ the\ maximum\ number\ of\n\ items\ is\ exceeded.\ (Mutator\ method)\n\n\ @param\ item\ the\ Item\ to\ be\ added\n
+comment2.params=item
+comment2.target=void\ updateWeight(Item)
+comment2.text=\n\ Adjust\ the\ total\ weight\ by\ adding\ in\ the\ weight\ of\ a\n\ new\ item.\n\ \n\ @param\ item\ the\ new\ Item\ being\ added\n
+comment3.params=item
+comment3.target=boolean\ checkWeight(Item)
+comment4.params=
+comment4.target=void\ printContents()
+comment4.text=\n\ Print\ the\ bag's\ contents.\n
+numComments=5

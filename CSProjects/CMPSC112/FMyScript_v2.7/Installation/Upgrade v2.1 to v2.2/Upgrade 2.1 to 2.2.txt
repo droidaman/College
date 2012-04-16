@@ -1,0 +1,251 @@
+/**************************************************************************************************
+| F My Script
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2010 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 2.1 To 2.2
+
+NOTE: If you have the picture module or mobile module installed, you will need to upgrade them after you complete this upgrade.
+
+
+1. Open and Edit /themes/header.tpl
+Find:
+function displayMail() {
+
+Add Above:
+function reloadImage()
+{
+	img = document.getElementById('cimg');
+	img.src = '{/literal}{$baseurl}{literal}/include/captcha.php?' + Math.random();
+}
+
+
+Find:
+$('#resultsubmitsh').hide();
+
+Add Above:
+reloadImage();
+
+
+Find:
+<img src="{$baseurl}/include/captcha.php" style="border: 0px; margin:0px; padding:0px" />
+
+Replace With:
+<img src="{$baseurl}/include/captcha.php" style="border: 0px; margin:0px; padding:0px" id="cimg" />
+
+
+Find:
+<div id="submit" class="post">
+
+Add Above:
+<div id="ie8"></div>
+
+
+
+2. Open and Edit moderate_next.php
+Find:
+mysql_select_db ($DBNAME); 
+
+Add Below:
+@mysql_query("SET NAMES 'UTF8'");
+
+
+Find:
+$query="UPDATE posts SET mod_no=mod_no+1 WHERE PID='".mysql_real_escape_string($pid)."'";
+$result=$conn->execute($query);
+
+Add Below:
+$query2 = "SELECT mod_no FROM posts WHERE PID='".mysql_real_escape_string($pid)."' AND active='0'";
+$executequery2 = $conn->execute($query2);
+$parray2 = $executequery2->getarray();
+$mc = $parray2[0]['mod_no'];
+
+$mno = $config['mno'];
+
+if($mc >= $mno)
+{
+	$query="DELETE FROM posts WHERE active='0' AND PID='".mysql_real_escape_string($pid)."'";
+	$result=$conn->execute($query);
+}
+
+
+
+3. Open and Edit /include/config.php
+Find:
+?>
+
+Add Above:
+function create_slrememberme() {
+        $key = md5(uniqid(rand(), true));
+        global $conn;
+        $sql="update members set remember_me_time='".date('Y-m-d H:i:s')."', remember_me_key='".$key."' WHERE username='".mysql_real_escape_string($_SESSION[USERNAME])."'";
+        $conn->execute($sql);
+        setcookie('slrememberme', gzcompress(serialize(array($_SESSION[USERNAME], $key)), 9), time()+60*60*24*30);
+}
+
+function destroy_slrememberme($username) {
+        if (strlen($username) > 0) {
+                global $conn;
+                $sql="update members set remember_me_time=NULL, remember_me_key=NULL WHERE username='".mysql_real_escape_string($username)."'";
+                $conn->execute($sql);
+        }
+        setcookie ("slrememberme", "", time() - 3600);
+}
+
+if (!isset($_SESSION["USERNAME"]) && isset($_COOKIE['slrememberme'])) 
+{
+        $sql="update members set remember_me_time=NULL and remember_me_key=NULL WHERE remember_me_time<'".date('Y-m-d H:i:s', mktime(0, 0, 0, date("m")-1, date("d"),   date("Y")))."'";
+        $conn->execute($sql);
+        list($username, $key) = @unserialize(gzuncompress(stripslashes($_COOKIE['slrememberme'])));
+        if (strlen($username) > 0 && strlen($key) > 0)
+		{
+        	$sql="SELECT status,USERID,email,username,verified,gender from members WHERE username='".mysql_real_escape_string($username)."' and remember_me_key='".mysql_real_escape_string($key)."'";
+          	$rs=$conn->execute($sql);
+          	if($rs->recordcount()<1)
+			{
+				$error=$lang['206'];
+			}
+		    elseif($rs->fields['status'] == "0")
+			{
+				$error = $lang['62'];
+			}
+    		if($error=="")
+			{				
+				SESSION_REGISTER("USERID");$_SESSION[USERID]=$rs->fields['USERID'];
+				SESSION_REGISTER("EMAIL");$_SESSION[EMAIL]=$rs->fields['email'];
+				SESSION_REGISTER("USERNAME");$_SESSION[USERNAME]=$rs->fields['username'];
+				SESSION_REGISTER("VERIFIED");$_SESSION[VERIFIED]=$rs->fields['verified'];
+				SESSION_REGISTER("GENDER");$_SESSION[GENDER]=$rs->fields['gender'];
+      			create_slrememberme();
+        	}
+			else
+			{
+                destroy_slrememberme($username);
+        	}
+        }
+}
+
+
+
+4. Open and Edit /include/functions/main.php
+Find:
+?>
+
+Add Above:
+function firstDayOfMonth2($uts=null)
+{
+    $today = is_null($uts) ? getDate() : getDate($uts);
+    $first_day = getdate(mktime(0,0,0,$today['mon'],1,$today['year']));
+    return $first_day[0];
+} 
+
+function firstDayOfYear2($uts=null)
+{
+    $today = is_null($uts) ? getDate() : getDate($uts);
+    $first_day = getdate(mktime(0,0,0,1,1,$today['year']));
+    return $first_day[0];
+}
+
+function insert_get_replies($a)
+{
+    global $conn;
+	$query = "SELECT * FROM posts_comments WHERE PID='".mysql_real_escape_string($a[PID])."' AND RID='".mysql_real_escape_string($a[CID])."' ORDER BY vote desc";
+	$results = $conn->execute($query);
+	$returnthis = $results->getrows();
+	return $returnthis;
+}
+
+
+
+5. Open and Edit /css/style.php
+Find:
+#haut{height:50px
+
+Replace With:
+#haut{height:60px
+
+
+Find:
+.post h2
+
+Add Before:
+.post div.right {float: right;text-align: right;}.post.reply {margin-left: 30px;}
+
+
+
+6. Open and Edit /themes/posts_bit.tpl
+Find:
+{$posts[i].story|stripslashes}
+
+Replace With:
+{$posts[i].story|stripslashes|nl2br}
+
+
+Find:
+{$posts[i].username|stripslashes}
+
+Replace With:
+{if $posts[i].USERID GT "0"}<a href="{$baseurl}/members/{$posts[i].USERID}/{$posts[i].username|stripslashes}">{$posts[i].username|stripslashes}</a>{else}{$posts[i].username|stripslashes}{/if}
+
+
+
+7. Open and Edit /include/lang/english.php
+Find:
+$lang['206'] =  "";
+
+Replace With:
+$lang['206'] =  "Error: Your account could not be found, you will need to login again.";
+$lang['207'] =  "Remember Me";
+$lang['208'] =  "reply";
+$lang['209'] =  "";
+
+
+
+8. Open and Edit /include/lang/spanish.php
+Find:
+$lang['206'] =  "";
+
+Replace With:
+$lang['206'] =  "Error: Su cuenta no se pudo encontrar, tendrá que volver a iniciar sesión.";
+$lang['207'] =  "Remember Me";
+$lang['208'] =  "responder";
+$lang['209'] =  "";
+
+
+
+9. Upload the following files to your server from the upload folder of this package:
+- /administrator/settings_general.php
+- /css/ie7.css
+- /images/thumb_up.png
+- /images/thumb_up_off.png
+- /images/thumb_down.png
+- /images/thumb_down_off.png
+- /include/captcha2.php
+- /themes/administrator/settings_general.tpl
+- /themes/editaccount.tpl
+- /themes/flop.tpl
+- /themes/right.tpl
+- /themes/signup.tpl
+- /themes/top.tpl
+- /themes/view.tpl
+- editaccount.php
+- flop.php
+- index.php
+- login.php
+- logout.php
+- signup_check.php
+- thumb.php
+- top.php
+- view.php
+
+
+
+10. Run the update.sql file in your database management tool such as phpMyAdmin

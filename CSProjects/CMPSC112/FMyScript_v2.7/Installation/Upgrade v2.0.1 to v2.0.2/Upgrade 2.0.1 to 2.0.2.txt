@@ -1,0 +1,25 @@
+/**************************************************************************************************
+| F My Script
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2009 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 2.0.1 To 2.0.2
+
+1. Open and Edit /themes/view.tpl
+Find:
+{$parray[0].story|stripslashes}
+
+Replace With:
+{insert name=clickable_link value=var text=$parray[0].story|stripslashes}
+
+
+
+2. Run the update.sql file in your database management tool such as phpMyAdmin

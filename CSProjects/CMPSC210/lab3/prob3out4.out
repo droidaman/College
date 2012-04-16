@@ -1,0 +1,5 @@
+What value for x would you like? 87654321
+What value for y would you like? 81726354
+What value for p would you like? 5
+What value for n would you like? 3
+setbits(87654321, 81726354, 5, 3) = 87654321

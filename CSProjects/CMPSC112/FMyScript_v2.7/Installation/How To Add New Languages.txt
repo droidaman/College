@@ -1,0 +1,65 @@
+/**************************************************************************************************
+| FMyScript
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2010 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+These are the steps for installing a new language, we will be doing an example for French.
+
+1. Convert one of the provided languages in the include/lang folder (english or spanish) into French, naming the newly converted language french.php
+
+
+2. Open include/config.php
+
+Find:
+elseif ($_REQUEST['language'] == "spanish")
+
+Add Above:
+elseif ($_REQUEST['language'] == "french")
+	{
+		SESSION_REGISTER("language");
+		$_SESSION[language] = "french";
+	}
+
+
+Find:
+elseif ($_SESSION['language'] == "spanish")
+
+Add Above:
+elseif ($_SESSION['language'] == "french")
+{
+include("lang/french.php");
+}
+
+
+3. Open themes/header.tpl
+
+Find:
+	<div id="drapes" class="flag">
+    	<form name="langselectes" id="langselectes" method="post" style="padding:0; margin:0">
+        <INPUT type=image value="spanish" src="{$imageurl}/flag_es.gif" border="0" name="language">
+        <input type="hidden" name="language" id="language" value="spanish" />
+        </form>
+    </div>
+
+Add After:
+	<div id="drapes" class="flag">
+    	<form name="langselectfr" id="langselectfr" method="post" style="padding:0; margin:0">
+        <INPUT type=image value="french" src="{$imageurl}/flag_fr.gif" border="0" name="language">
+        <input type="hidden" name="language" id="language" value="french" />
+        </form>
+    </div>
+
+
+
+4. You will need to get a small gif image of the french flag, name it flag_fr.gif, and upload it to the images folder.
+
+
+The french language would now be installed.

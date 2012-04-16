@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Deck()
+comment0.text=Create\ all\ 52\ Cards,\ in\ order.
+comment1.params=
+comment1.target=Card\ deal()
+comment1.text=Remove\ one\ Card\ from\ the\ Deck\ and\ return\ it.
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment2.text=Return\ true\ if\ the\ Deck\ contains\ no\ Cards.
+comment3.params=
+comment3.target=void\ shuffle()
+comment3.text=Randomly\ rearrange\ the\ Cards\ in\ the\ Deck.
+comment4.params=
+comment4.target=int\ size()
+comment4.text=Return\ the\ number\ of\ Cards\ currently\ in\ the\ Deck.
+comment5.params=i\ j
+comment5.target=void\ swap(int,\ int)
+comment5.text=Swap\ the\ Cards\ at\ indices\ i\ and\ j.
+numComments=6

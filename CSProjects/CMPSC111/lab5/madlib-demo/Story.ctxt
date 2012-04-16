@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=s
+comment0.target=Story(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Story\n\ \n\ @param\ \ \ s\ \ \ A\ story\ involving\ NOUNs,\ VERBs,\ ADJECTIVEs,\ and\ ADVERBs\n
+comment1.params=noun
+comment1.target=void\ replaceNoun(java.lang.String)
+comment1.text=\n\ Locate\ the\ first\ occurrence\ of\ the\ string\ "NOUN"\ in\ story,\ replace\ it\ with\ the\ string\ noun\n\ \n\ @param\ \ \ noun\ \ \ \ the\ word\ to\ use\ in\ place\ of\ "NOUN"\n
+comment2.params=
+comment2.target=java.lang.String\ getText()
+comment2.text=\n\ Returns\ the\ current\ text\ of\ the\ story\ (possibly\ modified\ from\ the\ original)\n\ \n\ @return\ \ \ the\ current\ story\ text\n
+numComments=3

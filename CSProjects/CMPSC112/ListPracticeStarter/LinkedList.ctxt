@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=ln
+comment0.target=LinkedList(Node)
+comment1.params=
+comment1.target=java.lang.Object\ first()
+comment2.params=
+comment2.target=LinkedList\ rest()
+comment3.params=item
+comment3.target=void\ add(java.lang.Object)
+comment3.text=
+comment4.params=item
+comment4.target=boolean\ contains(java.lang.Object)
+comment5.params=index
+comment5.target=java.lang.Object\ get(int)
+comment6.params=
+comment6.target=boolean\ isEmpty()
+comment7.params=index
+comment7.target=java.lang.Object\ remove(int)
+comment8.params=index\ item
+comment8.target=void\ set(int,\ java.lang.Object)
+comment9.params=
+comment9.target=int\ size()
+numComments=10

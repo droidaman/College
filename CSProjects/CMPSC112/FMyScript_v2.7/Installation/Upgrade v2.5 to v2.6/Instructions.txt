@@ -1,0 +1,259 @@
+/**************************************************************************************************
+| FMyScript
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2010 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+Upgrade 2.5 To 2.6
+
+
+1. Open /themes/search2.tpl
+Find:
+<div class="ligne">
+
+Replace With:
+<div class="ligne" style="height:auto">
+
+
+
+2. Open /themes/header.tpl
+Find:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+Replace With:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"> 
+
+
+Find:
+<body>
+
+Add Below:
+<div id="fb-root"></div>
+{if $enable_fc eq "1"}
+{literal}
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script>
+  FB.init({appId: '{/literal}{$FACEBOOK_APP_ID}{literal}', status: true,
+           cookie: true, xfbml: true});
+  FB.Event.subscribe('auth.login', function(response) {
+    window.location.reload();
+  });	  
+</script>
+{/literal}
+{/if}
+
+
+
+3. If you want to use facebook connect, you will need to create an application on facebook for your website, to do so:
+- Login to your facebook account
+- Install the facebook developer application
+- Go to the facebook developer application you installed then click on "+ Set Up New Application"
+- Enter your application name, click on "Agree", then click on "Create Application"
+- The next page will list your Application ID, API Key and Secret. Make a note of all of them.
+- Click on "Canvas", then under "Render Method" select "FBML"
+- Click on "Connect", then under "Connect URL" enter your full domain name such as "http://www.fmyscript.com/", then under "Base Domain" enter base your domain name such as "fmyscript.com"
+- Click on "Save Changes"
+
+- Download the facebook connect package from here:
+http://code.google.com/p/facebook-connect-php5-library/downloads/detail?name=fb_connect.zip&can=2&q=
+- Extract the fb_connect.zip package
+- In the fb_connect folder you extracted is a folder named connect, upload the connect folder to the public directory of your server (where you have the script installed)
+- Open /connect/lib/config.php
+Find "put your application path here" and replace it with the local path on your server to the connect directory you uploaded.
+Find "put the url of where the connect application folder resides" and replace it with the url on your website to the /connect/javascript/ folder.
+Find "put the url of where the connect application css folder resides" and replace it with the url on your website to the /connect/css/ folder.
+Find "put the url of where the connect application img folder resides" and replace it with the url on your website to the /connect/img/ folder.
+Find "place your callback url here" and replace it with the full domain name where the script is installed.
+Find "your application key" and replace it with the API Key you noted earlier.
+Find "your secret keyÈ and replace it with the Secret you noted earlier.
+
+- Go to the Admin Panel - Settings - General Settings, set "Enable Facebook Connect" to "Yes" and enter your "Facebook Application ID" and "Facebook Secret" from which you noted earlier.
+
+
+
+4. Open /include/config.php
+Find:
+?>
+
+Add Above:
+function generateCode($length) 
+{
+	$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRQSTUVWXYZ0123456789";
+    $code = "";
+    $clen = strlen($chars) - 1;
+    while (strlen($code) < $length) {
+        $code .= $chars[mt_rand(0,$clen)];
+    }
+    return $code;
+}
+if($config['enable_fc'] == "1")
+{
+	if(!isset($_SESSION['USERID']))
+	{
+		$A = $config['FACEBOOK_APP_ID'];
+		$B = $config['FACEBOOK_SECRET'];
+		define('FACEBOOK_APP_ID', $A);
+		define('FACEBOOK_SECRET', $B);
+		STemplate::assign('FACEBOOK_APP_ID',$A);
+		STemplate::assign('FACEBOOK_SECRET',$B);
+		
+		function get_facebook_cookie($app_id, $application_secret) {
+		  $args = array();
+		  parse_str(trim($_COOKIE['fbs_' . $app_id], '\\"'), $args);
+		  ksort($args);
+		  $payload = '';
+		  foreach ($args as $key => $value) {
+			if ($key != 'sig') {
+			  $payload .= $key . '=' . $value;
+			}
+		  }
+		  if (md5($payload . $application_secret) != $args['sig']) {
+			return null;
+		  }
+		  return $args;
+		}
+		
+		$cookie = get_facebook_cookie(FACEBOOK_APP_ID, FACEBOOK_SECRET);
+		
+		$fid = $cookie['uid'];
+		
+		if(isset($fid))
+		{
+			$femail = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']))->email;
+			$fname = json_decode(file_get_contents('https://graph.facebook.com/me?access_token='.$cookie['access_token']))->name;
+			$fname = htmlentities(strip_tags($fname), ENT_COMPAT, "UTF-8");
+			$femail = htmlentities(strip_tags($femail), ENT_COMPAT, "UTF-8");
+			
+			$query="SELECT USERID FROM members WHERE email='".mysql_real_escape_string($femail)."' limit 1";
+			$executequery=$conn->execute($query);
+			$FUID = intval($executequery->fields['USERID']);
+			if($FUID > 0)
+			{									
+				$query="SELECT USERID,email,username,verified,gender from members WHERE USERID='".mysql_real_escape_string($FUID)."' and status='1'";
+				$result=$conn->execute($query);
+				if($result->recordcount()>0)
+				{
+					$query="update members set lastlogin='".time()."', lip='".$_SERVER['REMOTE_ADDR']."' WHERE USERID='".mysql_real_escape_string($FUID)."'";
+					$conn->execute($query);
+					SESSION_REGISTER("USERID");$_SESSION[USERID]=$result->fields['USERID'];
+					SESSION_REGISTER("EMAIL");$_SESSION[EMAIL]=$result->fields['email'];
+					SESSION_REGISTER("USERNAME");$_SESSION[USERNAME]=$result->fields['username'];
+					SESSION_REGISTER("VERIFIED");$_SESSION[VERIFIED]=$result->fields['verified'];
+					SESSION_REGISTER("GENDER");$_SESSION[GENDER]=$result->fields['gender'];	
+					SESSION_REGISTER("FB");$_SESSION[FB]="1";			
+					header("Location:$config[baseurl]/account");exit;
+				}
+			}
+			else
+			{
+				$md5pass = md5(generateCode(5).time());
+				
+				if($fname != "" && $femail != "")
+				{
+					$query="INSERT INTO members SET email='".mysql_real_escape_string($femail)."',username='".mysql_real_escape_string($fname)."', password='".mysql_real_escape_string($md5pass)."', addtime='".time()."', lastlogin='".time()."', ip='".$_SERVER['REMOTE_ADDR']."', lip='".$_SERVER['REMOTE_ADDR']."', verified='1', gender='0'";
+					$result=$conn->execute($query);
+					$userid = mysql_insert_id();
+					if($userid != "" && is_numeric($userid) && $userid > 0)
+					{
+						$query="SELECT USERID,email,username,verified,gender from members WHERE USERID='".mysql_real_escape_string($userid)."'";
+						$result=$conn->execute($query);
+						
+						$SUSERID = $result->fields['USERID'];
+						$SEMAIL = $result->fields['email'];
+						$SUSERNAME = $result->fields['username'];
+						$SVERIFIED = $result->fields['verified'];
+						$SGENDER = $result->fields['gender'];
+						SESSION_REGISTER("USERID");
+						$_SESSION[USERID]=$SUSERID;
+						SESSION_REGISTER("EMAIL");
+						$_SESSION[EMAIL]=$SEMAIL;
+						SESSION_REGISTER("USERNAME");
+						$_SESSION[USERNAME]=$SUSERNAME;
+						SESSION_REGISTER("VERIFIED");
+						$_SESSION[VERIFIED]=$SVERIFIED;
+						SESSION_REGISTER("SGENDER");
+						$_SESSION[SGENDER]=$SGENDER;	
+						SESSION_REGISTER("FB");$_SESSION[FB]="1";				
+						header("Location:$config[baseurl]/account");exit;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+5. Open /include/functions/main.php
+Find:
+function generateCode($length) 
+{
+	$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRQSTUVWXYZ0123456789";
+    $code = "";
+    $clen = strlen($chars) - 1;
+    while (strlen($code) < $length) {
+        $code .= $chars[mt_rand(0,$clen)];
+    }
+    return $code;
+}
+
+Delete It
+
+
+
+6. Open /themes/signup.tpl
+Find:
+<input type="submit" value="{$lang28} !" />
+
+Add Below:
+{if $enable_fc eq "1"}
+<br /><br />
+{literal}
+<fb:login-button perms="email,user_birthday"></fb:login-button>
+{/literal}
+{/if}
+
+
+
+7. Open .htaccess
+Find:
+RewriteRule ^mailbox$ /mailbox.php
+
+Add Below:
+RewriteRule ^log_out$ /log_out.php
+
+
+
+8. Open /themes/view.tpl
+Find:
+<div id="plus{$parray[0].PID}" class="plus">
+
+Add Above:
+<p style="float:left; margin-top:1px; margin-left:10px;">
+	<iframe src="http://www.facebook.com/plugins/like.php?href={$baseurl}/view/{$parray[0].name|stripslashes}/{$parray[0].PID}&amp;layout=standard&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+</p>
+<div class="clear"></div>
+
+
+
+9. Upload the following files to your server from the upload folder of this package:
+- /administrator/settings_general.php
+- /themes/administrator/settings_general.tpl
+- /themes/log_out.tpl
+- /themes/right.tpl
+- log_out.php
+- logout.php
+- xd_receiver.htm
+
+
+
+10. Run the update.sql file in your database management tool such as phpMyAdmin

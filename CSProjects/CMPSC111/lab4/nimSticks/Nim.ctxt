@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=pileOne\ pileTwo\ pileThree
+comment0.target=Nim(int,\ int,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Nim\n
+comment1.params=pileNumber\ stickNumber
+comment1.target=void\ move(int,\ int)
+numComments=2

@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=ticketCost
+comment0.target=TicketMachine(int)
+comment0.text=\n\ Create\ a\ machine\ that\ issues\ tickets\ of\ the\ given\ price.\n
+comment1.params=
+comment1.target=int\ getPrice()
+comment1.text=\n\ @Return\ The\ price\ of\ a\ ticket.\n
+comment2.params=
+comment2.target=int\ getBalance()
+comment2.text=\n\ Return\ The\ amount\ of\ money\ already\ inserted\ for\ the\n\ next\ ticket.\n
+comment3.params=
+comment3.target=int\ getNumSold()
+comment3.text=\n\ @Return\ The\ number\ of\ tickets\ sold\ by\ this\ machine.\n
+comment4.params=amount
+comment4.target=void\ insertMoney(int)
+comment4.text=\n\ Receive\ an\ amount\ of\ money\ in\ cents\ from\ a\ customer.\n\ Check\ that\ the\ amount\ is\ sensible.\n
+comment5.params=
+comment5.target=void\ printTicket()
+comment5.text=\n\ Print\ a\ ticket\ if\ enough\ money\ has\ been\ inserted,\ and\n\ reduce\ the\ current\ balance\ by\ the\ ticket\ price.\ Print\n\ an\ error\ message\ if\ more\ money\ is\ required.\n
+comment6.params=
+comment6.target=int\ refundBalance()
+comment6.text=\n\ Return\ the\ money\ in\ the\ balance.\n\ The\ balance\ is\ cleared.\n
+comment7.params=
+comment7.target=void\ summary()
+comment7.text=\n\ Return\ a\ summary\ of\ the\ current\ ticket\ machines\ information.\n\ Displays\ the\ total\ amount\ of\ money\ in\ the\ machine,\ number\ of\ tickets\ sold,\ and\ the\ remaining\ balance\ in\ te\ machine.\n
+numComments=8

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=itemName\ itemCode\ itemPrice
+comment0.target=Receipt(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Receipt.\ When\ invoked,\r\n\ constructor\ must\ be\ told\ the\ item's\ name,\ code,\ and\ price.\r\n
+comment1.params=qty
+comment1.target=void\ purchase(int)
+comment1.text=\r\n\ Purchase\ some\ quantity\ of\ the\ item\r\n\r\n\ @param\ \ qty\ \ quantity\ purchased\r\n
+comment2.params=
+comment2.target=void\ printReceipt()
+comment2.text=\r\n\ Print\ out\ a\ receipt\ for\ the\ total\ amount\ purchased\r\n
+numComments=3

@@ -1,0 +1,5 @@
+What value for x would you like? 01010101
+What value for y would you like? 1a2b3c4d
+What value for p would you like? 10
+What value for n would you like? 5
+setbits(1010101, 1a2b3c4d, 10, 5) = 1010341

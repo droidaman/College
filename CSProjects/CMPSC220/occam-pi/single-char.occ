@@ -1,0 +1,12 @@
+#INCLUDE "course.module"
+
+-- This is a comment.
+-- There are no block comments.
+PROC main(CHAN BYTE keyboard?, screen!, error!)
+  PAR
+    STOP
+    -- Am I first?
+    SEQ
+      screen ! 'x'
+      screen ! 255
+:

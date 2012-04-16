@@ -1,0 +1,39 @@
+/**************************************************************************************************
+| FMyScript
+| http://www.fmyscript.com
+| webmaster@fmyscript.com
+|
+|**************************************************************************************************
+|
+| By using this software you agree that you have read and acknowledged our End-User License 
+| Agreement available at http://www.fmyscript.com/eula.html and to be bound by it.
+|
+| Copyright (c) 2010 fmyscript.com. All rights reserved.
+|**************************************************************************************************/
+
+These are instructions for setting up facebook connect once you have the script installed already.
+
+If you want to use facebook connect, you will need to create an application on facebook for your website, to do so:
+- Login to your facebook account
+- Install the facebook developer application
+- Go to the facebook developer application you installed then click on "+ Set Up New Application"
+- Enter your application name, click on "Agree", then click on "Create Application"
+- The next page will list your Application ID, API Key and Secret. Make a note of all of them.
+- Click on "Canvas", then under "Render Method" select "FBML"
+- Click on "Connect", then under "Connect URL" enter your full domain name such as "http://www.fmyscript.com/", then under "Base Domain" enter base your domain name such as "fmyscript.com"
+- Click on "Save Changes"
+
+- Download the facebook connect package from here:
+http://code.google.com/p/facebook-connect-php5-library/downloads/detail?name=fb_connect.zip&can=2&q=
+- Extract the fb_connect.zip package
+- In the fb_connect folder you extracted is a folder named connect, upload the connect folder to the public directory of your server (where you have the script installed)
+- Open /connect/lib/config.php
+Find "put your application path here" and replace it with the local path on your server to the connect directory you uploaded.
+Find "put the url of where the connect application folder resides" and replace it with the url on your website to the /connect/javascript/ folder.
+Find "put the url of where the connect application css folder resides" and replace it with the url on your website to the /connect/css/ folder.
+Find "put the url of where the connect application img folder resides" and replace it with the url on your website to the /connect/img/ folder.
+Find "place your callback url here" and replace it with the full domain name where the script is installed.
+Find "your application key" and replace it with the API Key you noted earlier.
+Find "your secret key" and replace it with the Secret you noted earlier.
+
+- Go to the Admin Panel - Settings - General Settings, set "Enable Facebook Connect" to "Yes" and enter your "Facebook Application ID" and "Facebook Secret" from which you noted earlier.
