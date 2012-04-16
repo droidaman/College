@@ -1,0 +1,21 @@
+#lang racket
+
+; Strustures for the assembler
+(struct a-const (value))
+(struct a-mem (name))
+
+(define program "@i\n@8\n")
+
+(define (read-prog input)
+  (regexp-split "\n" input))
+
+; CONTRACT
+; parse: list-of strings -> list-of structure
+(define (parse str)
+  (cond
+    [(regexp-match "@[0-9]" str)
+     (printf "A CONSTANT!")]
+    
+    [(regexp-match "@\\[a-zA-Z_]+" str)
+     (printf "A MEMORY LOCATION!")]
+    ))
