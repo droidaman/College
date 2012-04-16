@@ -1,0 +1,57 @@
+@relation mydata
+@attribute a0 {Today,Later}
+@attribute a1 {Tired,NotTired}
+@attribute a2 {Bored,NotBored}
+@attribute a3 {AfraidOfSun,LoveSun,Indifferent}
+@attribute category {DoYourWork,TakeANap,PlayGames,PlayOutside,SitAround}
+@data
+Later,Tired,Bored,LoveSun,TakeANap
+Later,Tired,Bored,AfraidOfSun,TakeANap
+Later,Tired,NotBored,AfraidOfSun,TakeANap
+Today,Tired,NotBored,Indifferent,DoYourWork
+Today,Tired,Bored,AfraidOfSun,DoYourWork
+Today,Tired,Bored,Indifferent,DoYourWork
+Today,NotTired,NotBored,LoveSun,DoYourWork
+Later,NotTired,Bored,Indifferent,SitAround
+Later,Tired,Bored,LoveSun,TakeANap
+Later,Tired,NotBored,AfraidOfSun,TakeANap
+Today,NotTired,Bored,AfraidOfSun,DoYourWork
+Later,Tired,Bored,Indifferent,TakeANap
+Later,NotTired,Bored,LoveSun,PlayOutside
+Later,Tired,NotBored,LoveSun,TakeANap
+Later,Tired,Bored,Indifferent,TakeANap
+Later,Tired,Bored,AfraidOfSun,TakeANap
+Today,Tired,Bored,Indifferent,DoYourWork
+Later,NotTired,NotBored,AfraidOfSun,DoYourWork
+Today,Tired,NotBored,LoveSun,DoYourWork
+Later,NotTired,NotBored,Indifferent,DoYourWork
+Later,NotTired,NotBored,LoveSun,DoYourWork
+Today,NotTired,NotBored,AfraidOfSun,DoYourWork
+Today,Tired,Bored,Indifferent,DoYourWork
+Later,NotTired,NotBored,Indifferent,DoYourWork
+Later,NotTired,NotBored,LoveSun,DoYourWork
+Today,NotTired,Bored,Indifferent,DoYourWork
+Later,Tired,Bored,Indifferent,TakeANap
+Today,NotTired,Bored,AfraidOfSun,DoYourWork
+Later,NotTired,Bored,Indifferent,SitAround
+Today,NotTired,NotBored,LoveSun,DoYourWork
+Later,Tired,NotBored,AfraidOfSun,TakeANap
+Later,NotTired,NotBored,AfraidOfSun,DoYourWork
+Today,Tired,NotBored,LoveSun,DoYourWork
+Today,NotTired,Bored,Indifferent,DoYourWork
+Later,NotTired,NotBored,LoveSun,DoYourWork
+Later,Tired,NotBored,LoveSun,TakeANap
+Today,Tired,Bored,LoveSun,DoYourWork
+Later,Tired,Bored,LoveSun,TakeANap
+Today,Tired,NotBored,AfraidOfSun,DoYourWork
+Today,NotTired,Bored,Indifferent,DoYourWork
+Today,Tired,Bored,AfraidOfSun,DoYourWork
+Today,Tired,Bored,LoveSun,DoYourWork
+Later,Tired,Bored,Indifferent,TakeANap
+Later,NotTired,Bored,LoveSun,PlayOutside
+Today,NotTired,NotBored,AfraidOfSun,DoYourWork
+Later,Tired,NotBored,Indifferent,TakeANap
+Later,Tired,NotBored,LoveSun,TakeANap
+Later,NotTired,Bored,Indifferent,SitAround
+Later,NotTired,NotBored,Indifferent,DoYourWork
+Today,NotTired,NotBored,Indifferent,DoYourWork

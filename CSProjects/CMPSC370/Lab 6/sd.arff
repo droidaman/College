@@ -1,0 +1,57 @@
+@relation mydata
+@attribute a0 {Fancy,NotFancy}
+@attribute a1 {Edible,Inedible}
+@attribute a2 {Alcoholic,Nonalcoholic}
+@attribute a3 {Delicious,Disgusting}
+@attribute category {yes,no}
+@data
+NotFancy,Inedible,Nonalcoholic,Disgusting,no
+Fancy,Edible,Nonalcoholic,Delicious,no
+Fancy,Edible,Nonalcoholic,Disgusting,no
+NotFancy,Inedible,Alcoholic,Delicious,no
+NotFancy,Inedible,Alcoholic,Disgusting,no
+Fancy,Edible,Alcoholic,Disgusting,no
+NotFancy,Inedible,Nonalcoholic,Disgusting,no
+NotFancy,Edible,Nonalcoholic,Delicious,no
+Fancy,Edible,Alcoholic,Disgusting,no
+NotFancy,Inedible,Nonalcoholic,Delicious,no
+NotFancy,Edible,Alcoholic,Disgusting,yes
+NotFancy,Edible,Alcoholic,Disgusting,yes
+Fancy,Inedible,Alcoholic,Disgusting,no
+NotFancy,Inedible,Nonalcoholic,Delicious,no
+NotFancy,Edible,Nonalcoholic,Disgusting,no
+Fancy,Inedible,Alcoholic,Delicious,no
+Fancy,Inedible,Nonalcoholic,Delicious,no
+NotFancy,Inedible,Alcoholic,Delicious,no
+Fancy,Inedible,Alcoholic,Disgusting,no
+Fancy,Inedible,Alcoholic,Delicious,no
+Fancy,Edible,Alcoholic,Disgusting,no
+Fancy,Inedible,Nonalcoholic,Delicious,no
+Fancy,Edible,Alcoholic,Disgusting,no
+Fancy,Inedible,Alcoholic,Delicious,no
+NotFancy,Edible,Alcoholic,Disgusting,yes
+NotFancy,Inedible,Alcoholic,Delicious,no
+NotFancy,Edible,Nonalcoholic,Disgusting,no
+NotFancy,Inedible,Alcoholic,Delicious,no
+NotFancy,Inedible,Nonalcoholic,Disgusting,no
+Fancy,Inedible,Alcoholic,Delicious,no
+NotFancy,Inedible,Alcoholic,Disgusting,no
+NotFancy,Edible,Nonalcoholic,Delicious,no
+Fancy,Edible,Nonalcoholic,Delicious,no
+NotFancy,Edible,Alcoholic,Disgusting,yes
+NotFancy,Edible,Nonalcoholic,Delicious,no
+Fancy,Edible,Alcoholic,Delicious,no
+Fancy,Inedible,Alcoholic,Disgusting,no
+NotFancy,Edible,Nonalcoholic,Disgusting,no
+NotFancy,Edible,Alcoholic,Delicious,yes
+Fancy,Edible,Nonalcoholic,Disgusting,no
+NotFancy,Edible,Nonalcoholic,Delicious,no
+Fancy,Inedible,Alcoholic,Disgusting,no
+NotFancy,Edible,Alcoholic,Disgusting,yes
+NotFancy,Edible,Alcoholic,Delicious,yes
+NotFancy,Edible,Alcoholic,Delicious,yes
+Fancy,Edible,Nonalcoholic,Delicious,no
+Fancy,Edible,Nonalcoholic,Disgusting,no
+Fancy,Edible,Alcoholic,Disgusting,no
+NotFancy,Inedible,Nonalcoholic,Disgusting,no
+NotFancy,Inedible,Alcoholic,Delicious,no

@@ -1,0 +1,21 @@
+@relation mydata
+@attribute a0 {sm,med,large}
+@attribute a1 {red,green,blue}
+@attribute a2 {circle,square,triangle}
+@attribute category {yes,no}
+@data
+large,green,circle,yes
+med,red,circle,yes
+large,green,square,no
+large,blue,circle,no
+sm,blue,square,no
+med,green,square,no
+med,red,triangle,yes
+large,green,circle,no
+large,blue,circle,yes
+large,blue,circle,no
+sm,blue,circle,no
+large,blue,circle,no
+sm,blue,square,no
+large,red,circle,yes
+large,green,triangle,yes
