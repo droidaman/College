@@ -11,6 +11,7 @@
 *.log
 *.sql
 *.sqlite
+*nppdf32Log*
 
 # OS generated files #
 ######################
