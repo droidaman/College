@@ -206,7 +206,6 @@ public class ProjC {
 
     int xpoint1 = rng.nextInt(LENGTH-1)+1; // random crossover point
     int xpoint2 = rng.nextInt(LENGTH-1)+1; // random crossover point
-    System.out.println("xp1 " + xpoint1 + "xp2 " + xpoint2);
 
     // Can't have double crossover if the numbers are the same.
     while(xpoint1 == xpoint2)

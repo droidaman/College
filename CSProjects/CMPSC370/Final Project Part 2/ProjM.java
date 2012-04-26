@@ -32,7 +32,7 @@ import java.io.*;
  * @author	Bob Roos
  * @version	11 April 2012
  */
-public class Proj {
+public class ProjM {
   // GA parameters:
   public static int POPSIZE;           // #bit strings in population
   public static double CROSSOVER_PROB; // prob. that 2 parents are mated
@@ -233,6 +233,9 @@ public class Proj {
    * @return	a new BitString containing mutated version of b
    */
   public static BitString mutate(BitString b) {
+    int rpoint1 = rng.nextInt(LENGTH-1)+1; // random point
+    int rpoint2 = rng.nextInt(LENGTH-1)+1; // random point
+
     String s = b.item(); // original bit string
     String result = "";  // mutated bit string
 
@@ -241,15 +244,33 @@ public class Proj {
      * FINAL PROJECT
      *********************************/
 
-    // Examine every bit:
-    for (int i = 0; i < LENGTH; i++) {
-      if (rng.nextDouble() < MUTATION_PROB) { // flip this bit
-        result = result + (1-s.charAt(i)+'0');
-      }
-      else {
-        result = result + s.charAt(i); // don't change this bit
-      }
+    // Can't have mutation if the numbers are the same.
+    while(rpoint1 == rpoint2)
+    {
+      rpoint2 = rng.nextInt(LENGTH-1)+1; // random crossover point
     }
+
+    // Have logic issues if num2 is larger than num1. Swap them.
+    if (rpoint1 > rpoint2)
+    {
+      int temp = rpoint1;
+      rpoint1 = rpoint2;
+      rpoint2 = temp;
+    }
+
+    // Copy first portions of parents into children:
+    for (int i = 0; i < rpoint1; i++) {
+      result += s.charAt(i);
+    }
+    // Swap randomly selected parts:
+    for (int i = rpoint2; i > rpoint1; i--) {
+     result += s.charAt(i);
+    }
+    // Copy remaining portions of parents into children:
+    for (int i = rpoint2; i < LENGTH; i++) {
+     result += s.charAt(i);
+    }
+
     return new BitString(result);
   }
 
