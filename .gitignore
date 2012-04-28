@@ -16,3 +16,7 @@
 # OS generated files #
 ######################
 *~
+
+# Temporary Lock Files #
+########################
+*~lock*
