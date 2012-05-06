@@ -1,0 +1,19 @@
+# Compiled source #
+###################
+#nothing here yet
+
+# Packages #
+############
+# Need these for cmpsc purposes
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*nppdf32Log*
+
+# OS generated files #
+######################
+*~
+~*
