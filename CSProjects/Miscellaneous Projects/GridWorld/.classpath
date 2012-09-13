@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="GridWorldCode/GridWorldCode/framework"/>
+	<classpathentry kind="src" path="GridWorldCode/GridWorldCode/projects/boxBug"/>
+	<classpathentry kind="src" path="GridWorldCode/GridWorldCode/projects/critters"/>
+	<classpathentry kind="src" path="GridWorldCode/GridWorldCode/projects/firstProject"/>
+	<classpathentry kind="lib" path="GridWorldCode/GridWorldCode/gridworld.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
