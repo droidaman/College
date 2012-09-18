@@ -1,3 +1,5 @@
+// Braden Licastro
+
 /*************************************************************************
  * YOU NEED TO MODIFY THIS FILE FOR LAB 2 
  * 
@@ -71,8 +73,43 @@ public class ThreeSumFast {
     } 
 
     public static void main(String[] args)  { 
-        int[] a = In.readInts(args[0]);
-        int cnt = count(a);
-        StdOut.println(cnt);
+
+        StdDraw.setXscale(1,5000);
+        StdDraw.setYscale(0,2000);   // YOU MAY NEED TO MODIFY THIS
+        StdDraw.setPenRadius(.005);
+
+        for (int n = 100; n < 5000; n = n + 100) {
+
+            // Run the algorithm and time it:
+            Stopwatch timer = new Stopwatch();
+            double elapse = timer.elapsedTime();
+ 
+            // Create and fill an array of size n
+            int[] a = new int[n];
+            for (int i = 0; i < n; i++) {
+                a[i] = StdRandom.uniform(20001)-10000;
+            }
+
+            int cnt = count(a);
+
+            // End the timer
+            elapse = timer.elapsedTime()-elapse;
+
+            StdOut.println(cnt);
+            StdDraw.setPenColor(StdDraw.BLACK);
+            StdDraw.point(cnt,elapse);
+
+            Stopwatch timer2 = new Stopwatch();
+            double elapsed = timer2.elapsedTime();
+            // calculations
+            long n2logn = (n * (long) n) * (long) Math.log(n);
+            elapsed = timer2.elapsedTime()-elapsed;
+
+            // Text output
+            /* StdOut.println(n2logn / elapsed);*/
+            // Second plot
+            StdDraw.setPenColor(StdDraw.RED);
+            StdDraw.point(n2logn,elapsed);
+        }
     } 
 } 

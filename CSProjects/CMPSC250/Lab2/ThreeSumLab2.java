@@ -82,6 +82,19 @@ public class ThreeSumLab2 {
             //StdOut.println(cnt);
             StdDraw.setPenColor(StdDraw.BLACK);
             StdDraw.point(n,elapse);
+
+            Stopwatch timer2 = new Stopwatch();
+            double elapsed = timer2.elapsedTime();
+
+            // calculations
+            long n3 = n * (long) n * (long) n;
+            elapsed = timer2.elapsedTime()-elapsed;
+
+            // Text output
+            /* StdOut.println(n3 / elapsed);*/
+            // Second plot
+            StdDraw.setPenColor(StdDraw.RED);
+            StdDraw.point(n3,elapsed);
         }
     } 
 } 
