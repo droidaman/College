@@ -1,0 +1,21 @@
+Alternatives to "404 Not Found"
+
+From the "Salon Haiku Error Message Challenge"--
+See http://www.cs.ou.edu/~rlpage/HaikuErrorMsgs.htm
+
+The authors have been listed below; however, these haiku
+appear in many places on the Web with authors' names removed.
+Please read the following thoughtful editorial about the 
+importance of attributing authorship and not simply 
+forwarding unattributed content:
+http://www.salon.com/1998/02/24/straight_14/
+
+You step in the stream,
+but the water has moved on.
+This page is not here.
+-- Cass Whittington
+
+The Web site you seek
+cannot be located but
+endless others exist
+-- Joy Rothke
