@@ -28,7 +28,7 @@ public class Lab3Part1 {
         // Prob 2b: Loop the program TESTNUM times to get the average.
         for(int k = 0; k < TESTNUM; k++)
         {
-            //  fill the array with random numbers between 0 and 99 inclusive.
+            //  Fill the array with random numbers between 0 and 99 inclusive.
             for (int i = 0; i < a.length; i++)
             {
                 a[i] = StdRandom.uniform(100);
@@ -39,7 +39,7 @@ public class Lab3Part1 {
             
         }
 
-        // Callculate the average number of inversions over n test runs and print the result.
+        // Calculate the average number of inversions over n test runs and print the result.
         average = average / TESTNUM;
         System.out.println ("The average number of inversions for " + TESTNUM + " runs of the program is " + average +  ".");
 

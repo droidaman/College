@@ -23,12 +23,22 @@ public class Bubble {
     /**
      * Bubble sort
      */
-    public static void sort(Comparable a[]) {
-          /******************************************************/
-          /* FILL IN THIS METHOD WITH A BUBBLE SORT ALGORITHM.  */
-          /* DON'T FORGET THAT YOU HAVE TO USE "compareTo" FOR  */
-          /* MAKING ARRAY COMPARISONS. YOUR SORT SHOULD WORK    */
-          /* FOR ANY Comparable TYPE, NOT JUST INTEGERS.        */
-          /******************************************************/
+    public static void sort(Comparable a[])
+    {
+        Comparable temp = 0;
+               
+        for(int i=0; i < a.length; i++)
+        {
+           for(int j=1; j < (a.length-i); j++)
+           {
+               if(a[j-1].compareTo(a[j]) > 0)
+               {
+                   //swap the elements!
+                   temp = a[j-1];
+                   a[j-1] = a[j];
+                   a[j] = temp;
+               }
+           }
+        }          
     }
 }
