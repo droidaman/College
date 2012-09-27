@@ -2,13 +2,13 @@ Printed Volume 1:
 Front Cover
 
 Printed:
-	0-40
+	0-140
 	379-380
 	423-424
 	509-510
 
 Need Printed:
-	41-378
+	141-378
 	381-422
 	425-508
 	511-584
