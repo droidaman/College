@@ -54,9 +54,14 @@ public class QuickIns {
     }
 
     public static void insertion(int[] a, int lo, int hi) {
-        /*****************************/
-        /*   YOUR CODE GOES HERE     */
-        /*****************************/
+        for(int i = lo + 1; i <= hi; i++) {
+            int hold = a[i];
+            int j = i;
+            while(j > lo && hold < a[j-1]; j--) {
+                a[j] = a[j-1];
+            }
+            a[j] = hold;
+        }
     }
 
     // Quicksort -- see textbook, pp 289-291
