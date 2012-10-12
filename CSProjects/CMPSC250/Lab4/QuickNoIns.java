@@ -1,7 +1,5 @@
 /********
- * Braden Licastro
- * Lab 4
- * CMPSC250
+ * YOUR NAME, LAB #, etc.
  *
  * QuickIns -- quicksort, modified with a cutoff value to switch to
  * insertion sort
