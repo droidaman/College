@@ -1,0 +1,112 @@
+Current working directory: 
+/home/braden/College/CSProjects/CMPSC250/Lab4
+
+Number of times to increment values and run script? 25
+
+Parameter input for sorting algorithms:
+What is the starting size of the array? 5
+Increment array size by how much with each test? 5
+How many experiments to be averaged by the sorting algorithms? 20
+What is the starting cutoff value? 0
+Increment cutoff by how much with each test? 2
+
+QuickIns Average: 6.7
+QuickNoIns Average: 11.95
+ArraySize: 5  Cutoff: 0
+
+QuickIns Average: 20.95
+QuickNoIns Average: 34.2
+ArraySize: 10  Cutoff: 2
+
+QuickIns Average: 44.7
+QuickNoIns Average: 59.65
+ArraySize: 15  Cutoff: 4
+
+QuickIns Average: 71.6
+QuickNoIns Average: 94.5
+ArraySize: 20  Cutoff: 6
+
+QuickIns Average: 115.3
+QuickNoIns Average: 125.45
+ArraySize: 25  Cutoff: 8
+
+QuickIns Average: 141.2
+QuickNoIns Average: 153.0
+ArraySize: 30  Cutoff: 10
+
+QuickIns Average: 215.4
+QuickNoIns Average: 192.3
+ArraySize: 35  Cutoff: 12
+
+QuickIns Average: 260.4
+QuickNoIns Average: 230.15
+ArraySize: 40  Cutoff: 14
+
+QuickIns Average: 342.7
+QuickNoIns Average: 265.95
+ArraySize: 45  Cutoff: 16
+
+QuickIns Average: 446.7
+QuickNoIns Average: 316.0
+ArraySize: 50  Cutoff: 18
+
+QuickIns Average: 481.0
+QuickNoIns Average: 349.15
+ArraySize: 55  Cutoff: 20
+
+QuickIns Average: 677.6
+QuickNoIns Average: 401.05
+ArraySize: 60  Cutoff: 22
+
+QuickIns Average: 671.15
+QuickNoIns Average: 439.55
+ArraySize: 65  Cutoff: 24
+
+QuickIns Average: 746.5
+QuickNoIns Average: 466.95
+ArraySize: 70  Cutoff: 26
+
+QuickIns Average: 976.2
+QuickNoIns Average: 529.6
+ArraySize: 75  Cutoff: 28
+
+QuickIns Average: 1167.1
+QuickNoIns Average: 580.25
+ArraySize: 80  Cutoff: 30
+
+QuickIns Average: 1286.8
+QuickNoIns Average: 626.55
+ArraySize: 85  Cutoff: 32
+
+QuickIns Average: 1422.65
+QuickNoIns Average: 673.1
+ArraySize: 90  Cutoff: 34
+
+QuickIns Average: 1592.1
+QuickNoIns Average: 722.15
+ArraySize: 95  Cutoff: 36
+
+QuickIns Average: 1630.35
+QuickNoIns Average: 748.7
+ArraySize: 100  Cutoff: 38
+
+QuickIns Average: 1745.35
+QuickNoIns Average: 776.0
+ArraySize: 105  Cutoff: 40
+
+QuickIns Average: 1919.0
+QuickNoIns Average: 838.3
+ArraySize: 110  Cutoff: 42
+
+QuickIns Average: 2379.65
+QuickNoIns Average: 905.05
+ArraySize: 115  Cutoff: 44
+
+QuickIns Average: 2375.45
+QuickNoIns Average: 929.25
+ArraySize: 120  Cutoff: 46
+
+QuickIns Average: 2398.4
+QuickNoIns Average: 966.85
+ArraySize: 125  Cutoff: 48
+

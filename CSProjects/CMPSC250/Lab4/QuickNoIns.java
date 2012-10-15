@@ -1,24 +1,24 @@
-/********
- * YOUR NAME, LAB #, etc.
+/*
+ * Braden Licastro
+ * Lab 4
+ * CMPSC250
  *
- * QuickIns -- quicksort, modified with a cutoff value to switch to
+ * QuickNoIns -- quicksort, modified without a cutoff value to switch to
  * insertion sort
  *
- * Compile: javac QuickIns.java
+ * Compile: javac QuickNoIns.java
  *
- * Usage: java QuickIns n numexp cutoff
+ * Usage: java QuickNoIns n numexp
  * where:
  *          n      is the size of the array to be sorted
  *          numexp is the number of experiments to be averaged (e.g., 100)
- *          cutoff is the array size where we should switch to insertion
- *                 sort (see textbook, page 296)
  *
  * @author	Bob Roos
  * @version	25 Sept 2012
  *********/
 
-public class QuickIns {
-    public static int count, cutoff; // comparison count, insertion cutoff
+public class QuickNoIns {
+    public static int count; // comparison count
 
     public static void main(String[] args) {
         // Input size of array from command line:
@@ -26,9 +26,6 @@ public class QuickIns {
 
         // Input number of experiments from command line:
         int numexp = Integer.parseInt(args[1]);
-
-        // Input cutoff-to-insertion value from command line:
-        cutoff = Integer.parseInt(args[2]);
         
         int a[] = new int[n];
 
@@ -68,19 +65,6 @@ public class QuickIns {
         StdOut.println("Average: " + total/(double)numexp);
     }
 
-    public static void insertion(int[] a, int lo, int hi) {
-        for(int i = lo + 1; i <= hi; i++) {
-            int hold = a[i];
-            int j = i;
-            while(j > lo && hold < a[j-1]) {
-                a[j] = a[j-1];
-                count++;
-                j--;
-            }
-            a[j] = hold;
-        }
-    }
-
     // Quicksort -- see textbook, pp 289-291
     public static void sort(int[] a) {
         // No shuffle in this version--it introduces a random
@@ -91,27 +75,13 @@ public class QuickIns {
     }
 
     // Sort a between positions lo, ... hi
-    //     *********************************
-    //     *  YOU NEED TO MODIFY THIS CODE *
-    //     *********************************
     public static void sort(int[] a, int lo, int hi) {
         if (hi <= lo) return; // array size 0 or 1--nothing to do
 
         int j = partition(a,lo,hi); // split array around index j
 
-        if ((j-1)-lo >= cutoff && hi-(j+1) >= cutoff) {
-            insertion(a,lo,j-1);
-            insertion(a,j+1,hi);
-        } else if ((j-1)-lo < cutoff && hi-(j+1) >= cutoff) {
-            sort(a,lo,j-1);
-            insertion(a,j+1,hi);
-        } else if ((j-1)-lo >= cutoff && hi-(j+1) < cutoff) {
-            insertion(a,lo,j-1);
-            sort(a,j+1,hi);
-        } else {
-            sort(a,lo,j-1);  // sort values left of j
-            sort(a,j+1,hi);  // sort values right of j
-        }
+        sort(a,lo,j-1);  // sort values left of j
+        sort(a,j+1,hi);  // sort values right of j
     }
 
     // Partition an array (between positions lo and hi) so that
