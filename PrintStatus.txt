@@ -4,12 +4,12 @@ Front Cover
 Printed:
 	0-378
 	379-380
-  381-422
+    381-422
 	423-424
-  425-508
+    425-508
 	509-510
-  511-584
-  585-586
+    511-584
+    585-586
 	587-786
 
 Need Printed:
@@ -25,11 +25,14 @@ Front Cover
 
 Printed:
 	0-22
+	789-848
 
 Needs Printed:
 	7*-8*
 	787*-788*
-	789-end (break up later)
+
+	849*-850*
+	851-end (break up later)
 
 Copyright
 Rear Cover

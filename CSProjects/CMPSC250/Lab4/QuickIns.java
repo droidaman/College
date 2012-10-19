@@ -49,6 +49,7 @@ public class QuickIns {
                 System.out.print(a[x] + ", ");
             System.out.print("\n\n");
             */
+            
 
             // Sort the array
             sort(a);
@@ -58,6 +59,7 @@ public class QuickIns {
                 System.out.print(a[x] + ", ");
             System.out.print("\n");
             */
+            
 
             // print three values so we can verify that the same
             // arrays are being sorted in both the "QuickIns" and the
