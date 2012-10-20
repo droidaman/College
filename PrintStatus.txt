@@ -24,15 +24,19 @@ Printed Volume 2:
 Front Cover
 
 Printed:
-	0-22
-	789-848
-
-Needs Printed:
+	0-6
 	7*-8*
+    9-22
 	787*-788*
-
+	789-848
 	849*-850*
-	851-end (break up later)
+    851-954
+	955*-956*
+    957-1086
+	1087*-1088*
+	
+Needs Printed:
+	1089end (break up later)
 
 Copyright
 Rear Cover
