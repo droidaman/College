@@ -1,5 +1,9 @@
 /*************************************************************************
- *  YOUR NAME, LAB #, DATE
+ *  Braden Licastro
+ *  Lab 5
+ *  CMPSC250
+ *  Professor Roos
+ *
  *  DESCRIPTION OF WHAT YOU CHANGED/ADDED
  *
  *  A symbol table implemented with a binary search tree.
@@ -35,14 +39,66 @@ public class BST<Key extends Comparable<Key>, Value> {
          }
     }
 
-  /*******************************************************/
-  /*   ADD CODE HERE FOR preorder (2 methods), postorder */
-  /*       (2 methods), inorder (2 methods), and depth   */
-  /*       (what do you think--1 method? 2 methods?)     */
-  /*                                                     */
-  /*   INCLUDE HEADER COMMENTS DESCRIBING PARAMETER      */
-  /*   AND RETURN VALUES.                                */
-  /*******************************************************/
+
+    /* Fun stuff - 6 methods and the depth method */
+    public void preorder()
+    {
+        preorder(root);
+    }
+    
+    private void preorder (Node x){
+        if (x == null){
+            return;
+        }
+        
+        StdOut.print(x);
+        preorder(x.left);
+        preorder(x.right);
+    }
+    
+    public void preorder(){
+        postorder(root);
+    }
+    
+    private void postorder (Node x){
+        if (x == null){
+            return;
+        }
+
+        postorder(x.left);
+        postorder(x.right);
+        StdOut.print(x);
+    }
+    
+    public void inorder(){
+        inorder(root);
+    }
+    
+    private void inorder (Node x){
+        if (x == null){
+            return;
+        }
+        
+        inorder(x.left);
+        StdOut.print(x);
+        inorder(x.right);
+    }
+    
+    public void depth(){
+        depth(root, 0);
+    }
+    
+    private void depth (Node x, int depth){
+        if (x == null){
+            return -1;
+        }
+        
+        depth(x.left, ++depth);
+        depth(x.right, ++depth);
+
+    }
+    
+    
 
     // is the symbol table empty?
     public boolean isEmpty() {
@@ -357,5 +413,15 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         for (String s : st.keys())
             StdOut.println(s + " " + st.get(s));
+
+        // Print out some additional information.
+        StdOut.println("Preorder:");
+        st.preorder();
+        
+        StdOut.println("Postorder:");
+        st.postorder();
+        
+        StdOut.println("Inorder:");
+        st.inorder();
     }
 }
