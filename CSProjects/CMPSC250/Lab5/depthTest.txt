@@ -1,0 +1,31 @@
+S 0 	Depth: 0
+E 12 	Depth: 1
+X 7 	Depth: 1
+A 8 	Depth: 2
+R 3 	Depth: 2
+C 4 	Depth: 3
+H 5 	Depth: 3
+M 9 	Depth: 4
+L 11 	Depth: 5
+P 10 	Depth: 5
+
+A 8 	Depth: 2
+C 4 	Depth: 3
+E 12 	Depth: 1
+H 5 	Depth: 3
+L 11 	Depth: 5
+M 9 	Depth: 4
+P 10 	Depth: 5
+R 3 	Depth: 2
+S 0 	Depth: 0
+X 7 	Depth: 1
+
+
+Preorder:
+(S,0)(E,12)(A,8)(C,4)(R,3)(H,5)(M,9)(L,11)(P,10)(X,7)
+
+Postorder:
+(C,4)(A,8)(L,11)(P,10)(M,9)(H,5)(R,3)(E,12)(X,7)(S,0)
+
+Inorder:
+(A,8)(C,4)(E,12)(H,5)(L,11)(M,9)(P,10)(R,3)(S,0)(X,7)

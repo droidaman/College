@@ -46,7 +46,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         preorder(root);
     }
     
-    private void preorder (Node x){
+    private void preorder(Node x){
         if (x == null){
             return;
         }
@@ -56,11 +56,11 @@ public class BST<Key extends Comparable<Key>, Value> {
         preorder(x.right);
     }
     
-    public void preorder(){
+    public void postorder(){
         postorder(root);
     }
     
-    private void postorder (Node x){
+    private void postorder(Node x){
         if (x == null){
             return;
         }
@@ -74,7 +74,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         inorder(root);
     }
     
-    private void inorder (Node x){
+    private void inorder(Node x){
         if (x == null){
             return;
         }
@@ -84,20 +84,24 @@ public class BST<Key extends Comparable<Key>, Value> {
         inorder(x.right);
     }
     
-    public void depth(){
-        depth(root, 0);
+    public  int depth(Key key){
+        return depth(root, key);
     }
     
-    private void depth (Node x, int depth){
-        if (x == null){
-            return -1;
+    private int depth(Node x, Key key){
+        if (x == null) {
+        	return -1;
         }
         
-        depth(x.left, ++depth);
-        depth(x.right, ++depth);
-
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) {
+        	return (depth(x.left, key) + 1);
+        } else if (cmp > 0) {
+        	return (depth(x.right, key) + 1);
+        } else {
+        	return 0;
+		}
     }
-    
     
 
     // is the symbol table empty?
@@ -406,22 +410,26 @@ public class BST<Key extends Comparable<Key>, Value> {
             st.put(key, i);
         }
 
-        for (String s : st.levelOrder())
-            StdOut.println(s + " " + st.get(s));
-
+        for (String s : st.levelOrder()){
+            StdOut.print(s + " " + st.get(s));
+            StdOut.println(" \tDepth: " + st.depth(s));
+		}
+		
         StdOut.println();
 
-        for (String s : st.keys())
-            StdOut.println(s + " " + st.get(s));
+        for (String s : st.keys()){
+            StdOut.print(s + " " + st.get(s));
+            StdOut.println(" \tDepth: " + st.depth(s));
+		}
 
         // Print out some additional information.
-        StdOut.println("Preorder:");
+        StdOut.println("\n\nPreorder:");
         st.preorder();
         
-        StdOut.println("Postorder:");
+        StdOut.println("\n\nPostorder:");
         st.postorder();
         
-        StdOut.println("Inorder:");
+        StdOut.println("\n\nInorder:");
         st.inorder();
     }
 }
