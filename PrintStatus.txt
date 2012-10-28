@@ -36,9 +36,10 @@ Printed:
 	1087*-1088*
 	1089-1388
 	1389*-1390*
+	1391-1475
 	
 Needs Printed:
-	1391-1475
+
 
 Copyright
 Rear Cover
