@@ -1,3 +1,8 @@
+# Braden Licastro
+# CMPSC381
+# Professor Roos
+# Lab 6
+
 # A simple "stop and wait" file transfer server. This server works
 # only in conjunction with a SINGLE client (in other words, it doesn't
 # distinguish between messages received from two different clients).

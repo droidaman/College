@@ -1,0 +1,47 @@
+sending 0a
+no response
+sending 0a
+ack = 1
+sending 1b
+ack = 0
+sending 0c
+ack = 1
+sending 1d
+ack = 0
+sending 0e
+ack = 1
+sending 1f
+ack = 0
+sending 0g
+ack = 1
+sending 1h
+ack = 0
+sending 0i
+ack = 1
+sending 1j
+ack = 0
+sending 0k
+no response
+sending 0k
+ack = 1
+sending 1l
+ack = 0
+sending 0m
+ack = 1
+sending 1n
+ack = 0
+sending 0o
+ack = 1
+sending 1p
+ack = 0
+sending 0q
+no response
+sending 0q
+ack = 1
+sending 1r
+ack = 0
+sending 0s
+ack = 1
+sending 1t
+ack = 0
+3 dropped packets

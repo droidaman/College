@@ -1,3 +1,8 @@
+# Braden Licastro
+# CMPSC381
+# Professor Roos
+# Lab 6
+
 # A simple "stop and wait" file transfer client. 
 #
 # A file is exactly 20 packets long; each packet has a
@@ -52,6 +57,9 @@ while i < 20:
       # FILL IN CODE HERE (you may need to use "int(...)" and "str(...)"
       # to convert back and forth between 0 and '0', 1 and '1')
       ###########
+      if int(bit) == (1 - int(ack[0])):
+      	bit = str(1 - int(bit))
+      	i = i+1
 
    except Exception: # timeout
       print "no response"
