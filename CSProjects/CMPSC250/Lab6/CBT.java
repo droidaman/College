@@ -1,15 +1,16 @@
 /**
- * CompleteMaker -- experiments in using the Graph class. 
- *      Write a method to construct and return a complete graph with n
- *      vertices.
  *
- * This is modelled on the program "GraphClient.java" which can be 
- * found on the textbook website and is partially shown in the textbook 
- * on page 523.
+ * CompleteBinaryTreeMaker -- experiments in using the Graph class. 
  *
- * @author	Bob Roos
- * @version	30 October 2012
+ * This program generates a complete binary tree.
+ *
+ * @author	Braden Licastro
+ * @version	06 November 2012
+ * CMPSC 250
+ * Lab 6
+ *
  */
+
 public class CBT {
     // main method simply tests the "makeComplete" method:
     public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class CBT {
         StdOut.println("Complete on i vertices: "+c);
     }
 
-    // This method creates a "complete graph" of n vertices
+    // This method creates a "complete binary tree" of n vertices
     // and returns it:
     public static Graph makeComplete(int n) {
         int vMax = (int)Math.pow(2, n+1) - 1;      

@@ -1,4 +1,9 @@
 /**
+ *
+ * Braden Licastro
+ * CMPSC250
+ * Lab 6
+ *
  * StarMaker -- experiments in using the Graph class.
  *      Write a method to construct and print a star graph with n
  *      vertices.

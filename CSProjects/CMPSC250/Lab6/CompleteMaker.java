@@ -1,4 +1,8 @@
 /**
+ * Braden Licastro
+ * CMPSC250
+ * Lab 6
+ *
  * CompleteMaker -- experiments in using the Graph class. 
  *      Write a method to construct and return a complete graph with n
  *      vertices.
