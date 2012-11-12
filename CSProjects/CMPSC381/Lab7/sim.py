@@ -26,8 +26,8 @@ packet = 0      # label of next packet to arrive
 n = 3           # number of input/output ports
 inpdropped = 0  # number of packets dropped from input queues
 outdropped = 0  # number of packets dropped from output queues
-maxq = 50        # maximum queue size
-prob = 1       # probability of a packet arriving at a given time
+maxq = 5        # maximum queue size
+prob = 1        # probability of a packet arriving at a given time
 
 
 inp = []        # list of input queues
