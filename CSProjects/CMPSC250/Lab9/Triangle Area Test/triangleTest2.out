@@ -1,0 +1,28 @@
+What would you like to do?
+	1. Calculate area of a triangle
+	2. Determine if a point lays to the left or right of a line
+	3. Determine whether two lines intersect
+	4. Calculate the area of a polygon
+	Q. Quit
+1
+
+What is the value of X0? 2
+What is the value of Y0? 9
+
+What is the value of X1? 6
+What is the value of Y1? 12
+
+What is the value of X2? 5
+What is the value of Y2? 10
+
+The area of the given triangle is: 2.5
+
+
+What would you like to do?
+	1. Calculate area of a triangle
+	2. Determine if a point lays to the left or right of a line
+	3. Determine whether two lines intersect
+	4. Calculate the area of a polygon
+	Q. Quit
+
+Q

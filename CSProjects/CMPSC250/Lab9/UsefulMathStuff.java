@@ -128,16 +128,20 @@ public class UsefulMathStuff
     // Given sideNumber points of the form x,y.
     private static double ngonArea(int[] pts, int sides)
     {
+		// Keep track of running Area and array incrementation
 		int rA = 0;
 		int n = 0;
 
+		// Find all magnetudes except the last one. 
 		for(int i = 0; i < sides-1; i++) {
 			rA += arr[n]*arr[n+3] - arr[n+2]*arr[n+1];
 			n += 2;
 		}
 
+		// Find remaining magnetude for the area x2.
 		rA += arr[2*sides-2]*arr[1] - arr[0]*arr[2*sides-1];
 
+		// Return the area
 		return .5*rA;
     }
 
