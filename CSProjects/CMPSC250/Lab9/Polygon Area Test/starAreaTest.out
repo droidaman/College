@@ -1,0 +1,51 @@
+
+What would you like to do?
+	1. Calculate area of a triangle
+	2. Determine if a point lays to the left or right of a line
+	3. Determine whether two lines intersect
+	4. Calculate the area of a polygon
+	Q. Quit
+4
+
+How many sides does the shape have? 10
+
+What is the value of X0? -4
+What is the value of Y0? -3
+
+What is the value of X1? -3
+What is the value of Y1? 0
+
+What is the value of X2? -5
+What is the value of Y2? 1
+
+What is the value of X3? -2
+What is the value of Y3? 2
+
+What is the value of X4? 0
+What is the value of Y4? 3
+
+What is the value of X5? 2
+What is the value of Y5? 2
+
+What is the value of X6? 5
+What is the value of Y6? 1
+
+What is the value of X7? 3
+What is the value of Y7? 0
+
+What is the value of X8? 4
+What is the value of Y8? -3
+
+What is the value of X9? 0
+What is the value of Y9? -1
+
+The area of the given shape is: 30.0
+
+
+What would you like to do?
+	1. Calculate area of a triangle
+	2. Determine if a point lays to the left or right of a line
+	3. Determine whether two lines intersect
+	4. Calculate the area of a polygon
+	Q. Quit
+Q
