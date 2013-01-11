@@ -1,0 +1,167 @@
+How many routers? 8
+Network (a weight of "--" means "no edge"):
+A : (A,--)  (B,1)  (C,--)  (D,4)  (E,6)  (F,2)  (G,6)  (H,6) 
+B : (A,1)  (B,--)  (C,10)  (D,10)  (E,6)  (F,8)  (G,4)  (H,4) 
+C : (A,--)  (B,10)  (C,--)  (D,--)  (E,--)  (F,--)  (G,10)  (H,--) 
+D : (A,4)  (B,10)  (C,--)  (D,--)  (E,--)  (F,1)  (G,9)  (H,8) 
+E : (A,6)  (B,6)  (C,--)  (D,--)  (E,--)  (F,6)  (G,--)  (H,--) 
+F : (A,2)  (B,8)  (C,--)  (D,1)  (E,6)  (F,--)  (G,--)  (H,9) 
+G : (A,6)  (B,4)  (C,10)  (D,9)  (E,--)  (F,--)  (G,--)  (H,9) 
+H : (A,6)  (B,4)  (C,--)  (D,8)  (E,--)  (F,9)  (G,9)  (H,--) 
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A )
+  distance to C = infinity
+  distance to D = 4 (previous = A )
+  distance to E = 6 (previous = A )
+  distance to F = 2 (previous = A )
+  distance to G = 6 (previous = A )
+  distance to H = 6 (previous = A )
+
+Which router should I add next? b
+
+Current best distance from A to B is 1
+
+There is an edge of weight 10 from router B to router C
+Update the distance from A to C  using B ? (y=yes, anything else = no)
+y
+okay, changing distance to C ; new distance = 11 ; changing previous to B
+
+There is an edge of weight 10 from router B to router D
+Update the distance from A to D  using B ? (y=yes, anything else = no)
+n
+
+There is an edge of weight 6 from router B to router E
+Update the distance from A to E  using B ? (y=yes, anything else = no)
+n
+
+There is an edge of weight 8 from router B to router F
+Update the distance from A to F  using B ? (y=yes, anything else = no)
+n
+
+There is an edge of weight 4 from router B to router G
+Update the distance from A to G  using B ? (y=yes, anything else = no)
+y
+okay, changing distance to G ; new distance = 5 ; changing previous to B
+
+There is an edge of weight 4 from router B to router H
+Update the distance from A to H  using B ? (y=yes, anything else = no)
+y
+okay, changing distance to H ; new distance = 5 ; changing previous to B
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = infinity
+  distance to D = 4 (previous = A )
+  distance to E = 6 (previous = A )
+  distance to F = 2 (previous = A )
+  distance to G = 5 (previous = B )
+  distance to H = 5 (previous = B )
+
+Which router should I add next? c
+
+Current best distance from A to C is 11
+
+There is an edge of weight 10 from router C to router G
+Update the distance from A to G  using C ? (y=yes, anything else = no)
+n
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = 11 (previous = B ) (FINISHED)
+  distance to D = 4 (previous = A )
+  distance to E = 6 (previous = A )
+  distance to F = 2 (previous = A )
+  distance to G = 5 (previous = B )
+  distance to H = 5 (previous = B )
+
+Which router should I add next? b
+That router has already been chosen; pick another
+Which router should I add next? g
+
+Current best distance from A to G is 5
+
+There is an edge of weight 9 from router G to router D
+Update the distance from A to D  using G ? (y=yes, anything else = no)
+n
+
+There is an edge of weight 9 from router G to router H
+Update the distance from A to H  using G ? (y=yes, anything else = no)
+n
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = 11 (previous = B ) (FINISHED)
+  distance to D = 4 (previous = A )
+  distance to E = 6 (previous = A )
+  distance to F = 2 (previous = A )
+  distance to G = 5 (previous = B ) (FINISHED)
+  distance to H = 5 (previous = B )
+
+Which router should I add next? d
+
+Current best distance from A to D is 4
+
+There is an edge of weight 1 from router D to router F
+Update the distance from A to F  using D ? (y=yes, anything else = no)
+n
+
+There is an edge of weight 8 from router D to router H
+Update the distance from A to H  using D ? (y=yes, anything else = no)
+n
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = 11 (previous = B ) (FINISHED)
+  distance to D = 4 (previous = A ) (FINISHED)
+  distance to E = 6 (previous = A )
+  distance to F = 2 (previous = A )
+  distance to G = 5 (previous = B ) (FINISHED)
+  distance to H = 5 (previous = B )
+
+Which router should I add next? e
+
+Current best distance from A to E is 6
+
+There is an edge of weight 6 from router E to router F
+Update the distance from A to F  using E ? (y=yes, anything else = no)
+n
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = 11 (previous = B ) (FINISHED)
+  distance to D = 4 (previous = A ) (FINISHED)
+  distance to E = 6 (previous = A ) (FINISHED)
+  distance to F = 2 (previous = A )
+  distance to G = 5 (previous = B ) (FINISHED)
+  distance to H = 5 (previous = B )
+
+Which router should I add next? f
+
+Current best distance from A to F is 2
+
+There is an edge of weight 9 from router F to router H
+Update the distance from A to H  using F ? (y=yes, anything else = no)
+n
+-------------------------------
+Current best distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = 11 (previous = B ) (FINISHED)
+  distance to D = 4 (previous = A ) (FINISHED)
+  distance to E = 6 (previous = A ) (FINISHED)
+  distance to F = 2 (previous = A ) (FINISHED)
+  distance to G = 5 (previous = B ) (FINISHED)
+  distance to H = 5 (previous = B )
+
+Which router should I add next? h
+
+Current best distance from A to H is 5
+-------------------------------
+Final distances from 0:
+  distance to B = 1 (previous = A ) (FINISHED)
+  distance to C = 11 (previous = B ) (FINISHED)
+  distance to D = 4 (previous = A ) (FINISHED)
+  distance to E = 6 (previous = A ) (FINISHED)
+  distance to F = 2 (previous = A ) (FINISHED)
+  distance to G = 5 (previous = B ) (FINISHED)
+  distance to H = 5 (previous = B ) (FINISHED)

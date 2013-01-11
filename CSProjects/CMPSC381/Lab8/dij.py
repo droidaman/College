@@ -6,7 +6,7 @@ n = int(raw_input("How many routers? "))
 def l(i):
    return "ABCDEFGHIJKL"[i]
 
-seed(12345)
+# seed(12345)
 graph = []
 for i in range(n):
    graph.append([])
