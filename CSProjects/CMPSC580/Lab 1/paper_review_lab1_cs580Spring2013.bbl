@@ -1,0 +1,10 @@
+\begin{thebibliography}{1}
+
+\bibitem{conrad-gecco-selection-study}
+Alexander~P. Conrad, Robert~S. Roos, and Gregory~M. Kapfhammer.
+\newblock Empirically studying the role of selection operators during
+  search-based test suite prioritization.
+\newblock In {\em Proceedings of the ACM SIGEVO Genetic and Evolutionary
+  Computation Conference}, Portland, Oregon, July 2010.
+
+\end{thebibliography}
