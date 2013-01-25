@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{Dresner:2008:MCF:1402821.1402881}
+Kurt Dresner and Peter Stone.
+\newblock Mitigating catastrophic failure at intersections of autonomous
+  vehicles.
+\newblock In {\em Proceedings of the 7th international joint conference on
+  Autonomous agents and multiagent systems - Volume 3}, AAMAS '08, pages
+  1393--1396, Richland, SC, 2008. International Foundation for Autonomous
+  Agents and Multiagent Systems.
+
+\bibitem{Holmes:2008:EPU:1389095.1389390}
+Tim Holmes and Johannes Zanker.
+\newblock Eye on the prize: using overt visual attention to drive fitness for
+  interactive evolutionary computation.
+\newblock In {\em Proceedings of the 10th annual conference on Genetic and
+  evolutionary computation}, GECCO '08, pages 1531--1538, New York, NY, USA,
+  2008. ACM.
+
+\bibitem{VanMiddlesworth:2008:RSS:1402821.1402886}
+Mark VanMiddlesworth, Kurt Dresner, and Peter Stone.
+\newblock Replacing the stop sign: unmanaged intersection control for
+  autonomous vehicles.
+\newblock In {\em Proceedings of the 7th international joint conference on
+  Autonomous agents and multiagent systems - Volume 3}, AAMAS '08, pages
+  1413--1416, Richland, SC, 2008. International Foundation for Autonomous
+  Agents and Multiagent Systems.
+
+\bibitem{Whiteson:2006:OEC:1143997.1144252}
+Shimon Whiteson and Peter Stone.
+\newblock On-line evolutionary computation for reinforcement learning in
+  stochastic domains.
+\newblock In {\em Proceedings of the 8th annual conference on Genetic and
+  evolutionary computation}, GECCO '06, pages 1577--1584, New York, NY, USA,
+  2006. ACM.
+
+\end{thebibliography}
