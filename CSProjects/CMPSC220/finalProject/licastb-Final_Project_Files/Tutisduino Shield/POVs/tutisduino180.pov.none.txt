@@ -1,0 +1,4 @@
+Parts not found in 3dpack.dat or 3dusrpac.dat are:
+//OUAZ-SS-105D		OUAZ-SS-105D
+//X1	Strike	22-23-2021
+//X3	12v In	22-23-2021
