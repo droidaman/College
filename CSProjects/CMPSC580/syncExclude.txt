@@ -1,3 +1,12 @@
+*~
+*.*~
+*/*.*~
 */.git
 */.gitignore
 */README.md
+Lightning Talk
+On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
+Writing for Computer Science.pdf
+syncExclude.txt
+syncStatus.log
+Pre-Logout SyncScript.sh

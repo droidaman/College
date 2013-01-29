@@ -11,8 +11,8 @@ LOGFILE=~/College/CSProjects/CMPSC580/syncStatus.log
 ### Set up function declarations before they are used ###
 
 function syncGit {
-    # Add files to commit
-    echo 2>&1 | tee -a $LOGFILE
+	# Add files to commit
+	echo 2>&1 | tee -a $LOGFILE
     echo "$(date) - Adding files to be committed." 2>&1 | tee -a $LOGFILE
     cd ~/College && git add . 2>&1 | tee -a $LOGFILE
 
@@ -39,7 +39,11 @@ echo 2>&1 | tee -a $LOGFILE
 echo "$(date) - Syncing local Bitbucket and GitHub repos." 2>&1 | tee -a $LOGFILE
 
 # Sync content between GitHub and Bitbucket repos.
-rsync -av --exclude-from '../College/CSProjects/CMPSC580/syncExclude.txt' ~/Desktop/CS580/ ~/College/CSProjects/CMPSC580/ 2>&1 | tee -a $LOGFILE
+echo "Sending data" 2>&1 | tee -a $LOGFILE
+rsync -auv --exclude-from '../College/CSProjects/CMPSC580/syncExclude.txt' ~/Desktop/CS580/ ~/College/CSProjects/CMPSC580/ 2>&1 | tee -a $LOGFILE
+echo 2>&1 | tee -a $LOGFILE
+echo "Receiving data" 2>&1 | tee -a $LOGFILE
+rsync -auv --exclude-from '../College/CSProjects/CMPSC580/syncExclude.txt' ~/College/CSProjects/CMPSC580/ ~/Desktop/CS580/ 2>&1 | tee -a $LOGFILE
 
 # Local sync complete.
 echo 2>&1 | tee -a $LOGFILE
@@ -94,4 +98,6 @@ select lo in "Yes" "No"; do
     esac
 done
 
-sleep 5s
+echo
+echo "Please wait..."
+sleep 2s
