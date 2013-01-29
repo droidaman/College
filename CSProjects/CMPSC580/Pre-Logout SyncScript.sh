@@ -4,7 +4,8 @@ LOGFILE=~/College/CSProjects/CMPSC580/syncStatus.log
 ####################################
 #
 # Data sync script for the
-# CS580 and College repositories.
+# CS580 Local
+# and College repositories.
 #
 ####################################
 
@@ -84,8 +85,8 @@ select yn in "Yes" "No"; do
 done
 
 # Log out?
-echo 2>&1 | tee -a $LOGFILE
-echo "Would you like to log out?" 2>&1 | tee -a $LOGFILE
+echo
+echo "Would you like to log out?"
 select lo in "Yes" "No"; do
     case $lo in
         Yes)
