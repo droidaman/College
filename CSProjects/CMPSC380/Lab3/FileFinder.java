@@ -16,13 +16,13 @@ public class FileFinder
 		// construct an list and populate it with some files
 		// in your home directory (I used the lab directory)
 		List<File> fileList = new ArrayList<File>();
-		fillPath("/home/gkapfham/working/teaching/cs380S2013/labs/provide/lab3", "", fileList);
+		fillPath(args[0], "", fileList);
 
 		// Create a new Query.
 		Query q = new Query ();
 		
 		// Parse the SQL you are going to use.
-		q.parse ("SELECT * FROM java.io.File WHERE name LIKE '%ja%'");
+		q.parse ("SELECT * FROM java.io.File WHERE name LIKE '" + args[1] + "'");
 
 		// Execute the query.
 		QueryResults qr = q.execute(fileList);
