@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\topmargin 0.0in
+\setlength{\textwidth} {420pt}
+\setlength{\textheight} {620pt} 
+\setlength{\oddsidemargin} {20pt}
+\setlength{\marginparwidth} {72in}
+
+\usepackage{fancyhdr} 
+\usepackage{url}
+
+% set it so that subsubsections have numbers and they
+% are displayed in the TOC (maybe hard to read, might want to disable)
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% define widow protection
+
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+\clubpenalty=10000  % Don't allow orphans
+\widowpenalty=10000 % Don't allow widows
+
+% this should give me the ability to use some math symbols that 
+% were available by default in standard latex (i.e. \Box)
+
+\usepackage{latexsym}
+
+% define a little section heading that doesn't go with any number
+
+\def\littlesection#1{
+\widow{2cm}
+\vskip 0.5cm
+\noindent{\bf #1}
+\vskip 0.0001cm 
+}
+
+\pagestyle{fancyplain}
+
+\newcommand{\tstamp}{\today}   
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\lhead[\Section \thesection]            {\fancyplain{}{\rightmark}}
+\chead[\fancyplain{}{}]                 {\fancyplain{}{}}
+\rhead[\fancyplain{}{\rightmark}]       {\fancyplain{}{\thepage}}
+\cfoot[\fancyplain{\thepage}{}]         {\fancyplain{\thepage}{}}
+
+\newlength{\myVSpace}% the height of the box
+\setlength{\myVSpace}{1ex}% the default, 
+\newcommand\xstrut{\raisebox{-.5\myVSpace}% symmetric behaviour, 
+  {\rule{0pt}{\myVSpace}}%
+}
+
+% leave things with no spacing extra spacing in the final version of the paper
+\renewcommand{\baselinestretch}{1.0}    % must go before the begin of doc
+
+% suppress the use of indentation for a paragraph
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+
+% handle widows appropriately
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+% build the title section
+
+\makeatletter
+
+\def\maketitle{%
+  %\null
+  \thispagestyle{empty}%
+  %\vfill
+  \begin{center}%\leavevmode
+    %\normalfont
+    {\Huge \@title\par}%
+    %\hrulefill\par
+    {\normalsize \@author\par}%
+    \vskip .4in
+%    {\Large \@date\par}%
+  \end{center}%
+  %\vfill
+  %\null
+  %\cleardoublepage
+
+  }
+
+\makeatother
+
+\vspace*{-1.5in} \title{Paper Review:\\{\Large Assessing the Value of Branches with What-if Analysis}}
+
+% build the author section
+\author{\vspace*{.1in} Braden D. Licastro\\
+Department of Computer Science\\
+Allegheny College \\
+{\tt licastb@allegheny.edu}  \\
+\url{http://www.fullforceapps.com/} \\ 
+\vspace*{.1in} February 5, 2013 
+}
+
+% use the default title stuff
+\maketitle
+
+\vspace*{-.8in}
+\section{Summary}
+\label{sec:summary}
+\vspace*{-.1in}
+
+This paper analyses the costs of branch usage in source code management systems and assesses alternate branch structures to reduce delay involved with merging branches.
+  \cite{Bird:2012:AVB:2393596.2393648}. With larger and larger code projects, many developers have implemented the use of source management systems to prevent keeping other developers from working efficiently. Using this system it is possible to take existing code, branch that code and work on a specific feature while another developer works on another feature using the same code base. Once modifications are complete the changes will be merged back to the master, but depending how the project was originally branched, conflicts, erroneous code, and other sub-par data may be present that worked in their respective branches but break when merged. The authors of the paper survey several hundred Microsoft developers and gather branching statistics. From this, they research and propose several methods of structuring branches to optimize time spent merging projects.
+
+\vspace*{-.1in}
+\section{Critique}
+\label{sec:critique}
+\vspace*{-.1in}
+
+Throughout the research article Microsoft employees' experiences were continually referenced which raises concern. The employees that are hired at these companies are typically the best in their field. This raises some concern regarding the validity of the surveys. Though mentioned in the paper that the study is most geared toward benefiting this type of professional, many open source projects have a massive user base and could also benefit. Being able to gauge the results with a mixed group of developers would be far more effective in determining the performance of the proposed branch structures and techniques.
+
+In addition to this, the authors outline the method used to normalize the data so various branch delays and isolations can be compared. The authors make an assumption where more code modifications equates to a longer delay. This may be true in many cases, but there are also cases where this assumption is invalid. It is possible that one code edit could be complex enough that it can take as long as n number of edits on more straightforward code. Because of this it is possible for the normalized code to be skewed just the same as it would have been before normalization.
+
+\vspace*{-.1in}
+\section{Synthesis}
+\label{sec:synthesis}
+\vspace*{-.1in}
+
+After reading the research paper I concluded that additional research could be performed to substantiate the claims outlined in the paper, and possibly improve the effectiveness. As a future area of research it would be beneficial to verify their results on smaller  but detailed projects. Windows is a complex piece of software with many parts, but a small program of high complexity could potentially yield different results.
+
+Lastly an area for future research would be running the same tests with users of different levels of competency. An efficient and experienced developer could potentially develop a branched program in a way that it would ensure a seamless integration, while an engineer with less experience may write a functional program that needs additional code modifications in order to integrate seamlessly with the master. Merging these separate branches coded using different levels of experience and techniques can yield vastly different results than what were recorded previously.
+
+\bibliographystyle{plain}
+\bibliography{paper_review_lab3_cs580Spring2013}
+
+\end{document}
