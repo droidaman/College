@@ -7,14 +7,15 @@ LOGFILE=~/College/CSProjects/CMPSC580/syncStatus.log
 # CS580 Local
 # and College repositories.
 #
+# Version: 3.0.1.15 Build: 20130207
+#
 ####################################
 
 ### Set up function declarations before they are used ###
-
-function syncGit {
+function syncCollegeGit {
 	# Add files to commit
 	echo 2>&1 | tee -a $LOGFILE
-    echo "$(date) - Adding files to be committed." 2>&1 | tee -a $LOGFILE
+    echo "$(date) - Adding files to be committed to the College repo." 2>&1 | tee -a $LOGFILE
     cd ~/College && git add . 2>&1 | tee -a $LOGFILE
 
     # Accept commit message and commit changes
@@ -31,15 +32,20 @@ function syncGit {
 }
 
 
-
 ### Run the script ###
 
 # Local folder sync initilized.
 echo "------------------------------------------------------------" 2>&1 | tee -a $LOGFILE
+
+# Pull repo from GitHub before checking status.
 echo 2>&1 | tee -a $LOGFILE
-echo "$(date) - Syncing local Bitbucket and GitHub repos." 2>&1 | tee -a $LOGFILE
+echo "$(date) - Pulling College repo before folder sync." 2>&1 | tee -a $LOGFILE
+cd ~/College && git pull 2>&1 | tee -a $LOGFILE
 
 # Sync content between GitHub and Bitbucket repos.
+echo 2>&1 | tee -a $LOGFILE
+echo "$(date) - Syncing local Bitbucket and GitHub repos." 2>&1 | tee -a $LOGFILE
+echo 2>&1 | tee -a $LOGFILE
 echo "Sending data" 2>&1 | tee -a $LOGFILE
 rsync -auv --exclude-from '../College/CSProjects/CMPSC580/syncExclude.txt' ~/Desktop/CS580/ ~/College/CSProjects/CMPSC580/ 2>&1 | tee -a $LOGFILE
 echo 2>&1 | tee -a $LOGFILE
@@ -50,24 +56,18 @@ rsync -auv --exclude-from '../College/CSProjects/CMPSC580/syncExclude.txt' ~/Col
 echo 2>&1 | tee -a $LOGFILE
 echo "$(date) - Local sync complete!" 2>&1 | tee -a $LOGFILE
 
-
-# Pull repo from GitHub before checking status.
-echo 2>&1 | tee -a $LOGFILE
-echo "$(date) - Pulling repos before status check." 2>&1 | tee -a $LOGFILE
-cd ~/College && git pull 2>&1 | tee -a $LOGFILE
-
 # Print start status message.
 echo 2>&1 | tee -a $LOGFILE
-echo "$(date) - Retrieving repo status." 2>&1 | tee -a $LOGFILE
+echo "$(date) - Retrieving College repo status." 2>&1 | tee -a $LOGFILE
 cd ~/College && git status 2>&1 | tee -a $LOGFILE
 
 # See if we want to autosync with the script
 echo 2>&1 | tee -a $LOGFILE
-echo "Would you like to autocommit and push the repo?" 2>&1 | tee -a $LOGFILE
+echo "Would you like to autocommit and push the College repo?" 2>&1 | tee -a $LOGFILE
 select yn in "Yes" "No"; do
     case $yn in
         Yes)
-            syncGit
+            syncCollegeGit
             echo 2>&1 | tee -a $LOGFILE
             echo 2>&1 | tee -a $LOGFILE
             echo "Sync complete." 2>&1 | tee -a $LOGFILE
@@ -77,7 +77,7 @@ select yn in "Yes" "No"; do
         No)
             echo 2>&1 | tee -a $LOGFILE
             echo 2>&1 | tee -a $LOGFILE
-            echo "** Sync cancelled. Please manually update repository." 2>&1 | tee -a $LOGFILE
+            echo "** Sync cancelled. Please manually update College repository." 2>&1 | tee -a $LOGFILE
             echo 2>&1 | tee -a $LOGFILE
             break
             ;;
@@ -101,4 +101,4 @@ done
 
 echo
 echo "Please wait..."
-sleep 2s
+sleep 1s
