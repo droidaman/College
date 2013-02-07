@@ -1,0 +1,8 @@
+Dataset: Postal Addresses
+
+Benchmark 1:
+    Hand coded iteration (procedural)
+    Database call (jsql)
+    
+Benchmark 2:
+    
