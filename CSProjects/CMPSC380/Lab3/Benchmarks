@@ -1,8 +1,42 @@
-Dataset: Postal Addresses
+CS380 Lab 3 Plan of Action
 
-Benchmark 1:
+Dataset: Phone Numbers
+         First and Last Names
+
+
+
+Benchmark 1 - Basic Matching:
     Hand coded iteration (procedural)
-    Database call (jsql)
-    
-Benchmark 2:
-    
+    Database call (josql)
+
+Benchmark 2 - Complex Statements and Matching:
+    Hand coded iteration (procedural)
+    Database call (josql)
+
+
+
+Benchmark 1 tests:
+    Procedural Coding tests with Basic Matching:
+      Run 1: ArrayList using 3 base phone number collections
+      Run 2: ArrayList using 3 base name collections
+      Run 3: LinkedList using 3 base phone number collections
+      Run 4: LinkedList using 3 base name collections
+
+    JoSQL tests with Basic Matching
+      Run 5: ArrayList using 3 base phone number collections
+      Run 6: ArrayList using 3 base name collections
+      Run 7: LinkedList using 3 base phone number collections
+      Run 8: LinkedList using 3 base name collections
+
+Benchmark 2 tests:
+    Procedural Coding tests with Complex Matching:
+      Run 9: ArrayList using 3 base phone number collections
+      Run 10: ArrayList using 3 base name collections
+      Run 11: LinkedList using 3 base phone number collections
+      Run 12: LinkedList using 3 base name collections
+
+    JoSQL tests with Complex Matching
+      Run 13: ArrayList using 3 base phone number collections
+      Run 14: ArrayList using 3 base name collections
+      Run 15: LinkedList using 3 base phone number collections
+      Run 16: LinkedList using 3 base name collections
