@@ -43,7 +43,7 @@ public class B2_JoSql_LL {
 				b2j.parseDBank("SELECT * FROM java.util.LinkedList WHERE:_currobj LIKE '" + args[1] + "%' OR:_currobj LIKE '" + args[1] + "'");
 			} else if(args[0].contains("Full_Names")){
 				// Search for a matching string
-				b2j.parseDBank("SELECT * FROM java.util.LinkedList WHERE:_currobj LIKE '" + args[1] + " %'");
+				b2j.parseDBank("SELECT * FROM java.util.LinkedList WHERE:_currobj LIKE '" + args[1] + "%'");
 			} else {
 				System.out.println("Unable to parse data: Unknown collection.");
 			}
