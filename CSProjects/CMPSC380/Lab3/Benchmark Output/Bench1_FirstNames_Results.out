@@ -1,0 +1,322 @@
+Running benchmark 1: Procedural - ArrayList on 500 First Names
+Lookup completed in 59ms.
+Lookup completed in 29ms.
+Lookup completed in 11ms.
+Lookup completed in 10ms.
+Lookup completed in 12ms.
+
+Average run time: 24ms
+
+Results returned:
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - ArrayList on 5000 First Names
+Lookup completed in 161ms.
+Lookup completed in 112ms.
+Lookup completed in 63ms.
+Lookup completed in 35ms.
+Lookup completed in 18ms.
+
+Average run time: 77ms
+
+Results returned:
+Greg Austin
+Greg Williams
+Greg Sanford
+Greg Botts
+Greg Thomas
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - ArrayList on 50000 First Names
+Lookup completed in 453ms.
+Lookup completed in 236ms.
+Lookup completed in 92ms.
+Lookup completed in 69ms.
+Lookup completed in 112ms.
+
+Average run time: 192ms
+
+Results returned:
+Greg Coffin
+Greg Pease
+Greg Rodriquez
+Greg Lumsden
+Greg Pickering
+Greg Kenney
+Greg Obrien
+Greg Gross
+Greg Blaser
+Greg Conti
+Greg Norrell
+Greg Tuma
+Greg Falconer
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Greg Morrison
+Greg Bonner
+Greg Gonzales
+Greg Bennett
+Greg Corn
+Greg Thompson
+Greg Parker
+Greg Wilson
+Greg Sanders
+Greg Mach
+Greg Bethel
+Greg Boughner
+Greg Holtz
+Greg Roth
+Greg McCloud
+Greg Beck
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - ArrayList on 1000000 First Names
+Lookup completed in 1915ms.
+
+Average run time: 1915ms
+
+Results returned:
+Greg Ellis
+Greg Percy
+Greg Fizelle
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - LinkedList on 500 First Names
+Lookup completed in 54ms.
+Lookup completed in 28ms.
+Lookup completed in 12ms.
+Lookup completed in 10ms.
+Lookup completed in 10ms.
+
+Average run time: 22ms
+
+Results returned:
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - LinkedList on 5000 First Names
+Lookup completed in 163ms.
+Lookup completed in 99ms.
+Lookup completed in 66ms.
+Lookup completed in 48ms.
+Lookup completed in 21ms.
+
+Average run time: 79ms
+
+Results returned:
+Greg Austin
+Greg Williams
+Greg Sanford
+Greg Botts
+Greg Thomas
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - LinkedList on 50000 First Names
+Lookup completed in 487ms.
+Lookup completed in 231ms.
+Lookup completed in 82ms.
+Lookup completed in 85ms.
+Lookup completed in 107ms.
+
+Average run time: 198ms
+
+Results returned:
+Greg Coffin
+Greg Pease
+Greg Rodriquez
+Greg Lumsden
+Greg Pickering
+Greg Kenney
+Greg Obrien
+Greg Gross
+Greg Blaser
+Greg Conti
+Greg Norrell
+Greg Tuma
+Greg Falconer
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Greg Morrison
+Greg Bonner
+Greg Gonzales
+Greg Bennett
+Greg Corn
+Greg Thompson
+Greg Parker
+Greg Wilson
+Greg Sanders
+Greg Mach
+Greg Bethel
+Greg Boughner
+Greg Holtz
+Greg Roth
+Greg McCloud
+Greg Beck
+------------------------------------------------------------
+
+Running benchmark 1: Procedural - LinkedList on 1000000 First Names
+Test timed out after 2.5 hours.
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - ArrayList on 500 First Names
+Lookup completed in 102ms.
+Lookup completed in 30ms.
+Lookup completed in 21ms.
+Lookup completed in 14ms.
+Lookup completed in 12ms.
+
+Average run time: 35ms
+
+Results returned:
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - ArrayList on 5000 First Names
+Lookup completed in 220ms.
+Lookup completed in 90ms.
+Lookup completed in 53ms.
+Lookup completed in 43ms.
+Lookup completed in 18ms.
+
+Average run time: 84ms
+
+Results returned:
+Greg Austin
+Greg Williams
+Greg Sanford
+Greg Botts
+Greg Thomas
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - ArrayList on 50000 First Names
+Lookup completed in 476ms.
+Lookup completed in 89ms.
+Lookup completed in 96ms.
+Lookup completed in 74ms.
+Lookup completed in 107ms.
+
+Average run time: 168ms
+
+Results returned:
+Greg Coffin
+Greg Pease
+Greg Rodriquez
+Greg Lumsden
+Greg Pickering
+Greg Kenney
+Greg Obrien
+Greg Gross
+Greg Blaser
+Greg Conti
+Greg Norrell
+Greg Tuma
+Greg Falconer
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Greg Morrison
+Greg Bonner
+Greg Gonzales
+Greg Bennett
+Greg Corn
+Greg Thompson
+Greg Parker
+Greg Wilson
+Greg Sanders
+Greg Mach
+Greg Bethel
+Greg Boughner
+Greg Holtz
+Greg Roth
+Greg McCloud
+Greg Beck
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - ArrayList on 1000000 First Names
+Lookup completed in 2042ms.
+
+Average run time: 2042ms
+
+Results returned:
+Greg Ellis
+Greg Percy
+Greg Fizelle
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - LinkedList on 500 First Names
+Lookup completed in 101ms.
+Lookup completed in 24ms.
+Lookup completed in 19ms.
+Lookup completed in 14ms.
+Lookup completed in 13ms.
+
+Average run time: 34ms
+
+Results returned:
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - LinkedList on 5000 First Names
+Lookup completed in 279ms.
+Lookup completed in 171ms.
+Lookup completed in 112ms.
+Lookup completed in 93ms.
+Lookup completed in 57ms.
+
+Average run time: 142ms
+
+Results returned:
+Greg Austin
+Greg Williams
+Greg Sanford
+Greg Botts
+Greg Thomas
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - LinkedList on 50000 First Names
+Lookup completed in 9882ms.
+Lookup completed in 10005ms.
+Lookup completed in 10492ms.
+Lookup completed in 12223ms.
+Lookup completed in 13501ms.
+
+Average run time: 11220ms
+
+Results returned:
+Greg Coffin
+Greg Pease
+Greg Rodriquez
+Greg Lumsden
+Greg Pickering
+Greg Kenney
+Greg Obrien
+Greg Gross
+Greg Blaser
+Greg Conti
+Greg Norrell
+Greg Tuma
+Greg Falconer
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Greg Morrison
+Greg Bonner
+Greg Gonzales
+Greg Bennett
+Greg Corn
+Greg Thompson
+Greg Parker
+Greg Wilson
+Greg Sanders
+Greg Mach
+Greg Bethel
+Greg Boughner
+Greg Holtz
+Greg Roth
+Greg McCloud
+Greg Beck
+------------------------------------------------------------
+
+Running benchmark 1: JoSQL - LinkedList on 1000000 First Names
+Test timed out after 2.5 hours.
+------------------------------------------------------------
+

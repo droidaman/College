@@ -1,0 +1,188 @@
+Running benchmark 2: Procedural - ArrayList on 500 Phone Numbers
+Lookup completed in 77ms.
+Lookup completed in 24ms.
+Lookup completed in 19ms.
+Lookup completed in 14ms.
+Lookup completed in 13ms.
+
+Average run time: 29ms
+
+Results returned:
+724-493-9192
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - ArrayList on 5000 Phone Numbers
+Lookup completed in 191ms.
+Lookup completed in 83ms.
+Lookup completed in 60ms.
+Lookup completed in 39ms.
+Lookup completed in 20ms.
+
+Average run time: 78ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - ArrayList on 50000 Phone Numbers
+Lookup completed in 523ms.
+Lookup completed in 109ms.
+Lookup completed in 92ms.
+Lookup completed in 89ms.
+Lookup completed in 111ms.
+
+Average run time: 184ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - ArrayList on 1000000 Phone Numbers
+Lookup completed in 1985ms.
+
+Average run time: 1985ms
+
+Results returned:
+724-493-9192
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 500 Phone Numbers
+Lookup completed in 54ms.
+Lookup completed in 21ms.
+Lookup completed in 21ms.
+Lookup completed in 15ms.
+Lookup completed in 11ms.
+
+Average run time: 24ms
+
+Results returned:
+724-493-9192
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 5000 Phone Numbers
+Lookup completed in 171ms.
+Lookup completed in 67ms.
+Lookup completed in 49ms.
+Lookup completed in 34ms.
+Lookup completed in 22ms.
+
+Average run time: 68ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 50000 Phone Numbers
+Lookup completed in 439ms.
+Lookup completed in 96ms.
+Lookup completed in 89ms.
+Lookup completed in 84ms.
+Lookup completed in 109ms.
+
+Average run time: 163ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 1000000 Phone Numbers
+Test timed out after 2.5 hours.
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 500 Phone Numbers
+Lookup completed in 105ms.
+Lookup completed in 36ms.
+Lookup completed in 19ms.
+Lookup completed in 14ms.
+Lookup completed in 13ms.
+
+Average run time: 37ms
+
+Results returned:
+724-493-9192
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 5000 Phone Numbers
+Lookup completed in 261ms.
+Lookup completed in 89ms.
+Lookup completed in 84ms.
+Lookup completed in 34ms.
+Lookup completed in 23ms.
+
+Average run time: 98ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 50000 Phone Numbers
+Lookup completed in 471ms.
+Lookup completed in 121ms.
+Lookup completed in 97ms.
+Lookup completed in 76ms.
+Lookup completed in 116ms.
+
+Average run time: 176ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 1000000 Phone Numbers
+Lookup completed in 2114ms.
+
+Average run time: 2114ms
+
+Results returned:
+724-493-9192
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 500 Phone Numbers
+Lookup completed in 118ms.
+Lookup completed in 33ms.
+Lookup completed in 22ms.
+Lookup completed in 14ms.
+Lookup completed in 15ms.
+
+Average run time: 40ms
+
+Results returned:
+724-493-9192
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 5000 Phone Numbers
+Lookup completed in 297ms.
+Lookup completed in 143ms.
+Lookup completed in 86ms.
+Lookup completed in 93ms.
+Lookup completed in 51ms.
+
+Average run time: 134ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 50000 Phone Numbers
+Lookup completed in 12930ms.
+Lookup completed in 10276ms.
+Lookup completed in 10687ms.
+Lookup completed in 11404ms.
+Lookup completed in 11865ms.
+
+Average run time: 11432ms
+
+Results returned:
+724-493-9192
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 1000000 Phone Numbers
+Test timed out after 2.5 hours.
+------------------------------------------------------------
+

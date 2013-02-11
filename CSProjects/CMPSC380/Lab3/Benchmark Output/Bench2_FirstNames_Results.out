@@ -1,0 +1,797 @@
+Running benchmark 2: Procedural - ArrayList on 500 First Names
+Lookup completed in 60ms.
+Lookup completed in 24ms.
+Lookup completed in 15ms.
+Lookup completed in 13ms.
+Lookup completed in 13ms.
+
+Average run time: 25ms
+
+Results returned:
+Gregory Pritchard
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - ArrayList on 5000 First Names
+Lookup completed in 163ms.
+Lookup completed in 140ms.
+Lookup completed in 108ms.
+Lookup completed in 56ms.
+Lookup completed in 18ms.
+
+Average run time: 97ms
+
+Results returned:
+Greg Austin
+Gregory Hightower
+Gregory Garay
+Gregory Vanleer
+Gregory Marsh
+Gregory Nelson
+Gregory Rosado
+Gregory Thompson
+Gregory Faust
+Greg Williams
+Gregory Johnston
+Gregory Morris
+Gregory Savage
+Gregory Hamilton
+Greg Sanford
+Gregory Kirchner
+Gregory Freeman
+Gregory Millner
+Greg Botts
+Gregory Lawson
+Greg Thomas
+Gregg Estey
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - ArrayList on 50000 First Names
+Lookup completed in 426ms.
+Lookup completed in 107ms.
+Lookup completed in 91ms.
+Lookup completed in 74ms.
+Lookup completed in 111ms.
+
+Average run time: 161ms
+
+Results returned:
+Gregory Martin
+Gregory Clarke
+Greg Coffin
+Greg Pease
+Gregory Tate
+Greg Rodriquez
+Gregory Farrell
+Gregg Castro
+Gregory Hudgins
+Gregory Harris
+Gregory Ramsey
+Greg Lumsden
+Gregory McCullough
+Gregory Erickson
+Greg Pickering
+Gregory Izaguirre
+Gregory Harper
+Gregory Rose
+Gregory Pieper
+Gregory Maciel
+Greg Kenney
+Gregory Zavala
+Gregoria Jenkins
+Gregory Fowler
+Gregory Garner
+Gregory Burt
+Gregory James
+Gregory Gates
+Gregory Dickson
+Greg Obrien
+Greg Gross
+Gregory Putman
+Gregory Henderson
+Gregg Hill
+Gregory Brackin
+Gregory Juneau
+Gregory Laberge
+Gregory Gullett
+Gregory Lykes
+Gregory Blouin
+Gregory Jarnagin
+Gregory Goetz
+Gregory Pippen
+Gregory Durgan
+Gregory Falls
+Gregory Ibarra
+Gregory Green
+Gregory Belgrave
+Gregory Harris
+Gregory Johnson
+Gregg Russ
+Gregory Hutchinson
+Gregory Raynor
+Gregory Butler
+Gregory Rodriguez
+Gregory Wilkes
+Gregory Gurley
+Gregory Saylors
+Gregory Spurlock
+Gregory Bowles
+Gregory Graves
+Gregory Echeverria
+Gregory Wortham
+Gregory Packard
+Gregory Ng
+Gregg Reedy
+Greg Blaser
+Gregory Easton
+Gregory Obryan
+Gregory Park
+Gregory Johnson
+Gregory Kelleher
+Greg Conti
+Greg Norrell
+Gregory Wagner
+Gregory Barnum
+Gregory Soltero
+Gregory Foster
+Gregory Cooper
+Gregory Jones
+Gregory Cartwright
+Gregory Reeder
+Gregory Israel
+Greg Tuma
+Gregory Petty
+Gregory Forney
+Gregory Lewis
+Gregory Bonilla
+Gregory Baran
+Gregory Oleary
+Greg Falconer
+Gregory Phillips
+Gregory Berry
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Gregory White
+Gregory Lindsay
+Greg Morrison
+Greg Bonner
+Gregory Cooper
+Gregory Boyles
+Gregory Davis
+Gregory Key
+Gregory Spencer
+Greg Gonzales
+Greg Bennett
+Gregory Isaac
+Gregory Veatch
+Gregory Chisolm
+Gregory Ray
+Gregory Amerson
+Gregory Cottrell
+Gregory Harris
+Greg Corn
+Greg Thompson
+Gregory Sollars
+Gregory Borders
+Greg Parker
+Gregory Musselman
+Gregory Mendoza
+Gregory Dennis
+Gregg Degraffenreid
+Greg Wilson
+Gregory Williamson
+Gregory Berube
+Gregory Pryor
+Greg Sanders
+Gregg Robinson
+Gregory Shell
+Gregory Moore
+Greg Mach
+Greg Bethel
+Gregory Thomas
+Greg Boughner
+Gregory Ludwig
+Gregory Myles
+Gregorio Garrett
+Gregory Shafer
+Gregory Mason
+Gregory Rogers
+Gregory Forcier
+Gregory Manuel
+Gregory Hallmark
+Gregory Fletcher
+Gregory Barksdale
+Gregory Stanley
+Gregory Reddy
+Greg Holtz
+Greg Roth
+Gregg Sheridan
+Gregory Press
+Gregg Nicholson
+Gregory Riley
+Gregory Brenner
+Gregory Stanberry
+Gregg Tobias
+Gregory Stacy
+Gregory Robertson
+Gregory Koury
+Gregory Bussey
+Gregory Taylor
+Gregory Scott
+Gregory Watson
+Gregory Mosley
+Greg McCloud
+Gregory Patterson
+Greg Beck
+Gregory Wilcoxson
+Gregory Hoelscher
+Gregory Chapman
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - ArrayList on 1000000 First Names
+Lookup completed in 1874ms.
+
+Average run time: 1874ms
+
+Results returned:
+Greg Ellis
+Greg Percy
+Gregory Foxall
+Greg Fizelle
+Gregory Bamford
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 500 First Names
+Lookup completed in 58ms.
+Lookup completed in 24ms.
+Lookup completed in 17ms.
+Lookup completed in 14ms.
+Lookup completed in 11ms.
+
+Average run time: 24ms
+
+Results returned:
+Gregory Pritchard
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 5000 First Names
+Lookup completed in 194ms.
+Lookup completed in 88ms.
+Lookup completed in 62ms.
+Lookup completed in 40ms.
+Lookup completed in 16ms.
+
+Average run time: 80ms
+
+Results returned:
+Greg Austin
+Gregory Hightower
+Gregory Garay
+Gregory Vanleer
+Gregory Marsh
+Gregory Nelson
+Gregory Rosado
+Gregory Thompson
+Gregory Faust
+Greg Williams
+Gregory Johnston
+Gregory Morris
+Gregory Savage
+Gregory Hamilton
+Greg Sanford
+Gregory Kirchner
+Gregory Freeman
+Gregory Millner
+Greg Botts
+Gregory Lawson
+Greg Thomas
+Gregg Estey
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 50000 First Names
+Lookup completed in 459ms.
+Lookup completed in 122ms.
+Lookup completed in 84ms.
+Lookup completed in 86ms.
+Lookup completed in 107ms.
+
+Average run time: 171ms
+
+Results returned:
+Gregory Martin
+Gregory Clarke
+Greg Coffin
+Greg Pease
+Gregory Tate
+Greg Rodriquez
+Gregory Farrell
+Gregg Castro
+Gregory Hudgins
+Gregory Harris
+Gregory Ramsey
+Greg Lumsden
+Gregory McCullough
+Gregory Erickson
+Greg Pickering
+Gregory Izaguirre
+Gregory Harper
+Gregory Rose
+Gregory Pieper
+Gregory Maciel
+Greg Kenney
+Gregory Zavala
+Gregoria Jenkins
+Gregory Fowler
+Gregory Garner
+Gregory Burt
+Gregory James
+Gregory Gates
+Gregory Dickson
+Greg Obrien
+Greg Gross
+Gregory Putman
+Gregory Henderson
+Gregg Hill
+Gregory Brackin
+Gregory Juneau
+Gregory Laberge
+Gregory Gullett
+Gregory Lykes
+Gregory Blouin
+Gregory Jarnagin
+Gregory Goetz
+Gregory Pippen
+Gregory Durgan
+Gregory Falls
+Gregory Ibarra
+Gregory Green
+Gregory Belgrave
+Gregory Harris
+Gregory Johnson
+Gregg Russ
+Gregory Hutchinson
+Gregory Raynor
+Gregory Butler
+Gregory Rodriguez
+Gregory Wilkes
+Gregory Gurley
+Gregory Saylors
+Gregory Spurlock
+Gregory Bowles
+Gregory Graves
+Gregory Echeverria
+Gregory Wortham
+Gregory Packard
+Gregory Ng
+Gregg Reedy
+Greg Blaser
+Gregory Easton
+Gregory Obryan
+Gregory Park
+Gregory Johnson
+Gregory Kelleher
+Greg Conti
+Greg Norrell
+Gregory Wagner
+Gregory Barnum
+Gregory Soltero
+Gregory Foster
+Gregory Cooper
+Gregory Jones
+Gregory Cartwright
+Gregory Reeder
+Gregory Israel
+Greg Tuma
+Gregory Petty
+Gregory Forney
+Gregory Lewis
+Gregory Bonilla
+Gregory Baran
+Gregory Oleary
+Greg Falconer
+Gregory Phillips
+Gregory Berry
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Gregory White
+Gregory Lindsay
+Greg Morrison
+Greg Bonner
+Gregory Cooper
+Gregory Boyles
+Gregory Davis
+Gregory Key
+Gregory Spencer
+Greg Gonzales
+Greg Bennett
+Gregory Isaac
+Gregory Veatch
+Gregory Chisolm
+Gregory Ray
+Gregory Amerson
+Gregory Cottrell
+Gregory Harris
+Greg Corn
+Greg Thompson
+Gregory Sollars
+Gregory Borders
+Greg Parker
+Gregory Musselman
+Gregory Mendoza
+Gregory Dennis
+Gregg Degraffenreid
+Greg Wilson
+Gregory Williamson
+Gregory Berube
+Gregory Pryor
+Greg Sanders
+Gregg Robinson
+Gregory Shell
+Gregory Moore
+Greg Mach
+Greg Bethel
+Gregory Thomas
+Greg Boughner
+Gregory Ludwig
+Gregory Myles
+Gregorio Garrett
+Gregory Shafer
+Gregory Mason
+Gregory Rogers
+Gregory Forcier
+Gregory Manuel
+Gregory Hallmark
+Gregory Fletcher
+Gregory Barksdale
+Gregory Stanley
+Gregory Reddy
+Greg Holtz
+Greg Roth
+Gregg Sheridan
+Gregory Press
+Gregg Nicholson
+Gregory Riley
+Gregory Brenner
+Gregory Stanberry
+Gregg Tobias
+Gregory Stacy
+Gregory Robertson
+Gregory Koury
+Gregory Bussey
+Gregory Taylor
+Gregory Scott
+Gregory Watson
+Gregory Mosley
+Greg McCloud
+Gregory Patterson
+Greg Beck
+Gregory Wilcoxson
+Gregory Hoelscher
+Gregory Chapman
+------------------------------------------------------------
+
+Running benchmark 2: Procedural - LinkedList on 1000000 First Names
+Test timed out after 2.5 hours.
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 500 First Names
+Lookup completed in 102ms.
+Lookup completed in 33ms.
+Lookup completed in 19ms.
+Lookup completed in 19ms.
+Lookup completed in 12ms.
+
+Average run time: 37ms
+
+Results returned:
+Gregory Pritchard
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 5000 First Names
+Lookup completed in 215ms.
+Lookup completed in 74ms.
+Lookup completed in 55ms.
+Lookup completed in 37ms.
+Lookup completed in 25ms.
+
+Average run time: 81ms
+
+Results returned:
+Greg Austin
+Gregory Hightower
+Gregory Garay
+Gregory Vanleer
+Gregory Marsh
+Gregory Nelson
+Gregory Rosado
+Gregory Thompson
+Gregory Faust
+Greg Williams
+Gregory Johnston
+Gregory Morris
+Gregory Savage
+Gregory Hamilton
+Greg Sanford
+Gregory Kirchner
+Gregory Freeman
+Gregory Millner
+Greg Botts
+Gregory Lawson
+Greg Thomas
+Gregg Estey
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 50000 First Names
+Lookup completed in 485ms.
+Lookup completed in 98ms.
+Lookup completed in 96ms.
+Lookup completed in 75ms.
+Lookup completed in 101ms.
+
+Average run time: 171ms
+
+Results returned:
+Gregory Martin
+Gregory Clarke
+Greg Coffin
+Greg Pease
+Gregory Tate
+Greg Rodriquez
+Gregory Farrell
+Gregg Castro
+Gregory Hudgins
+Gregory Harris
+Gregory Ramsey
+Greg Lumsden
+Gregory McCullough
+Gregory Erickson
+Greg Pickering
+Gregory Izaguirre
+Gregory Harper
+Gregory Rose
+Gregory Pieper
+Gregory Maciel
+Greg Kenney
+Gregory Zavala
+Gregoria Jenkins
+Gregory Fowler
+Gregory Garner
+Gregory Burt
+Gregory James
+Gregory Gates
+Gregory Dickson
+Greg Obrien
+Greg Gross
+Gregory Putman
+Gregory Henderson
+Gregg Hill
+Gregory Brackin
+Gregory Juneau
+Gregory Laberge
+Gregory Gullett
+Gregory Lykes
+Gregory Blouin
+Gregory Jarnagin
+Gregory Goetz
+Gregory Pippen
+Gregory Durgan
+Gregory Falls
+Gregory Ibarra
+Gregory Green
+Gregory Belgrave
+Gregory Harris
+Gregory Johnson
+Gregg Russ
+Gregory Hutchinson
+Gregory Raynor
+Gregory Butler
+Gregory Rodriguez
+Gregory Wilkes
+Gregory Gurley
+Gregory Saylors
+Gregory Spurlock
+Gregory Bowles
+Gregory Graves
+Gregory Echeverria
+Gregory Wortham
+Gregory Packard
+Gregory Ng
+Gregg Reedy
+Greg Blaser
+Gregory Easton
+Gregory Obryan
+Gregory Park
+Gregory Johnson
+Gregory Kelleher
+Greg Conti
+Greg Norrell
+Gregory Wagner
+Gregory Barnum
+Gregory Soltero
+Gregory Foster
+Gregory Cooper
+Gregory Jones
+Gregory Cartwright
+Gregory Reeder
+Gregory Israel
+Greg Tuma
+Gregory Petty
+Gregory Forney
+Gregory Lewis
+Gregory Bonilla
+Gregory Baran
+Gregory Oleary
+Greg Falconer
+Gregory Phillips
+Gregory Berry
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Gregory White
+Gregory Lindsay
+Greg Morrison
+Greg Bonner
+Gregory Cooper
+Gregory Boyles
+Gregory Davis
+Gregory Key
+Gregory Spencer
+Greg Gonzales
+Greg Bennett
+Gregory Isaac
+Gregory Veatch
+Gregory Chisolm
+Gregory Ray
+Gregory Amerson
+Gregory Cottrell
+Gregory Harris
+Greg Corn
+Greg Thompson
+Gregory Sollars
+Gregory Borders
+Greg Parker
+Gregory Musselman
+Gregory Mendoza
+Gregory Dennis
+Gregg Degraffenreid
+Greg Wilson
+Gregory Williamson
+Gregory Berube
+Gregory Pryor
+Greg Sanders
+Gregg Robinson
+Gregory Shell
+Gregory Moore
+Greg Mach
+Greg Bethel
+Gregory Thomas
+Greg Boughner
+Gregory Ludwig
+Gregory Myles
+Gregorio Garrett
+Gregory Shafer
+Gregory Mason
+Gregory Rogers
+Gregory Forcier
+Gregory Manuel
+Gregory Hallmark
+Gregory Fletcher
+Gregory Barksdale
+Gregory Stanley
+Gregory Reddy
+Greg Holtz
+Greg Roth
+Gregg Sheridan
+Gregory Press
+Gregg Nicholson
+Gregory Riley
+Gregory Brenner
+Gregory Stanberry
+Gregg Tobias
+Gregory Stacy
+Gregory Robertson
+Gregory Koury
+Gregory Bussey
+Gregory Taylor
+Gregory Scott
+Gregory Watson
+Gregory Mosley
+Greg McCloud
+Gregory Patterson
+Greg Beck
+Gregory Wilcoxson
+Gregory Hoelscher
+Gregory Chapman
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - ArrayList on 1000000 First Names
+Lookup completed in 2047ms.
+
+Average run time: 2047ms
+
+Results returned:
+Greg Ellis
+Greg Percy
+Gregory Foxall
+Greg Fizelle
+Gregory Bamford
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 500 First Names
+Lookup completed in 105ms.
+Lookup completed in 28ms.
+Lookup completed in 18ms.
+Lookup completed in 19ms.
+Lookup completed in 13ms.
+
+Average run time: 36ms
+
+Results returned:
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 5000 First Names
+Lookup completed in 288ms.
+Lookup completed in 172ms.
+Lookup completed in 113ms.
+Lookup completed in 91ms.
+Lookup completed in 58ms.
+
+Average run time: 144ms
+
+Results returned:
+Greg Austin
+Greg Williams
+Greg Sanford
+Greg Botts
+Greg Thomas
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 50000 First Names
+Lookup completed in 12782ms.
+Lookup completed in 13774ms.
+Lookup completed in 14485ms.
+Lookup completed in 15248ms.
+Lookup completed in 13851ms.
+
+Average run time: 14028ms
+
+Results returned:
+Greg Coffin
+Greg Pease
+Greg Rodriquez
+Greg Lumsden
+Greg Pickering
+Greg Kenney
+Greg Obrien
+Greg Gross
+Greg Blaser
+Greg Conti
+Greg Norrell
+Greg Tuma
+Greg Falconer
+Greg Morrell
+Greg Ryan
+Greg Radtke
+Greg Morrison
+Greg Bonner
+Greg Gonzales
+Greg Bennett
+Greg Corn
+Greg Thompson
+Greg Parker
+Greg Wilson
+Greg Sanders
+Greg Mach
+Greg Bethel
+Greg Boughner
+Greg Holtz
+Greg Roth
+Greg McCloud
+Greg Beck
+------------------------------------------------------------
+
+Running benchmark 2: JoSQL - LinkedList on 1000000 First Names
+Test timed out after 2.5 hours.
+------------------------------------------------------------
+
