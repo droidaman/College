@@ -119,7 +119,7 @@ Allegheny College \\
 
 Provide an intuitive motivation for and introduction to your proposed
 senior thesis research.  Whenever possible, you should use one or more
-concrete examples and technical diagrams.\cite{conrad-gecco-selection-study} 
+concrete examples and technical diagrams.
 
 \vspace*{-.1in}
 \section{Related Work}
@@ -133,6 +133,7 @@ past.  As you describe your papers, please make sure that you cite
 them properly \cite{conrad-gecco-selection-study}.
 
 \vspace*{-.2in}
+\cite{conrad-gecco-selection-study}]
 \section{Method of Approach}
 \label{sec:method}
 \vspace*{-.1in}
@@ -165,8 +166,6 @@ deadlines for when you will be able to complete each of these items.
 Provide a summary of your proposed research and suggest the impact
 that it may have on the discipline of computer science.  If possible,
 you may also suggest some areas for future research.
-
-As mentioned in Section \ref{sec:method} ...
 
 \bibliographystyle{plain}
 \bibliography{senior_thesis_proposal}
