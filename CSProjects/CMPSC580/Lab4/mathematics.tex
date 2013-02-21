@@ -111,24 +111,12 @@ Allegheny College \\
 \label{sec:introduction}
 \vspace*{-.1in}
 
-Here are some examples of sentences that contain mathematics:
+Writing out a fixed-length sequence of move symbols can be tedious, so we introduce a shorthand for specifying the number of successive touch-move events using the notation
 
-\begin{enumerate}
+EQUATION HERE
 
-\item Software testers execute a regression test suite $T=\langle t_1,
-  t_2, t_3, \ldots, t_n \rangle$ in order to increase their confidence
-  in the correctness of the program under test.
+which generates the expression that matches $t_1$ to $t_2$ successive EQUATION events. The $t_2$ parameter is optional. Proton++ expands the shorthand into $t_1$ consecutive move symbols if $t_2$ is not specified. It generates the disjunction of $t_1$ consecutive move symbols to $t_2$ move symbols if $t_2$ is specified. For example, a touch and hold that lasts at least five consecutive move events is expressed as EQUATION, which expands to EQUATION. A tap of one to five move events is expressed as EQUATION, which expands to EQUATION. We also update the tablature with timing notation as shown in Figure 11a. The developer can specify a range $t_1$ to $t_2$ within the gray move nodes.
 
-\item Given a test suite $T$, a test coverage monitor identifies a set
-  of covered requirements $\mathcal{R}$$(T) = \{ r_1, r_2, \ldots, r_m
-  \}$.
-
-\item A coverage monitor also determines the \textit{covered by}
-relationship that associates a requirement $r_j$ with a set of tests
-$\mathcal{T}$$(r_j) \subseteq T$ such that $r_j$ is covered by each
-test in $\mathcal{T}(r_j)$
-
-\end{enumerate}
 
 Here are some examples of equations:
 
