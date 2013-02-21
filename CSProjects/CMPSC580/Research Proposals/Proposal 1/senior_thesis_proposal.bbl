@@ -1,10 +1,17 @@
 \begin{thebibliography}{1}
 
-\bibitem{conrad-gecco-selection-study}
-Alexander~P. Conrad, Robert~S. Roos, and Gregory~M. Kapfhammer.
-\newblock Empirically studying the role of selection operators during
-  search-based test suite prioritization.
-\newblock In {\em Proceedings of the ACM SIGEVO Genetic and Evolutionary
-  Computation Conference}, Portland, Oregon, July 2010.
+\bibitem{Goldman:2011:CCC:1984642.1984658}
+Max Goldman, Greg Little, and Robert~C. Miller.
+\newblock Collabode: collaborative coding in the browser.
+\newblock In {\em Proceedings of the 4th International Workshop on Cooperative
+  and Human Aspects of Software Engineering}, CHASE '11, pages 65--68, New
+  York, NY, USA, 2011. ACM.
+
+\bibitem{Goldman:2011:RCC:2047196.2047215}
+Max Goldman, Greg Little, and Robert~C. Miller.
+\newblock Real-time collaborative coding in a web ide.
+\newblock In {\em Proceedings of the 24th annual ACM symposium on User
+  interface software and technology}, UIST '11, pages 155--164, New York, NY,
+  USA, 2011. ACM.
 
 \end{thebibliography}
