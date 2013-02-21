@@ -1,0 +1,165 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{upgreek}
+
+\topmargin 0.0in
+\setlength{\textwidth} {420pt}
+\setlength{\textheight} {620pt} 
+\setlength{\oddsidemargin} {20pt}
+\setlength{\marginparwidth} {72in}
+
+\usepackage{fancyhdr} 
+\usepackage{url}
+
+% set it so that subsubsections have numbers and they
+% are displayed in the TOC (maybe hard to read, might want to disable)
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% define widow protection
+
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+\clubpenalty=10000  % Don't allow orphans
+\widowpenalty=10000 % Don't allow widows
+
+% this should give me the ability to use some math symbols that 
+% were available by default in standard latex (i.e. \Box)
+
+\usepackage{latexsym}
+
+% define a little section heading that doesn't go with any number
+
+\def\littlesection#1{
+\widow{2cm}
+\vskip 0.5cm
+\noindent{\bf #1}
+\vskip 0.0001cm 
+}
+
+\pagestyle{fancyplain}
+
+\newcommand{\tstamp}{\today}   
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\lhead[\Section \thesection]            {\fancyplain{}{\rightmark}}
+\chead[\fancyplain{}{}]                 {\fancyplain{}{}}
+\rhead[\fancyplain{}{\rightmark}]       {\fancyplain{}{\thepage}}
+\cfoot[\fancyplain{\thepage}{}]         {\fancyplain{\thepage}{}}
+
+\newlength{\myVSpace}% the height of the box
+\setlength{\myVSpace}{1ex}% the default, 
+\newcommand\xstrut{\raisebox{-.5\myVSpace}% symmetric behaviour, 
+  {\rule{0pt}{\myVSpace}}%
+}
+
+% leave things with no spacing extra spacing in the final version of the paper
+\renewcommand{\baselinestretch}{1.0}    % must go before the begin of doc
+
+% suppress the use of indentation for a paragraph
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+
+\begin{document}
+
+% handle widows appropriately
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+% build the title section
+
+\makeatletter
+
+\def\maketitle{%
+  %\null
+  \thispagestyle{empty}%
+  %\vfill
+  \begin{center}%\leavevmode
+    %\normalfont
+    {\Huge \@title\par}%
+    %\hrulefill\par
+    {\normalsize \@author\par}%
+    \vskip .4in
+%    {\Large \@date\par}%
+  \end{center}%
+  %\vfill
+  %\null
+  %\cleardoublepage
+
+  }
+
+\makeatother
+
+\vspace*{-1.1in}
+\title{An Introduction to Mathematics in \LaTeX}
+
+% build the author section
+\author{Your Full Name\\
+Department of Computer Science\\
+Allegheny College \\
+{\tt youremail@allegheny.edu}  \\
+\url{http://www.cs.allegheny.edu/~yourwebsite/} \\ 
+\vspace*{.1in} \today \\ \vspace*{.1in}}
+
+% use the default title stuff
+\maketitle
+
+\vspace*{-.4in}
+\section{Introduction}
+\label{sec:introduction}
+\vspace*{-.1in}
+
+Here are some examples of sentences that contain mathematics:
+
+\begin{enumerate}
+
+\item Software testers execute a regression test suite $T=\langle t_1,
+  t_2, t_3, \ldots, t_n \rangle$ in order to increase their confidence
+  in the correctness of the program under test.
+
+\item Given a test suite $T$, a test coverage monitor identifies a set
+  of covered requirements $\mathcal{R}$$(T) = \{ r_1, r_2, \ldots, r_m
+  \}$.
+
+\item A coverage monitor also determines the \textit{covered by}
+relationship that associates a requirement $r_j$ with a set of tests
+$\mathcal{T}$$(r_j) \subseteq T$ such that $r_j$ is covered by each
+test in $\mathcal{T}(r_j)$
+
+\end{enumerate}
+
+Here are some examples of equations:
+
+\begin{equation}
+ coverage(t_i) = |\mathcal{R}(t_i)| - |\mathcal{R}(t_i) \bigcap
+ \mathcal{R}(T_r)|
+\label{eq:cov}
+\end{equation}
+\vspace{-12pt}
+\begin{equation}
+ cost(t_i) = time(t_i)
+\label{eq:cost}
+\end{equation}
+\vspace{-12pt}
+\begin{equation}
+ ratio(t_i) = \frac{coverage(t_i)}{cost(t_i)}
+\label{eq:ratio}
+\end{equation}
+\begin{equation}
+D(\uptau) = \sum_{\lambda \in \Lambda(\uptau)}\sum_{\rho \in R_\lambda}
+\left( \rho - \mu(R_\lambda) \right)^2 
+\label{eq:deviance}
+\end{equation}
+
+\begin{equation}
+\mu(R_\lambda) = \frac{\displaystyle{\sum_{\rho \in R_\lambda}} \rho}
+                {|R_\lambda|} 
+\label{eq:deviancemean}
+\end{equation}
+
+Can you create your own \LaTeX~document to rewrite some of the content in the Proton++ paper?
+
+\end{document}
+
