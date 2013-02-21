@@ -31,6 +31,9 @@
 
 \usepackage{latexsym}
 
+% this will let us use the \begin{align*} command to center our math
+\usepackage{amsmath}
+
 % define a little section heading that doesn't go with any number
 
 \def\littlesection#1{
@@ -96,11 +99,11 @@
 \title{An Introduction to Mathematics in \LaTeX}
 
 % build the author section
-\author{Your Full Name\\
+\author{Braden D. Licastro\\
 Department of Computer Science\\
 Allegheny College \\
-{\tt youremail@allegheny.edu}  \\
-\url{http://www.cs.allegheny.edu/~yourwebsite/} \\ 
+{\tt licastb@allegheny.edu}  \\
+\url{http://www.fullforceapps.com} \\ 
 \vspace*{.1in} \today \\ \vspace*{.1in}}
 
 % use the default title stuff
@@ -113,41 +116,16 @@ Allegheny College \\
 
 Writing out a fixed-length sequence of move symbols can be tedious, so we introduce a shorthand for specifying the number of successive touch-move events using the notation
 
-EQUATION HERE
+\vspace*{-.45in}
+\LARGE
+\begin{align*}
+(M_{_{T_{ID}}}^{A_{1}:A_{2}:A_{3^{...}}})^{t_1-t_2}
+\end{align*}
+\large
+\vspace*{-.25in}
 
-which generates the expression that matches $t_1$ to $t_2$ successive EQUATION events. The $t_2$ parameter is optional. Proton++ expands the shorthand into $t_1$ consecutive move symbols if $t_2$ is not specified. It generates the disjunction of $t_1$ consecutive move symbols to $t_2$ move symbols if $t_2$ is specified. For example, a touch and hold that lasts at least five consecutive move events is expressed as EQUATION, which expands to EQUATION. A tap of one to five move events is expressed as EQUATION, which expands to EQUATION. We also update the tablature with timing notation as shown in Figure 11a. The developer can specify a range $t_1$ to $t_2$ within the gray move nodes.
-
-
-Here are some examples of equations:
-
-\begin{equation}
- coverage(t_i) = |\mathcal{R}(t_i)| - |\mathcal{R}(t_i) \bigcap
- \mathcal{R}(T_r)|
-\label{eq:cov}
-\end{equation}
-\vspace{-12pt}
-\begin{equation}
- cost(t_i) = time(t_i)
-\label{eq:cost}
-\end{equation}
-\vspace{-12pt}
-\begin{equation}
- ratio(t_i) = \frac{coverage(t_i)}{cost(t_i)}
-\label{eq:ratio}
-\end{equation}
-\begin{equation}
-D(\uptau) = \sum_{\lambda \in \Lambda(\uptau)}\sum_{\rho \in R_\lambda}
-\left( \rho - \mu(R_\lambda) \right)^2 
-\label{eq:deviance}
-\end{equation}
-
-\begin{equation}
-\mu(R_\lambda) = \frac{\displaystyle{\sum_{\rho \in R_\lambda}} \rho}
-                {|R_\lambda|} 
-\label{eq:deviancemean}
-\end{equation}
-
-Can you create your own \LaTeX~document to rewrite some of the content in the Proton++ paper?
+which generates the expression that matches $t_1$ to $t_2$ successive $M_{_{T_{ID}}}^{A_{1}:A_{2}:A_{3^{...}}}$ events. The $t_2$ parameter is optional. Proton++ expands the shorthand into $t_1$ consecutive move symbols if $t_2$ is not specified. It generates the disjunction of $t_1$ consecutive move symbols to $t_2$ move symbols if $t_2$ is specified. For example, a touch and hold that lasts at least five consecutive move events is expressed as $D_{1}^{\bullet}(M_{1}^{\bullet})^5M_{1}^{\bullet\ast}U_{1}^{\bullet}$, which expands to $D_{1}^{\bullet}M_{1}^{\bullet}M_{1}^{\bullet}M_{1}^{\bullet}M_{1}^
+{\bullet}M_{1}^{\bullet}M_{1}^{\bullet\ast}U_{1}^{\bullet}$. A tap of one to five move events is expressed as $D_{1}^{\bullet}(M_{1}^{\bullet})^{1-5}U_{1}^{\bullet}$, which expands to $D_{1}^{\bullet}(M_{1}^{\bullet}|M_{1}^{\bullet}M_{1}^{\bullet}|...|M_{1}^{\bullet}M_{1}^{\bullet}M_{1}^{\bullet}M_{1}^{\bullet}M_{1}^{\bullet})U_{1}^{\bullet}$. We also update the tablature with timing notation as shown in Figure 11a. The developer can specify a range $t_1$ to $t_2$ within the gray move nodes.
 
 \end{document}
 
