@@ -61,6 +61,7 @@
 
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{0.1in}
+\setlength{\headheight}{15pt}
 
 \begin{document}
 
@@ -98,16 +99,16 @@
 \makeatother
 
 \vspace*{-1.1in}
-\title{Title of Your Senior Thesis Proposal}
+\title{Integration of Real-Time Collaborative Coding with Git for Productivity Gains}
 
 % build the author section
-\author{Your Full Name\\
+\author{Braden D. Licastro\\
 Department of Computer Science\\
 Allegheny College \\
-{\tt youremail@allegheny.edu}  \\
-\url{http://www.cs.allegheny.edu/~yourwebsite/} \\ 
+{\tt licastb@allegheny.edu}  \\
+\url{http://www.fullforceapps.com/} \\ 
 \vspace*{.1in} \today \\ \vspace*{.1in}
-{\bf Abstract} \\ Provide a concise summary of your proposed research.}
+{\bf Abstract} \\ This paper describes a method of coding to be researched that has the potential to greatly improve efficiency of program development. By combining the effectiveness and flexibility of collaborative coding with a version control system it may be possible to reduce time wasted during the software development cycle and shorten turn around times.}
 
 % use the default title stuff
 \maketitle
@@ -117,20 +118,22 @@ Allegheny College \\
 \label{sec:introduction}
 \vspace*{-.1in}
 
-Provide an intuitive motivation for and introduction to your proposed
-senior thesis research.  Whenever possible, you should use one or more
-concrete examples and technical diagrams.\cite{conrad-gecco-selection-study} 
+Software development is full of pitfalls that take an innumerable amount of time every year to overcome, especially when working with a group of developers. One major stumbling point every seasoned programmer will experience arises when using a revision control system. When projects are branched for feature work and merged at a later time collisions, otherwise known as conflicts will more than likely occur. The current method of resolving these conflicts is arduous at best, and can even lead to a code freeze until a solution is found. By integrating a version control system with a method of collaborative real-time coding it should be possible to greatly reduce, or even eliminate the chance of conflicts when a project is merged back to the master branch without losing the benefits of a source manages project.
+
+Current implementations of revision control systems are designed to be as intuitive and straightforward as possible, but for the most part remain weak in their handling of errors. Frequent problems arise when two branches of a project must be merged back into one and the code on one conflicts with code in the other. As of the writing of this paper, there is no standardized method of handling these situations. Many times it is required that the developer go back and manually edit the code thus resolving any conflicts. In some instances this is a trivial task, but others it is tedious and time consuming. With real-time collaboration it is possible to have many developers actively working on the same code-base without the necessity of a code merge that may or may not work out of the box. This setup would allow all contributors to see the code as it currently stands on other computers and work together to create code that is conflict free on the fly. This gain in efficiency could add up to be quite considerable, and different implementations may produce significantly beneficial results.
 
 \vspace*{-.1in}
 \section{Related Work}
 \label{sec:relatedwork}
 \vspace*{-.1in}
 
+The topic of collaborative coding is a rather new research topic. Much of the current research resolves around the implementation of an effective environment. One research paper describes a web-based Java development environment that supports collaboration between programmers names Collabode.\cite{Goldman:2011:RCC:2047196.2047215} The system analyzed is web based and has no code management integrated. The implementation I have proposed would be non web based in implementation, and it would have integrated revision control. This paper also talks about the shortcomings of such technologies, while the proposed research would focus primarily on the efficiency gains of said implementation. Similar to this paper, the same authors published another article that discusses possible workload reductions by using the Collabode system to outsorce small amounts of coding. \cite{Goldman:2011:CCC:1984642.1984658} 
+
 Summarize the previously published papers and books that are related
 to your proposed research.  Whenever possible, you should compare and
 constrast your approach with the ones that have been discussed in the
 past.  As you describe your papers, please make sure that you cite
-them properly \cite{conrad-gecco-selection-study}.
+them properlyS
 
 \vspace*{-.2in}
 \section{Method of Approach}
