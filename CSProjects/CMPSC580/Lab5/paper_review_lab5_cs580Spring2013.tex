@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\topmargin 0.0in
+\setlength{\textwidth} {420pt}
+\setlength{\textheight} {620pt} 
+\setlength{\oddsidemargin} {20pt}
+\setlength{\marginparwidth} {72in}
+
+\usepackage{fancyhdr} 
+\usepackage{url}
+
+% set it so that subsubsections have numbers and they
+% are displayed in the TOC (maybe hard to read, might want to disable)
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% define widow protection
+
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+\clubpenalty=10000  % Don't allow orphans
+\widowpenalty=10000 % Don't allow widows
+
+% this should give me the ability to use some math symbols that 
+% were available by default in standard latex (i.e. \Box)
+
+\usepackage{latexsym}
+
+% define a little section heading that doesn't go with any number
+
+\def\littlesection#1{
+\widow{2cm}
+\vskip 0.5cm
+\noindent{\bf #1}
+\vskip 0.0001cm 
+}
+
+\pagestyle{fancyplain}
+
+\newcommand{\tstamp}{\today}   
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\lhead[\Section \thesection]            {\fancyplain{}{\rightmark}}
+\chead[\fancyplain{}{}]                 {\fancyplain{}{}}
+\rhead[\fancyplain{}{\rightmark}]       {\fancyplain{}{\thepage}}
+\cfoot[\fancyplain{\thepage}{}]         {\fancyplain{\thepage}{}}
+
+\newlength{\myVSpace}% the height of the box
+\setlength{\myVSpace}{1ex}% the default, 
+\newcommand\xstrut{\raisebox{-.5\myVSpace}% symmetric behaviour, 
+  {\rule{0pt}{\myVSpace}}%
+}
+
+% leave things with no spacing extra spacing in the final version of the paper
+\renewcommand{\baselinestretch}{1.0}    % must go before the begin of doc
+
+% suppress the use of indentation for a paragraph
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+
+% handle widows appropriately
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+% build the title section
+
+\makeatletter
+
+\def\maketitle{%
+  %\null
+  \thispagestyle{empty}%
+  %\vfill
+  \begin{center}%\leavevmode
+    %\normalfont
+    {\Huge \@title\par}%
+    %\hrulefill\par
+    {\normalsize \@author\par}%
+    \vskip .4in
+%    {\Large \@date\par}%
+  \end{center}%
+  %\vfill
+  %\null
+  %\cleardoublepage
+
+  }
+
+\makeatother
+
+\vspace*{-1.5in} \title{Paper Review:\\{\Large Proton++: a customizable declarative multitouch framework}}
+
+% build the author section
+\author{\vspace*{.1in} Braden D. Licastro\\
+Department of Computer Science\\
+Allegheny College \\
+{\tt licastb@allegheny.edu}  \\
+\url{http://www.fullforceapps.com/} \\ 
+\vspace*{.1in} \today \\ 
+}
+
+% use the default title stuff
+\maketitle
+
+\vspace*{-.8in}
+\section{Summary}
+\label{sec:summary}
+\vspace*{-.1in}
+
+This paper describes using multi touch gestures as regular expressions in order to reduce code complexity and length. \cite{Kin:2012:PMG:2208636.2208694}. The framework described gives developers the ability to determine whether there will be conflicting gestures and extend the framework to reliably recognize complete gestures. The custom framework is able to take a regular expression and check for conflicts, reporting when one is found. In addition, the framework is able to generate a recognizer for a set of gestures and allows a sequence to be set. Further in the paper the authors explain situations where gestures may be indistinguishable at first, even though they are indeed different. The program is able to determine gestures by waiting for further input to distinguish. They also describe cases where a gesture is not precise, and the program must choose a best-fit gesture to perform an action.
+
+In the followup paper the authors expand on the previous framework introducing ideas such as custom touch attributes, pressure sensing, hand position, and screen location. \cite{Kin:2012:PCD:2380116.2380176} The proton framework remains intact in this paper and still providing the same benefits as before. The authors expand by describing methods of sensing direction, based on the shape of the active area on the screen being pressed. In a similar manner they describe a method of sensing pressure as the user's fingertips change shape and diameter on the screen. By utilizing several of these new features it is possible to determine which hand is currently using the device and also allows multiple users to interact at once.
+
+
+\vspace*{-.1in}
+\section{Critique}
+\label{sec:critique}
+\vspace*{-.1in}
+
+Throughout the research article, the tests performed left several questions, mainly in user identification. They mention using several defined areas on a screen to allow multiple users to interact simultaneously, but do not explain how the system handles the case where a user interacts with the screen in an area outside of the allotted grid. This could potentially confuse the system and instead of reading two separate gestures, one could be interpreted. The paper also does not cover whether the device orientation is of importance. If it is of importance and the device is used in an orientation other than which the program specifies the gestures would not function correctly.
+
+\vspace*{-.1in}
+\section{Synthesis}
+\label{sec:synthesis}
+\vspace*{-.1in}
+
+After reading the research paper I concluded that additional research could be performed to substantiate the claims outlined in the paper and improve upon the implementations of the Proton framework. Improvements to the framework could be a system which could determine the orientation of the device and adjust the expressions, touch fields, and location determination equations accordingly. In addition, research could be completed that could better utilize the multi user field of use by adjusting its active area based on the content currently displayed on the screen. This could possibly reduce the number of incorrect gesture reads.
+
+\bibliographystyle{plain}
+\bibliography{paper_review_lab5_cs580Spring2013}
+
+\end{document}

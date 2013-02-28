@@ -14,4 +14,17 @@ Max Goldman, Greg Little, and Robert~C. Miller.
   interface software and technology}, UIST '11, pages 155--164, New York, NY,
   USA, 2011. ACM.
 
+\bibitem{Hickey:2005:ECP:1040196.1040215}
+Timothy~J. Hickey, John Langton, and Richard Alterman.
+\newblock Enhancing cs programming lab courses using collaborative editors.
+\newblock {\em J. Comput. Sci. Coll.}, 20(3):157--167, February 2005.
+
+\bibitem{Waldmann:2010:IGW:1867651.1867671}
+Bethany~A. Waldmann and Devon~J. Lehman.
+\newblock Integrating the google wave platform with eclipse for collaborative,
+  real-time code creation.
+\newblock In {\em Proceedings of the 2010 ACM conference on Information
+  technology education}, SIGITE '10, pages 69--72, New York, NY, USA, 2010.
+  ACM.
+
 \end{thebibliography}
