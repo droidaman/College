@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\topmargin 0.0in
+\setlength{\textwidth} {420pt}
+\setlength{\textheight} {620pt} 
+\setlength{\oddsidemargin} {20pt}
+\setlength{\marginparwidth} {72in}
+
+\usepackage{fancyhdr} 
+\usepackage{url}
+
+% set it so that subsubsections have numbers and they
+% are displayed in the TOC (maybe hard to read, might want to disable)
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% define widow protection
+
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+\clubpenalty=10000  % Don't allow orphans
+\widowpenalty=10000 % Don't allow widows
+
+% this should give me the ability to use some math symbols that 
+% were available by default in standard latex (i.e. \Box)
+
+\usepackage{latexsym}
+
+% define a little section heading that doesn't go with any number
+
+\def\littlesection#1{
+\widow{2cm}
+\vskip 0.5cm
+\noindent{\bf #1}
+\vskip 0.0001cm 
+}
+
+\pagestyle{fancyplain}
+
+\newcommand{\tstamp}{\today}   
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\lhead[\Section \thesection]            {\fancyplain{}{\rightmark}}
+\chead[\fancyplain{}{}]                 {\fancyplain{}{}}
+\rhead[\fancyplain{}{\rightmark}]       {\fancyplain{}{\thepage}}
+\cfoot[\fancyplain{\thepage}{}]         {\fancyplain{\thepage}{}}
+
+\newlength{\myVSpace}% the height of the box
+\setlength{\myVSpace}{1ex}% the default, 
+\newcommand\xstrut{\raisebox{-.5\myVSpace}% symmetric behaviour, 
+  {\rule{0pt}{\myVSpace}}%
+}
+
+% leave things with no spacing extra spacing in the final version of the paper
+\renewcommand{\baselinestretch}{1.0}    % must go before the begin of doc
+
+% suppress the use of indentation for a paragraph
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.1in}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+
+% handle widows appropriately
+\def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
+
+% build the title section
+
+\makeatletter
+
+\def\maketitle{%
+  %\null
+  \thispagestyle{empty}%
+  %\vfill
+  \begin{center}%\leavevmode
+    %\normalfont
+    {\Huge \@title\par}%
+    %\hrulefill\par
+    {\normalsize \@author\par}%
+    \vskip .4in
+%    {\Large \@date\par}%
+  \end{center}%
+  %\vfill
+  %\null
+  %\cleardoublepage
+
+  }
+
+\makeatother
+
+\vspace*{-1.5in} \title{Paper Review:\\{\Large TritonSort: A Balanced and Energy-Efficient Large-Scale Sorting System}}
+
+% build the author section
+\author{\vspace*{.1in} Braden D. Licastro\\
+Department of Computer Science\\
+Allegheny College \\
+{\tt licastb@allegheny.edu}  \\
+\url{http://www.fullforceapps.com/} \\ 
+\vspace*{.1in} \today \\ 
+}
+
+% use the default title stuff
+\maketitle
+
+\vspace*{-.8in}
+\section{Summary}
+\label{sec:summary}
+\vspace*{-.1in}
+
+This paper describes a new, highly efficient sorting algorithm coined Triton Sort. The authors claim the algorithm to be ``a highly efficient, scalable sorting system.'' \cite{Rasmussen:2013:TBE:2427631.2427634} The algorithm described was designed to efficiently sort massive data sets, spanning into hundreds of terabytes in size. Many algorithms exist to sort data, but in sets of this magnitude, they are excessively resource hungry and inefficient. To add further complexity to the problem, a dataset of this size will inherently need to be spanned across many disks, and even entire server nodes. This creates an additional speed limit regarding network transfer rates, and each individual nodes I/O rate. The authors created an algorithm that accounts for the numerous variables and is able to choose a median between scalability and performance. By doing this, they show that it is possible to either reduce system cost and complete the same amount of work, or use the same, more cost-prohibitive systems to evaluate larger data sets.
+
+In order to validate their claim of creating a significantly improved sorting function the authors performed numerous tests and found their system was able to far outperform existing systems. After deciding on an optimal hardware configuration and write sizes to create the best environment for testing the algorithm and eliminating external factors the researchers performed  their test on several different data sets. Overall they found that the system performed approximately 66\% better than the previous record holder while utilizing about 80\% of the disks' write speed. \cite{Rasmussen:2013:TBE:2427631.2427634}.
+
+\vspace*{-.1in}
+\section{Critique}
+\label{sec:critique}
+\vspace*{-.1in}
+
+During the testing phase the authors mention a necessary increase in disks per cluster over the previous algorithm in order to run TritonSort in the same dataset size. While the algorithm may run significantly faster, I believe this would introduce a much higher likelihood of data corruption as the number of disks that could fail increases. In addition to this, each node would need additional hardware to accommodate the higher number of disks with additional points of failure. This was not a focus of the paper, but in a real world environment these issues could cause massive data corruption when running large datasets at the speeds discussed. In addition, every aspect of the computer systems and network were optimized specifically for the purpose of the testing. Would the algorithm performance degrade or remain consistent on other hardware? Will a slowdown be insignificant or great enough that a less environment specific algorithm could outperform TritonSort?
+
+\vspace*{-.1in}
+\section{Synthesis}
+\label{sec:synthesis}
+\vspace*{-.1in}
+
+After reading the research paper I concluded that additional research could be performed in many aspects, primarily testing performance of data residing on nodes in different geographic locations. With data sets ranging in the hundreds of gigabytes it is completely feasible that the information could be spread across several data-centers. This would introduce a vast array of new problems ranging from non-uniform hardware, varying transfer rates between data centers, and possible transfer failures. In this situation I believe that the system could be made significantly more robust and possibly allow an area for automatic optimization of the algorithm to accommodate for an ever changing environment.
+
+\bibliographystyle{plain}
+\bibliography{paper_review_lab7_cs580Spring2013}
+
+\end{document}
