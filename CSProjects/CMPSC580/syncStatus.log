@@ -1,0 +1,1704 @@
+------------------------------------------------------------
+
+Tue Jan 29 01:17:05 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+Lab 1/
+Lab 1/.gitignore~
+Lab 1/missfont.log
+Lab 1/paper_review_lab1_cs580Spring2013.aux
+Lab 1/paper_review_lab1_cs580Spring2013.bbl
+Lab 1/paper_review_lab1_cs580Spring2013.bib
+Lab 1/paper_review_lab1_cs580Spring2013.blg
+Lab 1/paper_review_lab1_cs580Spring2013.log
+Lab 1/paper_review_lab1_cs580Spring2013.pdf
+Lab 1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab 1/paper_review_lab1_cs580Spring2013.tex
+
+sent 323 bytes  received 49 bytes  744.00 bytes/sec
+total size is 79813  speedup is 214.55 (DRY RUN)
+sending incremental file list
+./
+On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
+Pre-Logout SyncScript.sh
+Writing for Computer Science.pdf
+syncExclude.txt~
+syncStatus.log
+Lab1/
+Lab1/paper_review_lab1_cs580Spring2013.aux
+Lab1/paper_review_lab1_cs580Spring2013.bbl
+Lab1/paper_review_lab1_cs580Spring2013.bib
+Lab1/paper_review_lab1_cs580Spring2013.blg
+Lab1/paper_review_lab1_cs580Spring2013.pdf
+Lab1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab1/paper_review_lab1_cs580Spring2013.tex
+Lab2/
+Lab2/annotated_bibliography_paper.aux
+Lab2/annotated_bibliography_paper.bbl
+Lab2/annotated_bibliography_paper.bib
+Lab2/annotated_bibliography_paper.blg
+Lab2/annotated_bibliography_paper.pdf
+Lab2/annotated_bibliography_paper.tex
+Lab2/Articles/
+Lab2/Articles/Autononomous Vehicle Failure at Intersections.pdf
+Lab2/Articles/Autononomous Vehicle Unmanaged Intersections.pdf
+Lab2/Articles/Eye on the Prize Evolutionary Computing.pdf
+Lab2/Articles/On-Line Evolutionary Computation.pdf
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Dicipline/
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+
+sent 930 bytes  received 107 bytes  2074.00 bytes/sec
+total size is 134328547  speedup is 129535.73 (DRY RUN)
+
+Tue Jan 29 01:17:05 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:17:05 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:17:06 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+------------------------------------------------------------
+
+Tue Jan 29 01:18:51 EST 2013 - Syncing local Bitbucket and GitHub repos.
+rsync: failed to open exclude file ../College/CSProjects/CMPSC580/syncExcclude.txt: No such file or directory (2)
+rsync error: error in file IO (code 11) at exclude.c(1058) [client=3.0.9]
+rsync: failed to open exclude file ../College/CSProjects/CMPSC580/syncExcslude.txt: No such file or directory (2)
+rsync error: error in file IO (code 11) at exclude.c(1058) [client=3.0.9]
+
+Tue Jan 29 01:18:51 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:18:51 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:18:52 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+------------------------------------------------------------
+
+Tue Jan 29 01:19:10 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+Lab 1/
+Lab 1/missfont.log
+Lab 1/paper_review_lab1_cs580Spring2013.aux
+Lab 1/paper_review_lab1_cs580Spring2013.bbl
+Lab 1/paper_review_lab1_cs580Spring2013.bib
+Lab 1/paper_review_lab1_cs580Spring2013.blg
+Lab 1/paper_review_lab1_cs580Spring2013.log
+Lab 1/paper_review_lab1_cs580Spring2013.pdf
+Lab 1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab 1/paper_review_lab1_cs580Spring2013.tex
+
+sent 261 bytes  received 46 bytes  614.00 bytes/sec
+total size is 79446  speedup is 258.78 (DRY RUN)
+sending incremental file list
+./
+On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
+Pre-Logout SyncScript.sh
+Writing for Computer Science.pdf
+syncStatus.log
+Lab1/
+Lab1/paper_review_lab1_cs580Spring2013.aux
+Lab1/paper_review_lab1_cs580Spring2013.bbl
+Lab1/paper_review_lab1_cs580Spring2013.bib
+Lab1/paper_review_lab1_cs580Spring2013.blg
+Lab1/paper_review_lab1_cs580Spring2013.pdf
+Lab1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab1/paper_review_lab1_cs580Spring2013.tex
+Lab2/
+Lab2/annotated_bibliography_paper.aux
+Lab2/annotated_bibliography_paper.bbl
+Lab2/annotated_bibliography_paper.bib
+Lab2/annotated_bibliography_paper.blg
+Lab2/annotated_bibliography_paper.pdf
+Lab2/annotated_bibliography_paper.tex
+Lab2/Articles/
+Lab2/Articles/Autononomous Vehicle Failure at Intersections.pdf
+Lab2/Articles/Autononomous Vehicle Unmanaged Intersections.pdf
+Lab2/Articles/Eye on the Prize Evolutionary Computing.pdf
+Lab2/Articles/On-Line Evolutionary Computation.pdf
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Dicipline/
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+
+sent 905 bytes  received 104 bytes  2018.00 bytes/sec
+total size is 134331959  speedup is 133133.76 (DRY RUN)
+
+Tue Jan 29 01:19:10 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:19:10 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:19:11 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:20:33 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+Lab 1/
+Lab 1/missfont.log
+Lab 1/paper_review_lab1_cs580Spring2013.aux
+Lab 1/paper_review_lab1_cs580Spring2013.bbl
+Lab 1/paper_review_lab1_cs580Spring2013.bib
+Lab 1/paper_review_lab1_cs580Spring2013.blg
+Lab 1/paper_review_lab1_cs580Spring2013.log
+Lab 1/paper_review_lab1_cs580Spring2013.pdf
+Lab 1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab 1/paper_review_lab1_cs580Spring2013.tex
+
+sent 261 bytes  received 46 bytes  614.00 bytes/sec
+total size is 79446  speedup is 258.78 (DRY RUN)
+sending incremental file list
+./
+On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
+Pre-Logout SyncScript.sh
+Writing for Computer Science.pdf
+syncStatus.log
+Lab1/
+Lab1/paper_review_lab1_cs580Spring2013.aux
+Lab1/paper_review_lab1_cs580Spring2013.bbl
+Lab1/paper_review_lab1_cs580Spring2013.bib
+Lab1/paper_review_lab1_cs580Spring2013.blg
+Lab1/paper_review_lab1_cs580Spring2013.pdf
+Lab1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab1/paper_review_lab1_cs580Spring2013.tex
+Lab2/
+Lab2/annotated_bibliography_paper.aux
+Lab2/annotated_bibliography_paper.bbl
+Lab2/annotated_bibliography_paper.bib
+Lab2/annotated_bibliography_paper.blg
+Lab2/annotated_bibliography_paper.pdf
+Lab2/annotated_bibliography_paper.tex
+Lab2/Articles/
+Lab2/Articles/Autononomous Vehicle Failure at Intersections.pdf
+Lab2/Articles/Autononomous Vehicle Unmanaged Intersections.pdf
+Lab2/Articles/Eye on the Prize Evolutionary Computing.pdf
+Lab2/Articles/On-Line Evolutionary Computation.pdf
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Dicipline/
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+
+sent 905 bytes  received 104 bytes  2018.00 bytes/sec
+total size is 134334607  speedup is 133136.38 (DRY RUN)
+
+Tue Jan 29 01:20:33 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:20:33 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:20:34 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:21:23 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+Lab 1/
+Lab 1/missfont.log
+Lab 1/paper_review_lab1_cs580Spring2013.aux
+Lab 1/paper_review_lab1_cs580Spring2013.bbl
+Lab 1/paper_review_lab1_cs580Spring2013.bib
+Lab 1/paper_review_lab1_cs580Spring2013.blg
+Lab 1/paper_review_lab1_cs580Spring2013.log
+Lab 1/paper_review_lab1_cs580Spring2013.pdf
+Lab 1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab 1/paper_review_lab1_cs580Spring2013.tex
+
+sent 80071 bytes  received 190 bytes  160522.00 bytes/sec
+total size is 79446  speedup is 0.99
+sending incremental file list
+On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
+Pre-Logout SyncScript.sh
+Writing for Computer Science.pdf
+syncStatus.log
+Lab1/
+Lab1/paper_review_lab1_cs580Spring2013.aux
+Lab1/paper_review_lab1_cs580Spring2013.bbl
+Lab1/paper_review_lab1_cs580Spring2013.bib
+Lab1/paper_review_lab1_cs580Spring2013.blg
+Lab1/paper_review_lab1_cs580Spring2013.pdf
+Lab1/paper_review_lab1_cs580Spring2013.synctex.gz
+Lab1/paper_review_lab1_cs580Spring2013.tex
+Lab2/
+Lab2/annotated_bibliography_paper.aux
+Lab2/annotated_bibliography_paper.bbl
+Lab2/annotated_bibliography_paper.bib
+Lab2/annotated_bibliography_paper.blg
+Lab2/annotated_bibliography_paper.pdf
+Lab2/annotated_bibliography_paper.tex
+Lab2/Articles/
+Lab2/Articles/Autononomous Vehicle Failure at Intersections.pdf
+Lab2/Articles/Autononomous Vehicle Unmanaged Intersections.pdf
+Lab2/Articles/Eye on the Prize Evolutionary Computing.pdf
+Lab2/Articles/On-Line Evolutionary Computation.pdf
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Dicipline/
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+
+sent 134355744 bytes  received 470 bytes  38387489.71 bytes/sec
+total size is 134416665  speedup is 1.00
+
+Tue Jan 29 01:21:26 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:21:26 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:21:27 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab 1/
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:26:18 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+
+sent 477 bytes  received 18 bytes  990.00 bytes/sec
+total size is 1698299  speedup is 3430.91 (DRY RUN)
+sending incremental file list
+./
+On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
+Pre-Logout SyncScript.sh
+Writing for Computer Science.pdf
+syncStatus.log
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Dicipline/
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+
+sent 845 bytes  received 44 bytes  1778.00 bytes/sec
+total size is 134339534  speedup is 151113.09 (DRY RUN)
+
+Tue Jan 29 01:26:18 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:26:18 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:26:19 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+------------------------------------------------------------
+
+Tue Jan 29 01:27:37 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+
+sent 477 bytes  received 18 bytes  990.00 bytes/sec
+total size is 1698299  speedup is 3430.91 (DRY RUN)
+sending incremental file list
+./
+syncExclude.txt~
+syncStatus.log
+
+sent 534 bytes  received 24 bytes  1116.00 bytes/sec
+total size is 1711722  speedup is 3067.60 (DRY RUN)
+
+Tue Jan 29 01:27:37 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:27:37 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:27:38 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+------------------------------------------------------------
+
+Tue Jan 29 01:29:13 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+
+sent 477 bytes  received 18 bytes  990.00 bytes/sec
+total size is 1698299  speedup is 3430.91 (DRY RUN)
+sending incremental file list
+./
+
+sent 477 bytes  received 18 bytes  990.00 bytes/sec
+total size is 1698299  speedup is 3430.91 (DRY RUN)
+
+Tue Jan 29 01:29:13 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:29:13 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:29:14 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:32:14 EST 2013 - Syncing local Bitbucket and GitHub repos.
+sending incremental file list
+./
+Untitled Document
+
+sent 571 bytes  received 37 bytes  1216.00 bytes/sec
+total size is 1698318  speedup is 2793.29
+sending incremental file list
+
+sent 506 bytes  received 15 bytes  1042.00 bytes/sec
+total size is 1698318  speedup is 3259.73
+
+Tue Jan 29 01:32:14 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:32:14 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:32:15 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Untitled Document
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+------------------------------------------------------------
+
+Tue Jan 29 01:33:27 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+
+sent 506 bytes  received 15 bytes  1042.00 bytes/sec
+total size is 1698318  speedup is 3259.73
+
+Receiving data
+sending incremental file list
+
+sent 506 bytes  received 15 bytes  1042.00 bytes/sec
+total size is 1698318  speedup is 3259.73
+
+Tue Jan 29 01:33:27 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:33:27 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:33:28 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Untitled Document
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:37:04 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+Lab2/
+
+sent 509 bytes  received 18 bytes  1054.00 bytes/sec
+total size is 1698318  speedup is 3222.61
+
+Receiving data
+sending incremental file list
+
+sent 506 bytes  received 15 bytes  1042.00 bytes/sec
+total size is 1698318  speedup is 3259.73
+
+Tue Jan 29 01:37:04 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:37:04 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:37:05 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Untitled Document
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+------------------------------------------------------------
+
+Tue Jan 29 01:38:56 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+Lab2/
+
+sent 512 bytes  received 21 bytes  1066.00 bytes/sec
+total size is 1698318  speedup is 3186.34
+
+Receiving data
+sending incremental file list
+Untitled Document
+Untitled Document~
+
+sent 651 bytes  received 53 bytes  1408.00 bytes/sec
+total size is 1698347  speedup is 2412.42
+
+Tue Jan 29 01:38:56 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:38:56 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:38:57 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Untitled Document
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:39:49 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+Untitled Document
+
+sent 592 bytes  received 37 bytes  1258.00 bytes/sec
+total size is 1698339  speedup is 2700.06
+
+Receiving data
+sending incremental file list
+
+sent 506 bytes  received 15 bytes  1042.00 bytes/sec
+total size is 1698339  speedup is 3259.77
+
+Tue Jan 29 01:39:50 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:39:50 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:39:50 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Untitled Document
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:40:34 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+
+sent 477 bytes  received 18 bytes  990.00 bytes/sec
+total size is 1698299  speedup is 3430.91
+
+Receiving data
+sending incremental file list
+Untitled Document
+
+sent 589 bytes  received 34 bytes  1246.00 bytes/sec
+total size is 1698339  speedup is 2726.07
+
+Tue Jan 29 01:40:34 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:40:34 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:40:35 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Untitled Document
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:42:46 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+
+sent 477 bytes  received 18 bytes  990.00 bytes/sec
+total size is 1698299  speedup is 3430.91
+
+Receiving data
+sending incremental file list
+
+sent 474 bytes  received 15 bytes  978.00 bytes/sec
+total size is 1698299  speedup is 3473.00
+
+Tue Jan 29 01:42:46 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:42:46 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:42:46 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/Pre-Logout SyncScript.sh
+#	modified:   CSProjects/CMPSC580/syncExclude.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+Tue Jan 29 01:43:39 EST 2013 - Adding files to be committed.
+
+Tue Jan 29 01:43:59 EST 2013 - Commiting changes.
+[master d98c8f7] Updating some of the cs sync files
+ 2 files changed, 19 insertions(+), 4 deletions(-)
+
+Tue Jan 29 01:43:59 EST 2013 - Pushing changes.
+To git@github-personal:BenchPressesBooks/College.git
+   4005ad0..d98c8f7  master -> master
+
+
+Sync complete.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 01:44:11 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+
+sent 474 bytes  received 15 bytes  978.00 bytes/sec
+total size is 1698299  speedup is 3473.00
+
+Receiving data
+sending incremental file list
+
+sent 474 bytes  received 15 bytes  978.00 bytes/sec
+total size is 1698299  speedup is 3473.00
+
+Tue Jan 29 01:44:11 EST 2013 - Local sync complete!
+
+Tue Jan 29 01:44:11 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 01:44:12 EST 2013 - Retrieving repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 13:26:08 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+
+sent 474 bytes  received 15 bytes  978.00 bytes/sec
+total size is 1698299  speedup is 3473.00
+
+Receiving data
+sending incremental file list
+
+sent 474 bytes  received 15 bytes  978.00 bytes/sec
+total size is 1698299  speedup is 3473.00
+
+Tue Jan 29 13:26:08 EST 2013 - Local sync complete!
+
+Tue Jan 29 13:26:08 EST 2013 - Pulling repos before status check.
+From github-personal:BenchPressesBooks/College
+   d98c8f7..9aa1ad3  master     -> origin/master
+Updating d98c8f7..9aa1ad3
+Fast-forward
+ CSProjects/CMPSC580/Pre-Logout SyncScript.sh |    7 ++++---
+ oracle-pdfimport.oxt                         |  Bin 0 -> 5508884 bytes
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+ create mode 100644 oracle-pdfimport.oxt
+
+Tue Jan 29 13:26:18 EST 2013 - Retrieving repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 19:50:49 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+Lab2/
+Lab2/annotated_bibliography_paper.aux
+Lab2/annotated_bibliography_paper.bbl
+Lab2/annotated_bibliography_paper.blg
+Lab2/annotated_bibliography_paper.log
+Lab2/annotated_bibliography_paper.pdf
+Lab2/annotated_bibliography_paper.synctex.gz
+Lab2/annotated_bibliography_paper.tex
+
+sent 71868 bytes  received 154 bytes  144044.00 bytes/sec
+total size is 1693505  speedup is 23.51
+
+Receiving data
+sending incremental file list
+
+sent 535 bytes  received 15 bytes  1100.00 bytes/sec
+total size is 1693505  speedup is 3079.10
+
+Tue Jan 29 19:50:50 EST 2013 - Local sync complete!
+
+Tue Jan 29 19:50:50 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 19:50:51 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.blg
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.pdf
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.tex
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.synctex.gz
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 19:58:07 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+Lab1/
+Lab1/paper_review_lab1_cs580Spring2013.aux
+Lab1/paper_review_lab1_cs580Spring2013.bib
+Lab1/paper_review_lab1_cs580Spring2013.pdf
+Lab1/paper_review_lab1_cs580Spring2013.tex
+Lab2/
+
+sent 56246 bytes  received 100 bytes  112692.00 bytes/sec
+total size is 1669351  speedup is 29.63
+
+Receiving data
+sending incremental file list
+
+sent 547 bytes  received 15 bytes  1124.00 bytes/sec
+total size is 1669351  speedup is 2970.38
+
+Tue Jan 29 19:58:07 EST 2013 - Local sync complete!
+
+Tue Jan 29 19:58:07 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 19:58:08 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/Lab1/paper_review_lab1_cs580Spring2013.pdf
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.blg
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.pdf
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.tex
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.synctex.gz
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Tue Jan 29 20:15:29 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+Lab3/
+
+sent 572 bytes  received 22 bytes  1188.00 bytes/sec
+total size is 1669351  speedup is 2810.36
+
+Receiving data
+sending incremental file list
+
+sent 566 bytes  received 16 bytes  1164.00 bytes/sec
+total size is 1669351  speedup is 2868.30
+
+Tue Jan 29 20:15:29 EST 2013 - Local sync complete!
+
+Tue Jan 29 20:15:29 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Tue Jan 29 20:15:30 EST 2013 - Retrieving repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/Lab1/paper_review_lab1_cs580Spring2013.pdf
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.blg
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.pdf
+#	modified:   CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.tex
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.synctex.gz
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the repo?
+
+Tue Jan 29 20:15:32 EST 2013 - Adding files to be committed.
+
+Tue Jan 29 20:41:17 EST 2013 - Commiting changes.
+[master f38e58f] Finished CMPSC580 Lab 2
+ 5 files changed, 6 insertions(+), 5 deletions(-)
+ rewrite CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.pdf (72%)
+ create mode 100644 CSProjects/CMPSC580/Lab2/annotated_bibliography_paper.synctex.gz
+
+Tue Jan 29 20:41:18 EST 2013 - Pushing changes.
+To git@github-personal:BenchPressesBooks/College.git
+   9aa1ad3..f38e58f  master -> master
+
+
+Sync complete.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Wed Feb  6 02:32:10 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+Lab3/
+Lab3/paper_review_lab3_cs580Spring2013.aux
+Lab3/paper_review_lab3_cs580Spring2013.bbl
+Lab3/paper_review_lab3_cs580Spring2013.bib
+Lab3/paper_review_lab3_cs580Spring2013.blg
+Lab3/paper_review_lab3_cs580Spring2013.log
+Lab3/paper_review_lab3_cs580Spring2013.pdf
+Lab3/paper_review_lab3_cs580Spring2013.synctex.gz
+Lab3/paper_review_lab3_cs580Spring2013.tex
+
+sent 78802 bytes  received 174 bytes  157952.00 bytes/sec
+total size is 1747091  speedup is 22.12
+
+Receiving data
+sending incremental file list
+Presentations/
+Presentations/FINCH through the Java Wilderness/
+Presentations/FINCH through the Java Wilderness/Jr Sem Group 4.pptx
+Presentations/FINCH through the Java Wilderness/bytecode.png
+Presentations/FINCH through the Java Wilderness/source code.png
+
+sent 272544 bytes  received 81 bytes  545250.00 bytes/sec
+total size is 2018591  speedup is 7.40
+
+Wed Feb  6 02:32:10 EST 2013 - Local sync complete!
+
+Wed Feb  6 02:32:10 EST 2013 - Pulling repos before status check.
+From github-personal:BenchPressesBooks/College
+   18dbbad..0bd1ab8  master     -> origin/master
+Updating 18dbbad..0bd1ab8
+Fast-forward
+ CSProjects/CMPSC380/Lab3/AYSR-EEDAFDUH.pdf         |  Bin 0 -> 141695 bytes
+ CSProjects/CMPSC380/Lab3/FileFinder.class          |  Bin 0 -> 2119 bytes
+ CSProjects/CMPSC380/Lab3/FileFinder.java           |   98 ++++++++++++++++++++
+ CSProjects/CMPSC380/Lab3/JoSQL-2.2.jar             |  Bin 0 -> 192222 bytes
+ CSProjects/CMPSC380/Lab3/gentlyWEB-utils-1.1.jar   |  Bin 0 -> 69223 bytes
+ CSProjects/CMPSC380/Lab3/lab3_directions.pdf       |  Bin 0 -> 132818 bytes
+ .../2 - Research Topic/licastb-lightningTalk2.pptx |  Bin 0 -> 56903 bytes
+ .../2 - Research Topic/licastb-powerpoint.pdf      |  Bin 0 -> 53236 bytes
+ 8 files changed, 98 insertions(+)
+ create mode 100644 CSProjects/CMPSC380/Lab3/AYSR-EEDAFDUH.pdf
+ create mode 100644 CSProjects/CMPSC380/Lab3/FileFinder.class
+ create mode 100644 CSProjects/CMPSC380/Lab3/FileFinder.java
+ create mode 100644 CSProjects/CMPSC380/Lab3/JoSQL-2.2.jar
+ create mode 100644 CSProjects/CMPSC380/Lab3/gentlyWEB-utils-1.1.jar
+ create mode 100644 CSProjects/CMPSC380/Lab3/lab3_directions.pdf
+ create mode 100644 CSProjects/CMPSC580/Lightning Talk/2 - Research Topic/licastb-lightningTalk2.pptx
+ create mode 100644 CSProjects/CMPSC580/Lightning Talk/2 - Research Topic/licastb-powerpoint.pdf
+
+Wed Feb  6 02:32:26 EST 2013 - Retrieving repo status.
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab3/
+#	CSProjects/CMPSC580/Presentations/
+nothing added to commit but untracked files present (use "git add" to track)
+
+Would you like to autocommit and push the repo?
+
+Wed Feb  6 02:32:28 EST 2013 - Adding files to be committed.
+
+Wed Feb  6 02:32:40 EST 2013 - Commiting changes.
+[master 33e4c24] Finished lab 3 and added other presentations
+ 10 files changed, 223 insertions(+)
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.aux
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.bbl
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.bib
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.blg
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.pdf
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.synctex.gz
+ create mode 100644 CSProjects/CMPSC580/Lab3/paper_review_lab3_cs580Spring2013.tex
+ create mode 100644 CSProjects/CMPSC580/Presentations/FINCH through the Java Wilderness/Jr Sem Group 4.pptx
+ create mode 100644 CSProjects/CMPSC580/Presentations/FINCH through the Java Wilderness/bytecode.png
+ create mode 100644 CSProjects/CMPSC580/Presentations/FINCH through the Java Wilderness/source code.png
+
+Wed Feb  6 02:32:40 EST 2013 - Pushing changes.
+To git@github-personal:BenchPressesBooks/College.git
+   0bd1ab8..33e4c24  master -> master
+
+
+Sync complete.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Wed Feb  6 12:33:27 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+
+sent 881 bytes  received 18 bytes  1798.00 bytes/sec
+total size is 2018591  speedup is 2245.37
+
+Receiving data
+sending incremental file list
+
+sent 881 bytes  received 18 bytes  1798.00 bytes/sec
+total size is 2018591  speedup is 2245.37
+
+Wed Feb  6 12:33:27 EST 2013 - Local sync complete!
+
+Wed Feb  6 12:33:27 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Wed Feb  6 12:33:39 EST 2013 - Retrieving repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Thu Feb  7 03:11:20 EST 2013 - Syncing local Bitbucket and GitHub repos.
+Sending data
+sending incremental file list
+./
+
+sent 711 bytes  received 19 bytes  1460.00 bytes/sec
+total size is 1747091  speedup is 2393.28
+
+Receiving data
+sending incremental file list
+
+sent 708 bytes  received 16 bytes  1448.00 bytes/sec
+total size is 1747091  speedup is 2413.11
+
+Thu Feb  7 03:11:20 EST 2013 - Local sync complete!
+
+Thu Feb  7 03:11:20 EST 2013 - Pulling repos before status check.
+Already up-to-date.
+
+Thu Feb  7 03:11:21 EST 2013 - Retrieving repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the repo?
+
+
+** Sync cancelled. Please manually update repository.
+
+
+Would you like to log out?
+------------------------------------------------------------
+
+Thu Feb 28 00:45:13 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 00:45:14 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+./
+
+sent 711 bytes  received 19 bytes  1460.00 bytes/sec
+total size is 1747091  speedup is 2393.28
+
+Receiving data
+sending incremental file list
+Lab4/
+Lab4/mathematics.aux
+Lab4/mathematics.bbl
+Lab4/mathematics.blg
+Lab4/mathematics.pdf
+Lab4/mathematics.tex
+Lab5/
+Lab5/paper_review_lab5_cs580Spring2013.aux
+Lab5/paper_review_lab5_cs580Spring2013.bbl
+Lab5/paper_review_lab5_cs580Spring2013.bib
+Lab5/paper_review_lab5_cs580Spring2013.blg
+Lab5/paper_review_lab5_cs580Spring2013.pdf
+Lab5/paper_review_lab5_cs580Spring2013.synctex.gz
+Lab5/paper_review_lab5_cs580Spring2013.tex
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Discipline/
+Lightning Talk/1 - Immersion in the Discipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Discipline/Immersion in the Discipline.pptx
+Lightning Talk/2 - Research Topic (Evolutionary Computation)/
+Lightning Talk/2 - Research Topic (Evolutionary Computation)/licastb-lightningTalk2.pptx
+Lightning Talk/2 - Research Topic (Evolutionary Computation)/licastb-powerpoint.pdf
+Lightning Talk/3 - Immersion in the Dicipline/
+Lightning Talk/3 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/3 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+Lightning Talk/4 - Research Topic (Branching and Merging)/
+Lightning Talk/4 - Research Topic (Branching and Merging)/Lightning Talk 4.pdf
+Lightning Talk/4 - Research Topic (Branching and Merging)/Lightning Talk 4.pptx
+Lightning Talk/5 - Immersion in the Discipline/
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.odp
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pdf
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pptx
+Lightning Talk/5 - Immersion in the Discipline/licastb_immersion_5.pdf
+Presentations/
+Presentations/FINCH through the Java Wilderness/
+Presentations/FINCH through the Java Wilderness/Jr Sem Group 4.pptx
+Presentations/FINCH through the Java Wilderness/bytecode.png
+Presentations/FINCH through the Java Wilderness/source code.png
+Research Proposals/
+Research Proposals/Proposal 1/
+Research Proposals/Proposal 1/collab-feature.png
+Research Proposals/Proposal 1/collabode.jpg
+Research Proposals/Proposal 1/multy-cursors.png
+Research Proposals/Proposal 1/senior_thesis_proposal.aux
+Research Proposals/Proposal 1/senior_thesis_proposal.bbl
+Research Proposals/Proposal 1/senior_thesis_proposal.bib
+Research Proposals/Proposal 1/senior_thesis_proposal.blg
+Research Proposals/Proposal 1/senior_thesis_proposal.pdf
+Research Proposals/Proposal 1/senior_thesis_proposal.synctex.gz
+Research Proposals/Proposal 1/senior_thesis_proposal.tex
+Research Proposals/Proposal 1/stats.PNG
+
+sent 3174174 bytes  received 786 bytes  2116640.00 bytes/sec
+total size is 4917123  speedup is 1.55
+
+Thu Feb 28 00:45:15 EST 2013 - Local sync complete!
+
+Thu Feb 28 00:45:15 EST 2013 - Retrieving College repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Feb 28 00:45:31 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 00:45:32 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+
+sent 2140 bytes  received 28 bytes  4336.00 bytes/sec
+total size is 4917123  speedup is 2268.05
+
+Receiving data
+sending incremental file list
+
+sent 2140 bytes  received 28 bytes  4336.00 bytes/sec
+total size is 4917123  speedup is 2268.05
+
+Thu Feb 28 00:45:32 EST 2013 - Local sync complete!
+
+Thu Feb 28 00:45:32 EST 2013 - Retrieving College repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Feb 28 01:23:33 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 01:23:34 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+./
+Lab3/
+Lab4/
+Lab4/mathematics.aux
+Lab4/mathematics.pdf
+Lab4/mathematics.tex
+Lab5/
+Lightning Talk/
+Lightning Talk/1 - Immersion in the Discipline/
+Lightning Talk/1 - Immersion in the Discipline/Immersion in the Discipline.pdf
+Lightning Talk/1 - Immersion in the Discipline/Immersion in the Discipline.pptx
+Lightning Talk/2 - Research Topic (Evolutionary Computation)/
+Lightning Talk/2 - Research Topic (Evolutionary Computation)/licastb-lightningTalk2.pptx
+Lightning Talk/2 - Research Topic (Evolutionary Computation)/licastb-powerpoint.pdf
+Lightning Talk/3 - Immersion in the Dicipline/
+Lightning Talk/3 - Immersion in the Dicipline/Immersion in the Discipline.pdf
+Lightning Talk/3 - Immersion in the Dicipline/Immersion in the Discipline.pptx
+Lightning Talk/4 - Research Topic (Branching and Merging)/
+Lightning Talk/4 - Research Topic (Branching and Merging)/Lightning Talk 4.pdf
+Lightning Talk/4 - Research Topic (Branching and Merging)/Lightning Talk 4.pptx
+Lightning Talk/5 - Immersion in the Discipline/
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.odp
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pdf
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pptx
+Lightning Talk/5 - Immersion in the Discipline/licastb_immersion_5.pdf
+Presentations/
+Presentations/FINCH through the Java Wilderness/
+Presentations/FINCH through the Java Wilderness/Jr Sem Group 4.pptx
+Presentations/FINCH through the Java Wilderness/bytecode.png
+Presentations/FINCH through the Java Wilderness/source code.png
+Research Proposals/
+Research Proposals/Proposal 1/
+Research Proposals/Proposal 1/stats.png
+
+sent 2613125 bytes  received 431 bytes  5227112.00 bytes/sec
+total size is 4916160  speedup is 1.88
+
+Receiving data
+sending incremental file list
+Lab4/mathematics.bbl
+Lab4/mathematics.blg
+Research Proposals/Proposal 1/stats.PNG
+
+sent 19521 bytes  received 85 bytes  39212.00 bytes/sec
+total size is 4933404  speedup is 251.63
+
+Thu Feb 28 01:23:34 EST 2013 - Local sync complete!
+
+Thu Feb 28 01:23:34 EST 2013 - Retrieving College repo status.
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Research Proposals/Proposal 1/stats.png
+nothing added to commit but untracked files present (use "git add" to track)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Feb 28 01:25:27 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 01:25:27 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+Research Proposals/Proposal 1/
+Research Proposals/Proposal 1/stats.PNG
+
+sent 18479 bytes  received 50 bytes  37058.00 bytes/sec
+total size is 4933404  speedup is 266.25
+
+Receiving data
+sending incremental file list
+
+sent 2152 bytes  received 28 bytes  4360.00 bytes/sec
+total size is 4933404  speedup is 2263.03
+
+Thu Feb 28 01:25:28 EST 2013 - Local sync complete!
+
+Thu Feb 28 01:25:28 EST 2013 - Retrieving College repo status.
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Research Proposals/Proposal 1/stats.PNG
+nothing added to commit but untracked files present (use "git add" to track)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Feb 28 01:26:21 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 01:26:22 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+Research Proposals/Proposal 1/
+
+sent 2119 bytes  received 31 bytes  4300.00 bytes/sec
+total size is 4917123  speedup is 2287.03
+
+Receiving data
+sending incremental file list
+
+sent 2116 bytes  received 28 bytes  4288.00 bytes/sec
+total size is 4917123  speedup is 2293.43
+
+Thu Feb 28 01:26:22 EST 2013 - Local sync complete!
+
+Thu Feb 28 01:26:22 EST 2013 - Retrieving College repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Feb 28 01:26:30 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 01:26:31 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+
+sent 2116 bytes  received 28 bytes  4288.00 bytes/sec
+total size is 4917123  speedup is 2293.43
+
+Receiving data
+sending incremental file list
+
+sent 2116 bytes  received 28 bytes  4288.00 bytes/sec
+total size is 4917123  speedup is 2293.43
+
+Thu Feb 28 01:26:31 EST 2013 - Local sync complete!
+
+Thu Feb 28 01:26:31 EST 2013 - Retrieving College repo status.
+# On branch master
+nothing to commit (working directory clean)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Feb 28 03:12:01 EST 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Feb 28 03:12:06 EST 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+
+sent 2116 bytes  received 28 bytes  4288.00 bytes/sec
+total size is 4917123  speedup is 2293.43
+
+Receiving data
+sending incremental file list
+
+sent 2116 bytes  received 28 bytes  4288.00 bytes/sec
+total size is 4917123  speedup is 2293.43
+
+Thu Feb 28 03:12:06 EST 2013 - Local sync complete!
+
+Thu Feb 28 03:12:06 EST 2013 - Retrieving College repo status.
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC380/Lab4/
+nothing added to commit but untracked files present (use "git add" to track)
+
+Would you like to autocommit and push the College repo?
+
+Thu Feb 28 03:12:12 EST 2013 - Adding files to be committed to the College repo.
+
+Thu Feb 28 03:12:24 EST 2013 - Commiting changes.
+[master cb441fb] Almost completed Lab 4 for CS380
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 CSProjects/CMPSC380/Lab4/6a0120a85dcdae970b012877705e50970c.png
+ create mode 100644 CSProjects/CMPSC380/Lab4/library
+ create mode 100644 CSProjects/CMPSC380/Lab4/licastb_lab4-Writeup.odt
+
+Thu Feb 28 03:12:24 EST 2013 - Pushing changes.
+To git@github-personal:BenchPressesBooks/College.git
+   d678833..cb441fb  master -> master
+
+
+Sync complete.
+
+------------------------------------------------------------
+
+Wed Mar 13 14:30:43 EDT 2013 - Pulling College repo before folder sync.
+From github-personal:BenchPressesBooks/College
+   a5e94c8..d7b99ef  master     -> origin/master
+Updating a5e94c8..d7b99ef
+Fast-forward
+ .gitignore                                         |    4 +-
+ .../IC Projects/SQL Triggers/WritersDatabase.db    |  Bin 0 -> 10240 bytes
+ .../IC Projects/SQL Triggers/WritersDatabase.sql   |   43 +
+ .../Lab5/hsqldb/doc/verbatim/sample/csv-sample.sql |   65 ++
+ .../Lab5/hsqldb/doc/verbatim/sample/dsv-sample.sql |   37 +
+ .../hsqldb/doc/verbatim/sample/html-report.sql     |   54 ++
+ .../Lab5/hsqldb/doc/verbatim/sample/pl.sql         |   95 +++
+ .../Lab5/hsqldb/doc/verbatim/sample/plsql.sql      |   51 ++
+ .../Lab5/hsqldb/doc/verbatim/sample/sample.sql     |   47 ++
+ .../Lab5/hsqldb/doc/verbatim/sample/sampledata.sql |  822 ++++++++++++++++++++
+ .../hsqldb/doc/verbatim/testrun/sqltool/sqljrt.sql |   17 +
+ .../hsqldb/doc/verbatim/testrun/sqltool/sqlpsm.sql |   27 +
+ .../CMPSC380/Lab5/hsqldb/sample/csv-sample.sql     |   65 ++
+ .../CMPSC380/Lab5/hsqldb/sample/dsv-sample.sql     |   37 +
+ .../CMPSC380/Lab5/hsqldb/sample/html-report.sql    |   54 ++
+ .../CMPSC380/Lab5/hsqldb/sample/j-sample.sql       |   38 +
+ .../Lab5/hsqldb/sample/load_binding_lu.sql         |   31 +
+ .../CMPSC380/Lab5/hsqldb/sample/nullempty.sql      |   33 +
+ CSProjects/CMPSC380/Lab5/hsqldb/sample/pl.sql      |   95 +++
+ CSProjects/CMPSC380/Lab5/hsqldb/sample/plsql.sql   |   51 ++
+ CSProjects/CMPSC380/Lab5/hsqldb/sample/sample.sql  |   47 ++
+ .../CMPSC380/Lab5/hsqldb/sample/sampledata.sql     |  822 ++++++++++++++++++++
+ .../org/hsqldb/resources/information-schema.sql    |  566 ++++++++++++++
+ .../hsqldb/src/org/hsqldb/resources/lob-schema.sql |  175 +++++
+ .../Lab5/hsqldb/testrun/sqltool/adv-comments.sql   |   27 +
+ .../Lab5/hsqldb/testrun/sqltool/at-chainer.sql     |    8 +
+ .../Lab5/hsqldb/testrun/sqltool/buffer-vars.sql    |   80 ++
+ .../Lab5/hsqldb/testrun/sqltool/comments.sql       |  125 +++
+ .../Lab5/hsqldb/testrun/sqltool/csv-roundtrip.sql  |   68 ++
+ .../hsqldb/testrun/sqltool/dsv-abortcommits.sql    |   50 ++
+ .../Lab5/hsqldb/testrun/sqltool/dsv-altspace.sql   |   15 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-constcols.sql  |   31 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-multiline.sql  |   45 ++
+ .../Lab5/hsqldb/testrun/sqltool/dsv-omits.sql      |   43 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-prepare.sql    |   18 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-rejects.sql    |   16 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-roundtrip.sql  |   38 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-rpcommit.sql   |   38 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-sqlarray.sql   |   46 ++
+ .../Lab5/hsqldb/testrun/sqltool/dsv-trimall.sql    |   42 +
+ .../Lab5/hsqldb/testrun/sqltool/dsv-trimming.sql   |   82 ++
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/else.sql  |   26 +
+ .../Lab5/hsqldb/testrun/sqltool/errhandling.sql    |   42 +
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/for.sql   |   25 +
+ .../Lab5/hsqldb/testrun/sqltool/forrows.sql        |   35 +
+ .../Lab5/hsqldb/testrun/sqltool/function.sql       |   60 ++
+ .../Lab5/hsqldb/testrun/sqltool/goodsqlonly.sql    |    7 +
+ .../Lab5/hsqldb/testrun/sqltool/inlineif.sql       |  132 ++++
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/j.sql     |   23 +
+ .../Lab5/hsqldb/testrun/sqltool/lastval.sql        |   42 +
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/logic.sql |   66 ++
+ .../Lab5/hsqldb/testrun/sqltool/logical-ops.sql    |   58 ++
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/macro.sql |   43 +
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/math.sql  |   74 ++
+ .../Lab5/hsqldb/testrun/sqltool/nestingschema.sql  |   22 +
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/noop.sql  |    5 +
+ .../Lab5/hsqldb/testrun/sqltool/nq-noarg1.sql      |    8 +
+ .../Lab5/hsqldb/testrun/sqltool/nullempty.sql      |   46 ++
+ .../Lab5/hsqldb/testrun/sqltool/nullrep.sql        |  109 +++
+ .../Lab5/hsqldb/testrun/sqltool/plcontrolflow.sql  |  214 +++++
+ .../Lab5/hsqldb/testrun/sqltool/q-noarg1.sql       |    8 +
+ .../Lab5/hsqldb/testrun/sqltool/rawmode.sql        |   32 +
+ .../Lab5/hsqldb/testrun/sqltool/return.sql         |   17 +
+ .../Lab5/hsqldb/testrun/sqltool/sqlarray.sql       |   24 +
+ .../Lab5/hsqldb/testrun/sqltool/sqljrt.sql         |   17 +
+ .../Lab5/hsqldb/testrun/sqltool/sqlpsm.sql         |   27 +
+ .../Lab5/hsqldb/testrun/sqltool/subdir/atuser.sql  |   14 +
+ .../Lab5/hsqldb/testrun/sqltool/subdir/tblx.sql    |   10 +
+ .../Lab5/hsqldb/testrun/sqltool/unsetvar.sql       |   19 +
+ .../Lab5/hsqldb/testrun/sqltool/varnester.sql      |   15 +
+ .../CMPSC380/Lab5/hsqldb/testrun/sqltool/vars.sql  |   58 ++
+ .../Lab5/hsqldb/testrun/sqltool/varswithspaces.sql |   14 +
+ 72 files changed, 5338 insertions(+), 2 deletions(-)
+ create mode 100644 CSProjects/CMPSC380/IC Projects/SQL Triggers/WritersDatabase.db
+ create mode 100644 CSProjects/CMPSC380/IC Projects/SQL Triggers/WritersDatabase.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/csv-sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/dsv-sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/html-report.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/pl.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/plsql.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/sample/sampledata.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/testrun/sqltool/sqljrt.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/doc/verbatim/testrun/sqltool/sqlpsm.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/csv-sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/dsv-sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/html-report.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/j-sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/load_binding_lu.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/nullempty.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/pl.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/plsql.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/sample.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/sample/sampledata.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/src/org/hsqldb/resources/information-schema.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/src/org/hsqldb/resources/lob-schema.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/adv-comments.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/at-chainer.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/buffer-vars.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/comments.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/csv-roundtrip.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-abortcommits.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-altspace.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-constcols.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-multiline.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-omits.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-prepare.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-rejects.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-roundtrip.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-rpcommit.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-sqlarray.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-trimall.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/dsv-trimming.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/else.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/errhandling.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/for.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/forrows.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/function.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/goodsqlonly.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/inlineif.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/j.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/lastval.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/logic.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/logical-ops.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/macro.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/math.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/nestingschema.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/noop.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/nq-noarg1.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/nullempty.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/nullrep.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/plcontrolflow.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/q-noarg1.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/rawmode.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/return.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/sqlarray.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/sqljrt.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/sqlpsm.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/subdir/atuser.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/subdir/tblx.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/unsetvar.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/varnester.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/vars.sql
+ create mode 100644 CSProjects/CMPSC380/Lab5/hsqldb/testrun/sqltool/varswithspaces.sql
+
+Wed Mar 13 14:30:53 EDT 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+./
+Lightning Talk/
+Lightning Talk/5 - Immersion in the Discipline/
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pdf
+Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pptx
+Presentations/FINCH through the Java Wilderness/
+Research Proposals/
+
+sent 400698 bytes  received 81 bytes  801558.00 bytes/sec
+total size is 4917123  speedup is 12.27
+
+Receiving data
+sending incremental file list
+Lab6/
+Lab6/ChickWeight.pdf
+Lab6/ChickWeightGraph.r
+Lab6/licastb.odt
+Lab6/screenshot.png
+Lab7/
+Lab7/paper_review_lab7_cs580Spring2013.aux
+Lab7/paper_review_lab7_cs580Spring2013.bbl
+Lab7/paper_review_lab7_cs580Spring2013.bib
+Lab7/paper_review_lab7_cs580Spring2013.blg
+Lab7/paper_review_lab7_cs580Spring2013.log
+Lab7/paper_review_lab7_cs580Spring2013.pdf
+Lab7/paper_review_lab7_cs580Spring2013.synctex.gz
+Lab7/paper_review_lab7_cs580Spring2013.tex
+Lightning Talk/6 - Research Topic (Multitouch and Regular Expressions)/
+Lightning Talk/6 - Research Topic (Multitouch and Regular Expressions)/licastb_CS580_LightningTalk.pdf
+Lightning Talk/6 - Research Topic (Multitouch and Regular Expressions)/licastb_CS580_LightningTalk.pptx
+Lightning Talk/7 - Immersion in the Dicipline/
+Lightning Talk/7 - Immersion in the Dicipline/licastb_lab7.pptx
+Lightning Talk/7 - Immersion in the Dicipline/licastb_talk7.pdf
+Research Proposals/Proposal 2/
+Research Proposals/Proposal 2/failurerate.PNG
+Research Proposals/Proposal 2/gestures.jpg
+Research Proposals/Proposal 2/hardwarerelation.PNG
+Research Proposals/Proposal 2/senior_thesis_proposal.aux
+Research Proposals/Proposal 2/senior_thesis_proposal.bbl
+Research Proposals/Proposal 2/senior_thesis_proposal.bib
+Research Proposals/Proposal 2/senior_thesis_proposal.blg
+Research Proposals/Proposal 2/senior_thesis_proposal.pdf
+Research Proposals/Proposal 2/senior_thesis_proposal.synctex.gz
+Research Proposals/Proposal 2/senior_thesis_proposal.tex
+
+sent 1645724 bytes  received 542 bytes  1097510.67 bytes/sec
+total size is 6558662  speedup is 3.98
+
+Wed Mar 13 14:30:54 EDT 2013 - Local sync complete!
+
+Wed Mar 13 14:30:54 EDT 2013 - Retrieving College repo status.
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pdf
+#	CSProjects/CMPSC580/Lightning Talk/5 - Immersion in the Discipline/Immersion in the Discipline.pptx
+#	Junior/Spring/ECON202/Exam 2 Review/
+nothing added to commit but untracked files present (use "git add" to track)
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Wed Mar 13 14:37:23 EDT 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Wed Mar 13 14:37:25 EDT 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+Lightning Talk/5 - Immersion in the Discipline/
+
+sent 2873 bytes  received 36 bytes  5818.00 bytes/sec
+total size is 6160225  speedup is 2117.64
+
+Receiving data
+sending incremental file list
+
+sent 2870 bytes  received 33 bytes  5806.00 bytes/sec
+total size is 6160225  speedup is 2122.02
+
+Wed Mar 13 14:37:25 EDT 2013 - Local sync complete!
+
+Wed Mar 13 14:37:25 EDT 2013 - Retrieving College repo status.
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Junior/Spring/ECON202/Exam 2 Review/
+nothing added to commit but untracked files present (use "git add" to track)
+
+Would you like to autocommit and push the College repo?
+
+Wed Mar 13 14:37:35 EDT 2013 - Adding files to be committed to the College repo.
+
+Wed Mar 13 14:37:43 EDT 2013 - Commiting changes.
+[master e06f361] Added econ study files
+ 13 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.13.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.18.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.2&3.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.22&25.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.27.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.39.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.43.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.52.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.66 - 1.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.66 - 2.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.7.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.73.JPG
+ create mode 100644 Junior/Spring/ECON202/Exam 2 Review/4.85.JPG
+
+Wed Mar 13 14:37:44 EDT 2013 - Pushing changes.
+To git@github-personal:BenchPressesBooks/College.git
+   d7b99ef..e06f361  master -> master
+
+
+Sync complete.
+

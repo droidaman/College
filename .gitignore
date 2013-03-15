@@ -8,7 +8,7 @@
 
 # Logs and databases #
 ######################
-*.log
+# *.log
 # *.sql - Allow for 380 now
 # *.sqlite - allow for 380 now
 *nppdf32Log*

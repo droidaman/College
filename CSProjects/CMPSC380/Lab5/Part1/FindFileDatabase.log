@@ -1,0 +1,16 @@
+/*C3*/SET SCHEMA PUBLIC
+DROP TABLE Files
+CREATE TABLE Files(Path varchar(255),Name varchar(255))
+INSERT INTO FILES VALUES('./FindFileDatabase.properties','FindFileDatabase.properties')
+COMMIT
+INSERT INTO FILES VALUES('./FindFileDatabase.log','FindFileDatabase.log')
+COMMIT
+INSERT INTO FILES VALUES('./FindFile.java','FindFile.java')
+COMMIT
+INSERT INTO FILES VALUES('./FindFileDatabase.lck','FindFileDatabase.lck')
+COMMIT
+INSERT INTO FILES VALUES('./FindFile.class','FindFile.class')
+COMMIT
+INSERT INTO FILES VALUES('./FindFileDatabase.script','FindFileDatabase.script')
+COMMIT
+DISCONNECT
