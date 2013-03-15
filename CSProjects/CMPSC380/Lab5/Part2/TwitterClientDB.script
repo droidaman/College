@@ -48,6 +48,7 @@ GRANT DBA TO "CMPSC380"
 SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
 SET SCHEMA PUBLIC
+INSERT INTO TWEETS VALUES('','Tutorialzine','Canvas Query - Use the Canvas Element with jQuery Syntax http://t.co/u2QiJoRVMQ',1)
 INSERT INTO TWEETS VALUES('','Tutorialzine','Secrets of Awesome JavaScript API Design http://t.co/lfHn7YVyYN',1)
 INSERT INTO TWEETS VALUES('','Hank_CATAbus','Wait till you see it on your first whiteout game. Nothing can compare to that. RT\u201c@TheMainShow_: Penn states stadium is HUUUGEEE!\u201d',1)
 INSERT INTO TWEETS VALUES('','Hank_CATAbus','I spell Friday: J-\u00c4-G-E-R',1)
@@ -67,4 +68,3 @@ INSERT INTO TWEETS VALUES('','Tutorialzine','Cool: Check if your designs are res
 INSERT INTO TWEETS VALUES('','1bradensenough','Just kidding, we have a lab to turn in, why would it be cancelled?! #CS3804Life',1)
 INSERT INTO TWEETS VALUES('','1bradensenough','Course Notification: The next CS380 class session has been cancelled. Enjoy your day! #CS3804Life',1)
 INSERT INTO TWEETS VALUES('','1bradensenough','Assignment reminder: Lab 5 will be due on Friday (That''s today...). #CS3804Life',1)
-INSERT INTO TWEETS VALUES('','1bradensenough','"Phase two of lab: Sleep until conscious tomorrow" #CS3804Life',1)

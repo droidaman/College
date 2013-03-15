@@ -1,6 +1,16 @@
 /*C3*/SET SCHEMA PUBLIC
 DROP TABLE Tweets
 CREATE TABLE Tweets (Date varchar(10),Usr varchar(15),Message varchar(140) NOT NULL,Offline int DEFAULT 0 NOT NULL)
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','RT @marleyismee: CATA driver just announced to the whole bus if anyone wants free beer a million of them fell out of a truck on Burrowes ...',1)
+COMMIT
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','RT @dontje_taylor: This cata bus driver looks and sounds like an alcoholic...',1)
+COMMIT
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','An alcoholic after my own heart < 3 \u000aRT @k_milllz: The cata app should have a struggle bus running from Thursday to Sunday',1)
+COMMIT
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','Check out @BlackSheep_PSU''s first issue while on campus today. Note: A cover-to-cover read may result in total enlightenment. #HankWisdom',1)
+COMMIT
+INSERT INTO TWEETS VALUES('','1bradensenough','I''m braden people! #CS3804Life',1)
+COMMIT
 INSERT INTO TWEETS VALUES('','Tutorialzine','Canvas Query - Use the Canvas Element with jQuery Syntax http://t.co/u2QiJoRVMQ',1)
 COMMIT
 INSERT INTO TWEETS VALUES('','Tutorialzine','Secrets of Awesome JavaScript API Design http://t.co/lfHn7YVyYN',1)
@@ -31,14 +41,3 @@ INSERT INTO TWEETS VALUES('','FSBigBob','RT @BellaBriBito: Only 4 little green w
 COMMIT
 INSERT INTO TWEETS VALUES('','FSBigBob','The Crosby No Look Pass...Straight Up Rap Video Nasty (GIF) http://t.co/pHP4zamvQy',1)
 COMMIT
-INSERT INTO TWEETS VALUES('','FSBigBob','Holy Crap ... Pens Win ... Bump And Grind ... Nsync/BSB Super Mash-Up ... I Am Sweaty http://t.co/3byvqr2ZWX',1)
-COMMIT
-INSERT INTO TWEETS VALUES('','Tutorialzine','Cool: Check if your designs are responsive with this tool http://t.co/kSHTBhX3Vn',1)
-COMMIT
-INSERT INTO TWEETS VALUES('','1bradensenough','Just kidding, we have a lab to turn in, why would it be cancelled?! #CS3804Life',1)
-COMMIT
-INSERT INTO TWEETS VALUES('','1bradensenough','Course Notification: The next CS380 class session has been cancelled. Enjoy your day! #CS3804Life',1)
-COMMIT
-INSERT INTO TWEETS VALUES('','1bradensenough','Assignment reminder: Lab 5 will be due on Friday (That''s today...). #CS3804Life',1)
-COMMIT
-DISCONNECT

@@ -51,8 +51,8 @@ public class TwitterClient {
 				// Gives the users a menu to choose a feature from.
 			   	System.out.println("Please type a number choice from the menu below:");
 			   	System.out.println("\t1. View Home Timeline");
-				System.out.println("\t2. Update status from \"Tweets.txt\" file");
-				System.out.println("\t3. Update status from \"Tweets.txt\" file and view Home Timeline");
+				System.out.println("\t2. Tweet a message");
+				System.out.println("\t3. Tweet a message and view Home Timeline");
 			 	System.out.println("\t4. Generate and tweet course notification for CS380s2013");
 			   	System.out.println("\t5. Quit");
 			   	
@@ -67,11 +67,11 @@ public class TwitterClient {
 			   	        break;
 			   	    case 2:
 			   	    	// Post a status
-			   	        tc.postStatus(conn);
+			   	        tc.postStatus();
 			   	        break;
 			   	    case 3:
 			   	    	// Post a status the view home timeline
-			   	        tc.postStatus(conn);
+			   	        tc.postStatus();
 			   	        tc.viewHome(conn);
 			   	        break;
 			   	    case 4:
@@ -198,39 +198,24 @@ public class TwitterClient {
     }
 
     /*
-     * Method posts statuses from file to the authenticated twitter account
+     * Method posts statusimput by user to the authenticated twitter account
      *
-     * @param conn acccepts a sql connection
 	 * @return No return value
-	 * @exception throws sql exception if it fails
      */
-    public void postStatus(Connection conn) throws SQLException {
-        // Store tweets without database until sent.
-	    ArrayList<Tweet> validTweets = new ArrayList<Tweet>();
-	    ArrayList invalidTweetMessages = new ArrayList<String>();
-
-		// Read from file Tweets.txt
-	    try {
-			sc = new Scanner(new File("Tweets.txt"));
-	    } catch(FileNotFoundException e) {
-	        e.printStackTrace();
-	    }
+    public void postStatus() {
+        Scanner reader = new Scanner(System.in);
+        String message = "";
+        
+        System.out.println("Please type the message you would like to tweet:");
+        message = reader.nextLine();
 
 		// Read in, validate, and store tweets for later use
-		while (sc.hasNextLine()) {
-			String currentTweetMessage = sc.nextLine();
-			if( Tweet.isValidMessage(currentTweetMessage) ) {
-				Tweet currentTweet = new Tweet();
-				currentTweet.setMessage(currentTweetMessage);
-				validTweets.add(currentTweet);
-			} else {
-				invalidTweetMessages.add(currentTweetMessage);
-			}
-		}
-
-		// Post the valid status updates
-		for( Tweet currentTweet : validTweets ) {
-			sendTweet(currentTweet);
+		if(Tweet.isValidMessage(message)) {
+		    //Convert the users string to a tweet and send it.
+			sendTweet(stringToTweet(message));
+		} else {
+		    // Tell they user they were WRONG.
+			System.out.println("The message: \"" + message + "\"is too long.");
 		}
 	}
 
