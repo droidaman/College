@@ -1,4 +1,4 @@
-SET DATABASE UNIQUE NAME HSQLDB3D6EB9028D
+SET DATABASE UNIQUE NAME HSQLDB3D6EF254D5
 SET DATABASE GC 0
 SET DATABASE DEFAULT RESULT MEMORY ROWS 0
 SET DATABASE EVENT LOG LEVEL 0
@@ -35,6 +35,8 @@ SET FILES LOG SIZE 50
 CREATE USER "CMPSC380" PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER "CMPSC380" SET LOCAL TRUE
 CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET SCHEMA PUBLIC
+CREATE MEMORY TABLE PUBLIC.TWEETS(DATE VARCHAR(10),USER VARCHAR(15),MESSAGE VARCHAR(140) NOT NULL,OFFLINE INTEGER DEFAULT 0 NOT NULL)
 ALTER SEQUENCE SYSTEM_LOBS.LOB_ID RESTART WITH 1
 SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
 GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.YES_OR_NO TO PUBLIC
@@ -45,3 +47,24 @@ GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.SQL_IDENTIFIER TO PUBLIC
 GRANT DBA TO "CMPSC380"
 SET SCHEMA SYSTEM_LOBS
 INSERT INTO BLOCKS VALUES(0,2147483647,0)
+SET SCHEMA PUBLIC
+INSERT INTO TWEETS VALUES('','Tutorialzine','Secrets of Awesome JavaScript API Design http://t.co/lfHn7YVyYN',1)
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','Wait till you see it on your first whiteout game. Nothing can compare to that. RT\u201c@TheMainShow_: Penn states stadium is HUUUGEEE!\u201d',1)
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','I spell Friday: J-\u00c4-G-E-R',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','The 2013 Burgh Bracket #1 Seeds...Any one of these could win the whole thing  http://t.co/PlcCHsmrzu',1)
+INSERT INTO TWEETS VALUES('','Hank_CATAbus','RT @surruhkeefar: advice from the CATA bus driver: "get close and make a new friend, just not a new baby"',1)
+INSERT INTO TWEETS VALUES('','Tutorialzine','Bolt - a simple, easy and sophisticated content management system http://t.co/qmNrNaFvpo',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','Glee - Nsync vs BSB Mash-Up....Let It Happen http://t.co/3byvqr2ZWX',1)
+INSERT INTO TWEETS VALUES('','AndrewBoyer','I won''t wait for you...',1)
+INSERT INTO TWEETS VALUES('','Kiwanis','RT @BethAHinshaw: Great morning @Kiwanis of Downtown Hutchinson. Reports on new Builders Club, Aktion Club and @circlekintnl #active #se ...',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','Justin Timberlake On Jimmy Fallon - Night 4 - Summer Camp  http://t.co/gCVzOo196b #BallShorts',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','Win Front Row WWE Monday Night Raw Tickets This Morning ... Details On How To Win Here http://t.co/froeVTc8Jv',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','Office Monkey Goat Barfing',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','RT @BellaBriBito: Only 4 little green weenies in your mouth at once! #OfficeMonkies @FSBigBob @fsmikey',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','The Crosby No Look Pass...Straight Up Rap Video Nasty (GIF) http://t.co/pHP4zamvQy',1)
+INSERT INTO TWEETS VALUES('','FSBigBob','Holy Crap ... Pens Win ... Bump And Grind ... Nsync/BSB Super Mash-Up ... I Am Sweaty http://t.co/3byvqr2ZWX',1)
+INSERT INTO TWEETS VALUES('','Tutorialzine','Cool: Check if your designs are responsive with this tool http://t.co/kSHTBhX3Vn',1)
+INSERT INTO TWEETS VALUES('','1bradensenough','Just kidding, we have a lab to turn in, why would it be cancelled?! #CS3804Life',1)
+INSERT INTO TWEETS VALUES('','1bradensenough','Course Notification: The next CS380 class session has been cancelled. Enjoy your day! #CS3804Life',1)
+INSERT INTO TWEETS VALUES('','1bradensenough','Assignment reminder: Lab 5 will be due on Friday (That''s today...). #CS3804Life',1)
+INSERT INTO TWEETS VALUES('','1bradensenough','"Phase two of lab: Sleep until conscious tomorrow" #CS3804Life',1)

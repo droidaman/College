@@ -124,15 +124,37 @@ public class TwitterClient {
        		
        		// For compatibility to other database, use varchar(255)
         	// In HSQL Database Engine, length is unlimited, like Java Strings
-        	stat.execute("CREATE TABLE Tweets (Date varchar(10),User varchar(15),Message varchar(140) NOT NULL,Offline int DEFAULT 0 NOT NULL)");
+        	stat.execute("CREATE TABLE Tweets (Date varchar(10),Usr varchar(15),Message varchar(140) NOT NULL,Offline int DEFAULT 0 NOT NULL)");
 
+            // Use a PreparedStatement because names and messages could contain '
+            PreparedStatement prep = conn.prepareCall("INSERT INTO Tweets (Date,Usr,Message,Offline) VALUES (?,?,?,?)");
+            
 			// Store the list of statuses in a database for offline retrieval
 			for(Status status : statuses) {
-				stat.executeUpdate("INSERT INTO Tweets (User,Message,Offline) VALUES (\"" + status.getUser().getScreenName() + "\",\"" + status.getText() + "\",1)");
+                // Clear all Parameters of the PreparedStatement
+                prep.clearParameters();
+                
+                // Fill the first parameter: Date
+                prep.setString(1, "");
+                
+                // Fill the second parameter: User
+                prep.setString(2, status.getUser().getScreenName());
+                
+                // Fill the second parameter: message
+                prep.setString(3, status.getText());
+                
+                // Fill the second parameter: offline
+                prep.setString(4, "1");
+                
+                // Its a file: add it to the table
+                prep.execute();
 			}
-			System.out.println("debug");
+			
+			// Close the prep
+            prep.close();
+
 			// Now execute the search query
-       		ResultSet result = stat.executeQuery("SELECT User,Message FROM Tweets WHERE Offline = '1'");
+       		ResultSet result = stat.executeQuery("SELECT Usr,Message FROM Tweets WHERE Offline = '1'");
 
 			// Print out the home stream
 			System.out.println("Showing @" + user.getScreenName() + "'s home timeline.\n");
@@ -141,7 +163,7 @@ public class TwitterClient {
         	while (result.next()) {
             	// Print the first column of the result
             	// could use also getString("Path")
-            	System.out.println("@" + result.getString("User") + " - " + result.getString("Message"));
+            	System.out.println("@" + result.getString("Usr") + " - " + result.getString("Message"));
         	}
 
         	// Close the connection and resultset
@@ -158,13 +180,13 @@ public class TwitterClient {
 	        Statement stat = conn.createStatement();
 			
 			// Now execute the search query
-       		ResultSet result = stat.executeQuery("SELECT User,Message FROM Tweets WHERE Offline = '1'");
+       		ResultSet result = stat.executeQuery("SELECT Usr,Message FROM Tweets WHERE Offline = '1'");
 			
         	// Moves to the next record until no more records in home stream
         	while (result.next()) {
             	// Print the first column of the result
             	// could use also getString("Path")
-            	System.out.println("@" + result.getString("User") + " - " + result.getString("Message"));
+            	System.out.println("@" + result.getString("Usr") + " - " + result.getString("Message"));
         	}
 
         	// Close the connection and resultset
