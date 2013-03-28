@@ -1702,3 +1702,176 @@ To git@github-personal:BenchPressesBooks/College.git
 
 Sync complete.
 
+------------------------------------------------------------
+
+Thu Mar 28 11:37:12 EDT 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Mar 28 11:37:21 EDT 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+./
+Lab2/
+Lab3/
+Lab7/
+
+sent 3033 bytes  received 45 bytes  2052.00 bytes/sec
+total size is 6174511  speedup is 2006.01
+
+Receiving data
+sending incremental file list
+Lab2/annotated_bibliography_paper.log
+Lab3/paper_review_lab3_cs580Spring2013.log
+Lab7/paper_review_lab7_cs580Spring2013.log
+Lab8/
+Lab8/algorithms.tex
+Lab8/original.tex
+
+sent 33208 bytes  received 132 bytes  66680.00 bytes/sec
+total size is 6195393  speedup is 185.82
+
+Thu Mar 28 11:37:22 EDT 2013 - Local sync complete!
+
+Thu Mar 28 11:37:22 EDT 2013 - Retrieving College repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncStatus.log
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab8/
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Mar 28 11:40:47 EDT 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Mar 28 11:40:48 EDT 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+Lab8/
+
+sent 3122 bytes  received 37 bytes  6318.00 bytes/sec
+total size is 6195393  speedup is 1961.19
+
+Receiving data
+sending incremental file list
+
+sent 3119 bytes  received 34 bytes  6306.00 bytes/sec
+total size is 6195393  speedup is 1964.92
+
+Thu Mar 28 11:40:48 EDT 2013 - Local sync complete!
+
+Thu Mar 28 11:40:48 EDT 2013 - Retrieving College repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   CSProjects/CMPSC580/syncStatus.log
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab8/
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Mar 28 11:41:55 EDT 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Mar 28 11:41:58 EDT 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+
+sent 3119 bytes  received 34 bytes  6306.00 bytes/sec
+total size is 6195393  speedup is 1964.92
+
+Receiving data
+sending incremental file list
+
+sent 3119 bytes  received 34 bytes  6306.00 bytes/sec
+total size is 6195393  speedup is 1964.92
+
+Thu Mar 28 11:41:58 EDT 2013 - Local sync complete!
+
+Thu Mar 28 11:41:58 EDT 2013 - Retrieving College repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   CSProjects/CMPSC580/syncStatus.log
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab8/
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the College repo?
+
+
+** Sync cancelled. Please manually update College repository.
+
+------------------------------------------------------------
+
+Thu Mar 28 11:43:19 EDT 2013 - Pulling College repo before folder sync.
+Already up-to-date.
+
+Thu Mar 28 11:43:20 EDT 2013 - Syncing local Bitbucket and GitHub repos.
+
+Sending data
+sending incremental file list
+
+sent 3119 bytes  received 34 bytes  2102.00 bytes/sec
+total size is 6195393  speedup is 1964.92
+
+Receiving data
+sending incremental file list
+
+sent 3119 bytes  received 34 bytes  6306.00 bytes/sec
+total size is 6195393  speedup is 1964.92
+
+Thu Mar 28 11:43:21 EDT 2013 - Local sync complete!
+
+Thu Mar 28 11:43:21 EDT 2013 - Retrieving College repo status.
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   CSProjects/CMPSC580/syncStatus.log
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	CSProjects/CMPSC580/Lab8/
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Would you like to autocommit and push the College repo?
+
+Thu Mar 28 11:43:31 EDT 2013 - Adding files to be committed to the College repo.
+
+Thu Mar 28 11:43:42 EDT 2013 - Commiting changes.

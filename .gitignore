@@ -12,6 +12,7 @@
 # *.sql - Allow for 380 now
 # *.sqlite - allow for 380 now
 *nppdf32Log*
+syncStatus.log
 
 # OS generated files #
 ######################

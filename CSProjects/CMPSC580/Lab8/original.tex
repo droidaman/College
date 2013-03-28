@@ -1,0 +1,26 @@
+%!TEX root=../mut13-schemata.tex
+
+\begin{figure}[h]
+%\begin{mdframed}[style=widthfix]
+\begin{algorithmic}
+\footnotesize
+
+\State \emph{K} $ \gets $ \emph{$\varnothing$}
+\For{{\bf each} \emph{mutant}}
+	\State Create tables in database for \emph{mutant}
+	\For{{\bf each} \emph{sqlInsertStatement} {\bf in} \emph{testSuite}}
+		\State \emph{originalResult} $ \gets $ Pre-computed result of insert with non-mutant 
+		\State \emph{mutantResult} $ \gets $ executeWithDBMS(\emph{sqlInsertStatement})
+		\If{\emph{originalResult} $ \neq $ \emph{mutantResult}}
+			\State \emph{K} $ \gets $ \emph{K} $\cup$ \emph{mutant}
+		\EndIf
+	\EndFor
+	\State Remove tables in database for \emph{mutant}
+\EndFor
+
+\end{algorithmic}
+%\end{mdframed}
+
+\caption{\label{alg:original}Kapfhammer et al.'s mutation analysis algorithm, referred to as the ``Original'' approach in this paper}
+\vspace{-1em}
+\end{figure}
