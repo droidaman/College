@@ -1,0 +1,38 @@
+%!TEX root=../mut13-schemata.tex
+
+\begin{figure}[h]
+%\begin{mdframed}[style=widthfix]
+\begin{algorithmic}
+\footnotesize
+
+\State $\triangleright$ 1. Meta-mutant creation
+\For{{\bf each} \emph{mutant}}
+	\State Prefix names of tables in \emph{mutant} with unique mutant ID
+\EndFor
+\State Create tables in database for all \emph{mutants}
+\\
+
+\State $\triangleright$ 2. Mutant evaluation
+\State \emph{K} $ \gets $ \emph{$\varnothing$}
+\For{{\bf each} \emph{mutant}}
+	\State \emph{killed} $\gets$ false
+	\For{{\bf each} \emph{sqlInsertStatement} {\bf in} \emph{testSuite}}	
+		\State \emph{sqlInsertStatement'} $ \gets $ \emph{sqlInsertStatement} modified to use unique mutant ID of \emph{mutant} for table names 
+		\State \emph{originalResult} $ \gets $ Pre-computed result of insert with non-mutant 
+		\State \emph{mutantResult} $ \gets $ executeWithDBMS(\emph{sqlInsertStatement})
+		\If{\emph{originalResult} $ \neq $ \emph{mutantResult}}
+			\State \emph{K} $ \gets $ \emph{K} $\cup$ \emph{mutant}
+		\EndIf
+	\EndFor
+\EndFor
+\\
+
+\State $\triangleright$ 3. Clean up
+\State Remove tables in database for all mutants
+
+\end{algorithmic}
+%\end{mdframed}
+
+\caption{\label{alg:original}``Full Schemata'' mutation analysis algorithm}
+\vspace{-1em}
+\end{figure}
