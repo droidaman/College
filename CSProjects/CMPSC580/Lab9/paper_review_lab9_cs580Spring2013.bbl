@@ -1,0 +1,10 @@
+\begin{thebibliography}{1}
+
+\bibitem{Kapfhammer2013}
+Gregory~M. Kapfhammer, Phil McMinn, and Chris~J. Wright.
+\newblock Search-based testing of relational schema integrity constraints
+  across multiple database management systems.
+\newblock In {\em International Conference on Software Testing, Verification
+  and Validation (ICST 2013)}. IEEE, March 2013.
+
+\end{thebibliography}
