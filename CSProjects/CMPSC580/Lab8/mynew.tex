@@ -1,6 +1,6 @@
 %!TEX root=../mut13-schemata.tex
 
-\begin{figure}[h]
+\begin{figure}[p]
 %\begin{mdframed}[style=widthfix]
 \begin{algorithmic}
 \footnotesize
@@ -17,7 +17,7 @@
 \For{{\bf each} \emph{mutant}}
 	\State \emph{killed} $\gets$ false
 	\For{{\bf each} \emph{sqlInsertStatement} {\bf in} \emph{testSuite}}	
-		\State \emph{sqlInsertStatement'} $ \gets $ \emph{sqlInsertStatement} modified to use unique mutant ID of \emph{mutant} for table names 
+		\State \emph{sqlInsertStatement}' $ \gets $ \emph{sqlInsertStatement} modified to use unique mutant ID of \emph{mutant} for table names 
 		\State \emph{originalResult} $ \gets $ Pre-computed result of insert with non-mutant 
 		\State \emph{mutantResult} $ \gets $ executeWithDBMS(\emph{sqlInsertStatement})
 		\If{\emph{originalResult} $ \neq $ \emph{mutantResult}}
