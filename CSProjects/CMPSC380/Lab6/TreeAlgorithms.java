@@ -53,7 +53,7 @@ public class TreeAlgorithms
     public static void main(String[] args)
     {
 
-	Tree randomTree = RandomTreeBuilder.randomTree(10);
+	Tree randomTree = RandomTreeBuilder.randomTree(50);
 
 	System.out.println("The random tree: \n\n" + 
 			   preOrderPrint(randomTree,
