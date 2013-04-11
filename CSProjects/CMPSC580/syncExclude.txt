@@ -4,6 +4,7 @@
 */.git
 */.gitignore
 */README.md
+icst2013-presentation/
 On Being a Scientist - A Guide to Responsible Conduct in Research Third Edition.pdf
 Writing for Computer Science.pdf
 syncExclude.txt
