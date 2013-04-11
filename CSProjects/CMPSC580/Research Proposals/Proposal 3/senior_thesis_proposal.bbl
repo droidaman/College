@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{Fei:2008:EFD:1347375.1347380}
+Yunsi Fei, Lin Zhong, and Niraj~K. Jha.
+\newblock An energy-aware framework for dynamic software management in mobile
+  computing systems.
+\newblock {\em ACM Trans. Embed. Comput. Syst.}, 7(3):27:1--27:31, May 2008.
+
+\bibitem{Zhuang:2010:IEE:1814433.1814464}
+Zhenyun Zhuang, Kyu-Han Kim, and Jatinder~Pal Singh.
+\newblock Improving energy efficiency of location sensing on smartphones.
+\newblock In {\em Proceedings of the 8th international conference on Mobile
+  systems, applications, and services}, MobiSys '10, pages 315--330, New York,
+  NY, USA, 2010. ACM.
+
+\end{thebibliography}
