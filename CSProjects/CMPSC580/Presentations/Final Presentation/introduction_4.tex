@@ -1,0 +1,92 @@
+\begin{frame}[t]{Databases Are Everywhere!}
+
+  \hspace*{-.5in}
+  \begin{minipage}{5in}
+  \begin{center}
+
+    \begin{minipage}{4.5in}
+
+    \tikzstyle{proc} = [draw, thick, fill=blue!40, text centered, rounded corners]
+    \tikzstyle{prochighlight} = [draw, thick, fill=yellow!40, text centered, rounded corners]
+    \tikzstyle{procdata} = [draw, thick, fill=orange!40, text centered, rounded corners]
+    \tikzstyle{procold} = [draw, thick, fill=blue!15, text centered, rounded corners]
+    \tikzstyle{prochighlightold} = [draw, thick, fill=yellow!15, text centered, rounded corners]
+
+    \tikzstyle{io} = [ellipse, draw, thick, fill=blue!20]
+    \tikzstyle{iohighlight} = [ellipse, draw, thick, fill=yellow!20]
+    \tikzstyle{feature} = [draw, thick, fill=orange!40, text centered]  
+    \tikzstyle{featureold} = [draw, thick, fill=black!40, text centered]
+    \tikzstyle{special} = [draw, thick, fill=purple!40, text centered]    
+
+    %\tikzstyle{image} = [draw, fill=blue!40, text centered, rounded corners]
+
+    % Derby.png
+    \pgfdeclareimage[height=4ex]{Derby}{Derby.png}
+    
+    % HSQLDB.png
+    \pgfdeclareimage[height=4ex]{Hsqldb}{HSQLDB.png}
+
+    % IBMDB2.png
+    \pgfdeclareimage[height=4ex]{Db2}{IBMDB2.png}
+    
+    % MySQL.png
+    \pgfdeclareimage[height=4ex]{My}{mysql-logo-1.jpg}
+
+    % Postgres.png
+    \pgfdeclareimage[height=10ex]{Postgres}{logo_w_elephant.pdf}
+
+    % SQLite.png
+    \pgfdeclareimage[height=4ex]{Sqlite}{SQLite.png}    
+
+    \begin{figure}
+
+    \begin{center}
+
+      \begin{tikzpicture}[node distance=1cm, auto,>=stealth, thick]
+	
+        \path[use as bounding box] (-2,3.5) rectangle (10,-2);
+
+        %%%%% 1
+
+        % The relational database management system
+    	\path[->]<1-> node[proc, text width=14ex] 
+        (Server) at (4,.25) {Relational Database Management Systems};
+
+        % Draw all of the databases
+        \path[->]<2-> node[above of=Server, 
+                      yshift=.5in, xshift=0cm,] 
+                      (Derby) {\pgfuseimage{Derby}};
+
+        \path[->]<2-> node[left of=Server, 
+                      yshift=.75in, xshift=2in,] 
+                      (Hsqldb) {\pgfuseimage{Hsqldb}};
+
+        \path[->]<2-> node[left of=Server, 
+                      yshift=-.75in, xshift=-1.25in,] 
+                      (Db2) {\pgfuseimage{Db2}};
+
+        \path[->]<2-> node[right of=Server, 
+                      yshift=-.75in, xshift=1.25in,] 
+                      (My) {\pgfuseimage{My}};
+
+        \path[->]<2-> node[left of=Server, 
+                      yshift=.75in, xshift=-1.25in,] 
+                      (Postgres) {\pgfuseimage{Postgres}};
+
+        \path[->]<2-> node[below of=Server, 
+                      yshift=-.5in, xshift=0cm,] 
+                      (Sqlite) {\pgfuseimage{Sqlite}};
+
+
+ 	\end{tikzpicture}
+	
+        \end{center}
+
+        \end{figure}
+      
+      \end{minipage} 
+
+  \end{center}
+  \end{minipage}
+
+\end{frame}
