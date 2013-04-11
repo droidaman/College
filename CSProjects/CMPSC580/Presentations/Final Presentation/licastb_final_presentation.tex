@@ -1,0 +1,262 @@
+%\documentclass[handout]{beamer}
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{AnnArbor}
+  %\useinnertheme{circles}
+  \usecolortheme{wolverine}  
+  \setbeamercovered{transparent}
+  \beamertemplatenavigationsymbolsempty
+}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{stmaryrd}
+\usepackage{booktabs}
+\usepackage{calc,xcolor}
+\usepackage{url}
+
+% this one no longer works?
+%\usepackage{qtree}
+
+%% \usepackage{pstricks}
+%% \usepackage{auto-pst-pdf,pst-barcode}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shadows,arrows,shapes,calc,backgrounds,fit}
+
+%\usepackage{pst-barcode}
+
+\usepackage{color,listings}
+
+\definecolor{forestgreen}{RGB}{34,139,34} 
+
+%% java code highlighting
+\definecolor{javaclass}{rgb}{0, 0.49, 0.35}
+\definecolor{javastring}{rgb}{0.87, 0, 0}
+\lstdefinestyle{java}{
+	language=Java,
+	basicstyle=\scriptsize\ttfamily,
+	upquote=true,
+	tabsize=2,
+	numbers=left,
+	numberstyle=\tiny,
+	breaklines=true,
+	breakautoindent=false,
+	lineskip=2pt,
+	breakatwhitespace=true,
+	frame=leftline,
+	xleftmargin=10pt,
+	breakindent=0pt,
+	fontadjust=true,
+	keywordstyle=\color{blue},
+	stringstyle=\color{javastring},
+	showspaces=false,
+	showtabs=false,
+	showstringspaces=false
+}
+\lstset{style=java}
+
+%% SQL highlighting
+\lstdefinestyle{sql}{
+  language=SQL,
+  basicstyle=\scriptsize\ttfamily,
+  upquote=true,
+  tabsize=2,
+  numbers=none,
+  numberstyle=\tiny,
+  breaklines=true,
+  breakautoindent=false,
+  lineskip=2pt,
+  breakatwhitespace=true,
+  frame=leftline,
+  xleftmargin=10pt,
+  breakindent=0pt,
+  fontadjust=true
+}
+
+\definecolor{lightblue}{rgb}{.85,.85,1} % 217 217 255
+\definecolor{lightorange}{rgb}{1,.8,.6} % 255 204 153
+\definecolor{lightgreen}{rgb}{.6,1,.6} % 153 255 153
+\definecolor{lightyellow}{rgb}{1,.98,.6} % 255 250 153
+\definecolor{specialblue}{rgb}{.69,.77,.87} % 177 197 222
+\definecolor{specialyellow}{rgb}{1.0,.97,.56} % 255 247 143
+\definecolor{forestgreen}{RGB}{34,139,34} 
+
+\setbeamercolor{alerted text}{fg=blue} 
+
+\lstset{language=java}
+\lstset{breaklines=true}
+\lstset{showstringspaces=false}
+\lstset{tabsize=3}
+\lstset{basicstyle=\ttfamily\scriptsize}
+\lstset{breakautoindent=true}
+\lstset{postbreak=\space}
+
+\newcommand\sql[1]{{\tt \small #1}}
+\newcommand{\smtt}[1]{{\small \texttt{#1}}}
+
+%\newcommand{\cmd}[1]{\vspace{-0.75ex}\begin{center}\smtt{#1}\end{center}\vspace{-0.75ex}}
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+\newcommand{\alertline}{%
+ \usebeamercolor[fg]{normal text}%
+ \only{\usebeamercolor[fg]{alerted text}}}
+
+\usepackage{color, colortbl}
+
+\makeatletter
+% Open `\noalign` and check for overlay specification:
+\def\rowcolor{\noalign{\ifnum0=`}\fi\bmr@rowcolor}
+\newcommand<>{\bmr@rowcolor}{%
+    \alt#1%
+        {\global\let\CT@do@color\CT@@do@color\@ifnextchar[\CT@rowa\CT@rowb}% Rest of original `\rowcolor`
+        {\ifnum0=`{\fi}\@gooble@rowcolor}% End `\noalign` and gobble all arguments of `\rowcolor`.
+}
+% Gobble all normal arguments of `\rowcolor`:
+\newcommand{\@gooble@rowcolor}[2][]{\@gooble@rowcolor@}
+\newcommand{\@gooble@rowcolor@}[1][]{\@gooble@rowcolor@@}
+\newcommand{\@gooble@rowcolor@@}[1][]{\ignorespaces}
+\makeatother
+
+% content of titlepage
+\title{Pointer Based File Management System to Reduce Redundency and Storage Overhead}
+
+\author[Licastro]{\hspace*{-1.5mm}\mbox{\underline{Braden D. Licastro}}}
+\date{{\small First Annual Computer Science 580 Research Symposium\\[2mm] Tuesday, April 23, 2013}}
+\institute[April 23, 2013]
+{
+Allegheny College, USA \\[1mm]
+}
+
+\titlegraphic{
+\vspace*{-.15in}
+\begin{minipage}[t]{1.0\textwidth}
+
+\begin{center}
+\includegraphics[width=.6\textwidth]{logo_right.pdf}
+\end{center}
+
+\end{minipage}
+}
+
+\newsavebox\CBox
+\newenvironment{ColorBox}[3][black]{%
+\par\noindent
+\def\RANDfarbe{#1}\def\HINTERGRUNDfarbe{#2}
+\begin{lrbox}{\CBox}
+\minipage{#3-2\fboxsep-2\fboxrule}%
+}{%
+\endminipage\end{lrbox}%
+\fcolorbox{\RANDfarbe}{\HINTERGRUNDfarbe}{\usebox\CBox}\par}
+
+\usepackage{multirow}
+\usepackage{stfloats}
+\usepackage{booktabs}
+
+\begin{document}
+\newcommand{\boxcolor}{white}
+\newcommand{\boxfc}{black}
+\newcommand{\fc}{white}
+\newcommand{\bgc}{white}
+\newcommand{\boxlength}{3cm}
+\newlength{\tmpSep}
+\newlength{\tmpRule}
+\newcommand{\hilight}[1][3cm]{\makebox[1pt][l]{\color{\boxcolor}\fcolorbox{\boxfc}{\boxcolor}{\rule[-3pt]{#1}{10pt}}}}
+
+% titlepage
+\frame[plain]{\titlepage}
+
+\setcounter{tocdepth}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction_main}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Testing Technique
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Testing Technique}
+%\label{sec:testing-technique}
+%\input{testing_kapfhammer_icst2013_presentation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Empirical Study
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Empirical Study}
+%\label{sec:empirical-study}
+%\input{experiments_kapfhammer_icst2013_presentation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conclusion of the Talk
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Conclusion}
+%\label{sec:concl-future-direct}
+%\input{conclusion_kapfhammer_icst2013_presentation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Concluding Slide - Contacts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \date{}
+
+%% \author[Kapfhammer]{\hspace*{0mm}\mbox{{\large Gregory M.\ Kapfhammer}}}
+%% \date{}
+%% \institute[Allegheny College]
+%% { \vspace*{0in}
+%% {\normalsize Department of Computer Science} \\
+%% {\normalsize Allegheny College} \\
+%% \urlstyle{same}
+%% \url{http://www.cs.allegheny.edu/~gkapfham/}
+%% }
+
+%% \institute[Allegheny College]
+%% { \vspace*{0in}
+%% {\normalsize Department of Computer Science} \\
+%% {\normalsize Allegheny College} \\
+%% \urlstyle{same}
+%% \url{http://www.cs.allegheny.edu/~gkapfham/}
+%% }
+
+%% %% \institute[Allegheny College]
+%% %% { \vspace*{0in}
+%% %% \urlstyle{same}
+%% %% \url{http://www.cs.allegheny.edu/~gkapfham/}
+%% %% }
+
+%% \titlegraphic{
+
+%% \vspace*{-.25in}
+%% \begin{minipage}[t]{1.0\textwidth}
+
+%% % NOTE: A better statement is needed
+%% \begin{center}
+%% \large{Thank you for your attention!} \\ 
+%% \large{I welcome your questions and comments.}
+%% \end{center}
+
+%% \vspace*{-.2in}
+%% \includegraphics[width=\textwidth]{logo_right}
+
+%% \end{minipage}
+%% }
+
+%% \frame[plain]{\titlepage}
+
+\end{document}
