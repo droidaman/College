@@ -100,7 +100,7 @@
 \makeatother
 
 \vspace*{-1.1in}
-\title{Mobile Platform App Prioritization to Improve Battery Life}
+\title{Pointer Based File Manager to Reduce Data Redundancy and Storage Costs}
 
 % build the author section
 \author{Braden D. Licastro\\
@@ -109,7 +109,7 @@ Allegheny College \\
 {\tt licastb@allegheny.edu}  \\
 \url{http://www.fullforceapps.com/} \\ 
 \vspace*{.1in} \today \\ \vspace*{.1in}
-{\bf Abstract} \\ This paper describes a method of prioritizing app mobile connection usage on mobile platforms to increase battery life. Mobile platforms allow apps to run silently in the background collecting and sending data in addition to accessing the GPS unit if required. This constant activity severely decreases battery life of mobile devices. Top app marketplaces already categorize apps and track installations. Using this information it is possible to prioritize background process access to power hungry wireless and location units based on app category, function, and current activity on the device. This research could potentially lead to drastic improvements in mobile battery life.}
+{\bf Abstract} \\ With mass amounts of data being generated every day, the importance of file management technology is becoming ever more prevalent. The average computer user owns approximately 300 gigabytes of data, and in a majority of cases a fair percentage of this is duplicate or irrelevant. To address this problem the research aims to create a pointer based environment that allows files to be accessed easily from numerous locations without creating unnecessary redundancy. Reducing the number of duplicate files benefits the user in numerous ways, from faster response to decreased costs of storage and backups this issue is relevant on numerous fields.}
 
 % use the default title stuff
 \maketitle
@@ -119,87 +119,83 @@ Allegheny College \\
 \label{sec:introduction}
 \vspace*{-.1in}
 
-As the population continues to adopt more mobile devices into their daily lives we are becoming more dependent on their availability every day. With a nearly unlimited number of apps performing various functions, mobile devices are becoming extremely power hungry as many apps continue to run in the background. Most apps require a constant-on data connection in order to provide real time updates for the user, which can involve using the cellular, wireless network, bluetooth or GPS functionality of the device. These applications, upon first run will continue to remain active in the background until opened again, therefore increasing responsiveness, but as with most benefits come consequences.
+Computers are absolutely everywhere, and society is becoming more digitized every day creating a need for storage of large amount of files. When using a workstation not only are the physical disks in the computer being used but quite possibly hundreds of others around the world. By using this wide array of storage, it becomes easy to build up large amounts of duplicate data. This research will target the problem of data redundancy and provide a solution that will reduce not only storage costs but also inefficiencies. An implementation of a file management system will be introduced that is capable of managing large volumes of files using a database of location pointers and hash keys that identify each individual file. By using pointers, it is possible for the files to be stored on one central location on the disk while avoiding long search times.
 
-This research will target this energy deficiency problem and provide a method of preserving power through app data communication and GPS access prioritization. Upon app installation the software will be able to monitor activity, data usage, and user activity. From this point, the app will be able to either force it into a state of sleep, or leave it fully operational. If the application is left to run in the background the software will restrict access to the data hardware until set time interval, force it to sleep until the phone is activated, or leave it run uninhibited. The actions will be determined based on either a user selected option or by app marketplace category.
-
-
+By using text based entries in a database, an MD5 hash can be generated for each file in the collection. Because this key is unique for each different file, it is a reliable gauge of uniqueness. When multiple files are found to be identical only one physical copy will be kept but pointers to the database entry will allow easy access. On large network storage servers the benefits become ever more apparent. As users store files on the disks, the system will hash each file and search for a match in a database, thus allowing the user access to the data, but eliminating the overhead of storing numerous copies of identical data. An increase in computation time will exist but should be minimal as text comparisons will be the primary task in finding uniqueness, but this will be outweighed by minimized physical storage requirements and costs of data baskup.
 
 \vspace*{-.1in}
 \section{Related Work}
 \label{sec:relatedwork}
 \vspace*{-.1in}
 
-There is a minimum amount of research surrounding the topic of app data transfer optimization, but the current research can be utilized in a way that would enable it to be implemented in the proposed program. The closest research relating to the topic of app prioritization refers to the GPS location functionality of phones. The research seeks to improve GPS function energy efficiency through substitution, suppression, piggybacking, and adaptation of programs location-sensing requests to conserve energy. \cite{Zhuang:2010:IEE:1814433.1814464} 
+A significant amount of work exists revolving around data optimization, but the idea of using databases of pointers and hashes to track file location on disk and file uniqueness is mostly undocumented. In addition to a mostly unexplored area of research, many of the data de-duplication methods are very costly when operating on large data sets. The first article to note addresses this issue. The authors set about creating a comparison and detection algorithm that is both fast and efficient. The authors utilized TI-Similarity and RAR methods for quickly scanning the database for potential duplicate records. \cite{Sung:2002:FFS:584792.584808} When a duplicate entry is located it is removed from the collection.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=.5]{efficient}
-\caption{\label{fig:efficient} Battery life based on tested parameters.}
+\includegraphics[scale=.8]{duplicate}
+\caption{\label{fig:duplicate} The authors' filtering and pruning process.}
 \end{center}
 \end{figure}
 
-In the research, the authors were able to significantly improve battery life in several ways. By substituting a call for the GPS function, it was able to provide data that was acquired a short time ago. Though this will introduce a small amount of error in the readings, because the calls were so close it was insignificant. Most notably, the authors suppressed the GPS calls or piggybacked them. This result is very applicable to the proposed research as it can be used for not only location information prioritization, but can be implemented to manage data transmission. The authors found a large drop in battery life by turning on the GPS, and having several applications accessing it at once as seen in figure \ref{fig:efficient}.
+As seen in figure \ref{fig:duplicate}, the database is input into the authors' program and the algorithm searches through the data looking for duplicates. Any duplicate results are evaluated and checked for false positives using the TI-Similarity method. \cite{Sung:2002:FFS:584792.584808} Once a duplicate is validated, the result will be dropped from the database  and the resulting table will be returned and the database state will reflect the changes.
+
+This method of finding duplicate data could be applied to the pointer based file system. By utilixing the authors' RAR and TI-Similarity search methods, it would be more efficient than searching the database one record at a time. The authors used an example table where identical data is inserted into a table by several users. As each entry has its own unique primary key value, the schema was satisfied, but the storage overhead is double what would be needed without redundancy. As seen in figure \ref{fig:duptable} there are three identical entries, their algorithm will remove all but the first occurance leaving the end result of only rows $A$ and $D$.
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=.8]{hold}
-\caption{\label{fig:hold} Piggyback method postpones one call and synchronizes with others to cut calls to GPS unit.}
+\includegraphics[scale=.8]{duptable}
+\caption{\label{fig:duptable} Duplicate entries in the database to be removed.}
 \end{center}
 \end{figure}
 
-In order to piggyback calls to the GPS, the authors decided to delay one call long enough that another is made. By doing this, the response time of the app suffers, but the power costs of turning the GPS on and off are negated. The method used to piggyback was actually very well implemented. The installed software monitors GPS usage for the apps and records patterns and access intervals. Using this method, the program is able to predict a call to the location unit. Using this information the program will postpone enabling the unit until another call has been made. At this point the GPS request will go through and the value returned from the hardware will be sent to both pieces of requesting software. This process can be seen in figure \ref{fig:hold}.
+The next authors target the process of removing duplicate files from the physical disk itself. Throughout the paper, they create a framework for finding and removing duplicate file entries located on solid state drives. \cite{Wu:2011:DDA:1982185.1982313} This is extremely valuable for not only the proposed research, but for any real world environment. Solid state drives have a limited number of writes per block of memory, by reducing the number of write requests, not only is the longevity of the disk being improved, but the total consumed space is also reduced therefore allowing more unique data per disk. Solid state drives are inherently fast, so it is possible that the framework, being optimized for said devices, could prove to be highly inefficient on traditional platter based disk drives. The authors track duplicates by the number of references made per file. 
 
 \begin{figure}
 \begin{center}
-\includegraphics[scale=.6]{stop}
-\caption{\label{fig:stop} The suppression method stops a call based on certain criteria.}
+\includegraphics[scale=.8]{delete}
+\caption{\label{fig:delete} Authors' file deletion process.}
 \end{center}
 \end{figure}
 
-In addition to the piggyback method, the suppression method described could be used to implement more efficient data transfer using the criteria described with minor modifications. The authors use an algorithm that checks the gyroscopes for movement and the screen for activity once per minute as seen in figure \ref{fig:stop}. If the device is not in motion, the GPS unit will turn off. By using this method with non cellular radios and other integrated devices the battery life of the device can be significantly improved.
-
-In addition to to the research paper previously mentioned, additional research was completed with the goal of creating an energy \-aware framework for mobile platforms that monitors program activity and still retains usability. \cite{Fei:2008:EFD:1347375.1347380}. The writers were able to create a system that improved battery life with minimal impact to usability. Overall the authors methods could be implemented and used in the proposed research project, but the methods are very in depth and were shown to cause usability issues in some instances. The most valuable techniques that could be used are the power measurement methods and the evaluation methods.
+As seen in figure \ref{fig:delete}, if a file has a reference count of 0 it will be deleted. If the count is above 0, it cannot be removed as it is still referenced by another file or it is unique. If another file references an older version, the older version will be removed as the latest revision contains the contents of the old file. This method of removal us used in conjunction with perfect matches, as a perfect match is an exact duplicate. The latest modified instance of one of these files is kept, while others are rejected, or if already on disk, will be removed. 
 
 \vspace*{-.2in}
 \section{Method of Approach}
 \label{sec:method}
 \vspace*{-.1in}
 
-The proposed research will require both hardware and software modifications. To begin, the project will implement a variant of the program designed by the researchers trying to improve battery life by reducing calls to the GPS unit. In addition to the software, voltage and current monitoring hardware will need to be implemented so energy efficiency results can be gathered.
+In order to implement the proposed research, an open source file manager will need to be acquired and be extended. The file manager must be lightweight and compatible with the linux operating environment. To start, a database will be implemented so that it is able to hold a hashed key and the location of the file on the disk. An example of this schema can be seen in figure \ref{fig:schema}. The software, upon installation will run an initial scan of all user files on the system. The file hash will be generated by running an MD5 hashing function over each file currently on the disk. An INSERT will be run on the database for each file and will record the files current position on the disk, and it will record the result of the hash. Using the searching method outlined by the authors of the first paper in section \ref{sec:relatedwork}, the database will be searched for duplicate hash entries. When a duplicate entry is found, the file manager will remove all but the latest modified entry, and in place of the old modified files, a pointer will be implemented that links to the one remaining file.
 
-The software variant will implement several familiar features. These features will include data and GPS call piggybacking, suppression, and optimization. For data piggybacking, all calls to the GPS will be handled as they were in the previous paper. \cite{Zhuang:2010:IEE:1814433.1814464} In order to reduce the number of data send and receiving calls a queue will be implemented to hold data calls. Once a request delay passes the queue will be executed until all calls have been completed. The delay will be automatically determined by the software after monitoring trends and user activity. When the device is locked and no longer in use, any programs that do not require constant data connection such as phone, messaging, and email, the apps will be placed into a state of sleep where data requests will be queued. Once the phone is activated these backlogs will be executed from the latest request to the oldest to ensure optimal response time.
+In the case of needing duplicate files, so one can be modified while retaining the integrity of the original, it will be possible to open the original using the pointer, but if a saved copy of the file differs from the one that the pointer refers to, the pointer will be overwritten by the new file. This will allow the file system to work as it had before the file manager was implemented, retaining full intuitiveness and flexibility, but data redundancy can be avoided.
 
-Lastly, the mobile data connections will be optimized based on connection speeds. Connections with a faster transfer rate will be favored, making the time necessary for the device to be actively sending and receiving data minimized as much as possible. If one connection has an excessive number of connection requests another can be utilized if available.
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.8]{schema}
+\caption{\label{fig:schema} Example schema to be used.}
+\end{center}
+\end{figure}
 
 \vspace*{-.2in}
 \section{Evaluation Strategy}
 \label{sec:evaluate}
 \vspace*{-.1in}
 
-Evaluating the effectiveness of the program is relatively straightforward and will be monitored for each of four variables. To be able to monitor energy efficiency, the device will be hooked up to a power monitoring device similar to the one in figure \ref{fig:power}. This set up will be used to gather a base reading for voltage and amperage of the device running the included weather app and a reading of the phone in a locked state. With the device in factory condition a fully charged battery will be timed until the phone shuts off. The device will be used for three hours browsing internet, and the remaining time will be spent in locked mode. The last baseline parameter would gauge any visible lags in performance when the user is actively interacting with the device.
+Evaluating the effectiveness of the program will entail several benchmark readings. The total number of files, the number of unique files, and the overall percentage of the disk will be evaluated to determine the effectiveness of the file manager. The total number of files will be fixed for every test run and the files used will be exactly the same for each run. The number of files will be the total number of files on the system located inside of the test file structure. This will not include program or system files. The number of duplicates will be randomly generated initially and the same file structure will be used each time the experiment is run. Duplicates are defined as files with identical metadata and contents. The total disk space utilized will be determined by measuring the total size of the file structure containing the test structure.
 
-\begin{figure}
-\begin{center}
-\includegraphics[scale=.6]{power}
-\caption{\label{fig:power} Power measurement setup used by previous researchers \cite{Fei:2008:EFD:1347375.1347380}}
-\end{center}
-\end{figure}
-
-Again, the same tests will be performed, but will be run with the proposed program. A computer will record voltage and amperage. Battery life will be timed by running a stopwatch in the background and when the phone shuts off the state of the watch will halt and will be recorded. Usability, as before, will be determined by the user.
+Again, the same tests will be performed, but will be run with the proposed file management system. After the initial running of the program, statistics will be gathered that include the total run time of the program to completion, the final number of files, the number of remaining duplicate files, and the total storage space used. Because the system implements a text based database, the total storage space will be reduced, but the efficiency of the system will need to be determined.
 
 \vspace*{-.1in}
 \section{Research Schedule}
 \label{sec:schedule}
 \vspace*{-.1in}
 
-To begin the project several topics must be addressed, namely development, implementation, and testing of the proposed systems and programs. 
+The research schedule for the project is to be tentatively based off of the following deadlines. Due to the nature of the project and the wide array of pre-existing software required needing to be modified and implemented, unseen hurdles may arise. 
 
-Phase 1 - 1 week: Research and obtain hardware necessary to record baseline recordings.
+Phase 1 - 1 month: Find acceptable open source operating system and file manager. Begin the process of learning libraries and code so implementation can begin.
 
-Phase 2 - 2-3 months: Develop a working program which is capable of satisfying the requirements outlined in section \ref{sec:method}. Take baseline readings before program is installed. Install program and test for stability.
+Phase 2 - 2-3 months: Develop a working program which is capable of satisfying the requirements outlined in section \ref{sec:method}. Set up a basic file structure to be used as a baseline for the research project. Record the number of files, number of duplicates, and the total storage space used compared to the file system with no user generated files.
 
-Phase 3 - 1 week: During this time I will run various tests on the program using the proposed methods in section \ref{sec:method} and record the results.
+Phase 3 - 1 week: During this time I will run various tests on the program using the proposed methods in section \ref{sec:method} and record the results of the experiment. Results to be recorded are the final number of files, the number of remaining duplicates, and the total storage space used.
 
 Phase 4 - remaining time: The results gathered throughout the test process will be evaluated and the software tweaked and finalized. After modifications are complete tests will be rerun and the final results will be evaluated.
 
@@ -208,7 +204,7 @@ Phase 4 - remaining time: The results gathered throughout the test process will 
 \label{sec:conclusion}
 \vspace*{-.1in}
 
-Mobile devices are becoming more prominent in most people's daily lives -- to the point of individuals becoming reliant on the availability of the devices. This raises a need for more energy efficient devices that require less charge time and more time actively being used. In order to do this manufacturers have implemented sensors to adjust screen brightness and other hardware settings to improve this. Software can play a massive role in power usage, and in many cases is the culprit for most consumption. By reducing the number and frequency of calls to GPS and data transfer hardware and allowing connections and apps to be optimized and put to sleep can drastically improve not only battery life, but user experience.
+With computers becoming ever more prevalent and data being generated at an exponential rate, it is becoming more and more necessary every day to reduce the redundancy and create a more efficient file system. By removing duplicate files from a system while retaining structure and organization this problem can be addressed and will not only reduce the amount of storage space required, but can also improve search efficiency by using stored information in a database and also reduce time spent sorting through structures manually removing duplicate data before backups.
 
 \bibliographystyle{plain}
 \bibliography{senior_thesis_proposal}

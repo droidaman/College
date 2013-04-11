@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{Sung:2002:FFS:584792.584808}
+Sam~Y. Sung, Zhao Li, and Peng Sun.
+\newblock A fast filtering scheme for large database cleansing.
+\newblock In {\em Proceedings of the eleventh international conference on
+  Information and knowledge management}, CIKM '02, pages 76--83, New York, NY,
+  USA, 2002. ACM.
+
+\bibitem{Wu:2011:DDA:1982185.1982313}
+Chin-Hsien Wu and Hau-Shan Wu.
+\newblock A data de-duplication access framework for solid state drives.
+\newblock In {\em Proceedings of the 2011 ACM Symposium on Applied Computing},
+  SAC '11, pages 600--604, New York, NY, USA, 2011. ACM.
+
+\end{thebibliography}
