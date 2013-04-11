@@ -10,3 +10,4 @@ Writing for Computer Science.pdf
 syncExclude.txt
 syncStatus.log
 Pre-Logout SyncScript.sh
+cs580.pdf
