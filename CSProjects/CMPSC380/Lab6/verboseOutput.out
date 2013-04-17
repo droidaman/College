@@ -1,0 +1,13 @@
+The random tree: 
+than of Officers Amendment Executive Seventeenth his passed defend http him the have in inflicted.
+
+Parenthetic representation: 
+than ( of ( Officers, Amendment ( Executive ), Seventeenth ( his ( passed ( defend ) ) ) ), http ( him ( the ) ), have ( in ), inflicted. )
+
+Storing to binary...	process completeed in 40ms
+Storing to XML...	process completeed in 105ms
+
+Retrieving from binary...	process completeed in 2ms
+	Deserialization check for binary...	passed.
+Retrieving from XML...		process completeed in 21ms
+	Deserialization check for XML...	passed.

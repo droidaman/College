@@ -1,5 +1,4 @@
 import java.util.*;
-
 import java.io.*;
 
 /** 
@@ -9,38 +8,30 @@ import java.io.*;
  *
  * @author Lucy Perry (lep)
  * @version JDSL 2
-*/ 
+ */ 
 class NameGenerator {
 
-    public static ArrayList getNames() 
-    {
+    public static ArrayList getNames() {
+        ArrayList ret = new ArrayList();
+
+        try {
+            StreamTokenizer in = new StreamTokenizer(new FileReader("names.list"));
+            
+            String str;
+            int i=0;
+            int type;
+            
+            do {
+                type = in.nextToken();
+                
+                if (type==StreamTokenizer.TT_WORD) {
+                    ret.add(in.sval);
+                    i++;
+                }
+
+            } while (type!=StreamTokenizer.TT_EOF);
+        } catch (IOException e) {}
         
-	ArrayList ret = new ArrayList();
-        
-	try 
-	    {
-		StreamTokenizer in = 
-		    new StreamTokenizer(new FileReader("names.list"));
-		
-		String str;
-		int i=0;
-		int type;
-		do 
-		    {
-			type = in.nextToken();
-			
-			if (type==StreamTokenizer.TT_WORD) 
-			    {
-				ret.add(in.sval);
-				i++;
-			    }
-			
-		    } 
-		while (type!=StreamTokenizer.TT_EOF);
-	    } 
-	catch (IOException e) {}
-       
-	return ret;
-    
+        return ret;
     }
 }

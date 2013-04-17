@@ -1,0 +1,551 @@
+<GeneralTree>
+  <root>
+    <dataElement class="string">not</dataElement>
+    <childrenList>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">shall</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">President</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">the</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">provided</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">made</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">Representatives</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">each</dataElement>
+            <childrenList/>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">which</dataElement>
+        <childrenList/>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">of</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">considered</dataElement>
+            <childrenList/>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">be</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">of</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">he</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">Trial</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">unreasonable</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">States</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">as</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Resignation</dataElement>
+            <childrenList/>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">with</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">whom</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">may</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">for</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">to</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">to</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">the</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">or</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">have</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">of</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">the</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">the</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">which</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">elector</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">to</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">the</dataElement>
+                        <childrenList>
+                          <GTNode>
+                            <parent class="GTNode" reference="../../.."/>
+                            <dataElement class="string">but</dataElement>
+                            <childrenList>
+                              <GTNode>
+                                <parent class="GTNode" reference="../../.."/>
+                                <dataElement class="string">the</dataElement>
+                                <childrenList/>
+                              </GTNode>
+                            </childrenList>
+                          </GTNode>
+                        </childrenList>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">Quorum</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">State</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">Acting</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">to</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">Speaker</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">or</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">Authors</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">elected</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">Votes</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">no</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">they</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">United</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">Citizen</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">shall</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">made</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">Territory</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">concur</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">to</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">bear</dataElement>
+                        <childrenList>
+                          <GTNode>
+                            <parent class="GTNode" reference="../../.."/>
+                            <dataElement class="string">of</dataElement>
+                            <childrenList/>
+                          </GTNode>
+                        </childrenList>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">the</dataElement>
+                        <childrenList>
+                          <GTNode>
+                            <parent class="GTNode" reference="../../.."/>
+                            <dataElement class="string">Representatives</dataElement>
+                            <childrenList/>
+                          </GTNode>
+                        </childrenList>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">Congress</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">of</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">other</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">Court</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">such</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">the</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">right</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">of</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">several</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">of</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">or</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Court.</dataElement>
+            <childrenList/>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">Amendment</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">against</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">any</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">holding</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Constitution</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">five</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">the</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">the</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">the</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">powers</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Senate</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">of</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">shall</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">of</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">the</dataElement>
+                        <childrenList>
+                          <GTNode>
+                            <parent class="GTNode" reference="../../.."/>
+                            <dataElement class="string">and</dataElement>
+                            <childrenList>
+                              <GTNode>
+                                <parent class="GTNode" reference="../../.."/>
+                                <dataElement class="string">jurisdiction</dataElement>
+                                <childrenList/>
+                              </GTNode>
+                            </childrenList>
+                          </GTNode>
+                        </childrenList>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">President.</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">States.</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">the</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">other</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">of</dataElement>
+                    <childrenList/>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">and</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">as</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">and</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">abridge</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">or</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">President</dataElement>
+                <childrenList/>
+              </GTNode>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">States</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+    </childrenList>
+  </root>
+</GeneralTree>

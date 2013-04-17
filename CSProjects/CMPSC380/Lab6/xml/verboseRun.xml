@@ -1,0 +1,85 @@
+<GeneralTree>
+  <root>
+    <dataElement class="string">than</dataElement>
+    <childrenList>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">of</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Officers</dataElement>
+            <childrenList/>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Amendment</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">Executive</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">Seventeenth</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">his</dataElement>
+                <childrenList>
+                  <GTNode>
+                    <parent class="GTNode" reference="../../.."/>
+                    <dataElement class="string">passed</dataElement>
+                    <childrenList>
+                      <GTNode>
+                        <parent class="GTNode" reference="../../.."/>
+                        <dataElement class="string">defend</dataElement>
+                        <childrenList/>
+                      </GTNode>
+                    </childrenList>
+                  </GTNode>
+                </childrenList>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">http</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">him</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">the</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">have</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">in</dataElement>
+            <childrenList/>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">inflicted.</dataElement>
+        <childrenList/>
+      </GTNode>
+    </childrenList>
+  </root>
+</GeneralTree>

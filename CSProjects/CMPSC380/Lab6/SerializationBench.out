@@ -1,0 +1,78 @@
+Running iteration 1 - Tree Size 10
+Storing to binary...	process completeed in 38ms
+Storing to XML...	process completeed in 94ms
+
+Retrieving from binary...	process completeed in 2ms
+Retrieving from XML...		process completeed in 21ms
+------------------------------------------------------------
+
+Running iteration 2 - Tree Size 10
+Storing to binary...	process completeed in 50ms
+Storing to XML...	process completeed in 91ms
+
+Retrieving from binary...	process completeed in 2ms
+Retrieving from XML...		process completeed in 21ms
+------------------------------------------------------------
+
+Running iteration 3 - Tree Size 10
+Storing to binary...	process completeed in 46ms
+Storing to XML...	process completeed in 112ms
+
+Retrieving from binary...	process completeed in 2ms
+Retrieving from XML...		process completeed in 27ms
+------------------------------------------------------------
+
+Running iteration 4 - Tree Size 10
+Storing to binary...	process completeed in 39ms
+Storing to XML...	process completeed in 118ms
+
+Retrieving from binary...	process completeed in 3ms
+Retrieving from XML...		process completeed in 21ms
+------------------------------------------------------------
+
+Running iteration 5 - Tree Size 10
+Storing to binary...	process completeed in 40ms
+Storing to XML...	process completeed in 109ms
+
+Retrieving from binary...	process completeed in 2ms
+Retrieving from XML...		process completeed in 22ms
+------------------------------------------------------------
+Running iteration 1 - Tree Size 100
+Storing to binary...	process completeed in 56ms
+Storing to XML...	process completeed in 120ms
+
+Retrieving from binary...	process completeed in 10ms
+Retrieving from XML...		process completeed in 61ms
+------------------------------------------------------------
+
+Running iteration 2 - Tree Size 100
+Storing to binary...	process completeed in 44ms
+Storing to XML...	process completeed in 146ms
+
+Retrieving from binary...	process completeed in 8ms
+Retrieving from XML...		process completeed in 58ms
+------------------------------------------------------------
+
+Running iteration 3 - Tree Size 100
+Storing to binary...	process completeed in 45ms
+Storing to XML...	process completeed in 142ms
+
+Retrieving from binary...	process completeed in 9ms
+Retrieving from XML...		process completeed in 64ms
+------------------------------------------------------------
+
+Running iteration 4 - Tree Size 100
+Storing to binary...	process completeed in 62ms
+Storing to XML...	process completeed in 126ms
+
+Retrieving from binary...	process completeed in 9ms
+Retrieving from XML...		process completeed in 57ms
+------------------------------------------------------------
+
+Running iteration 5 - Tree Size 100
+Storing to binary...	process completeed in 51ms
+Storing to XML...	process completeed in 139ms
+
+Retrieving from binary...	process completeed in 9ms
+Retrieving from XML...		process completeed in 57ms
+------------------------------------------------------------

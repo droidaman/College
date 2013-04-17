@@ -1,0 +1,55 @@
+<GeneralTree>
+  <root>
+    <dataElement class="string">Inability</dataElement>
+    <childrenList>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">shall</dataElement>
+        <childrenList/>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">shall</dataElement>
+        <childrenList/>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">United</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">in</dataElement>
+            <childrenList/>
+          </GTNode>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">made</dataElement>
+            <childrenList/>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">not</dataElement>
+        <childrenList>
+          <GTNode>
+            <parent class="GTNode" reference="../../.."/>
+            <dataElement class="string">such</dataElement>
+            <childrenList>
+              <GTNode>
+                <parent class="GTNode" reference="../../.."/>
+                <dataElement class="string">large</dataElement>
+                <childrenList/>
+              </GTNode>
+            </childrenList>
+          </GTNode>
+        </childrenList>
+      </GTNode>
+      <GTNode>
+        <parent class="GTNode" reference="../../.."/>
+        <dataElement class="string">the</dataElement>
+        <childrenList/>
+      </GTNode>
+    </childrenList>
+  </root>
+</GeneralTree>

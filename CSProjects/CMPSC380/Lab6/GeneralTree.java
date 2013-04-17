@@ -1,102 +1,72 @@
+/**
+ * @author Braden Licastro
+ *
+ * PLEDGE: _____________________
+ * CS380
+ * Lab 6
+ */
+
 import java.util.Iterator;
+import java.io.Serializable;
 
-public class GeneralTree implements Tree
-{
-
+public class GeneralTree implements Tree, Serializable {
     private GTNode root;
 
-    public GeneralTree()
-    {
-
-	root = new GTNode();
-
+    public GeneralTree() {
+        root = new GTNode();
     }
 
-    public boolean isRoot(Position p)
-    {
-
-	if( root == p )
-	    {
-
-		return true;
-
-	    }
-
-	return false;
-
+    public boolean isRoot(Position p) {
+        if( root == p ) {
+            return true;
+        }
+        
+        return false;
     }
 
-    public Position getRoot()
-    {
-
-	return root;
-
+    public Position getRoot() {
+        return root;
     }
 
-    public Position parent(Position p)
-    {
-
-	return ((GTNode)p).getParent();
-	
+    public Position parent(Position p) {
+        return ((GTNode)p).getParent();
     }
 
-    public Position addPosition(Object newChildObject, 
-			    Position newPositionParent)
-    {
-	
-	GTNode newPositionChild = 
-	    new GTNode(newPositionParent, newChildObject);
-
-	((GTNode)newPositionParent).addChild(newPositionChild);
-
-	return newPositionChild;
-
+    public Position addPosition(Object newChildObject, Position newPositionParent) {
+        GTNode newPositionChild = new GTNode(newPositionParent, newChildObject);
+        ((GTNode)newPositionParent).addChild(newPositionChild);
+        
+        return newPositionChild;
     }
 
-    public boolean isExternal(Position p)
-    {
-
-	GTNode gtNode = (GTNode)p;
-	if( gtNode.getChildren().size() == 0 )
-	    {
-
-		return true;
-
-	    }
-
-	return false;
-
+    public boolean isExternal(Position p) {
+        GTNode gtNode = (GTNode)p;
+        
+        if(gtNode.getChildren().size() == 0 ) {
+            return true;
+        }
+        
+        return false;
     }
 
-    public boolean isInternal(Position p)
-    {
-
-	GTNode gtNode = (GTNode)p;
-	if( gtNode.getChildren().size() == 0 )
-	    {
-
-		return false;
-
-	    }
-
-	return true;
-
+    public boolean isInternal(Position p) {
+        GTNode gtNode = (GTNode)p;
+        
+        if(gtNode.getChildren().size() == 0 ) {
+            return false;
+        }
+        
+        return true;
     }
 
-    public void replaceElement(Position p, Object element)
-    {
-
-	GTNode gtNode = (GTNode)p;
-	gtNode.setElement(element);
-
+    public void replaceElement(Position p, Object element) {
+        GTNode gtNode = (GTNode)p;
+        gtNode.setElement(element);
     }
 
-    public Iterator children(Position p)
-    {
-
-	GTNode gtNode = (GTNode)p;
-	return gtNode.getChildren().iterator();
-
+    public Iterator children(Position p) {
+        GTNode gtNode = (GTNode)p;
+        
+        return gtNode.getChildren().iterator();
     }
-
 }
