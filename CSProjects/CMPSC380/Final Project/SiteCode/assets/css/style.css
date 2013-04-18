@@ -1,0 +1,117 @@
+#header {
+	background: url('../images/header-repeat.png') repeat-x;
+	text-decoration: none;
+}
+
+#content {
+    padding-left: 10px;
+    text-align: center;
+}
+
+#content2 {
+    padding-left: 20px;
+}
+
+#tab {
+    margin-left: 40px;
+}
+
+img {
+	border-style: none;
+}
+
+#navi {
+	margin-top: 5px;
+	text-align: left;
+	color: black;
+}
+
+#navi a {
+	color: black;
+	padding-right: 7px;
+}
+
+
+
+#navi a:hover {
+	font-weight: bold;
+}
+
+#footer {
+	font-size: x-small;
+	padding-top: 25px;
+}
+
+.ordertotalnum {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.style1 {
+	text-align: center;
+}
+
+.style2 {
+	text-align: center;
+	font-style: italic;
+}
+
+legend {
+	font-weight: bold;
+}
+
+td {
+	max-width: 325px;
+}
+
+/*Main navigation menu*/
+.invertedshiftdown2{
+padding: 0;
+width: 100%;
+border-top: 5px solid #020202; /*Highlight dark grey color theme*/
+background: transparent;
+voice-family: "\"}\"";
+voice-family: inherit;
+}
+
+.invertedshiftdown2 ul{
+margin:0;
+margin-left: 40px; /*margin between first menu item and left browser edge*/
+padding: 0;
+list-style: none;
+}
+
+.invertedshiftdown2 li{
+display: inline;
+margin: 0 2px 0 0;
+padding: 0;
+text-transform:uppercase;
+}
+
+.invertedshiftdown2 a{
+float: left;
+display: block;
+font: bold 12px Arial;
+color: #ADADAD;
+text-decoration: none;
+margin: 0 1px 0 0; /*Margin between each menu item*/
+padding: 5px 10px 5px 10px; /*Padding within each menu item*/
+background-color: #404040; /*Default menu color*/
+border-bottom: 8px solid white;
+}
+
+.invertedshiftdown2 a:hover{
+background-color: #FF6A00; /*Highlight orange color theme*/
+padding-top: 10px; /*Set padding-top value to default's padding-top + padding-bottom */
+padding-bottom: 0; /*Set padding-bottom value to 0 */
+border-bottom-color: #FF6A00; /*Highlight orange color theme*/
+color: white;
+}
+
+.invertedshiftdown2 .current a{ /** currently selected menu item **/
+background-color: #FF6A00; /*Highlight orange color theme*/
+padding-top: 10px; /*Set padding-top value to default's padding-top + padding-bottom */
+padding-bottom: 0; /*Set padding-bottom value to 0 */
+border-bottom-color: #FF6A00; /*Highlight orange color theme*/
+color: white;
+}
