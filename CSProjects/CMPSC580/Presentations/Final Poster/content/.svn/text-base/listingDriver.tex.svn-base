@@ -1,0 +1,19 @@
+\begin{lstlisting}
+ package major.mutation;
+
+ public class Driver{
+    public static int MAX_NO = 100000;
+    public static int[] COV  = 
+    			new int[MAX_NO];
+    			
+    public static int M_NO=0;
+    
+    public static boolean COVERED
+    (int from, int to){
+        for(int i=from; i<=to; ++i){
+            COV[i]++;
+        }
+        return false;
+    }
+ }
+\end{lstlisting}

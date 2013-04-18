@@ -1,0 +1,15 @@
+meth:
+	pdflatex evolution_database_applications_wrapper.tex
+	pdflatex evolution_database_applications_wrapper.tex
+	pdfcrop evolution_database_applications_wrapper.pdf evolution_database_applications_wrapper_crop.pdf
+	pdflatex categorize_database_applications_wrapper.tex
+	pdflatex categorize_database_applications_wrapper.tex
+	pdfcrop categorize_database_applications_wrapper.pdf categorize_database_applications_wrapper_crop.pdf
+	pdflatex test_suite_reduction_rescue_wrapper.tex
+	pdflatex test_suite_reduction_rescue_wrapper.tex
+	pdfcrop test_suite_reduction_rescue_wrapper.pdf test_suite_reduction_rescue_wrapper_crop.pdf
+	pdflatex test_coverage_monitoring_wrapper.tex	
+	pdflatex test_coverage_monitoring_wrapper.tex
+	pdfcrop test_coverage_monitoring_wrapper.pdf test_coverage_monitoring_wrapper_crop.pdf
+	pdflatex kapfhammer_icst2012_posterA1.tex
+	pdflatex kapfhammer_icst2012_posterA1.tex

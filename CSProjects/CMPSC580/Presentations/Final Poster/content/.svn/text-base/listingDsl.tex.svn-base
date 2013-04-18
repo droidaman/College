@@ -1,0 +1,19 @@
+\begin{lstlisting}[morekeywords={COR,AOR,BIN,LVR}]
+ listCOR={&&, ||, ==, !=};
+ method ="java.lang.System@println";
+
+ myOp{
+	BIN(&&) -> listCOR;
+	BIN(||) -> listCOR;
+	COR;
+	LVR;
+ }
+ 
+ // Define replacement list
+ BIN(+)<"org"> -> {-,*};
+ BIN(*)<"org"> -> {/,%};
+ // Enable built-in operator AOR
+ AOR<"org">;
+ // Enable operator myOp
+ myOp<method>;
+\end{lstlisting}

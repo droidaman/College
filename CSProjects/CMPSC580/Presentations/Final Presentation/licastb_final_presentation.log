@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.21)  11 APR 2013 12:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.21)  16 APR 2013 11:58
 entering extended mode
  %&-line parsing enabled.
 **licastb_final_presentation.tex
@@ -1231,31 +1231,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 139.
 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 {\small F
-               irst Annual Computer Science 580 Research Symposium\\[2mm] Tu...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 ...r Science 580 Research Symposium\\[2mm] T
-                                                  uesday, April 23, 2013}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 \CBox=\box83
 (/usr/share/texmf-texlive/tex/latex/sttools/stfloats.sty
 Package: stfloats 1999/10/22
@@ -1427,8 +1402,13 @@ Dictionary: translator-theorem-dictionary, Language: English
 \c@lstlisting=\count195
 
 (./licastb_final_presentation.nav)
-Overfull \hbox (112.20404pt too wide) in paragraph at lines 171--171
+Overfull \hbox (118.20396pt too wide) in paragraph at lines 171--171
  [][][][]  
+ []
+
+
+Overfull \hbox (287.34656pt too wide) in paragraph at lines 171--171
+ [][]|  \OT1/phv/m/n/6 0
  []
 
 \tmpSep=\skip66
@@ -1456,18 +1436,657 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
 <logo_right.pdf, id=34, 854.19125pt x 225.84375pt>
 File: logo_right.pdf Graphic file (type pdf)
  <use logo_right.pdf>
-Overfull \vbox (33.23499pt too high) has occurred while \output is active []
-
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo_right.pdf>]
-(./introduction_main.tex (./introduction_1.tex
-Overfull \hbox (112.20404pt too wide) has occurred while \output is active
- [][][][]  
+(./introduction_main.tex (./introduction_1.tex [2
+
+]) (./introduction_2.tex
+
+Package pgf Warning: File "Derby.png" not found when defining image "Derby".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Derby" ("Derby.png") in draft mod
+e.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "HSQLDB.png" not found when defining image "Hsqldb".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Hsqldb" ("HSQLDB.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "IBMDB2.png" not found when defining image "Db2".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Db2" ("IBMDB2.png") in draft mode
+.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "mysql-logo-1.jpg" not found when defining image "My"
+.
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "My" ("mysql-logo-1.jpg") in draft
+ mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "logo_w_elephant.pdf" not found when defining image "
+Postgres".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Postgres" ("logo_w_elephant.pdf")
+ in draft mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "SQLite.png" not found when defining image "Sqlite".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Sqlite" ("SQLite.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Overfull \hbox (16.21793pt too wide) in paragraph at lines 108--108
+ [] 
  []
 
-[2
+[3
+
+]
+
+Package pgf Warning: File "Derby.png" not found when defining image "Derby".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Derby" ("Derby.png") in draft mod
+e.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "HSQLDB.png" not found when defining image "Hsqldb".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Hsqldb" ("HSQLDB.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "IBMDB2.png" not found when defining image "Db2".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Db2" ("IBMDB2.png") in draft mode
+.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "mysql-logo-1.jpg" not found when defining image "My"
+.
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "My" ("mysql-logo-1.jpg") in draft
+ mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "logo_w_elephant.pdf" not found when defining image "
+Postgres".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Postgres" ("logo_w_elephant.pdf")
+ in draft mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "SQLite.png" not found when defining image "Sqlite".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Sqlite" ("SQLite.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 108.
+! Double subscript.
+\pgf@image@Postgres! ...p -10cm\hfil \tiny logo_w_
+                                                  elephant.pdf\hfil \hskip -...
+l.108 \end{frame}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.108 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.21793pt too wide) in paragraph at lines 108--108
+ [] 
+ []
+
+[4
+
+]
+
+Package pgf Warning: File "Derby.png" not found when defining image "Derby".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Derby" ("Derby.png") in draft mod
+e.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "HSQLDB.png" not found when defining image "Hsqldb".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Hsqldb" ("HSQLDB.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "IBMDB2.png" not found when defining image "Db2".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Db2" ("IBMDB2.png") in draft mode
+.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "mysql-logo-1.jpg" not found when defining image "My"
+.
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "My" ("mysql-logo-1.jpg") in draft
+ mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "logo_w_elephant.pdf" not found when defining image "
+Postgres".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Postgres" ("logo_w_elephant.pdf")
+ in draft mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "SQLite.png" not found when defining image "Sqlite".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Sqlite" ("SQLite.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+\pgf@image@Postgres! ...p -10cm\hfil \tiny logo_w_
+                                                  elephant.pdf\hfil \hskip -...
+l.108 \end{frame}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.108 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.21793pt too wide) in paragraph at lines 108--108
+ [] 
+ []
+
+[5
+
+]
+
+Package pgf Warning: File "Derby.png" not found when defining image "Derby".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Derby" ("Derby.png") in draft mod
+e.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "HSQLDB.png" not found when defining image "Hsqldb".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Hsqldb" ("HSQLDB.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "IBMDB2.png" not found when defining image "Db2".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Db2" ("IBMDB2.png") in draft mode
+.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "mysql-logo-1.jpg" not found when defining image "My"
+.
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "My" ("mysql-logo-1.jpg") in draft
+ mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "logo_w_elephant.pdf" not found when defining image "
+Postgres".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Postgres" ("logo_w_elephant.pdf")
+ in draft mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "SQLite.png" not found when defining image "Sqlite".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Sqlite" ("SQLite.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+\pgf@image@Postgres! ...p -10cm\hfil \tiny logo_w_
+                                                  elephant.pdf\hfil \hskip -...
+l.108 \end{frame}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.108 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.21793pt too wide) in paragraph at lines 108--108
+ [] 
+ []
+
+[6
+
+]
+
+Package pgf Warning: File "Derby.png" not found when defining image "Derby".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Derby" ("Derby.png") in draft mod
+e.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "HSQLDB.png" not found when defining image "Hsqldb".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Hsqldb" ("HSQLDB.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "IBMDB2.png" not found when defining image "Db2".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Db2" ("IBMDB2.png") in draft mode
+.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "mysql-logo-1.jpg" not found when defining image "My"
+.
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "My" ("mysql-logo-1.jpg") in draft
+ mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "logo_w_elephant.pdf" not found when defining image "
+Postgres".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Postgres" ("logo_w_elephant.pdf")
+ in draft mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "SQLite.png" not found when defining image "Sqlite".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Sqlite" ("SQLite.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+\pgf@image@Postgres! ...p -10cm\hfil \tiny logo_w_
+                                                  elephant.pdf\hfil \hskip -...
+l.108 \end{frame}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.108 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.21793pt too wide) in paragraph at lines 108--108
+ [] 
+ []
+
+[7
+
+]
+
+Package pgf Warning: File "Derby.png" not found when defining image "Derby".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Derby" ("Derby.png") in draft mod
+e.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "HSQLDB.png" not found when defining image "Hsqldb".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Hsqldb" ("HSQLDB.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "IBMDB2.png" not found when defining image "Db2".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Db2" ("IBMDB2.png") in draft mode
+.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "mysql-logo-1.jpg" not found when defining image "My"
+.
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "My" ("mysql-logo-1.jpg") in draft
+ mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "logo_w_elephant.pdf" not found when defining image "
+Postgres".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Postgres" ("logo_w_elephant.pdf")
+ in draft mode.
+(pgf)                Using 1cm instead on input line 108.
+
+
+Package pgf Warning: File "SQLite.png" not found when defining image "Sqlite".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 108.
+
+
+Package pgf Warning: Missing width for image "Sqlite" ("SQLite.png") in draft m
+ode.
+(pgf)                Using 1cm instead on input line 108.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+\pgf@image@Postgres! ...p -10cm\hfil \tiny logo_w_
+                                                  elephant.pdf\hfil \hskip -...
+l.108 \end{frame}
+                 
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.108 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.21793pt too wide) in paragraph at lines 108--108
+ [] 
+ []
+
+[8
 
 ]))
 \tf@nav=\write7
@@ -1481,19 +2100,20 @@ Overfull \hbox (112.20404pt too wide) has occurred while \output is active
 
  (./licastb_final_presentation.aux) ) 
 Here is how much of TeX's memory you used:
- 22185 strings out of 493848
- 427861 string characters out of 1152823
- 543851 words of memory out of 3000000
- 24838 multiletter control sequences out of 15000+50000
- 19853 words of font info for 51 fonts, out of 3000000 for 9000
+ 22356 strings out of 493848
+ 430961 string characters out of 1152823
+ 551851 words of memory out of 3000000
+ 24973 multiletter control sequences out of 15000+50000
+ 26166 words of font info for 61 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 49i,17n,69p,434b,508s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,17n,69p,434b,1155s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/
-base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on licastb_final_presentation.pdf (2 pages, 213042 bytes).
+base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+</usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf
+-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on licastb_final_presentation.pdf (8 pages, 232510 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

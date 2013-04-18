@@ -216,7 +216,7 @@ public class TreeAlgorithms {
         storeToBinary(randomTree, args[1]);
         
         // Return time taken to store file
-        System.out.println("\tprocess completeed in " + (System.currentTimeMillis() - startTime) + "ms");
+        System.out.println("\tprocess completed in " + (System.currentTimeMillis() - startTime) + "ms");
 
 
         /*
@@ -230,7 +230,7 @@ public class TreeAlgorithms {
         storeToXML(randomTree, args[2]);
         
         // Return time taken to store file
-        System.out.println("\tprocess completeed in " + (System.currentTimeMillis() - startTime) + "ms");
+        System.out.println("\tprocess completed in " + (System.currentTimeMillis() - startTime) + "ms");
 
 
         System.out.println();
@@ -246,7 +246,7 @@ public class TreeAlgorithms {
         dsTree = retrieveFromBinary(args[1]);
         
         // Return time taken to store file
-        System.out.println("\tprocess completeed in " + (System.currentTimeMillis() - startTime) + "ms");
+        System.out.println("\tprocess completed in " + (System.currentTimeMillis() - startTime) + "ms");
         
         // Check to make sure Objects were stored and retrieved properly by comparing contents
         if(!args[3].toLowerCase().contains("--v")) {
@@ -271,7 +271,7 @@ public class TreeAlgorithms {
         dsTree = retrieveFromXML(args[2]);
         
         // Return time taken to store file
-        System.out.println("\t\tprocess completeed in " + (System.currentTimeMillis() - startTime) + "ms");
+        System.out.println("\t\tprocess completed in " + (System.currentTimeMillis() - startTime) + "ms");
         
         // Check to make sure Objects were stored and retrieved properly by comparing contents
         if(!args[3].toLowerCase().contains("--v")) {

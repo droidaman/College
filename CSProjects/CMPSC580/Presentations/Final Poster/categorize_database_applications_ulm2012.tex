@@ -1,0 +1,103 @@
+%\begin{frame}[t]{Categorizing Database Applications}
+
+  \hspace*{-.5in}
+  \begin{minipage}{5in}
+  \begin{center}
+
+      \begin{minipage}{4.5in}
+
+    \tikzstyle{proc} = [draw, thick, fill=blue!40, text centered, rounded corners]
+    \tikzstyle{prochighlight} = [draw, thick, fill=yellow!40, text centered, rounded corners]
+    \tikzstyle{comment} = [draw, thick, fill=yellow!40, text centered, rounded corners]
+    \tikzstyle{procold} = [draw, thick, fill=black!40, text centered, rounded corners]
+
+    \tikzstyle{io} = [ellipse, draw, thick, fill=blue!20]
+    \tikzstyle{iohighlight} = [ellipse, draw, thick, fill=yellow!20]
+    \tikzstyle{feature} = [draw, thick, fill=orange!40, text centered]  
+    \tikzstyle{featureold} = [draw, thick, fill=black!40, text centered]
+    \tikzstyle{special} = [draw, thick, fill=purple!40, text centered]    
+
+    \begin{figure}
+
+    \begin{center}
+
+      \begin{tikzpicture}[node distance=0cm, auto,>=stealth, thick]
+	
+        \path[use as bounding box] (-2,3.5) rectangle (10,-2);
+
+        % Database Applications
+    	\path[->]<1-> node[proc, text width=14ex] 
+        (Applications) at (4,2.65) {Database Applications};
+
+        % Interaction Approach
+        \path[->]<1-> node[proc, right of=Applications,  
+                      yshift=-.65in, xshift=-1.25in, text width=12ex] 
+                      (Interaction) {Interaction Approach}
+        (Applications) edge node {} (Interaction);
+
+        % Program Location
+        \path[->]<1-> node[proc, below of=Applications,  
+                      yshift=-.65in, xshift=1.25in, text width=12ex] 
+                      (Location) {Program Location}
+        (Applications) edge node {} (Location);
+
+        % Interface
+        \path[->]<1-> node[proc, below of=Interaction,  
+                      yshift=-.65in, xshift=-.65in, text width=12ex] 
+                      (Interface) {Interface}
+        (Interaction) edge node {} (Interface);
+
+        % Embedded
+        \path[->]<1-> node[proc, below of=Interaction,  
+                      yshift=-.65in, xshift=.65in, text width=12ex] 
+                      (Embedded) {Embedded}
+        (Interaction) edge node {} (Embedded);
+
+        %% the last group
+
+        % Outside
+        \path[->]<1-> node[proc, below of=Location,  
+                      yshift=-.65in, xshift=-.65in, text width=12ex] 
+                      (Outside) {Outside RDBMS}
+        (Location) edge node {} (Outside);
+
+        % Embedded
+        \path[->]<1-> node[proc, below of=Location,  
+                      yshift=-.65in, xshift=.65in, text width=12ex] 
+                      (Inside) {Inside RDBMS}
+        (Location) edge node {} (Inside);
+
+        %% highlight
+
+        % Interface
+        \path[->]<1-> node[prochighlight, below of=Interaction,  
+                      yshift=-.65in, xshift=-.65in, text width=12ex] 
+                      (Interface) {Interface}
+        (Interaction) edge node {} (Interface);        
+
+        % Outside
+        \path[->]<1-> node[prochighlight, below of=Location,  
+                      yshift=-.65in, xshift=-.65in, text width=12ex] 
+                      (Outside) {Outside RDBMS}
+        (Location) edge node {} (Outside);
+
+        % Example
+        \path[->]<1-> node[comment, below of=Applications,  
+                      yshift=-1.8in, xshift=0in] 
+                      (Comment) 
+              {Java application that submits SQL strings to MySQL
+                using JDBC};
+
+ 	\end{tikzpicture}
+	
+        \end{center}
+
+        \end{figure}
+      
+      \end{minipage} 
+
+  \end{center}
+  \end{minipage}
+
+%\end{frame}
+

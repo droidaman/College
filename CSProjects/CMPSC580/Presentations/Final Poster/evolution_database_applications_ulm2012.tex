@@ -1,0 +1,99 @@
+%% \begin{frame}[t]{}
+
+  \hspace*{-.5in}
+  \begin{minipage}{5in}
+  \begin{center}
+
+      \begin{minipage}{4.5in}
+
+    \tikzstyle{proc} = [draw, thick, fill=blue!40, text centered, rounded corners]
+    \tikzstyle{procbase} = [draw, thick, fill=blue!40, text centered, rounded corners]
+    \tikzstyle{constraint} = [draw, thick, fill=forestgreen!40, text centered, rounded corners]
+    \tikzstyle{procstate} = [draw, thick, fill=blue!20, text centered, rounded corners]
+    \tikzstyle{procstatesel} = [draw, thick, fill=orange!20, text centered, rounded corners]
+    \tikzstyle{procstatemod} = [draw, thick, fill=purple!20, text centered, rounded corners]
+    \tikzstyle{procstateupdate} = [draw, thick, fill=forestgreen!40, text centered, rounded corners]
+    \tikzstyle{question} = [draw, thick, fill=orange!40, text centered, rounded corners]
+    \tikzstyle{commentsel} = [draw, thick, fill=orange!40, text centered, rounded corners]
+    \tikzstyle{commentmod} = [draw, thick, fill=purple!40, text centered, rounded corners]
+    \tikzstyle{io} = [ellipse, draw, thick, fill=blue!20]
+    \tikzstyle{iohighlight} = [ellipse, draw, thick, fill=yellow!20]
+    \tikzstyle{feature} = [draw, thick, fill=orange!40, text centered]  
+    \tikzstyle{featureold} = [draw, thick, fill=black!40, text centered]
+    \tikzstyle{special} = [draw, thick, fill=purple!40, text centered]    
+
+    \begin{figure}
+
+    \begin{center}
+
+      \begin{tikzpicture}[node distance=1cm, auto,>=stealth, thick]
+	
+        \path[use as bounding box] (-2,3.5) rectangle (10,-2);
+
+        %%%%% 1 
+
+        % Program
+    	\path[->]<1-> node[proc, text width=14ex] 
+        (Program) at (.05,1.5) {Program};
+
+        % RDBMS -- rest of the database
+        \path[->]<1-> node[procbase, right of=Program,  
+                      yshift=0in, xshift=2.5in, text width=20ex] 
+                      (Database) {Relational Database Management System};
+
+        \path[->]<1-> node[procbase, right of=Program,  
+                      yshift=0in, xshift=2.5in, text width=20ex] 
+                      (Database) {Relational Database Management System}
+        (Program) edge node {DML Command} (Database);
+
+        \path[->]<1-> node[procstate, below of=Database,  
+                      yshift=-.75in, xshift=-.6in, text width=10ex] 
+                      (State) {Database State}
+        (Database) edge node {} (State);
+
+        \path[->]<1-> node[procstate, below of=Database,  
+                      yshift=-.75in, xshift=.6in, text width=10ex] 
+                      (Structure) {Database Structure}
+        (Database) edge node {} (Structure);
+
+        \path[->]<1-> node[commentmod, above of=Program,  
+                      yshift=.2in, xshift=1.535in] 
+                      (Cannot) 
+      {Electronic journals, scientific data repositories, and e-commerce systems};
+
+        \path[->]<1-> node[constraint, below of=Program,  
+                      yshift=-.075in, xshift=.25in] 
+                      (Commands) {DML Commands};
+
+        \path[->]<1-> node[constraint, below of=Commands,  
+                      yshift=0in, xshift=-.75in] 
+                      (Select) {select}
+        (Commands) edge node {} (Select);   
+
+        \path[->]<1-> node[constraint, below of=Commands,  
+                      yshift=-.3in, xshift=-.3in] 
+                      (Update) {update}
+        (Commands) edge node {} (Update);   
+
+        \path[->]<1-> node[constraint, below of=Commands,  
+                      yshift=-.3in, xshift=.3in] 
+                      (Insert) {insert}
+        (Commands) edge node {} (Insert);   
+
+        \path[->]<1-> node[constraint, below of=Commands,  
+                      yshift=0in, xshift=.75in] 
+                      (Delete) {delete}
+        (Commands) edge node {} (Delete);   
+
+ 	\end{tikzpicture}
+	
+        \end{center}
+
+        \end{figure}
+      
+      \end{minipage} 
+
+  \end{center}
+  \end{minipage}
+
+%% \end{frame}

@@ -1,0 +1,21 @@
+\begin{lstlisting}
+public int eval(int x){
+   int a = 3, b = 1, y;
+    
+   y = (M_NO==1)? a - x: 
+		 (M_NO==2)? a + x:
+		 (M_NO==3)? a % x:
+		 (M_NO==0 && COVERED(1,3))? 
+		 a * x : a * x; // original
+    
+   if(M_NO==4){
+       y -= b;
+   }else if(M_NO==0 && COVERED(4,4)){
+       y += b; 
+   }else{
+       y += b; // original
+   }
+        
+   return y;
+}
+\end{lstlisting}
