@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="assets/js/jquery-1.4.1.js"></script>
 	</head>
 	<body>
-		<div id="header"><a href="index.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
+		<div id="header"><a href="internal.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
 		<div class="invertedshiftdown2">
 			<ul>
 				<li><a href="internal.php" title="Home">Home</a></li>
@@ -29,52 +29,54 @@
 		<div class="fieldsetcontent">
 		<span class="desc">Place a new t-shirt order by filling out the form below.</span>
 		<br /><br />
-		<form action="order_process.php" method="post">
+		<form action="process.php" method="post">
+			<input type="hidden" name="FID" value="2" />
+			<input type="hidden" name="UID" value="1" />
 			<table cellpadding="2" border="1">
 				<tr>
 					<td><strong>Buyer's Name*:</strong><br />
 					Enter the name of the person buying the shirt(s).</td>
-					<td><input type="text" name="buyername" /></td>
+					<td><input type="text" name="text1" /></td>
 				</tr>
 				<tr>
 					<td><strong>Email*:</strong><br />
 					Only needed for you to access and edit your order.</td>
-					<td><input type="text" name="email" /></td>
+					<td><input type="text" name="text2" /></td>
 				</tr>
 				<tr>
 					<td><strong>Buyer's Homeroom:</strong><br />
 					If applicable, enter the buyer's homeroom number.</td>
-					<td><input type="text" name="homeroom" size="5" /></td>
+					<td><input type="text" name="text3" size="5" /></td>
 				</tr>
 				<tr>
 					<td><strong>School*:</strong><br />
 					Who are you supporting: Derry or Latrobe? Choose which style of shirt you want to order.</td>
-					<td><input type="radio" name="school" value="derry" />Derry<br />
-					<input type="radio" name="school" value="latrobe" />Latrobe</td>
+					<td><input type="radio" name="radio1" value="derry" />Derry<br />
+					<input type="radio" name="radio1" value="latrobe" />Latrobe</td>
 				</tr>
 				<tr>
 					<td><strong>Shirt Size*:</strong><br />
 					Choose your shirt size. <em><strong>Note: </strong> If you are ordering multiple shirts, they 
 					must all be of the same size. To order shirts of different sizes, please create multiple orders, one for each 
 					shirt size.</em></td>
-					<td><select name="shirtsize">
+					<td><select name="drop1">
 						<option value="small">Small</option>
 						<option value="medium">Medium</option>
 						<option value="large">Large</option>
-						<option value="x-large">Extra Large</option>	
+						<option value="x-large">Extra Large</option>
 						<option value="xx-large">Double Extra Large</option>
-						<option value="xxx-large">Triple Extra Large</option>				
+						<option value="xxx-large">Triple Extra Large</option>
 					</select></td>
 				</tr>
 				<tr>
 					<td><strong>Quantity*:</strong><br />
 					Enter the number of shirts you would like to order. Be sure to see the Shirt Size note for information on 
 					ordering multiple shirt sizes.</td>
-					<td><input type="text" name="quantity" size="2" value="1" /></td>
+					<td><input type="text" name="text4" size="2" value="1" /></td>
 				</tr>
 				<tr>
 					<td><strong>Submit Order</strong></td>
-					<td><button name="submitorder" type="submit">Submit Order</button></td>
+					<td><button name="submit" type="submit">Submit Order</button></td>
 				</tr>
 				</table>
 		</form>

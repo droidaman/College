@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="assets/js/jquery-1.4.1.js"></script>
 	</head>
 	<body>
-		<div id="header"><a href="index.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
+		<div id="header"><a href="internal.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
 		<div class="invertedshiftdown2">
 			<ul>
 				<li><a href="internal.php" title="Home">Home</a></li>
@@ -29,47 +29,49 @@
 		<div class="fieldsetcontent">
 		<span class="desc">Complete the survey by filling out the form below.</span>
 		<br /><br />
-		<form action="order_process.php" method="post">
+		<form action="process.php" method="post">
+			<input type="hidden" name="FID" value="3" />
+			<input type="hidden" name="UID" value="1" />
 			<table cellpadding="2" border="1">
 				<tr>
 					<td><strong>Name:</strong><br />
 					Enter your name.</td>
-					<td><input type="text" name="buyername" /></td>
+					<td><input type="text" name="text1" /></td>
 				</tr>
 				<tr>
 					<td><strong>Homeroom:</strong><br />
 					Enter your homeroom number.</td>
-					<td><input type="text" name="homeroom" size="4" /></td>
+					<td><input type="text" name="text2" size="4" /></td>
 				</tr>
 				<tr>
 					<td><strong>After school plans:</strong><br />
 					Please select the most appropriate option detailing your after high-school plans.</td>
 					<td>
-						<input type="radio" name="plan" value="College">College</input><br />
-						<input type="radio" name="plan" value="Tech School">Technical School</input><br />
-						<input type="radio" name="plan" value="Military">Military</input><br />
-						<input type="radio" name="plan" value="Workforce">Workforce</input><br />
-						<input type="radio" name="plan" value="Undecided">Undecided</input><br />
+						<input type="radio" name="radio1" value="College">College</input><br />
+						<input type="radio" name="radio1" value="Tech School">Technical School</input><br />
+						<input type="radio" name="radio1" value="Military">Military</input><br />
+						<input type="radio" name="radio1" value="Workforce">Workforce</input><br />
+						<input type="radio" name="radio1" value="Undecided">Undecided</input><br />
 					</td>
 				</tr>
 				<tr>
 					<td><strong>School:</strong><br />
 					If you chose College or Technical School, enter its name here. If you selected Military, please indicate what branch.</td>
-					<td><input type="text" name="school" /></td>
+					<td><input type="text" name="text3" /></td>
 				</tr>
 				<tr>
 					<td><strong>College Sports?</strong><br />
 					Indicate if you are playing any sports next year (do not include intermural sports).</td>
-					<td><input type="radio" name="playsports" value="yes">Yes</input><br />
-					<input type="radio" name="playsports" value="no">No</input><br />
-					<input type="text" name="sports" /></td>
+					<td><input type="radio" name="radio2" value="yes">Yes</input><br />
+					<input type="radio" name="radio2" value="no">No</input><br />
+					<input type="text" name="text4" /></td>
 				</tr>
 				<tr>
 					<td><strong>Submit Survey</strong></td>
-					<td><button name="submitorder" type="submit">Submit Survey</button></td>
+					<td><button name="submit" type="submit">Submit Survey</button></td>
 				</tr>
 				</table>
-		</form>
+			</form>
 		</div>
 	</fieldset>
     <div id="footer">Evolving Data Storage System &copy; 2013 Braden Licastro. Version 1.2 Build 6.3</div>	

@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="assets/js/jquery-1.4.1.js"></script>
 	</head>
 	<body>
-		<div id="header"><a href="index.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
+		<div id="header"><a href="internal.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
 		<div class="invertedshiftdown2">
 			<ul>
 				<li class="current"><a href="internal.php" title="Home">Home</a></li>

@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="assets/js/jquery-1.4.1.js"></script>
 	</head>
 	<body>
-		<div id="header"><a href="index.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
+		<div id="header"><a href="internal.php"><img src="assets/images/header.png" alt="Site Logo" /></a></div>
 		<div class="invertedshiftdown2">
 			<ul>
 				<li><a href="internal.php" title="Home">Home</a></li>
@@ -27,45 +27,47 @@
     <fieldset>
 		<legend><a name="add">Place New Order</a></legend>
 		<div class="fieldsetcontent">
-		<span class="desc"><span style="visibility:hidden;">Place a new carnation order by filling out the form below.</span>Orders will be cleared and reset every 24 hours due to archive maintenance.</span>
+		<span class="desc">Place a new carnation order by filling out the form below.</span>
 		<br /><br />
-		<form action="order_process.php" method="post">
+		<form action="process.php" method="post">
+			<input type="hidden" name="FID" value="1" />
+			<input type="hidden" name="UID" value="1" />
 			<table cellpadding="2" border="2">
 				<tr>
 					<td><strong>Buyer's Name*:</strong><br />
 					Enter the name of the person buying the flower(s).</td>
-					<td><input type="text" name="buyername" /></td>
+					<td><input type="text" name="text1" /></td>
 				</tr>
 				<tr>
 					<td><strong>Anonymous sender?</strong><br />
 					Check this box if you would like the flowers to be delivered anonymously.</td>
-					<td><input type="checkbox" name="isanonymous" /></td>
+					<td><input type="checkbox" name="check1" /></td>
 				</tr>
 				<tr>
 					<td><strong>Number of flowers*:</strong><br />
 					Enter the number of flowers you would like to purchase.<br />
 					Remember, flowers are $1 apiece and $10 for a bouquet of 12 flowers.</td>
-					<td><input type="text" name="ordernumber" value="1" size="3" /></td>
+					<td><input type="text" name="text2" value="1" size="3" /></td>
 				</tr>
 				<tr>
 					<td><strong>Recipient Name*:</strong><br />
 					Enter the name of the flower recipient.</td>
-					<td><input type="text" name="recipientname" /></td>
+					<td><input type="text" name="text3" /></td>
 				</tr>
 				<tr>
 					<td><strong>Recipient Homeroom:</strong><br />
 					If you know it, enter the homeroom of the flower recipient.<br />
 					 We can look it up if you aren't sure.</td>
-					<td><input type="text" name="recipienthr" size="4" maxlength="4" /></td>
+					<td><input type="text" name="text4" size="4" maxlength="4" /></td>
 				</tr>
 				<tr>
 					<td><strong>Message:</strong><br />
 					Enter a message to be included with the flower(s).</td>
-					<td><textarea name="message" rows="5" cols="20"></textarea></td>
+					<td><textarea name="textarea1" rows="5" cols="20"></textarea></td>
 				</tr>
 				<tr>
 					<td><strong>Submit Order</strong></td>
-					<td><button name="submitorder" type="submit">Submit Order</button></td>
+					<td><button name="submit" type="submit">Submit Order</button></td>
 				</tr>
 				</table>
 		</form>
