@@ -32,7 +32,13 @@ class Process
 		
 		// Get element IDs from the database for processing
 		$sql="SELECT `EID`,`ename` FROM `elements` WHERE `FID`=$FID;";
-		$result=mysql_query($sql);
+		$eidResult=mysql_query($sql);
+		
+		$eidRows = array();
+		while($rows = mysql_fetch_array($eidResult))
+		{
+		    $eidRows[] = $rows;
+		}
 				
 		// Find all of the input text data 
 		while(true){
@@ -41,9 +47,9 @@ class Process
 				// Get the posted data and protect it from SQL injection
 				$text = $_POST['text' . $count];
 				$text = mysql_real_escape_string($text);
-								
+				
 				// Fetch the elements corresponding EID for INSERT
-				while($rows=mysql_fetch_array($result)){
+				foreach ($eidRows as $rows) {
 					// See if the current element name matches our iterative element name
 					if($rows['ename'] == 'text' . $count){
 						// Set the element ID and break to reduce server load
@@ -59,16 +65,14 @@ class Process
 				$doquery = mysql_query($querystring);
 								
 				$count++;
-			} elseif(isset($_POST['text' . $count + 1])){
-				$count++;
 			} else {
 				break;
 			}
 		}
-		
+
 		// Reset the element counter.
 		$count = 1;
-		
+
 		// Find all of the textarea data 
 		while(true){
 			// If the item exists
@@ -78,7 +82,7 @@ class Process
 				$text = mysql_real_escape_string($text);
 								
 				// Fetch the elements corresponding EID for INSERT
-				while($rows=mysql_fetch_array($result)){
+				foreach ($eidRows as $rows) {
 					// See if the current element name matches our iterative element name
 					if($rows['ename'] == 'textarea' . $count){
 						// Set the element ID and break to reduce server load
@@ -94,12 +98,58 @@ class Process
 				$doquery = mysql_query($querystring);
 								
 				$count++;
-			} elseif(isset($_POST['textarea' . $count + 1])){
+			} else {
+				break;
+			}
+		}
+
+		// Reset the element counter.
+		$count = 1;
+
+		// Find all of the radio data 
+		while(true){
+
+			// If the item exists
+			if(isset($_POST['radio' . $count])){
+				// Get the posted data and protect it from SQL injection
+				$text = $_POST['radio' . $count];
+				$text = mysql_real_escape_string($text);
+
+				// Fetch the elements corresponding EID for INSERT
+				foreach ($eidRows as $rows) {
+					// See if the current element name matches our iterative element name
+					if($rows['ename'] == 'radio' . $count){
+						// Set the element ID and break to reduce server load
+						$EID = $rows['EID'];
+						break;
+					}
+				}
+				
+				// Protect Element ID from SQL injection
+				$EID = mysql_real_escape_string($EID);
+
+				// Get option IDs from the database for processing
+				$query = "SELECT `opid` FROM `radio_options` WHERE `EID`='$EID' AND `value`='$text';";
+				$opidResult=mysql_query($query) or die($query."<br/><br/>".mysql_error());
+				
+				while($opidRows=mysql_fetch_array($opidResult)){
+					// Protect orderID from SQL injection
+					$opid = mysql_real_escape_string($opidRows['opid']);
+					break;
+				}
+				
+				$querystring = "INSERT INTO `radio_data` (`EID`, `UID`, `opid`) VALUES ('$EID', '$UID', '$opid');";
+				$doquery = mysql_query($querystring);
+								
 				$count++;
 			} else {
 				break;
 			}
 		}
+		
+		// Reset the element counter.
+		$count = 1;
+
 
 		// Redirects to the order review. Since this is the first time, it automatically fills in both the orderid and name
 		header('Location: dump.php');
