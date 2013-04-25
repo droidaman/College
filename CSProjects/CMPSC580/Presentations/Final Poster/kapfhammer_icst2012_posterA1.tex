@@ -89,35 +89,20 @@
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%
-	% Database Applications Are Everywhere
+	% Motivation
 	%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \begin{block}{\textsc{The Prevalence of Database Applications}}
-  
-          \begin{figure}			
-  	    \centering
-            \includegraphics[width=.95\linewidth]{evolution_database_applications_wrapper_crop}
-            \vspace*{.05in}
-	    \caption{Common Architecture of Many Real-World
-              Applications That Interact with a Relational Database.}
-            
-	  \end{figure}
-          \vspace*{-.2in}
+        \begin{block}{\textsc{Motivation}}
 
       	  \begin{itemize}
           
-            \item Silberschatz et al.\ observe that ``practically all
-              use of databases occurs from within application
-              programs'' \mbox{[Data. Sys. Conc. 2010]}
+            \item There was approximately 2.8 billion terabytes of data in the world as of January 2012.
 
-            \item Database applications rapidly evolve as changes are
-              made to both the program and the database's state and
-              structure
-
-%% Moreover, many database applications rapidly evolve as software
-%% developers change the source code, database administrators modify the
-%% database's schema, and external application programs add data to and
-%% delete data from the database.
+            \item Approximately 5\% of the world's data is redundant.
+            
+            \item Collectively, businesses spend \$1.8 trillion annually to store data.
+            
+            \item By removing even 1\% of the redundant data, that is an annual savings of \$18 billion dollars.
           
           \end{itemize}
 
@@ -125,20 +110,20 @@
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%
-	% Types of Database Applications
+	% Types of file systems
 	%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{block}{\textsc{Types of Database Applications}}
+	\begin{block}{\textsc{What is a file system?}}
 
           \begin{figure}			
   	    \centering
-            \includegraphics[width=.95\linewidth]{categorize_database_applications_wrapper_crop}
+            \includegraphics[scale=1.5]{fs.png}
             \vspace*{.05in}
-	    \caption{Categorizing Database Applications --- the Presented Method Focuses on the Highlight Type of Application.}
+	    \caption{Example file system tree structure.}
 
 	  \end{figure}
           \vspace*{-.2in}
-
+		File systems are a type of data store that can be used to store, retrieve, and update a set of files on a hard disk.
    	\end{block}
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -146,16 +131,29 @@
 	% Test Suite Reduction's Role
 	%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   	\begin{block}{\textsc{The Role of Test Suite Reduction}}
+   	\begin{block}{\textsc{Types of file systems}}
 
-          \begin{figure}			
-  	    \centering
-            \includegraphics[width=.95\linewidth]{test_suite_reduction_rescue_wrapper_crop}
-            \vspace*{.05in}
-	    \caption{Test Suite Reduction Aims to Improve the
-              Efficiency of Testing Database Applications.}
+          \begin{itemize}
+          
+            \item ntfs
+
+            \item exfAT
             
-	  \end{figure}          
+            \item fat
+            
+            \item fat32
+            
+            \item ext3
+            
+          \end{itemize}         
+		  
+          \begin{itemize}
+
+            \item Why so many? Each file system is designed and tailored for a specific need.
+            
+            \item All-inclusive file system would not be user friendly and would more than likely become bloated and unreliable.
+          
+          \end{itemize}         
 
 	\end{block}
       \end{column}   
@@ -172,13 +170,25 @@
 	% Datatabase-Aware Coverage
 	%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{block}{\textsc{Database-Aware Test Suite Reduction}}
+	\begin{block}{\textsc{Related Work}}
 
+		\textbf{A Fast Filtering Scheme for large Database Cleansing \cite{a1}}
+          \begin{itemize}
+          
+            \item Database focused algorithms
+
+            \item Data redundency reduction
+            
+            \item Matches data, not entire files
+            
+            \item Completely removes duplicates from database
+          
+          \end{itemize} 
+          
           \begin{figure}			
   	    \centering
-            \includegraphics[width=.95\linewidth]{test_coverage_monitoring_wrapper_crop}
+            \includegraphics[scale=1.8]{duptable.JPG}
             \vspace*{.05in}
-	    \caption{The Process of Test Suite Reduction for Database Applications.}
             
 	  \end{figure}          
 
@@ -186,14 +196,54 @@
 		
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%
-	% The Case Study Applications
+	% Datatabase-Aware Coverage
 	%
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%		
-	\begin{block}{\textsc{Case Study Applications}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{block}{\textsc{Related Work}}
+
+		\textbf{A Data De-duplication Access Framework for Solid State Drives \cite{a2}}
+          \begin{itemize}
           
-            \include{case_study_applications}
+            \item Algorithms tuned for solid state drives running on computing cluster
+
+            \item Finds candidate duplciates from calculated scores
             
-	  \end{block}
+            \item Minimal read and write calls needed to operate
+                
+          \end{itemize} 
+          
+          \begin{figure}			
+  	    \centering
+            \includegraphics[scale=1.4]{duplicate.JPG}
+            \vspace*{.05in}
+	    \caption{Authors process for finding and processing duplicates.}
+            
+	  \end{figure}          
+
+	\end{block}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+	% The Empirical Results
+	%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{block}{\textsc{Challenges}}
+          \begin{itemize}
+
+            \item Initial setup time costs when hashing user files.
+
+            \item Keep performance costs to a minimum when interacting with system.
+
+            \item Implementing a web based environment for file system interaction.
+            
+            \item Verify that pointers all function as intended and file modifications drop pointer accordingly.
+
+          \end{itemize}
+
+          \vspace*{.2in}    
+          
+	\end{block}
+
 	\end{column}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
@@ -208,83 +258,61 @@
 	% The Empirical Results
 	%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \begin{block}{\textsc{Experimental Results}}
-
-          \include{reduction_test_suite_size}
-
-          \vspace*{-.5in}          
-
+        \begin{block}{\textsc{Implementation}}
           \begin{itemize}
 
-            \item $\mbox{RFFS}(T, T') = (|T|-|T'|) \div |T|$
+            \item Create or modify existing file system
 
-            \item ST has the best RFFS (.69 avg) and GB has the worst
-              (.36 avg)
+            \item Hash files usign MD5 hashing algorithm to allow checking for matches.
 
-            \item Across all of the applications, RFFS was .51 on
-              average at the relation level and .44 on average at the
-              attribute value level
+            \item Remove duplicate files and replace duplicate with pointer referring to the parent copy
 
-            \item RFFS drops from .50 to .40 when the reducer analyzes
-              at the record level instead of the attribute level
+            \item Overwrite opened pointer with modified file to prevent overwriting a needed original.
 
-            \item RFFS climbs to .44 from .40 with attribute value
-              requirements
+            \item Restrict file database to non-system files.
 
           \end{itemize}
 
-          \vspace*{.1in}
-
-          \include{reduction_test_suite_time}          
-
-          \vspace*{-.5in}          
-
+          \vspace*{.2in}    
+              
+          \begin{figure}			
+  	    \centering
+            \includegraphics[scale=2.2]{schema.JPG}
+            \vspace*{.05in}
+            
+	  \end{figure}
+	\end{block}
+	
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+	% The Empirical Results
+	%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \begin{block}{\textsc{Method of Evaluation}}
           \begin{itemize}
 
-            \item $\mbox{RFFT}(T, T') = (\mbox{{\em time}}(T)-\mbox{{\em
-                time}}(T')) \div \mbox{{\em time}}(T)$
+            \item Measure space saved by removing duplicates including size of the database in calculations.
 
-            \item GB has the highest RFFT value because it contains
-              redundant tests that restart the database and are thus
-              very costly to run
+            \item Monitor performance impact of running implemented project vs OOB file system
 
-            \item Except for GB, the RFFT values are lower than those
-              for RFFS
-
-            %% \item For all of the applications, RFFS was .28 on average
-            %%   at the relation level and .24 on average at the
-            %%   attribute value level
-
-            \item RFFS was .28 on average at the relation level and
-              .24 on average at the attribute value level, across all
-              of the applications
-
-            %% \item RFFS decreases from .28 to .23 when the reducer
-            %%   analyzes at the record level instead of the attribute
-            %%   level
-
-            \item When the reducer analyzes at the record level
-              instead of the attribute value level, RFFS decreases
-              from .28 to .23
-
-            \item With attribute value requirements RFFS increases to
-              .24 from .23
+            \item View file tree structure, starting with a set structure and compare to tree after removing duplicates.
+            
+            \item Verify that pointers all function as intended and file modifications drop pointer accordingly.
 
           \end{itemize}
 
-	\end{block}	    
-
+          \vspace*{.2in}    
+          
+	\end{block}
+	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%
 	% Future Work
 	%
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%				
 	\begin{alertblock}{\textsc{Future Work}}
-          \begin{itemize}
-	  \item Use larger and more varied applications in follow-on experiments
-	  \item Investigate the fault-detection effectiveness of $T$ and $T'$
-	  \item Focus on affiliated testing tasks (e.g., test data generation)
-	  \end{itemize}
+		\bibliographystyle{plain}
+		\bibliography{finalbib}
 	\end{alertblock}
       \end{column}
       
