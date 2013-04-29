@@ -150,6 +150,49 @@ class Process
 		// Reset the element counter.
 		$count = 1;
 
+		// Find all of the check data 
+		while(true){
+
+			// If the item exists
+			if(isset($_POST['check' . $count])){
+				// Get the posted data and protect it from SQL injection
+				$text = $_POST['check' . $count];
+				$text = mysql_real_escape_string($text);
+
+				// Fetch the elements corresponding EID for INSERT
+				foreach ($eidRows as $rows) {
+					// See if the current element name matches our iterative element name
+					if($rows['ename'] == 'check' . $count){
+						// Set the element ID and break to reduce server load
+						$EID = $rows['EID'];
+						break;
+					}
+				}
+				
+				// Protect Element ID from SQL injection
+				$EID = mysql_real_escape_string($EID);
+
+				// Get option IDs from the database for processing
+				$query = "SELECT `opid` FROM `check_options` WHERE `EID`='$EID' AND `value`='$text';";
+				$opidResult=mysql_query($query) or die($query."<br/><br/>".mysql_error());
+				
+				while($opidRows=mysql_fetch_array($opidResult)){
+					// Protect orderID from SQL injection
+					$opid = mysql_real_escape_string($opidRows['opid']);
+					break;
+				}
+				
+				$querystring = "INSERT INTO `check_data` (`EID`, `UID`, `opid`) VALUES ('$EID', '$UID', '$opid');";
+				$doquery = mysql_query($querystring);
+								
+				$count++;
+			} else {
+				break;
+			}
+		}
+		
+		// Reset the element counter.
+		$count = 1;
 
 		// Redirects to the order review. Since this is the first time, it automatically fills in both the orderid and name
 		header('Location: dump.php');
