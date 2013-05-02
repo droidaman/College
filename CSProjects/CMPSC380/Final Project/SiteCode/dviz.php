@@ -26,7 +26,7 @@
             <h2>Computer Science 380 Spring 2013 Final Project</h2>
         </div>
         <div id="content2">
-            <p id="tab">Page content coming soon.</p>
+            <p id="tab">Page content dropped due to complexity and time constraints.</p>
         </div>
     <div id="footer">Evolving Data Storage System &copy; 2013 Braden Licastro. Version 1.2 Build 6.3</div>	
 	</body>

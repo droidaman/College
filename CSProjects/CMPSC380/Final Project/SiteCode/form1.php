@@ -41,7 +41,10 @@
 				<tr>
 					<td><strong>Anonymous sender?</strong><br />
 					Check this box if you would like the flowers to be delivered anonymously.</td>
-					<td><input type="checkbox" name="check1" /></td>
+					<td>
+						<input type="hidden" name="check1" value="defunchk" />
+						<input type="checkbox" name="check1" />
+					</td>
 				</tr>
 				<tr>
 					<td><strong>Number of flowers*:</strong><br />

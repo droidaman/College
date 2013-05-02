@@ -1,10 +1,9 @@
 <?php
-/* This file contains all the functions for adding or modifying content from the databases.
- * It was modeled off of the Rockdown Registration System's process.php. For more information
- * on that source, please see that archived software.
- * Part of the Shirt Ordering System. Copyright 2010 FullForce Applications.
+/*
+	This file contains all the functions for adding or 'in the future' modifying content from the database.
  */
 
+// Connect to the database
 include("connect.php");
 
 class Process
@@ -18,7 +17,7 @@ class Process
 		}
 	}
 	
-	// Inserts the submissions into the database
+	// Inserts the submissions into the database one firld at a time
 	function AddSubmission(){
 		//Assigns values from the form
 		$FID = $_POST['FID'];
@@ -32,8 +31,9 @@ class Process
 		
 		// Get element IDs from the database for processing
 		$sql="SELECT `EID`,`ename` FROM `elements` WHERE `FID`=$FID;";
-		$eidResult=mysql_query($sql);
+		$eidResult=mysql_query($sql) or die($query."<br/><br/>".mysql_error());
 		
+		// Adds query resultto array so we can loop indefinitely in the future
 		$eidRows = array();
 		while($rows = mysql_fetch_array($eidResult))
 		{
@@ -61,16 +61,18 @@ class Process
 				// Protect Element ID from SQL injection
 				$EID = mysql_real_escape_string($EID);
 				
+				// Insert the complete data into the database.
 				$querystring = "INSERT INTO `text_data` (`EID`, `UID`, `input`) VALUES ('$EID', '$UID', '$text');";
-				$doquery = mysql_query($querystring);
-								
+				$doquery = mysql_query($querystring) or die($query."<br/><br/>".mysql_error());
+				
+				// Increment so we can move to the next posted field
 				$count++;
 			} else {
 				break;
 			}
 		}
 
-		// Reset the element counter.
+		// Reset the element counter for the next field type.
 		$count = 1;
 
 		// Find all of the textarea data 
@@ -94,9 +96,11 @@ class Process
 				// Protect Element ID from SQL injection
 				$EID = mysql_real_escape_string($EID);
 				
+				// Insert the complete data into the database.
 				$querystring = "INSERT INTO `textarea_data` (`EID`, `UID`, `input`) VALUES ('$EID', '$UID', '$text');";
-				$doquery = mysql_query($querystring);
+				$doquery = mysql_query($querystring) or die($query."<br/><br/>".mysql_error());
 								
+				// Increment so we can move to the next posted field
 				$count++;
 			} else {
 				break;
@@ -133,14 +137,16 @@ class Process
 				$opidResult=mysql_query($query) or die($query."<br/><br/>".mysql_error());
 				
 				while($opidRows=mysql_fetch_array($opidResult)){
-					// Protect orderID from SQL injection
+					// Protect option ID from SQL injection
 					$opid = mysql_real_escape_string($opidRows['opid']);
 					break;
 				}
 				
+				// Insert the complete data into the database.
 				$querystring = "INSERT INTO `radio_data` (`EID`, `UID`, `opid`) VALUES ('$EID', '$UID', '$opid');";
-				$doquery = mysql_query($querystring);
-								
+				$doquery = mysql_query($querystring) or die($query."<br/><br/>".mysql_error());
+						
+				// Increment so we can move to the next posted field
 				$count++;
 			} else {
 				break;
@@ -159,10 +165,52 @@ class Process
 				$text = $_POST['check' . $count];
 				$text = mysql_real_escape_string($text);
 
+				// Make sure the checkbox was checked before running query
+				if($text != 'defunchk'){
+					// Fetch the elements corresponding EID for INSERT
+					foreach ($eidRows as $rows) {
+						// See if the current element name matches our iterative element name
+						if($rows['ename'] == 'check' . $count){
+							// Set the element ID and break to reduce server load
+							$EID = $rows['EID'];
+							break;
+						}
+					}
+				
+					// Protect Element ID from SQL injection
+					$EID = mysql_real_escape_string($EID);
+				
+					// Insert the complete data into the database.
+					$querystring = "INSERT INTO `check_data` (`EID`, `UID`) VALUES ('$EID', '$UID');";
+					$doquery = mysql_query($querystring) or die($query."<br/><br/>".mysql_error());
+							
+					// Increment so we can move to the next posted field	
+					$count++;
+				} else {
+					// Increment so we can move to the next posted field
+					$count++;
+				}
+			} else {
+				break;
+			}
+		}
+		
+		// Reset the element counter.
+		$count = 1;
+		
+		// Find all of the dropdown data 
+		while(true){
+
+			// If the item exists
+			if(isset($_POST['drop' . $count])){
+				// Get the posted data and protect it from SQL injection
+				$text = $_POST['drop' . $count];
+				$text = mysql_real_escape_string($text);
+
 				// Fetch the elements corresponding EID for INSERT
 				foreach ($eidRows as $rows) {
 					// See if the current element name matches our iterative element name
-					if($rows['ename'] == 'check' . $count){
+					if($rows['ename'] == 'drop' . $count){
 						// Set the element ID and break to reduce server load
 						$EID = $rows['EID'];
 						break;
@@ -173,33 +221,32 @@ class Process
 				$EID = mysql_real_escape_string($EID);
 
 				// Get option IDs from the database for processing
-				$query = "SELECT `opid` FROM `check_options` WHERE `EID`='$EID' AND `value`='$text';";
+				$query = "SELECT `opid` FROM `drop_options` WHERE `EID`='$EID' AND `value`='$text';";
 				$opidResult=mysql_query($query) or die($query."<br/><br/>".mysql_error());
 				
 				while($opidRows=mysql_fetch_array($opidResult)){
-					// Protect orderID from SQL injection
+					// Protect option ID from SQL injection
 					$opid = mysql_real_escape_string($opidRows['opid']);
 					break;
 				}
 				
-				$querystring = "INSERT INTO `check_data` (`EID`, `UID`, `opid`) VALUES ('$EID', '$UID', '$opid');";
-				$doquery = mysql_query($querystring);
-								
+				// Insert the complete data into the database.
+				$querystring = "INSERT INTO `drop_data` (`EID`, `UID`, `opid`) VALUES ('$EID', '$UID', '$opid');";
+				$doquery = mysql_query($querystring) or die($query."<br/><br/>".mysql_error());
+							
+				// Increment so we can move to the next posted field	
 				$count++;
 			} else {
 				break;
 			}
 		}
-		
-		// Reset the element counter.
-		$count = 1;
 
-		// Redirects to the order review. Since this is the first time, it automatically fills in both the orderid and name
+		// Redirects to the submission review page if everything worked as expected.
 		header('Location: dump.php');
 	}
 	
 }
 
-/* Initialize Order process */
+/* Initialize data modification process */
 $Process = new Process;
 ?>

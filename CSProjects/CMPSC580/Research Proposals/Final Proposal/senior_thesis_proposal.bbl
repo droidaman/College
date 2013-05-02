@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bitton}
+Dina Bitton and David~J. DeWitt.
+\newblock Duplicate record elimination in large data files.
+\newblock {\em ACM Trans. Database Syst.}, 8(2):255--265, June 1983.
+
+\bibitem{Meister}
+Dirk Meister and Andr{\'e} Brinkmann.
+\newblock Multi-level comparison of data deduplication in a backup scenario.
+\newblock In {\em Proceedings of SYSTOR 2009: The Israeli Experimental Systems
+  Conference}, SYSTOR '09, pages 8:1--8:12, New York, NY, USA, 2009. ACM.
+
+\bibitem{Quinlan}
+Sean Quinlan and Sean Dorward.
+\newblock Venti: A new approach to archival data storage.
+\newblock In {\em Proceedings of the 1st USENIX Conference on File and Storage
+  Technologies}, FAST '02, Berkeley, CA, USA, 2002. USENIX Association.
+
+\bibitem{Sung}
+Sam~Y. Sung, Zhao Li, and Peng Sun.
+\newblock A fast filtering scheme for large database cleansing.
+\newblock In {\em Proceedings of the eleventh international conference on
+  Information and knowledge management}, CIKM '02, pages 76--83, New York, NY,
+  USA, 2002. ACM.
+
+\bibitem{Wu}
+Chin-Hsien Wu and Hau-Shan Wu.
+\newblock A data de-duplication access framework for solid state drives.
+\newblock In {\em Proceedings of the 2011 ACM Symposium on Applied Computing},
+  SAC '11, pages 600--604, New York, NY, USA, 2011. ACM.
+
+\end{thebibliography}
