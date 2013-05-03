@@ -1,23 +1,20 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  2 MAY 2013 13:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.8.21)  3 MAY 2013 08:54
 entering extended mode
+ %&-line parsing enabled.
 **senior_thesis_proposal.tex
-
-("C:\Users\Braden\Documents\College\CSProjects\CMPSC580\Research Proposals\Fina
-l Proposal\senior_thesis_proposal.tex"
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+(./senior_thesis_proposal.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,14 +29,14 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
+(/usr/share/texmf-texlive/tex/latex/psnfss/mathptmx.sty
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -75,39 +72,32 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -118,11 +108,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
@@ -130,8 +120,9 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )
 \myVSpace=\skip52
 
-("C:\Users\Braden\Documents\College\CSProjects\CMPSC580\Research Proposals\Fina
-l Proposal\senior_thesis_proposal.aux")
+(./senior_thesis_proposal.aux)
+\openout1 = `senior_thesis_proposal.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
@@ -146,12 +137,12 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 67.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 \big@size=\dimen105
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen106
@@ -162,42 +153,41 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \MPscratchCnt=\count91
 \MPscratchDim=\dimen107
 \MPnumerator=\count92
-\makeMPintoPDFobject=\count93
 \everyMPtoPDFconversion=\toks16
 )
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 115.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+ (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 11
 5.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 11
 5.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 11
 5.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 11
 5.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
+(/usr/share/texmf-texlive/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 115.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
@@ -208,7 +198,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 115.
 LaTeX Font Info:    Try loading font information for U+lasy on input line 115.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
@@ -217,77 +207,53 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<duplicate.jpg, id=8, 429.85594pt x 178.41656pt>
-File: duplicate.jpg Graphic file (type jpg)
- <use duplicate.jpg>
-Package pdftex.def Info: duplicate.jpg used on input line 137.
-(pdftex.def)             Requested size: 343.88521pt x 142.73343pt.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <duplicate.JPG, id=8, 429.
+85594pt x 178.41656pt>
+File: duplicate.JPG Graphic file (type jpg)
 
-<duptable.jpg, id=9, 375.65344pt x 133.24782pt>
-File: duptable.jpg Graphic file (type jpg)
- <use duptable.jpg>
-Package pdftex.def Info: duptable.jpg used on input line 148.
-(pdftex.def)             Requested size: 300.52315pt x 106.59839pt.
- [2 <C:/Users/Braden/Documents/College/CSProjects/CMPSC580/Research Proposals/F
-inal Proposal/duplicate.jpg>] <delete.jpg, id=14, 319.94531pt x 237.88875pt>
-File: delete.jpg Graphic file (type jpg)
+<use duplicate.JPG> <duptable.JPG, id=9, 375.65344pt x 133.24782pt>
+File: duptable.JPG Graphic file (type jpg)
 
-<use delete.jpg>
-Package pdftex.def Info: delete.jpg used on input line 159.
-(pdftex.def)             Requested size: 255.95659pt x 190.31123pt.
- [3 <C:/Users/Braden/Documents/College/CSProjects/CMPSC580/Research Proposals/F
-inal Proposal/duptable.jpg> <C:/Users/Braden/Documents/College/CSProjects/CMPSC
-580/Research Proposals/Final Proposal/delete.jpg>]
-<savings.png, id=18, 429.85594pt x 280.04625pt>
+<use duptable.JPG> [2 <./duplicate.JPG>]
+<delete.JPG, id=14, 319.94531pt x 237.88875pt>
+File: delete.JPG Graphic file (type jpg)
+ <use delete.JPG> [3 <./duptable.JPG> <./delete.JPG>] <savings.png, id=18, 429.
+85594pt x 280.04625pt>
 File: savings.png Graphic file (type png)
- <use savings.png>
-Package pdftex.def Info: savings.png used on input line 172.
-(pdftex.def)             Requested size: 300.89711pt x 196.03102pt.
- [4 <C:/Users/Braden/Documents/College/CSProjects/CMPSC580/Research Proposals/F
-inal Proposal/savings.png>] <chunk_shift.png, id=23, 438.8897pt x 290.58563pt>
-File: chunk_shift.png Graphic file (type png)
 
-<use chunk_shift.png>
-Package pdftex.def Info: chunk_shift.png used on input line 181.
-(pdftex.def)             Requested size: 307.22069pt x 203.40854pt.
- [5 <C:/Users/Braden/Documents/College/CSProjects/CMPSC580/Research Proposals/F
-inal Proposal/chunk_shift.png>]
+<use savings.png> [4 <./savings.png (PNG copy)>]
+<chunk_shift.png, id=23, 438.8897pt x 290.58563pt>
+File: chunk_shift.png Graphic file (type png)
+ <use chunk_shift.png>
+[5 <./chunk_shift.png (PNG copy)>]
 <venti_prop.png, id=28, 390.70969pt x 168.63pt>
 File: venti_prop.png Graphic file (type png)
- <use venti_prop.png>
-Package pdftex.def Info: venti_prop.png used on input line 196.
-(pdftex.def)             Requested size: 273.4949pt x 118.04018pt.
- [6 <C:/Users/Braden/Documents/College/CSProjects/CMPSC580/Research Proposals/F
-inal Proposal/venti_prop.png>] <schema.jpg, id=33, 213.04594pt x 107.65219pt>
-File: schema.jpg Graphic file (type jpg)
+ <use venti_prop.png> [6 <./venti_prop.png (PNG copy)>] <schema.JPG, id=33, 213
+.04594pt x 107.65219pt>
+File: schema.JPG Graphic file (type jpg)
 
-<use schema.jpg>
-Package pdftex.def Info: schema.jpg used on input line 216.
-(pdftex.def)             Requested size: 170.43697pt x 86.12186pt.
- [7] [8 <C:/Users/Braden/Documents/College/CSProjects/CMPSC580/Research Proposa
-ls/Final Proposal/schema.jpg>] [9]
-("C:\Users\Braden\Documents\College\CSProjects\CMPSC580\Research Proposals\Fina
-l Proposal\senior_thesis_proposal.bbl") [10]
-("C:\Users\Braden\Documents\College\CSProjects\CMPSC580\Research Proposals\Fina
-l Proposal\senior_thesis_proposal.aux") ) 
+<use schema.JPG> [7] [8 <./schema.JPG>] [9] (./senior_thesis_proposal.bbl)
+[10] (./senior_thesis_proposal.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1793 strings out of 493921
- 23929 string characters out of 3144873
- 72981 words of memory out of 3000000
- 5059 multiletter control sequences out of 15000+200000
+ 1581 strings out of 493848
+ 19472 string characters out of 1152823
+ 69331 words of memory out of 3000000
+ 4829 multiletter control sequences out of 15000+50000
  31779 words of font info for 55 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 27i,11n,43p,1513b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/enc/dvips/fontname/8r.enc} <C:\Users\Braden\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ectt1095.pk><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on senior_thesis_proposal.pdf (10 pages, 188152 bytes).
+ 714 hyphenation exceptions out of 8191
+ 25i,11n,43p,1513b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts
+/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-sup
+er/sftt1095.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></us
+r/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texliv
+e/fonts/type1/urw/times/utmri8a.pfb>
+Output written on senior_thesis_proposal.pdf (10 pages, 213175 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
