@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding="ISO-8859-1" standalone="yes"?>
+<SitePermissions>
+	<login_details>
+		<username>blicastro</username>
+		<password>Gqjv4i</password>
+		<name>Braden</name>
+	</login_details>
+	<login_details>
+		<username>rroos</username>
+		<password>tOzbxz</password>
+		<name>Professor Roos</name>
+	</login_details>
+	<login_details>
+		<username>gkapfhammer</username>
+		<password>dNGw3h</password>
+		<name>Professor Kapfhammer</name>
+	</login_details>
+</SitePermissions>
