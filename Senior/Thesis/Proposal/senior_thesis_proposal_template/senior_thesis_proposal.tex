@@ -37,6 +37,7 @@
 \setlength{\textheight} {620pt} 
 \setlength{\oddsidemargin} {20pt}
 \setlength{\marginparwidth} {72in}
+\setlength{\headheight}{14pt}
 
 %   ********************************************************************
 %   * Many of the commands below were simply copied over from an older *
@@ -49,6 +50,8 @@
 \usepackage{fancyhdr} 
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update} % only regenerate pdf files when eps file is newer
 
 % set it so that subsubsections have numbers and they
 % are displayed in the TOC (maybe hard to read, might want to disable)
@@ -163,10 +166,7 @@
 %   ********************************************************************
 
 \begin{quote}
-Provide a concise summary of your proposed research. Remember that
-the abstract is {\it not} an introduction, it is a {\it summary} of the
-entire document. It makes sense to wait to write the abstract until the
-rest of the document has been written.
+Websites similar to Photobucket and imgur must be able to store massively increasing quantities of data; most of these sites already implement systems that limit the number, size, type of image, and compress the uploaded images to save space. Though these systems can be paired with file expiration times in which an upload is deleted, the cost of storage and backups of this data can be high. To further address this problem, the research aims to create an intelligent image uploading system capable of identifying near-duplicate image uploads on-the-fly; This system also provides the user with a higher resolution copy of their image from the server if available, thus providing better user experience while reducing unnecessary redundancy. By using the proposed system, the user will benefit from improved quality and service while the business can reduce storage and other various costs.
 \end{quote}
 
 %\vspace*{-.4in}
@@ -178,9 +178,32 @@ rest of the document has been written.
 %   * Enter the text of your introductory section here.                *
 %   ********************************************************************
 
-Provide an intuitive motivation for and introduction to your proposed
-senior thesis research.  Whenever possible, you should use one or more
-concrete examples and technical diagrams.
+Computers are absolutely everywhere, and society is becoming more digitized every day creating
+a need for storage of large amount of files. When running a website, storage space is at a
+premium, and the physical disks in the servers being used may not be local, but may in fact be
+located around the world. By allowing user submitted data, it quickly becomes apparent that data
+redundancy reduction can save a significant amount of storage space. This research will target
+the problem of data redundancy and provide a solution that will reduce not only storage costs but
+also inefficiencies. An implementation of a file management system will be introduced that is
+capable of managing large volumes of files using a database of location pointers and hash keys
+that identify each individual file. By using pointers, it is possible for the files to be stored on one
+central location or distributed across several systems while avoiding long search times.
+By using text based entries in a database, a hashing function can be implemented which is capable
+of producing a unique hash code for each file in the collection. Because this key is unique for each
+different file, it is a reliable gauge of uniqueness. When multiple files are found to be identical
+only one physical copy will be kept but pointers to the database entry will allow easy access.
+On large, distributed network storage servers, the benefits become ever more apparent. As users
+store files on the disks, the system will hash each file and search for a match in a database,
+thus allowing the user access to the data, but eliminating the overhead of storing numerous
+copies of identical data. An increase in computation time will exist but should be minimal as
+text comparisons will be the primary task in finding uniqueness, but this will be outweighed by
+minimized physical storage requirements and costs of data backup.
+The implementation of this system could be used in tandem with other currently implemented
+methods of file space cost reduction technologies out of the box. By not only using the proposed
+method of space requirement reduction, it could in theory be possible that with data expiration times, file size maximums, and similar technologies, that storage needs will plateau after the
+initial surge of additions and the expiration time has passed for the earliest uploaded file. This
+would allow webmasters to better predict overall needs and better predict upload trends and react
+accordingly with preventative maintenance and any required space additions.
 
 \vspace*{-.1in}
 \section{Related Work}
@@ -193,9 +216,20 @@ concrete examples and technical diagrams.
 
 Summarize the previously published papers and books that are related
 to your proposed research.  Whenever possible, you should compare and
-constrast your approach with the ones that have been discussed in the
+contrast your approach with the ones that have been discussed in the
 past.  As you describe your papers, please make sure that you cite
-them properly \cite{conrad-gecco-selection-study}.
+them properly.
+\\Let's use the rest of this section to generate out bibliography!
+\cite{nettuts:pdosqli}
+\cite{about:rename}
+\cite{php:uploads}
+\cite{catpa:gdcode}
+\cite{ubuntu:lampsetup}
+\cite{nix:gdsetup}
+\cite{php:gdimg}
+\cite{Foo:2007}
+\cite{Srinivasan:2008}
+\cite{Lee:2010}.
 
 \vspace*{-.2in}
 \section{Method of Approach}

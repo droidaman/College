@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+
+\bibitem{about:rename}
+Angela Bradley.
+\newblock {R}enaming {PHP} {U}ploads.
+\newblock \url{http://php.about.com/od/advancedphp/ss/rename_upload.htm}, 2011.
+\newblock [Online; accessed 10-October-2013].
+
+\bibitem{catpa:gdcode}
+CatPa.ws.
+\newblock {PHP} {GD} {D}uplicate {I}mage {F}inder.
+\newblock \url{http://www.catpa.ws/php-duplicate-image-finder/}, 2010.
+\newblock [Online; accessed 13-September-2013].
+
+\bibitem{ubuntu:lampsetup}
+Ubuntu Documentation.
+\newblock {A}pache{M}y{SQLPHP} - {LAMP} {S}erver {S}etup {G}uide.
+\newblock \url{http://php.net/manual/en/ref.image.php}, 2013.
+\newblock [Online; accessed 21-August-2013].
+
+\bibitem{Foo:2007}
+Jun~Jie Foo, Justin Zobel, Ranjan Sinha, and S.~M.~M. Tahaghoghi.
+\newblock {D}etection of {N}ear-duplicate {I}mages for {W}eb {S}earch.
+\newblock In {\em Proceedings of the 6th ACM International Conference on Image
+  and Video Retrieval}, CIVR '07, pages 557--564, New York, NY, USA, 2007. ACM.
+
+\bibitem{php:gdimg}
+The~PHP Group.
+\newblock {GD} and {I}mage {F}unctions.
+\newblock \url{http://php.net/manual/en/ref.image.php}, 2013.
+\newblock [Online; accessed 13-October-2013].
+
+\bibitem{php:uploads}
+The~PHP Group.
+\newblock {POST} {M}ethod {U}ploads.
+\newblock
+  \url{http://de.php.net/manual/en/features.file-upload.post-method.php}, 2013.
+\newblock [Online; accessed 09-September-2013].
+
+\bibitem{Lee:2010}
+David~C. Lee, Qifa Ke, and Michael Isard.
+\newblock {P}artition {M}in-hash for {P}artial {D}uplicate {I}mage {D}iscovery.
+\newblock In {\em Proceedings of the 11th European Conference on Computer
+  Vision: Part I}, ECCV'10, pages 648--662, Berlin, Heidelberg, 2010.
+  Springer-Verlag.
+
+\bibitem{nettuts:pdosqli}
+Dejan Marjanovic.
+\newblock {PDO} vs. {M}y{SQL}i: {W}hich {S}hould {Y}ou {U}se?
+\newblock
+  \url{http://net.tutsplus.com/tutorials/php/pdo-vs-mysqli-which-should-you-use/},
+  2012.
+\newblock [Online; accessed 02-October-2013].
+
+\bibitem{nix:gdsetup}
+nixCraft.
+\newblock {U}buntu {L}inux: {I}nstall or {A}dd {PHP}-{GD} {S}upport to {A}pache
+  {W}eb {S}erver.
+\newblock
+  \url{http://www.cyberciti.biz/faq/ubuntu-linux-install-or-add-php-gd-support-to-apache/},
+  2012.
+\newblock [Online; accessed 30-September-2013].
+
+\bibitem{Srinivasan:2008}
+S~H. Srinivasan and Neela Sawant.
+\newblock {F}inding {N}ear-duplicate {I}mages on the {W}eb {U}sing
+  {F}ingerprints.
+\newblock In {\em Proceedings of the 16th ACM International Conference on
+  Multimedia}, MM '08, pages 881--884, New York, NY, USA, 2008. ACM.
+
+\end{thebibliography}
