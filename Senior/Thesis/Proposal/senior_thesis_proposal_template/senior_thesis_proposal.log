@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  10 OCT 2013 16:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  18 OCT 2013 14:24
 entering extended mode
 **senior_thesis_proposal.tex
 
@@ -287,6 +287,38 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 260.
  [2 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
 posal_template/flow-eps-converted-to.pdf>]
+<benchmark_eq.jpg, id=15, 373.395pt x 54.2025pt>
+File: benchmark_eq.jpg Graphic file (type jpg)
+ <use benchmark_eq.jpg>
+Package pdftex.def Info: benchmark_eq.jpg used on input line 284.
+(pdftex.def)             Requested size: 289.07999pt x 41.96513pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+[3 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_prop
+osal_template/benchmark_eq.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
+
+ []
+
+[4]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
@@ -311,26 +343,26 @@ $\T1/cmtt/m/n/10.95 ubuntu-[]linux-[]install-[]or-[]add-[]php-[]gd-[]support-[]
 to-[]apache/$\T1/ptm/m/n/10.95 , 2012.  [On-line;
  []
 
-) [3]
+) [5]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2134 strings out of 493921
- 30214 string characters out of 3144873
- 83593 words of memory out of 3000000
- 5367 multiletter control sequences out of 15000+200000
+ 2140 strings out of 493921
+ 30327 string characters out of 3144873
+ 83601 words of memory out of 3000000
+ 5372 multiletter control sequences out of 15000+200000
  36182 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,10n,43p,922b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,43p,1289b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/font
 s/enc/dvips/fontname/8r.enc} <C:\Users\Braden\AppData\Local\MiKTeX\2.9\fonts\pk
 \ljfour\jknappen\ec\dpi600\ectt1095.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on senior_thesis_proposal.pdf (3 pages, 64921 bytes).
+Output written on senior_thesis_proposal.pdf (5 pages, 83753 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -277,18 +277,39 @@ Fifth draft & 11 Oct & 18 Oct\\\hline
 %   * Enter the text of your evaluation strategy section here.         *
 %   ********************************************************************
 
-Explain what steps you will take to evaluate your proposed method.  If
-you intend to conduct experiments, then you must clearly define your
-evaluation metrics.
+Evaluating the effectiveness of the website will entail several benchmark readings. The total number of files, number of unique files, and the overall size of the benchmark folder versus the duplicate reduced upload folder will all be used in determining the effectiveness of the image comparison algorithms implemented in the website. To perform the tests, a fixed set of images will be used. These images will consist of a collection of 15 artificially generated gray-scale, 15 natural gray-scale, and 15 natural RGB images in addition to 5 duplicate images in each category. These duplicates will consist of one of each of the following images: identical, diminished resolution, text overlaid, reduced resolution, and a color/contrast correction.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=4in]{benchmark_eq}
+\caption{Equation for determining efficiency improvements}
+\label{benchmark_eq}
+\end{figure}
+
+In order to test the algorithm, all 15 unique images will be uploaded to the server using the built in upload function. Any false positive matches will be noted and the algorithm will be adjusted until none remain. At this point, the baseline folder and the duplicate reduced folders should contain the same set of data. Next, the duplicate images will be uploaded to the server using the same method. The system should find all remaining images as duplicates and prompt the user with the option to upload anyway or use the existing image. For the test I will not allow the upload. After all images have been uploaded, the total number of files in the baseline directory will be compared to the number of files in the duplicate reduced directory using the algorithm in \ref{benchmark_eq}, where base is the baseline directory number to be compared and reduced is the duplicate reduced directory number to be compared.  The directory sizes and average upload times will also be evaluated using the algorithm in \ref{benchmark_eq}. The evaluated result, if positive, will denote a positive improvement in efficiency compared to the baseline directory, and a negative result is interpreted as a decrease in efficiency over the baseline directory.\\
+
+After analyzing the results of the test outlined above, the algorithm will be refined to provide more accurate results and the folders and database will be reset. At this point, the tests will be run again, and any changes in effectiveness will be noted. Because the system implements a text-based database, the size difference between the baseline and duplicate reduced will be negligible as no image specific information is stored. In addition, the number of entries will be identical due to the upload process outlined in \ref{sec:method}, which generates a unique URL for every image upload request whether the image is uploaded or an existing one on the server is used.
 
 \vspace*{-.1in}
 \section{Research Schedule}
 \label{sec:schedule}
 \vspace*{-.1in}
 
-Identify the main phases and tasks of your research project and set
-deadlines for when you will be able to complete each of these items.
+The research schedule for the project is to be tentatively based off of the following deadlines.
+Due to the nature of the project and the wide array of pre-existing software required needing to
+be modified and implemented, unseen hurdles may arise.\\
 
+Phase 1 - 1 month: Find acceptable operating system set up a fully functional LAMP server to host website and provide storage of submitted images. During this time, I will begin learning and installing PHP and JavaScript libraries so code implementation can begin shortly after the completion of server setup.\\
+
+Phase 2 - 2-3 months: Develop a working image sharing website which is capable of satisfying the requirements
+outlined in \ref{sec:method}. Set up two basic file and database structures to be used throughout the experiment. One will be used as a baseline and the other structure will function as the duplicate-reduced system. Both will host the image files, file information, and time taken to add files to the database. The system will also track the average upload time for each method, the total number of files, and the total size of each upload directory.\\
+
+Phase 3 - 1 week: During this time I will run various tests on the website using the proposed
+methods in \ref{sec:method} and record the results of the experiment. After the new image files have been added to the collection, some unique, and others duplicate, the submissions directory on the server will be scanned for  duplicates and ensure none were accidentally added. Results to be recorded are the final number of files, the number of duplicate images, and the total storage space used.\\
+
+Phase 4 - remaining time: The results gathered throughout the test process will be evaluated and
+the website algorithms tweaked and finalized. After modifications are complete tests will be rerun and the
+final results will be evaluated.
 \vspace*{-.1in}
 \section{Conclusion}
 \label{sec:conclusion}
@@ -298,10 +319,9 @@ deadlines for when you will be able to complete each of these items.
 %   * Enter the text of your concluding section section here.          *
 %   ********************************************************************
 
-Provide a summary of your proposed research and suggest the impact
-that it may have on the discipline of computer science.  If possible,
-you may also suggest some areas for future research.
+With computers becoming ever more prevalent and data being generated and shared at a rapidly increasing rate, it is becoming more and more necessary every day to reduce the redundancy of shared data and create more efficient sharing systems. By removing duplicate image files from sharing sites and preventing the addition of new duplicates we can begin to tackle this issue and begin reducing the storage requirements of running such systems. Aside from just reducing storage overhead it can also be possible to reduce time overhead of searching for images and the amount of bandwidth needed to operate these systems. In addition, a significant amount of money can be saved as a result of reduced electrical costs per node, and even reduce the number of server nodes in extreme cases of redundancy.
 
+\newpage
 \bibliographystyle{plain}
 \bibliography{senior_thesis_proposal}
 
