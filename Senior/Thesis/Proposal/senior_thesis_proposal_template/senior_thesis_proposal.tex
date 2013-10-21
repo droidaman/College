@@ -253,18 +253,19 @@ If the image histogram closely matches or is an identical match to the image on 
 
 In the case of requiring duplicate files, where the user decides to upload the image regardless of uniqueness, the script will be able to differentiate between the two images with the unique image ID that is generated at the time of insertion into the database. The first occurrence of the duplicate image or the one closest matching a new upload will be used in the prompt to the user to prevent frustration with multiple prompts every time more than one duplicate is found.
 
-If an image is indeed found to be duplicate, and the user chooses to use the higher resolution image that is on the server, a unique link will be generated for them and an INSERT statement will be run containing the same information as the matching file's insert did at the time of upload. This will allow multiple links that point to the same image and the user will be unaware of the system operating in the background which will provide a consistent experience. An outline of this full process can be seen in \ref{method-fig1}
+If an image is indeed found to be duplicate, and the user chooses to use the higher resolution image that is on the server, a unique link will be generated for them and an INSERT statement will be run containing the same information as the matching file's insert did at the time of upload. This will allow multiple links that point to the same image and the user will be unaware of the system operating in the background which will provide a consistent experience. An outline of this full process can be seen in figure \ref{method-fig1}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=4.5in]{upprocess}
+\caption{Streamlined upload process}
+\label{method-fig1}
+\end{figure}
 
 When a user accesses the file from the provided link, the system will run a query that looks up the image identifier provided in the URL, if it matches an image on the server, the image location will be used to provide the image to the user for viewing. The user never notices a difference, but on the server side we have ensured file redundancy has been eliminated and possibly improved user experience by providing the user with higher quality content than what they were expecting. If the image is not found, a 404 "Image cannot be found." error will be displayed to let the user know something went wrong.
 
-\begin{figure}
-\begin{center}
-\includegraphics[scale=.8]{upprocess}
-\caption{\label{method-fig1} Streamlined upload process}
-\end{center}
-\end{figure}
-
 Left the figures intact temporarily for future reference in case I need a table.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5in]{flow}
@@ -305,7 +306,7 @@ Evaluating the effectiveness of the website will entail several benchmark readin
 \label{benchmark_eq}
 \end{figure}
 
-In order to test the algorithm, all 15 unique images will be uploaded to the server using the built in upload function. Any false positive matches will be noted and the algorithm will be adjusted until none remain. At this point, the baseline folder and the duplicate reduced folders should contain the same set of data. Next, the duplicate images will be uploaded to the server using the same method. The system should find all remaining images as duplicates and prompt the user with the option to upload anyway or use the existing image. For the test I will not allow the upload. After all images have been uploaded, the total number of files in the baseline directory will be compared to the number of files in the duplicate reduced directory using the algorithm in \ref{benchmark_eq}, where base is the baseline directory number to be compared and reduced is the duplicate reduced directory number to be compared.  The directory sizes and average upload times will also be evaluated using the algorithm in \ref{benchmark_eq}. The evaluated result, if positive, will denote a positive improvement in efficiency compared to the baseline directory, and a negative result is interpreted as a decrease in efficiency over the baseline directory.\\
+In order to test the algorithm, all 15 unique images will be uploaded to the server using the built in upload function. Any false positive matches will be noted and the algorithm will be adjusted until none remain. At this point, the baseline folder and the duplicate reduced folders should contain the same set of data. Next, the duplicate images will be uploaded to the server using the same method. The system should find all remaining images as duplicates and prompt the user with the option to upload anyway or use the existing image. For the test I will not allow the upload. After all images have been uploaded, the total number of files in the baseline directory will be compared to the number of files in the duplicate reduced directory using the algorithm in \ref{benchmark_eq}, where base is the baseline directory number to be compared and reduced is the duplicate reduced directory number to be compared.  The directory sizes and average upload times will also be evaluated using the algorithm in \ref{benchmark_eq}. The evaluated result, if positive, will denote a positive improvement in efficiency compared to the baseline directory, and a negative result is interpreted as a decrease in efficiency over the baseline directory.
 
 After analyzing the results of the test outlined above, the algorithm will be refined to provide more accurate results and the folders and database will be reset. At this point, the tests will be run again, and any changes in effectiveness will be noted. Because the system implements a text-based database, the size difference between the baseline and duplicate reduced will be negligible as no image specific information is stored. In addition, the number of entries will be identical due to the upload process outlined in \ref{sec:method}, which generates a unique URL for every image upload request whether the image is uploaded or an existing one on the server is used.
 
@@ -316,15 +317,15 @@ After analyzing the results of the test outlined above, the algorithm will be re
 
 The research schedule for the project is to be tentatively based off of the following deadlines.
 Due to the nature of the project and the wide array of pre-existing software required needing to
-be modified and implemented, unseen hurdles may arise.\\
+be modified and implemented, unseen hurdles may arise.
 
-Phase 1 - 1 month: Find acceptable operating system set up a fully functional LAMP server to host website and provide storage of submitted images. During this time, I will begin learning and installing PHP and JavaScript libraries so code implementation can begin shortly after the completion of server setup.\\
+Phase 1 - 1 month: Find acceptable operating system set up a fully functional LAMP server to host website and provide storage of submitted images. During this time, I will begin learning and installing PHP and JavaScript libraries so code implementation can begin shortly after the completion of server setup.
 
 Phase 2 - 2-3 months: Develop a working image sharing website which is capable of satisfying the requirements
-outlined in \ref{sec:method}. Set up two basic file and database structures to be used throughout the experiment. One will be used as a baseline and the other structure will function as the duplicate-reduced system. Both will host the image files, file information, and time taken to add files to the database. The system will also track the average upload time for each method, the total number of files, and the total size of each upload directory.\\
+outlined in \ref{sec:method}. Set up two basic file and database structures to be used throughout the experiment. One will be used as a baseline and the other structure will function as the duplicate-reduced system. Both will host the image files, file information, and time taken to add files to the database. The system will also track the average upload time for each method, the total number of files, and the total size of each upload directory.
 
 Phase 3 - 1 week: During this time I will run various tests on the website using the proposed
-methods in \ref{sec:method} and record the results of the experiment. After the new image files have been added to the collection, some unique, and others duplicate, the submissions directory on the server will be scanned for  duplicates and ensure none were accidentally added. Results to be recorded are the final number of files, the number of duplicate images, and the total storage space used.\\
+methods in \ref{sec:method} and record the results of the experiment. After the new image files have been added to the collection, some unique, and others duplicate, the submissions directory on the server will be scanned for  duplicates and ensure none were accidentally added. Results to be recorded are the final number of files, the number of duplicate images, and the total storage space used.
 
 Phase 4 - remaining time: The results gathered throughout the test process will be evaluated and
 the website algorithms tweaked and finalized. After modifications are complete tests will be rerun and the
@@ -338,7 +339,8 @@ final results will be evaluated.
 %   * Enter the text of your concluding section section here.          *
 %   ********************************************************************
 
-With computers becoming ever more prevalent and data being generated and shared at a rapidly increasing rate, it is becoming more and more necessary every day to reduce the redundancy of shared data and create more efficient sharing systems. By removing duplicate image files from sharing sites and preventing the addition of new duplicates we can begin to tackle this issue and begin reducing the storage requirements of running such systems. Aside from just reducing storage overhead it can also be possible to reduce time overhead of searching for images and the amount of bandwidth needed to operate these systems. In addition, a significant amount of money can be saved as a result of reduced electrical costs per node, and even reduce the number of server nodes in extreme cases of redundancy.
+With computers becoming ever more prevalent and data being generated and shared at a rapidly increasing rate, it is becoming more and more necessary every day to reduce the redundancy of shared data and create more efficient sharing systems. By removing duplicate image files from
+sharing sites and preventing the addition of new duplicates we can begin to tackle this issue and begin reducing the storage requirements of running such systems. Aside from just reducing storage overhead it can also be possible to reduce time overhead of searching for images and the amount of bandwidth needed to operate these systems. In addition, a significant amount of money can be saved as a result of reduced electrical costs per node, and even reduce the number of server nodes in extreme cases of redundancy.
 
 \newpage
 \bibliographystyle{plain}

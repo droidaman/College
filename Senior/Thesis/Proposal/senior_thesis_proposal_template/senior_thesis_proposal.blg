@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: senior_thesis_proposal.aux
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: senior_thesis_proposal.aux
 The style file: plain.bst
 Database file #1: senior_thesis_proposal.bib
+You've used 10 entries,
+            2118 wiz_defined-function locations,
+            560 strings with 5878 characters,
+and the built_in function-call counts, 3038 in all, are:
+= -- 322
+> -- 103
+< -- 3
++ -- 42
+- -- 32
+* -- 139
+:= -- 486
+add.period$ -- 40
+call.type$ -- 10
+change.case$ -- 46
+chr.to.int$ -- 0
+cite$ -- 10
+duplicate$ -- 118
+empty$ -- 272
+format.name$ -- 32
+if$ -- 685
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 3
+newline$ -- 60
+num.names$ -- 20
+pop$ -- 74
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 99
+stack$ -- 0
+substring$ -- 146
+swap$ -- 37
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 0
+while$ -- 29
+width$ -- 12
+write$ -- 128
