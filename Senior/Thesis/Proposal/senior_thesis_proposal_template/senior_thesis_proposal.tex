@@ -214,12 +214,16 @@ accordingly with preventative maintenance and any required space additions.
 %   * Enter the text of your related work section here.                *
 %   ********************************************************************
 
+Removed as document will not compile with this section - too many errors and the document will be blank after this point.
+
+Original text:
 Summarize the previously published papers and books that are related
 to your proposed research.  Whenever possible, you should compare and
 contrast your approach with the ones that have been discussed in the
 past.  As you describe your papers, please make sure that you cite
 them properly.
-\\Let's use the rest of this section to generate out bibliography!
+
+Let's use the rest of this section to generate out bibliography!
 \cite{nettuts:pdosqli}
 \cite{about:rename}
 \cite{php:uploads}
@@ -239,13 +243,28 @@ them properly.
 %   ********************************************************************
 %   * Enter the text of your method of approach section here.          *
 %   ********************************************************************
+In order to implement the proposed research, the website will be run on a custom server with an allocated 5 Gigabytes of dedicated storage, 8 Gigabytes of RAM, and a Core i3 2.43 GHz processor. All services and programs will be shut down during the experiment except for Apache, MySQL, PHP, and Webmin to ensure consistent results. Throughout the duration of the experiment, no software updates will be installed other than security related operating system updates. The website must be designed to be lightweight, have no extraneous scripts or applets running on the upload page, and will be compatible with WebKit browsers such as Firefox. This limitation will allow for a focused effort in file management on a specific platform and will allow room for further research after the tool has been optimized. To start, a database will be implemented so that it is able to hold a hashed key for each uploaded image and the location of the file on the disk in addition to upload statistics such as upload method and time taken to complete the task. An example of this schema can be seen in (schema to be added when finalized). %\ref{fig:schema}
 
-Use technical diagrams, equations, algorithms, and paragraphs of text
-to describe the research that you intend to complete. See the \LaTeX\ source
-file for the proposal to learn how Figure \ref{intro-fig1} and Table 
-\ref{intro-tab1} were included. Be sure to number all figures and tables and to
-explicitly refer to them in your text.
+The website will run multiple scripts for each upload. The first script will be a traditional upload method where the user supplies a file, it will be uploaded to the server, and the server will return a unique URL to access the image from at a later time. During this process, each file will be assigned a new, unique name to prevent collisions upon upload. An INSERT will then be run on the database for the image and will record the files location on the server, the file name, that it was uploaded using the traditional method, the unique URL to access it from, and an ID for each insert into the database. After the completion of the process an UPDATE will be run on the database entry created by the INSERT above. The time taken to complete the task will be included in that entry and can be used to analyze the efficiency of both systems upon the completion of the tests outlined in \ref{sec:evaluate}.
 
+After the first script completes, a second script will be called. This will perform mostly the same function as the traditional upload script, but will check each upload for duplicates and handle each case appropriately. This script will use the file uploaded and used in the section above. The image will be taken and converted into a 16x16 black-and-white thumbnail and a histogram will be produced from that image. The server will then look into the database and check whether or not any images uploaded with the duplicate reduced system are similar to the one looking to be uploaded. If there are no matches, then the image will be uploaded to the server. At this time an INSERT will then be run on the database for the image and will record the files location on the server, the file name, that it was uploaded using the duplicate-reduced method, the unique URL to access it from, the image's MD5 hashed histogram that is described below, and an ID for each insert into the database. After the completion of the process an UPDATE will be run on the database entry created by the INSERT above.
+
+If the image histogram closely matches or is an identical match to the image on the server, a color profile will be generated real time for both images and compared. If there is a match or close match, the script will compare several small, randomly chosen blocks on the images. If these match, then the image is assumed to be a  duplicate and a prompt will be displayed to the user showing them the image they provided and the possible match that already exists. If the image is verified a match, the higher of the two resolutions will be kept, and the user will be given a unique link to the image. If the user decides the image is not a duplicate, the system will run an INSERT on the database as outlined earlier, and it will be added to the database. Following the completion of this process an UPDATE will be run on the lase INSERT and the time taken to complete the task will be included in that entry.
+
+In the case of requiring duplicate files, where the user decides to upload the image regardless of uniqueness, the script will be able to differentiate between the two images with the unique image ID that is generated at the time of insertion into the database. The first occurrence of the duplicate image or the one closest matching a new upload will be used in the prompt to the user to prevent frustration with multiple prompts every time more than one duplicate is found.
+
+If an image is indeed found to be duplicate, and the user chooses to use the higher resolution image that is on the server, a unique link will be generated for them and an INSERT statement will be run containing the same information as the matching file's insert did at the time of upload. This will allow multiple links that point to the same image and the user will be unaware of the system operating in the background which will provide a consistent experience. An outline of this full process can be seen in \ref{method-fig1}
+
+When a user accesses the file from the provided link, the system will run a query that looks up the image identifier provided in the URL, if it matches an image on the server, the image location will be used to provide the image to the user for viewing. The user never notices a difference, but on the server side we have ensured file redundancy has been eliminated and possibly improved user experience by providing the user with higher quality content than what they were expecting. If the image is not found, a 404 "Image cannot be found." error will be displayed to let the user know something went wrong.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.8]{upprocess}
+\caption{\label{method-fig1} Streamlined upload process}
+\end{center}
+\end{figure}
+
+Left the figures intact temporarily for future reference in case I need a table.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=5in]{flow}
