@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  22 OCT 2013 18:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  28 OCT 2013 13:28
 entering extended mode
 **senior_thesis_proposal.tex
 
@@ -265,44 +265,32 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 173.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-<upprocess.png, id=11, 548.80031pt x 233.37187pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<fourierTrans.jpg, id=8, 713.66624pt x 112.16907pt>
+File: fourierTrans.jpg Graphic file (type jpg)
+ <use fourierTrans.jpg>
+Package pdftex.def Info: fourierTrans.jpg used on input line 223.
+(pdftex.def)             Requested size: 325.215pt x 51.11401pt.
+
+[2 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_prop
+osal_template/fourierTrans.jpg>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+ [3] [4]
+<upprocess.png, id=20, 548.80031pt x 233.37187pt>
 File: upprocess.png Graphic file (type png)
  <use upprocess.png>
-Package pdftex.def Info: upprocess.png used on input line 260.
-(pdftex.def)             Requested size: 325.215pt x 138.29712pt.
-Package epstopdf Info: Source file: <flow.eps>
-(epstopdf)                    date: 2013-10-04 14:06:06
-(epstopdf)                    size: 5198 bytes
-(epstopdf)             Output file: <flow-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-10-10 15:16:56
-(epstopdf)                    size: 3260 bytes
-(epstopdf)             Command: <epstopdf --outfile=flow-eps-converted-to.pdf f
-low.eps>
-(epstopdf)             \includegraphics on input line 271.
-Package epstopdf Info: Output file is already uptodate.
-
-<flow-eps-converted-to.pdf, id=12, 507.8975pt x 78.2925pt>
-File: flow-eps-converted-to.pdf Graphic file (type pdf)
-
-<use flow-eps-converted-to.pdf>
-Package pdftex.def Info: flow-eps-converted-to.pdf used on input line 271.
-(pdftex.def)             Requested size: 361.34999pt x 55.70393pt.
- [3]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 280.
-
-<benchmark_eq.jpg, id=16, 373.395pt x 54.2025pt>
+Package pdftex.def Info: upprocess.png used on input line 292.
+(pdftex.def)             Requested size: 419.16621pt x 178.25113pt.
+ [5 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
+posal_template/upprocess.png>] <benchmark_eq.jpg, id=24, 373.395pt x 54.2025pt>
 File: benchmark_eq.jpg Graphic file (type jpg)
- <use benchmark_eq.jpg>
-Package pdftex.def Info: benchmark_eq.jpg used on input line 304.
-(pdftex.def)             Requested size: 289.07999pt x 41.96513pt.
 
-[4 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_prop
-osal_template/upprocess.png> <C:/Users/Braden/Documents/College/Senior/Thesis/P
-roposal/senior_thesis_proposal_template/flow-eps-converted-to.pdf>] [5 <C:/User
-s/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_proposal_templa
-te/benchmark_eq.jpg>] [6]
+<use benchmark_eq.jpg>
+Package pdftex.def Info: benchmark_eq.jpg used on input line 336.
+(pdftex.def)             Requested size: 289.07999pt x 41.96513pt.
+ [6 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
+posal_template/benchmark_eq.jpg>] [7]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
@@ -327,26 +315,27 @@ $\T1/cmtt/m/n/10.95 ubuntu-[]linux-[]install-[]or-[]add-[]php-[]gd-[]support-[]
 to-[]apache/$\T1/ptm/m/n/10.95 , 2012.  [On-line;
  []
 
-) [7]
+) [8]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2144 strings out of 493921
- 30406 string characters out of 3144873
- 83609 words of memory out of 3000000
- 5376 multiletter control sequences out of 15000+200000
- 33460 words of font info for 52 fonts, out of 3000000 for 9000
+ 2134 strings out of 493921
+ 30330 string characters out of 3144873
+ 83601 words of memory out of 3000000
+ 5374 multiletter control sequences out of 15000+200000
+ 34518 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,11n,43p,1287b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,43p,1386b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/font
 s/enc/dvips/fontname/8r.enc} <C:\Users\Braden\AppData\Local\MiKTeX\2.9\fonts\pk
 \ljfour\jknappen\ec\dpi600\ectt1095.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
-times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri
-8a.pfb>
-Output written on senior_thesis_proposal.pdf (7 pages, 136642 bytes).
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on senior_thesis_proposal.pdf (8 pages, 169211 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

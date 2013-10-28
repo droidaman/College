@@ -214,26 +214,58 @@ accordingly with preventative maintenance and any required space additions.
 %   * Enter the text of your related work section here.                *
 %   ********************************************************************
 
-Removed as document will not compile with this section - too many errors and the document will be blank after this point.
+Though I will not be comparing existing images located in a database, the paper by Lee, Ke, and Isard \cite{Lee:2010} can be useful in method of approach. During their research they utilized a Partition min-hash function for discovering near-duplicate images. Their algorithm doesn't look at the image as a whole as many other algorithms do, but it in fact only looks at the image in several smaller pieces. They claimed that the algorithm is actually faster and more effective than standard min-Hash functions which look at the entire image as they only require several smaller regions. Since the proposed research I will be performing is highly efficiency sensitive due to its web based structure, I believe this method of image comparison would be highly valuable and will attempt to reconstruct the algorithm in one manner or another.
 
-Original text:
-Summarize the previously published papers and books that are related
-to your proposed research.  Whenever possible, you should compare and
-contrast your approach with the ones that have been discussed in the
-past.  As you describe your papers, please make sure that you cite
-them properly.
+Another article that will be vital to creating an effective an efficient image matching algorithm will be the 2010 paper by Srinivasan. This research was target at web-based image matching, which is exactly what I am going to perform. This research claims that traditional near-duplicate detection systems are not applicable for the de-duplication of large-scale web image collections. \cite{Srinivasan:2008} The research performed targeted an image matching system which was scalable, highly efficient, and effective.
 
-Let's use the rest of this section to generate out bibliography!
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=4.5in]{fourierTrans}
+\caption{Fourier Transform Used by Authors}
+\label{related-fourier}
+\end{figure}
+
+In order to perform the effective image matching the authors required, they decided to implement a thumbnail matching based system. This algorithm would generate a 130-bit thumbnail representation of the image using the Fourier Transform method outlined in figure \ref{related-fourier} and was capable of finding near-duplicate images while operating in $O(1)$ time.  \cite{Srinivasan:2008}
+
+When using this thumbnail method, the authors were able to adjust automatically for differences in resolution, arbitrary amounts of cropping, caption, logo, and other manipulations, in assition to color, and rotation variations. This will all be vitally important with the research being proposed, as each of these are highly probable, and will likely each be included in the final tests performed on the implemented system.
+
+Due to the web based nature of the proposed research, another article, written by Foo, Zobel, Sinha, and Tahaghoghi in 2007 focuses primarily on web search based image matching. Their research primarily targets the finding and determination of types of copyright infringement as most near-duplicate images are derived from one source. The goal of their research was not to derive an algorithm capable of matching images, but was to locate duplicate and near-duplicate images on the web using search engines, and determine the most common methods of image alteration leading to redundancy and possibly copyright infringement. Their research will be invaluable to the proposed research as it will then be possible to target the most common methods of image alteration when creating a matching algorithm. To locate their image set to work with, they used the most popular search queries of 2005 and collected the number of images, and determined the number of unique images based off of the results returned. As a note, images with non-unique URLs were not included to prevent false duplicates from the same sites. In conclusion, the authors found that the most common alterations, ordered from one to 10, one being the most common were as follows: \cite{Foo:2007}
+\begin{enumerate}
+\item
+\textbf{Combination:} Images with one or more alterations.
+\item
+\textbf{Scale:} Images that difer in size.
+\item
+\textbf{Crop/Zoom:} Images that are cropped from the original.
+\item
+\textbf{Picture in Picture:} Images that contain another image.
+\item
+\textbf{Contract:} Images that have adjusted contrast.
+\item
+\textbf{Border/Frame:} Images that have added borders or frames.
+\item
+\textbf{Grayscale:} Images that have been converted to grayscale.
+\item
+\textbf{Recoloring:} Images with colors that have been modified.
+\item
+\textbf{Mirror:} Images that have been mirrored to prevent copyright infringement detection.
+\item
+\textbf{Rotate:} Images that have been rotated.
+\end{enumerate}
+
+The research proposed will not focus on every one of these common parameters that have been found, but will focus on a select group of these common alterations outlined in section \ref{sec:method}.
+
+Finally, the most relevant information found will provide a codebase for the algorithm and research to springboard from. An individual outlined a method of using PHP libraries to generate real-time thumbnails and hashes of images and compare them to ones currently located on a server before uploading. If the image is a duplicate it would be denied the privilege of being uploaded and tell the user so. This system is extremely limited as it provides the user with no way of adding an image to the server if it is not a duplicate and is only a false positive, and if it is unique, does not provide them with a method of accessing the already-present file.
+
+The code used to generate the image will be used as a base to generate a fully functional image sharing site with duplicate-reduction systems and allow for the testing of the effectiveness of such a system over traditional methods of sharing with duplicates allowed. The system created by the author generates a 16x16 thumbnail of each image on the server, and of the image being uploaded. From here, the algorithm will compare the thumbnail, black and white, and color histograms, and determine if it is a duplicate based off the threshold setting set by the server administrator for allowable differences. \cite{catpa:gdcode}. The proposed research will utilize this exact method, but will provide code improvements to utilize less memory by implementing the PHP Improved libraries and also checking images for immediate similarities in resolution, exact image matching with a full MD5 image hash, and by comparison of metadata. These methods require minimal calculation and is a simple comparison of strings compared to the generation of histograms and resizing of images as a first step. After the initial string comparison approach, the provided code will be used to calculate the average deviation between the teo images and will allow for easy expansion of the system to hopefully provide a faster more effective image matching system.
+
+Using the remainder of the section to generate the bibliography that I didn't reference.
 \cite{nettuts:pdosqli}
 \cite{about:rename}
 \cite{php:uploads}
-\cite{catpa:gdcode}
 \cite{ubuntu:lampsetup}
 \cite{nix:gdsetup}
 \cite{php:gdimg}
-\cite{Foo:2007}
-\cite{Srinivasan:2008}
-\cite{Lee:2010}.
 
 \vspace*{-.2in}
 \section{Method of Approach}
@@ -257,36 +289,36 @@ If an image is indeed found to be duplicate, and the user chooses to use the hig
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=4.5in]{upprocess}
+\includegraphics[width=5.8in]{upprocess}
 \caption{Streamlined upload process}
 \label{method-fig1}
 \end{figure}
 
 When a user accesses the file from the provided link, the system will run a query that looks up the image identifier provided in the URL, if it matches an image on the server, the image location will be used to provide the image to the user for viewing. The user never notices a difference, but on the server side we have ensured file redundancy has been eliminated and possibly improved user experience by providing the user with higher quality content than what they were expecting. If the image is not found, a 404 "Image cannot be found." error will be displayed to let the user know something went wrong.
 
-Left the figures intact temporarily for future reference in case I need a table.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=5in]{flow}
-\caption{Flow graph for proposal-writing}
-\label{intro-fig1}
-\end{figure}
-
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|c||c|c|}
-\hline
-\bf Task & \bf Begin Date & \bf End Date\\\hline\hline
-First draft & Now & 20 Sept\\\hline
-Second draft & 20 Sept & 27 Sept\\\hline
-Third draft & 27 Sept & 4 Oct\\\hline
-Fourth draft & 4 Oct & 11 Oct\\\hline
-Fifth draft & 11 Oct & 18 Oct\\\hline
-\end{tabular}
-\caption{Proposed work schedule}
-\label{intro-tab1}
-\end{table}
+%Left the figures intact temporarily for future reference in case I need a table.
+%
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[width=5in]{flow}
+%\caption{Flow graph for proposal-writing}
+%\label{intro-fig1}
+%\end{figure}
+%
+%\begin{table}[htbp]
+%\centering
+%\begin{tabular}{|c||c|c|}
+%\hline
+%\bf Task & \bf Begin Date & \bf End Date\\\hline\hline
+%First draft & Now & 20 Sept\\\hline
+%Second draft & 20 Sept & 27 Sept\\\hline
+%Third draft & 27 Sept & 4 Oct\\\hline
+%Fourth draft & 4 Oct & 11 Oct\\\hline
+%Fifth draft & 11 Oct & 18 Oct\\\hline
+%\end{tabular}
+%\caption{Proposed work schedule}
+%\label{intro-tab1}
+%\end{table}
 
 \vspace*{-.2in}
 \section{Evaluation Strategy}
