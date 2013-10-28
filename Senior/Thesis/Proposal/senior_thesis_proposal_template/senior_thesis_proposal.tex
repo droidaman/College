@@ -48,7 +48,7 @@
 %   ********************************************************************
 
 \usepackage{fancyhdr} 
-\usepackage{url}
+\usepackage[hyphens]{url}
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \epstopdfsetup{update} % only regenerate pdf files when eps file is newer
@@ -225,11 +225,11 @@ Another article that will be vital to creating an effective an efficient image m
 \label{related-fourier}
 \end{figure}
 
-In order to perform the effective image matching the authors required, they decided to implement a thumbnail matching based system. This algorithm would generate a 130-bit thumbnail representation of the image using the Fourier Transform method outlined in figure \ref{related-fourier} and was capable of finding near-duplicate images while operating in $O(1)$ time.  \cite{Srinivasan:2008}
+In order to perform the effective image matching the authors required, they decided to implement a thumbnail matching based system. This algorithm would generate a 130-bit thumbnail representation of the image using the Fourier Transform method outlined in figure \ref{related-fourier} and was capable of finding near-duplicate images while operating in $O(1)$ time \cite{Srinivasan:2008}.
 
 When using this thumbnail method, the authors were able to adjust automatically for differences in resolution, arbitrary amounts of cropping, caption, logo, and other manipulations, in assition to color, and rotation variations. This will all be vitally important with the research being proposed, as each of these are highly probable, and will likely each be included in the final tests performed on the implemented system.
 
-Due to the web based nature of the proposed research, another article, written by Foo, Zobel, Sinha, and Tahaghoghi in 2007 focuses primarily on web search based image matching. Their research primarily targets the finding and determination of types of copyright infringement as most near-duplicate images are derived from one source. The goal of their research was not to derive an algorithm capable of matching images, but was to locate duplicate and near-duplicate images on the web using search engines, and determine the most common methods of image alteration leading to redundancy and possibly copyright infringement. Their research will be invaluable to the proposed research as it will then be possible to target the most common methods of image alteration when creating a matching algorithm. To locate their image set to work with, they used the most popular search queries of 2005 and collected the number of images, and determined the number of unique images based off of the results returned. As a note, images with non-unique URLs were not included to prevent false duplicates from the same sites. In conclusion, the authors found that the most common alterations, ordered from one to 10, one being the most common were as follows: \cite{Foo:2007}
+Due to the web based nature of the proposed research, another article, written by Foo, Zobel, Sinha, and Tahaghoghi in 2007 focuses primarily on web search based image matching \cite{Foo:2007}. Their research primarily targets the finding and determination of types of copyright infringement as most near-duplicate images are derived from one source. The goal of their research was not to derive an algorithm capable of matching images, but was to locate duplicate and near-duplicate images on the web using search engines, and determine the most common methods of image alteration leading to redundancy and possibly copyright infringement. Their research will be invaluable to the proposed research as it will then be possible to target the most common methods of image alteration when creating a matching algorithm. To locate their image set to work with, they used the most popular search queries of 2005 and collected the number of images, and determined the number of unique images based off of the results returned. As a note, images with non-unique URLs were not included to prevent false duplicates from the same sites. In conclusion, the authors found that the most common alterations, ordered from one to 10, one being the most common were as follows \cite{Foo:2007}:
 \begin{enumerate}
 \item
 \textbf{Combination:} Images with one or more alterations.
@@ -240,7 +240,7 @@ Due to the web based nature of the proposed research, another article, written b
 \item
 \textbf{Picture in Picture:} Images that contain another image.
 \item
-\textbf{Contract:} Images that have adjusted contrast.
+\textbf{Contrast:} Images that have adjusted contrast.
 \item
 \textbf{Border/Frame:} Images that have added borders or frames.
 \item
@@ -257,15 +257,7 @@ The research proposed will not focus on every one of these common parameters tha
 
 Finally, the most relevant information found will provide a codebase for the algorithm and research to springboard from. An individual outlined a method of using PHP libraries to generate real-time thumbnails and hashes of images and compare them to ones currently located on a server before uploading. If the image is a duplicate it would be denied the privilege of being uploaded and tell the user so. This system is extremely limited as it provides the user with no way of adding an image to the server if it is not a duplicate and is only a false positive, and if it is unique, does not provide them with a method of accessing the already-present file.
 
-The code used to generate the image will be used as a base to generate a fully functional image sharing site with duplicate-reduction systems and allow for the testing of the effectiveness of such a system over traditional methods of sharing with duplicates allowed. The system created by the author generates a 16x16 thumbnail of each image on the server, and of the image being uploaded. From here, the algorithm will compare the thumbnail, black and white, and color histograms, and determine if it is a duplicate based off the threshold setting set by the server administrator for allowable differences. \cite{catpa:gdcode}. The proposed research will utilize this exact method, but will provide code improvements to utilize less memory by implementing the PHP Improved libraries and also checking images for immediate similarities in resolution, exact image matching with a full MD5 image hash, and by comparison of metadata. These methods require minimal calculation and is a simple comparison of strings compared to the generation of histograms and resizing of images as a first step. After the initial string comparison approach, the provided code will be used to calculate the average deviation between the teo images and will allow for easy expansion of the system to hopefully provide a faster more effective image matching system.
-
-Using the remainder of the section to generate the bibliography that I didn't reference.
-\cite{nettuts:pdosqli}
-\cite{about:rename}
-\cite{php:uploads}
-\cite{ubuntu:lampsetup}
-\cite{nix:gdsetup}
-\cite{php:gdimg}
+The code used to generate the image will be used as a base to generate a fully functional image sharing site with duplicate-reduction systems and allow for the testing of the effectiveness of such a system over traditional methods of sharing with duplicates allowed. The system created by the author generates a 16x16 thumbnail of each image on the server, and of the image being uploaded. From here, the algorithm will compare the thumbnail, black and white, and color histograms, and determine if it is a duplicate based off the threshold setting set by the server administrator for allowable differences \cite{catpa:gdcode}. The proposed research will utilize this exact method, but will provide code improvements to utilize less memory by implementing the PHP Improved libraries and also checking images for immediate similarities in resolution, exact image matching with a full MD5 image hash, and by comparison of metadata. These methods require minimal calculation and is a simple comparison of strings compared to the generation of histograms and resizing of images as a first step. After the initial string comparison approach, the provided code will be used to calculate the average deviation between the two images and will allow for easy expansion of the system to hopefully provide a faster more effective image matching system.
 
 \vspace*{-.2in}
 \section{Method of Approach}
@@ -277,19 +269,19 @@ Using the remainder of the section to generate the bibliography that I didn't re
 %   ********************************************************************
 In order to implement the proposed research, the website will be run on a custom server with an allocated 5 Gigabytes of dedicated storage, 8 Gigabytes of RAM, and a Core i3 2.43 GHz processor. All services and programs will be shut down during the experiment except for Apache, MySQL, PHP, and Webmin to ensure consistent results. Throughout the duration of the experiment, no software updates will be installed other than security related operating system updates. The website must be designed to be lightweight, have no extraneous scripts or applets running on the upload page, and will be compatible with WebKit browsers such as Firefox. This limitation will allow for a focused effort in file management on a specific platform and will allow room for further research after the tool has been optimized. To start, a database will be implemented so that it is able to hold a hashed key for each uploaded image and the location of the file on the disk in addition to upload statistics such as upload method and time taken to complete the task. An example of this schema can be seen in (schema to be added when finalized). %\ref{fig:schema}
 
-The website will run multiple scripts for each upload. The first script will be a traditional upload method where the user supplies a file, it will be uploaded to the server, and the server will return a unique URL to access the image from at a later time. During this process, each file will be assigned a new, unique name to prevent collisions upon upload. An INSERT will then be run on the database for the image and will record the files location on the server, the file name, that it was uploaded using the traditional method, the unique URL to access it from, and an ID for each insert into the database. After the completion of the process an UPDATE will be run on the database entry created by the INSERT above. The time taken to complete the task will be included in that entry and can be used to analyze the efficiency of both systems upon the completion of the tests outlined in \ref{sec:evaluate}.
+The website will run multiple scripts for each upload. The first script will be a traditional upload method where the user supplies a file, it will be uploaded to the server, and the server will return a unique URL to access the image from at a later time. During this process, each file will be assigned a new, unique name to prevent collisions upon upload. A SQL {\tt "INSERT"} will then be run on the database for the image and will record the files location on the server, the file name, that it was uploaded using the traditional method, the unique URL to access it from, and an {\tt ID} for each insert into the database. After the completion of the process an {\tt "UPDATE"} will be run on the database entry created by the {\tt "INSERT"} above. The time taken to complete the task will be included in that entry and can be used to analyze the efficiency of both systems upon the completion of the tests outlined in section \ref{sec:evaluate}.
 
-After the first script completes, a second script will be called. This will perform mostly the same function as the traditional upload script, but will check each upload for duplicates and handle each case appropriately. This script will use the file uploaded and used in the section above. The image will be taken and converted into a 16x16 black-and-white thumbnail and a histogram will be produced from that image. The server will then look into the database and check whether or not any images uploaded with the duplicate reduced system are similar to the one looking to be uploaded. If there are no matches, then the image will be uploaded to the server. At this time an INSERT will then be run on the database for the image and will record the files location on the server, the file name, that it was uploaded using the duplicate-reduced method, the unique URL to access it from, the image's MD5 hashed histogram that is described below, and an ID for each insert into the database. After the completion of the process an UPDATE will be run on the database entry created by the INSERT above.
+After the first script completes, a second script will be called. This will perform mostly the same function as the traditional upload script, but will check each upload for duplicates and handle each case appropriately. This script will use the file uploaded and used in the section above. The image will be taken and converted into a 16x16 black-and-white thumbnail and a histogram will be produced from that image. The server will then look into the database and check whether or not any images uploaded with the duplicate reduced system are similar to the one looking to be uploaded. If there are no matches, then the image will be uploaded to the server. At this time a SQL {\tt "INSERT"} will then be run on the database for the image and will record the files location on the server, the file name, that it was uploaded using the duplicate-reduced method, the unique URL to access it from, the image's MD5 hashed histogram that is described below, and an {\tt ID} for each insert into the database. After the completion of the process an {\tt "UPDATE"} will be run on the database entry created by the {\tt "INSERT"} above.
 
-If the image histogram closely matches or is an identical match to the image on the server, a color profile will be generated real time for both images and compared. If there is a match or close match, the script will compare several small, randomly chosen blocks on the images. If these match, then the image is assumed to be a  duplicate and a prompt will be displayed to the user showing them the image they provided and the possible match that already exists. If the image is verified a match, the higher of the two resolutions will be kept, and the user will be given a unique link to the image. If the user decides the image is not a duplicate, the system will run an INSERT on the database as outlined earlier, and it will be added to the database. Following the completion of this process an UPDATE will be run on the lase INSERT and the time taken to complete the task will be included in that entry.
+If the image histogram closely matches or is an identical match to the image on the server, a color profile will be generated real time for both images and compared. If there is a match or close match, the script will compare several small, randomly chosen blocks on the images. If these match, then the image is assumed to be a  duplicate and a prompt will be displayed to the user showing them the image they provided and the possible match that already exists. If the image is verified a match, the higher of the two resolutions will be kept, and the user will be given a unique link to the image. If the user decides the image is not a duplicate, the system will run an {\tt "INSERT"} on the database as outlined earlier, and it will be added to the database. Following the completion of this process an {\tt "UPDATE"} will be run on the last {\tt "INSERT"} and the time taken to complete the task will be included in that entry.
 
-In the case of requiring duplicate files, where the user decides to upload the image regardless of uniqueness, the script will be able to differentiate between the two images with the unique image ID that is generated at the time of insertion into the database. The first occurrence of the duplicate image or the one closest matching a new upload will be used in the prompt to the user to prevent frustration with multiple prompts every time more than one duplicate is found.
+In the case of requiring duplicate files, where the user decides to upload the image regardless of uniqueness, the script will be able to differentiate between the two images with the unique image ID that is generated at the time of insertion into the database. The closest matching occurance of an image on the server compared to a new upload will be used in the prompt displayed to the user. This will prevent frustration with multiple prompts every time more than one duplicate is found.
 
-If an image is indeed found to be duplicate, and the user chooses to use the higher resolution image that is on the server, a unique link will be generated for them and an INSERT statement will be run containing the same information as the matching file's insert did at the time of upload. This will allow multiple links that point to the same image and the user will be unaware of the system operating in the background which will provide a consistent experience. An outline of this full process can be seen in figure \ref{method-fig1}
+If an image is indeed found to be duplicate, and the user chooses to use the higher resolution image that is on the server, a unique link will be generated for them and an {\tt "INSERT"} statement will be run containing the same information as the matching file's insert did at the time of upload. This will allow multiple links that point to the same image and the user will be unaware of the system operating in the background which will provide a consistent experience. An outline of this full process can be seen in figure \ref{method-fig1}.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=5.8in]{upprocess}
+\includegraphics[width=6in]{upprocess}
 \caption{Streamlined upload process}
 \label{method-fig1}
 \end{figure}
@@ -333,7 +325,7 @@ Evaluating the effectiveness of the website will entail several benchmark readin
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=4in]{benchmark_eq}
+\[\left ( \frac{Base - Reduced}{Base} \right ) * 100 = \% Improvement Over Base\]
 \caption{Equation for determining efficiency improvements}
 \label{benchmark_eq}
 \end{figure}
@@ -351,15 +343,15 @@ The research schedule for the project is to be tentatively based off of the foll
 Due to the nature of the project and the wide array of pre-existing software required needing to
 be modified and implemented, unseen hurdles may arise.
 
-Phase 1 - 1 month: Find acceptable operating system set up a fully functional LAMP server to host website and provide storage of submitted images. During this time, I will begin learning and installing PHP and JavaScript libraries so code implementation can begin shortly after the completion of server setup.
+Phase 1:1 month: Find acceptable operating system set up a fully functional LAMP server to host website and provide storage of submitted images. During this time, I will begin learning and installing PHP and JavaScript libraries so code implementation can begin shortly after the completion of server setup.
 
-Phase 2 - 2-3 months: Develop a working image sharing website which is capable of satisfying the requirements
+Phase 2:2-3 months: Develop a working image sharing website which is capable of satisfying the requirements
 outlined in \ref{sec:method}. Set up two basic file and database structures to be used throughout the experiment. One will be used as a baseline and the other structure will function as the duplicate-reduced system. Both will host the image files, file information, and time taken to add files to the database. The system will also track the average upload time for each method, the total number of files, and the total size of each upload directory.
 
-Phase 3 - 1 week: During this time I will run various tests on the website using the proposed
+Phase 3:1 week: During this time I will run various tests on the website using the proposed
 methods in \ref{sec:method} and record the results of the experiment. After the new image files have been added to the collection, some unique, and others duplicate, the submissions directory on the server will be scanned for  duplicates and ensure none were accidentally added. Results to be recorded are the final number of files, the number of duplicate images, and the total storage space used.
 
-Phase 4 - remaining time: The results gathered throughout the test process will be evaluated and
+Phase 4:Remaining time: The results gathered throughout the test process will be evaluated and
 the website algorithms tweaked and finalized. After modifications are complete tests will be rerun and the
 final results will be evaluated.
 \vspace*{-.1in}
@@ -375,6 +367,7 @@ With computers becoming ever more prevalent and data being generated and shared 
 sharing sites and preventing the addition of new duplicates we can begin to tackle this issue and begin reducing the storage requirements of running such systems. Aside from just reducing storage overhead it can also be possible to reduce time overhead of searching for images and the amount of bandwidth needed to operate these systems. In addition, a significant amount of money can be saved as a result of reduced electrical costs per node, and even reduce the number of server nodes in extreme cases of redundancy.
 
 \newpage
+\nocite{*}
 \bibliographystyle{plain}
 \bibliography{senior_thesis_proposal}
 
