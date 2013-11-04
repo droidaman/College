@@ -61,6 +61,15 @@ nixCraft.
   2012.
 \newblock [Online; accessed 30-September-2013].
 
+\bibitem{ntps:staledata}
+NTP Software.
+\newblock {S}urvey {S}ays {N}early {T}wo-{T}hirds of {F}iles on {P}rimary
+  {S}torage {A}re {S}tale.
+\newblock
+  \url{www.ntpsoftware.com/pressroom/survey-says-nearly-two-thirds-files-primary-storage-are-stale},
+  2013.
+\newblock [Online; accessed 31-October-2013].
+
 \bibitem{Srinivasan:2008}
 S~H. Srinivasan and Neela Sawant.
 \newblock {F}inding {N}ear-duplicate {I}mages on the {W}eb {U}sing
