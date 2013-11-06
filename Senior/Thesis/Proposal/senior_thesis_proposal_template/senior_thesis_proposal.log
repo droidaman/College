@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  1 NOV 2013 18:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  6 NOV 2013 15:01
 entering extended mode
 **senior_thesis_proposal.tex
 
@@ -269,43 +269,43 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 <imagesamples.png, id=8, 4117.13156pt x 2599.46156pt>
 File: imagesamples.png Graphic file (type png)
  <use imagesamples.png>
-Package pdftex.def Info: imagesamples.png used on input line 225.
+Package pdftex.def Info: imagesamples.png used on input line 224.
 (pdftex.def)             Requested size: 252.94499pt x 159.68942pt.
 
 [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 235.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 234.
  [3 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
 posal_template/imagesamples.png>]
-<schema.png, id=19, 497.60907pt x 175.40532pt>
+<schema.png, id=19, 464.4853pt x 175.40532pt>
 File: schema.png Graphic file (type png)
  <use schema.png>
-Package pdftex.def Info: schema.png used on input line 274.
-(pdftex.def)             Requested size: 361.34999pt x 127.37569pt.
+Package pdftex.def Info: schema.png used on input line 273.
+(pdftex.def)             Requested size: 361.34999pt x 136.4623pt.
  [4] [5 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis
 _proposal_template/schema.png>] <upprocess.png, id=28, 505.89pt x 235.63031pt>
 File: upprocess.png Graphic file (type png)
 
 <use upprocess.png>
-Package pdftex.def Info: upprocess.png used on input line 291.
+Package pdftex.def Info: upprocess.png used on input line 290.
 (pdftex.def)             Requested size: 361.34999pt x 168.30899pt.
  [6 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
 posal_template/upprocess.png>] [7] [8]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.bbl
-Underfull \hbox (badness 3930) in paragraph at lines 56--63
+Underfull \hbox (badness 3930) in paragraph at lines 63--70
 []\T1/ptm/m/n/10.95 nixCraft.  Ubuntu Linux: In-stall or Add PHP-GD Sup-port to
  Apache Web
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 56--63
+Underfull \hbox (badness 1742) in paragraph at lines 63--70
 \T1/ptm/m/n/10.95 Server.  $\T1/cmtt/m/n/10.95 http : / / www . cyberciti . biz
  / faq / ubuntu -[] linux -[] install -[] or -[] add -[] php -[]$
  []
 
 
-Underfull \hbox (badness 2865) in paragraph at lines 65--72
+Underfull \hbox (badness 2865) in paragraph at lines 72--79
 []\T1/ptm/m/n/10.95 NTP Soft-ware.  Sur-vey Says Nearly Two-Thirds of Files on 
 Pri-mary Stor-age
  []
@@ -314,13 +314,13 @@ Pri-mary Stor-age
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2140 strings out of 493921
- 30346 string characters out of 3144873
- 83622 words of memory out of 3000000
- 5376 multiletter control sequences out of 15000+200000
+ 2141 strings out of 493921
+ 30365 string characters out of 3144873
+ 83626 words of memory out of 3000000
+ 5377 multiletter control sequences out of 15000+200000
  35718 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,11n,43p,1466b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,43p,1475b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/font
 s/enc/dvips/fontname/8r.enc} <C:\Users\Braden\AppData\Local\MiKTeX\2.9\fonts\pk
 \ljfour\jknappen\ec\dpi600\ectt1095.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts
@@ -330,9 +330,9 @@ ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on senior_thesis_proposal.pdf (9 pages, 21644036 bytes).
+Output written on senior_thesis_proposal.pdf (9 pages, 21644540 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

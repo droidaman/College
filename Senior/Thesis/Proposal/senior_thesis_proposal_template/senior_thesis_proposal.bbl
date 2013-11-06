@@ -52,6 +52,13 @@ Dejan Marjanovic.
   2012.
 \newblock [Online; accessed 02-October-2013].
 
+\bibitem{tecnick:testimage}
+TecNick~LTD Nicola~Asuni.
+\newblock {TESTIMAGES}.
+\newblock \url{www.tecnick.com/public/code/cp_dpage.php?aiocp_dp=testimages},
+  2013.
+\newblock [Online; accessed 3-November-2013].
+
 \bibitem{nix:gdsetup}
 nixCraft.
 \newblock {U}buntu {L}inux: {I}nstall or {A}dd {PHP}-{GD} {S}upport to {A}pache
