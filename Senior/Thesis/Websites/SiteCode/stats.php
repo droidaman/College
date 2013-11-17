@@ -16,7 +16,7 @@
 				if(is_dir($dir."/".$filename)) {
 					$new_folderstats = folderstats($dir."/".$filename);
 					$count_size = $count_size + $new_folderstats[0];
-					$count = $count + $new_folderstats[1];
+					$count += $new_folderstats[1];
 				} else if(is_file($dir."/".$filename)) {
 					$count_size = $count_size + filesize($dir."/".$filename);
 					$count++;
@@ -25,8 +25,8 @@
 		return array($count_size,$count);
 	}
 	
-	$dirupld = folderstats("/var/www/srthesis/uploads/");
-	$dirupldred = folderstats("/var/www/srthesis/uploads_reduced/");
+	$dirupld = folderstats("/var/www/srthesis/uploads");
+	$dirupldred = folderstats("/var/www/srthesis/uploads_reduced");
 
 ?>
  
@@ -96,7 +96,7 @@
 		          <figure><img src="images/settings.gif" width="32" height="32" alt=""></figure>
 		          <strong>Server Statistics</strong>
 				  <div><br /><br /><hr /></div>
-				  <p>Using the proposed redundency minimalization algorithms it is possible to reduce </p>
+				  <p>Using the proposed redundency minimalization algorithms storage usage was reduced <?php echo round(((($dirupld[0]-$dirupldred[0])/$dirupld[0])*100), 2);  ?>% .</p>
 		          <p>This feature is currently unavailable, please view full stats for this information.</p>
 		          <p class="more"><a href="../service-status">View Full Statistics &raquo;</a></p>
 		        </article>
@@ -106,7 +106,7 @@
 		      <!-- Locate the image on the server with the DB entry -->
 				<?php
 					try {
-						$stmt = $conn->prepare('SELECT * FROM share_tracker ORDER BY ID DESC LIMIT 4');
+						$stmt = $conn->prepare('SELECT * FROM share_tracker WHERE uMethod = "1" ORDER BY ID DESC LIMIT 4');
 						$stmt->execute();
 						// Get array containing all of the result rows
 						$result = $stmt->fetchAll();
@@ -180,8 +180,14 @@
 
 	<input type="hidden" name="upldsz" id="upldsz" value="<?php echo json_encode($dirupld[0]); ?>">
 	<input type="hidden" name="upldredsz" id="upldredsz" value=" <?php echo json_encode($dirupldred[0]); ?>">
-	<input type="hidden" name="upldct" id="upldct" value="<?php echo json_encode($dirupld[1]); ?>">
-	<input type="hidden" name="upldredct" id="upldredct" value=" <?php echo json_encode($dirupldred[1]); ?>">
+	<?php if ($dirupld[1] == 0 && $dirupldred[1] == 0){	?>
+		<input type="hidden" name="upldct" id="upldct" value="<?php echo json_encode($dirupld[1]); ?>">
+		<input type="hidden" name="upldredct" id="upldredct" value=" <?php echo json_encode($dirupldred[1]); ?>">
+	<?php } else { ?>
+		<input type="hidden" name="upldct" id="upldct" value="<?php echo json_encode($dirupld[1]+1); ?>">
+		<input type="hidden" name="upldredct" id="upldredct" value=" <?php echo json_encode($dirupldred[1]+1); ?>">
+	<?php } ?>
+	
 
 	<!-- Scripts for the bar graphs! -->
 	<!--[if IE]><script src="scripts/excanvas.js"></script><![endif]-->

@@ -2,7 +2,7 @@
 var iBytesUploaded = 0;
 var iBytesTotal = 0;
 var iPreviousBytesLoaded = 0;
-var iMaxFilesize = 5; // Max file upload size in Megabytes
+var iMaxFilesize = 15; // Max file upload size in Megabytes
 var iMaxFilesizeInBytes = iMaxFilesize * 1048576; // Convert megabytes to a usable format
 var oTimer = 0;
 var sResultFileSize = '';
@@ -28,12 +28,13 @@ function bytesToSize(bytes) {
 
 function fileSelected() {
 
-    // hide different warnings
+    // hide different warnings and status blocks
     document.getElementById('upload_response').style.display = 'none';
     document.getElementById('error').style.display = 'none';
     document.getElementById('error2').style.display = 'none';
     document.getElementById('abort').style.display = 'none';
     document.getElementById('warnsize').style.display = 'none';
+   	document.getElementById('progress_info').style.display = 'none';
 
     // get selected file element
     var oFile = document.getElementById('image_file').files[0];
@@ -43,13 +44,23 @@ function fileSelected() {
     var rFilter = /^(image\/jpeg)$/i;
     if (! rFilter.test(oFile.type)) {
         document.getElementById('error').style.display = 'block';
+    	document.getElementById('btnUpload').disabled = true;
+	   	document.getElementById('progress_info').style.display = 'none';
+	   	document.getElementById('upload_response').style.display = 'none';
         return;
     }
 
-    // little test for filesize
+    // Little test for filesize
     if (oFile.size > iMaxFilesizeInBytes) {
         document.getElementById('warnsize').style.display = 'block';
+    	document.getElementById('btnUpload').disabled = true;
+	   	document.getElementById('progress_info').style.display = 'none';
+	   	document.getElementById('upload_response').style.display = 'none';
         return;
+    }
+    
+    if (rFilter.test(oFile.type) && oFile.size <= iMaxFilesizeInBytes) {
+    	document.getElementById('btnUpload').disabled = false;
     }
 
     // get preview element
@@ -87,6 +98,10 @@ function startUploading() {
     document.getElementById('abort').style.display = 'none';
     document.getElementById('warnsize').style.display = 'none';
     document.getElementById('progress_percent').innerHTML = '';
+    document.getElementById('progress_info').style.display = 'block';
+    document.getElementById('upload_response').style.display = 'block';
+   	document.getElementById('btnUpload').disabled = true;
+
     var oProgress = document.getElementById('progress');
     oProgress.style.display = 'block';
     oProgress.style.width = '0px';
@@ -130,7 +145,7 @@ function doInnerUpdates() { // we will use this function to display upload speed
     }
 
     document.getElementById('speed').innerHTML = iSpeed;
-    document.getElementById('remaining').innerHTML = '| ' + secondsToTime(secondsRemaining);        
+    document.getElementById('remaining').innerHTML = '| Remaining: ' + secondsToTime(secondsRemaining);        
 }
 
 function uploadProgress(e) { // upload process in progress
@@ -149,7 +164,7 @@ function uploadProgress(e) { // upload process in progress
             oUploadResponse.style.display = 'block';
         }
     } else {
-        document.getElementById('progress').innerHTML = 'unable to compute';
+        document.getElementById('progress').innerHTML = 'Unable to compute';
     }
 }
 
@@ -159,19 +174,21 @@ function uploadFinish(e) { // upload successfully finished
     oUploadResponse.style.display = 'block';
 
     document.getElementById('progress_percent').innerHTML = '100%';
-    document.getElementById('progress').style.width = '400px';
-    document.getElementById('filesize').innerHTML = sResultFileSize;
-    document.getElementById('remaining').innerHTML = '| 00:00:00';
+    document.getElementById('progress').style.width = '650px';
+    document.getElementById('filesize').innerHTML = 'Size: ' + sResultFileSize;
+    document.getElementById('remaining').innerHTML = '|   Upload complete';
 
     clearInterval(oTimer);
 }
 
 function uploadError(e) { // upload error
     document.getElementById('error2').style.display = 'block';
+   	document.getElementById('btnUpload').disabled = false;
     clearInterval(oTimer);
 }  
 
 function uploadAbort(e) { // upload abort
     document.getElementById('abort').style.display = 'block';
+   	document.getElementById('btnUpload').disabled = false;
     clearInterval(oTimer);
 }

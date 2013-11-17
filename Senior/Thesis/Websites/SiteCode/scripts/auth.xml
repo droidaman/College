@@ -15,4 +15,9 @@
 		<password>dNGw3h</password>
 		<name>Professor Kapfhammer</name>
 	</login_details>
+	<login_details>
+		<username>dboyer</username>
+		<password>m36a3D</password>
+		<name>Devin</name>
+	</login_details>
 </SitePermissions>

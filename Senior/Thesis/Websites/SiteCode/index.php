@@ -40,7 +40,7 @@
 		  <div id="container" class="clear">
 		    <!-- content body -->
 		   	<section id="shout">
-		    	<p style="text-align:center">Welcome! This site is the work of Braden Licastro for the Allegheny College Department of Computer Science Senior Thesis.<br />Keep checking back for frequent changes as rapid development of website code and support documentation occurs daily!</p>
+		    	<p style="text-align:center">Welcome! This site is the thesis work of Braden Licastro for the Allegheny College Department of Computer Science.<br />Keep checking back for frequent changes as rapid development of website code and support documentation occurs daily!</p>
 		    </section>
 		    <section id="slider"><a href="#"><img src="images/960x360.gif" alt=""></a></section>
 		    

@@ -1,5 +1,6 @@
 <?php
-	//Uncomment to turn on debugging
+	// Uncomment to turn on debugging
+	//error_reporting(E_ALL);
 	//ini_set('display_errors', 'On');
 
 	// Allow sessions to be passed so we can see if the user is logged in
@@ -140,9 +141,9 @@
 		                        	<div><input type="file" name="image_file" id="image_file" onchange="fileSelected();" /></div>
 		                    	</div>
 			                   	<div id="error">Valid .jpg or .jpeg image files only!</div>
-			                   	<div id="warnsize">Your file is too large. Please select a file smaller than 5MB. </div>
+			                   	<div id="warnsize">Your file is too large. Please select a file smaller than 15MB. </div>
 		                    	<div>
-		                        	<input type="button" value="Upload" onclick="startUploading()" />
+		                        	<input type="button" id="btnUpload" value="Upload" onclick="startUploading()" disabled="disabled" />
 		                    	</div>
 		                    	<div id="fileinfo">
 		                     	   <div id="filename"></div>
@@ -214,7 +215,7 @@
 				<!-- Locate the image on the server with the DB entry -->
 				<?php
 					try {
-						$stmt = $conn->prepare('SELECT * FROM share_tracker ORDER BY ID DESC LIMIT 4');
+						$stmt = $conn->prepare('SELECT * FROM share_tracker WHERE uMethod = "1" ORDER BY ID DESC LIMIT 4');
 						$stmt->execute();
 						// Get array containing all of the result rows
 						$result = $stmt->fetchAll();
