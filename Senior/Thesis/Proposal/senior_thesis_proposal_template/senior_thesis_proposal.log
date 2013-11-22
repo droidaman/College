@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  22 NOV 2013 01:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  22 NOV 2013 12:50
 entering extended mode
 **senior_thesis_proposal.tex
 
@@ -282,24 +282,55 @@ File: schema.png Graphic file (type png)
  <use schema.png>
 Package pdftex.def Info: schema.png used on input line 249.
 (pdftex.def)             Requested size: 361.34999pt x 136.4623pt.
- [4] [5 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis
-_proposal_template/schema.png>]
+ [4]
+<success_duponly.png, id=24, 369.63094pt x 146.79843pt>
+File: success_duponly.png Graphic file (type png)
+
+<use success_duponly.png>
+Package pdftex.def Info: success_duponly.png used on input line 258.
+(pdftex.def)             Requested size: 361.34999pt x 143.5098pt.
+ [5 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
+posal_template/schema.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Pro
+posal/senior_thesis_proposal_template/success_duponly.png>] <success_nodupfound
+.png, id=29, 470.50781pt x 168.63pt>
+File: success_nodupfound.png Graphic file (type png)
+
+<use success_nodupfound.png>
+Package pdftex.def Info: success_nodupfound.png used on input line 267.
+(pdftex.def)             Requested size: 397.48499pt x 142.45874pt.
+
+<success_dupfound.png, id=30, 414.79968pt x 168.63pt>
+File: success_dupfound.png Graphic file (type png)
+
+<use success_dupfound.png>
+Package pdftex.def Info: success_dupfound.png used on input line 276.
+(pdftex.def)             Requested size: 361.34999pt x 146.90503pt.
+ [6 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
+posal_template/success_nodupfound.png>]
 
 pdfTeX warning: pdflatex (file C:/Users/Braden/Documents/College/Senior/Thesis/
 Proposal/senior_thesis_proposal_template/upproc.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<upproc.pdf, id=28, 794.97pt x 614.295pt>
+<upproc.pdf, id=34, 794.97pt x 614.295pt>
 File: upproc.pdf Graphic file (type pdf)
  <use upproc.pdf>
-Package pdftex.def Info: upproc.pdf used on input line 266.
+Package pdftex.def Info: upproc.pdf used on input line 287.
 (pdftex.def)             Requested size: 433.62pt x 262.55733pt.
 
-Overfull \hbox (13.62pt too wide) in paragraph at lines 266--267
+Overfull \hbox (13.62pt too wide) in paragraph at lines 287--288
  [][] 
  []
 
-[6 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_prop
-osal_template/upproc.pdf>] [7] [8]
+<viewimage.png, id=36, 412.54124pt x 213.79875pt>
+File: viewimage.png Graphic file (type png)
+ <use viewimage.png>
+Package pdftex.def Info: viewimage.png used on input line 296.
+(pdftex.def)             Requested size: 361.34999pt x 187.27243pt.
+ [7 <C:/Users/Braden/Documents/College/Senior/Thesis/Proposal/senior_thesis_pro
+posal_template/success_dupfound.png>] [8 <C:/Users/Braden/Documents/College/Sen
+ior/Thesis/Proposal/senior_thesis_proposal_template/upproc.pdf> <C:/Users/Brade
+n/Documents/College/Senior/Thesis/Proposal/senior_thesis_proposal_template/view
+image.png>] [9] [10]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 22--29
@@ -325,17 +356,17 @@ Underfull \hbox (badness 2865) in paragraph at lines 87--94
 Pri-mary Stor-age
  []
 
-[9]) [10]
+[11]) [12]
 (C:\Users\Braden\Documents\College\Senior\Thesis\Proposal\senior_thesis_proposa
 l_template\senior_thesis_proposal.aux) ) 
 Here is how much of TeX's memory you used:
- 2143 strings out of 493921
- 30369 string characters out of 3144873
- 86634 words of memory out of 3000000
- 5379 multiletter control sequences out of 15000+200000
+ 2167 strings out of 493921
+ 30881 string characters out of 3144873
+ 86667 words of memory out of 3000000
+ 5399 multiletter control sequences out of 15000+200000
  35718 words of font info for 60 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,10n,43p,3757b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,11n,43p,3757b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/font
 s/enc/dvips/fontname/8r.enc} <C:\Users\Braden\AppData\Local\MiKTeX\2.9\fonts\pk
 \ljfour\jknappen\ec\dpi600\ectt1095.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts
@@ -345,9 +376,9 @@ ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on senior_thesis_proposal.pdf (10 pages, 21601157 bytes).
+Output written on senior_thesis_proposal.pdf (12 pages, 21854385 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
