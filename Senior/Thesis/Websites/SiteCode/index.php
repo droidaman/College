@@ -1,9 +1,15 @@
 <?php
 	//Uncomment to turn on debugging
-	//ini_set('display_errors', 'On');
+	ini_set('display_errors', 'On');
 
     // Connect to our database
     include "scripts/connect.php";
+
+	require "scripts/config.php";
+	require "scripts/aboutPage.class.php";
+	require "scripts/vcard.class.php";
+
+	$profile = new AboutPage($info);
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +19,7 @@
 		<title>CS Thesis Home | CS14-11 | Braden Licastro</title>
 		<meta charset="iso-8859-1">
 		<link rel="stylesheet" href="styles/layout.css" type="text/css">
+		<link rel="stylesheet" href="styles/about.css" type="text/css"/>
 		<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 	</head>
 	
@@ -42,7 +49,25 @@
 		   	<section id="shout">
 		    	<p style="text-align:center">Welcome! This site is the thesis work of Braden Licastro for the Allegheny College Department of Computer Science.<br />Keep checking back for frequent changes as rapid development of website code and support documentation occurs daily!</p>
 		    </section>
-		    <section id="slider"><a href="#"><img src="images/960x360.gif" alt=""></a></section>
+		    <section id="slider">
+		    	<section id="infoPage">
+    				<img src="<?php echo $profile->photoURL()?>" alt="<?php echo $profile->fullName()?>" width="164" height="164" />
+
+            		<header>
+             	    	<span style="font-size:64px; font-weight:normal; line-height:1; text-shadow:2px 2px 0 rgba(22,22,22,0.5); padding-left: 10px; color:#dfdfdf;"><?php echo $profile->fullName()?></span><br />
+            	    	<span style="font-size: 18px; font-weight: normal; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1); padding-left: 25px; color:#777;"><?php echo $profile->tags()?></span>
+           			</header>
+
+            		<p class="description"><?php echo nl2br($profile->description())?></p>
+
+            		<ul class="vcard">
+                		<li class="fn"><?php echo $profile->fullName()?><br /></li>
+                		<li class="org"><?php echo $profile->company()?><br /></li>
+                		<li class="tel"><?php echo $profile->cellphone()?><br /></li>
+                		<li><a class="url" href="<?php echo $profile->website()?>"><?php echo $profile->website()?></a></li>
+            		</ul>
+				</section>
+			</section>
 		    
 		    <!-- main content -->
 		    <div id="homepage">
@@ -70,7 +95,7 @@
 				<!-- Locate the image on the server with the DB entry -->
 				<?php
 					try {
-						$stmt = $conn->prepare('SELECT * FROM share_tracker ORDER BY ID DESC LIMIT 4');
+						$stmt = $conn->prepare('SELECT * FROM share_tracker WHERE uMethod = "1" ORDER BY ID DESC LIMIT 4');
 						$stmt->execute();
 						// Get array containing all of the result rows
 						$result = $stmt->fetchAll();
@@ -80,7 +105,7 @@
 				?>
 
    			<!-- One Quarter -->
-		      <h1>Latest User Submitted Images</h1>
+<h1>Latest User Submitted Images</h1>
 		      <section id="latest" class="last clear">
 		        <article class="one_quarter">
 					<?php

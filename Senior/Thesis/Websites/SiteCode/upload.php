@@ -200,7 +200,7 @@ function drUpload()
 			{
 				// Create an image handle for the duplicate reduced link! (Technically a different image)
 				$newiHandle = createImageHandle(6);
-				$notice = "<p>The image was not in the duplicate directory and was added to a separate database, identical image also accessable here:<br /><a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}\">http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}</a></p>";
+				$notice = "<p>The image was not in the duplicate directory and was added to a separate database.</p>"; //, identical image also accessable here:<br /><a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}\">http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}</a></p>";
 				
 				// Add the image to the database!
 				try {
