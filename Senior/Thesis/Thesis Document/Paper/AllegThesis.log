@@ -1,23 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.12.6)  6 DEC 2013 14:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.8.27)  6 DEC 2013 15:15
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **AllegThesis.tex
-
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
-esis.tex"
+(./AllegThesis.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,18 +33,15 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\gatorth
-esis.sty"
+) (./gatorthesis.sty
 Package: gatorthesis 1997/11/25
 
 Allegheny Thesis Style, $Revision: 1.0 $, by Andrew Thall (athall@allegheny.edu
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-)
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\doubles
-pace.sty") ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
+) (./doublespace.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
@@ -67,24 +65,24 @@ Margins (in inches):
  hoffset = 0.00
  marginparwidth = 0.36
  marginparsep = 0.13
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
@@ -125,38 +123,38 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: dvips.def on input line 91.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvips.def"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen112
@@ -165,11 +163,11 @@ File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count105
 \lst@gtempboxa=\box28
 \lst@token=\toks20
@@ -183,34 +181,44 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 \lst@lineno=\count110
 \lst@maxwidth=\dimen119
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count111
 \lst@skipnumbers=\count112
 \lst@framebox=\box29
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
-Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2008/00/00 v3.10 algorithms environments
 \c@AlgoLine=\count113
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 LaTeX Info: Redefining \xspace on input line 40.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
-Package: relsize 2003/07/04 ver 3.1
-)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2011/09/21 ver 4.0
+
+Examine \normalsize starts \@setfontsize size may be \@xiipt. 
+Examine \small starts \@setfontsize size may be \@xipt. 
+Examine \footnotesize starts \@setfontsize size may be \@xpt. 
+Examine \large starts \@setfontsize size may be \@xivpt. 
+Examine \Large starts \@setfontsize size may be \@xviipt. 
+Examine \LARGE starts \@setfontsize size may be \@xxpt. 
+Examine \scriptsize starts \@setfontsize size may be \@viiipt. 
+Examine \tiny starts \@setfontsize size may be \@vipt. 
+Examine \huge starts \@setfontsize size may be \@xxvpt. 
+Examine \Huge starts \@setfontsize size may be \@xxvpt. )
 ********************************************************
-Package `algorithm2e' Release 5.0 -- january 06 2013 --
+Package `algorithm2e' Release 4.01 -- december 14 2009 --
 - algorithm2e-announce@lirmm.fr mailing list for announcement about releases
 - algorithm2e-discussion@lirmm.fr mailing list for discussion about package
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
-- Author: Christophe Fiorio (cfiorio@um2.fr)
+- Author: Christophe Fiorio (fiorio@lirmm.fr)
 ********************************************************
 \skiptotal=\skip47
 \skiplinenumber=\skip48
@@ -222,7 +230,7 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \skipalgocfslide=\skip54
 \algowidth=\dimen120
 \inoutsize=\dimen121
-\inoutindent=\dimen122
+\inoutline=\dimen122
 \interspacetitleruled=\dimen123
 \interspacealgoruled=\dimen124
 \interspacetitleboxruled=\dimen125
@@ -230,42 +238,23 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algocf@inputbox=\box31
 \AlCapSkip=\skip55
 \AlCapHSkip=\skip56
-\algoskipindent=\skip57
 \algocf@nlbox=\box32
 \algocf@hangingbox=\box33
-\algocf@untilbox=\box34
-\algocf@skipuntil=\skip58
-\algocf@capbox=\box35
-\algoheightruledefault=\skip59
-\algoheightrule=\skip60
-\algotitleheightruledefault=\skip61
-\algotitleheightrule=\skip62
+\algocf@capbox=\box34
+\algoheightruledefault=\skip57
+\algoheightrule=\skip58
+\algotitleheightruledefault=\skip59
+\algotitleheightrule=\skip60
 \c@algocfline=\count114
 \c@algocfproc=\count115
 \c@algocf=\count116
-\algocf@algoframe=\box36
-\algocf@algobox=\box37
-)
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
-esis.aux"
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
-t.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\dedicat
-ion.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ack.aux
-")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch01_ov
-erview.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
-latedwork.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
-thodofapproach.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_im
-plementation.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
-nclusion.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\appa.au
-x"))
+\algocf@algoframe=\box35
+\algocf@algobox=\box36
+) (./AllegThesis.aux (./abstract.aux) (./dedication.aux) (./ack.aux)
+(./ch01_overview.aux) (./ch02_relatedwork.aux) (./ch03_methodofapproach.aux)
+(./ch04_implementation.aux) (./ch05_conclusion.aux) (./appa.aux))
+\openout1 = `AllegThesis.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
 LaTeX Font Info:    ... okay on input line 101.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
@@ -280,12 +269,13 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
 LaTeX Font Info:    ... okay on input line 101.
 \c@lstlisting=\count117
 LaTeX Font Info:    Try loading font information for U+msa on input line 129.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
@@ -293,23 +283,30 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
  [2]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
-t.tex" [3
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex
+[3
 
 
 ])
-No file dedication.tex.
-No file ack.tex.
+\openout2 = `dedication.aux'.
 
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
-esis.toc")
+
+No file dedication.tex.
+\openout2 = `ack.aux'.
+
+No file ack.tex.
+(./AllegThesis.toc)
 \tf@toc=\write4
+\openout4 = `AllegThesis.toc'.
+
  [4
 
 
@@ -318,18 +315,21 @@ esis.toc")
 
 
 
-]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
-esis.lof")
+] (./AllegThesis.lof)
 \tf@lof=\write5
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+\openout5 = `AllegThesis.lof'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 ) [5
 
 
 ]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch01_ov
-erview.tex"
+\openout2 = `ch01_overview.aux'.
+
+
+(./ch01_overview.tex
 Chapter 1.
 File: latexprocess.eps Graphic file (type eps)
 <latexprocess.eps>
@@ -342,8 +342,9 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
 
 
 ]) [2] [3]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
-latedwork.tex"
+\openout2 = `ch02_relatedwork.aux'.
+
+ (./ch02_relatedwork.tex
 Chapter 2.
 ) [4
 
@@ -351,19 +352,19 @@ Chapter 2.
 
 
 ]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
-thodofapproach.tex"
+\openout2 = `ch03_methodofapproach.aux'.
+
+ (./ch03_methodofapproach.tex
 Chapter 3.
 [5
 
 
 
 
-]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/Sa
-mpleProgUncommented.java")) [6]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_im
-plementation.tex"
+] (./Code/SampleProgUncommented.java)) [6]
+\openout2 = `ch04_implementation.aux'.
+
+ (./ch04_implementation.tex
 Chapter 4.
 ) [7
 
@@ -371,8 +372,9 @@ Chapter 4.
 
 
 ]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
-nclusion.tex"
+\openout2 = `ch05_conclusion.aux'.
+
+ (./ch05_conclusion.tex
 Chapter 5.
 ) [8
 
@@ -380,52 +382,31 @@ Chapter 5.
 
 
 ]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\appa.te
-x"
+\openout2 = `appa.aux'.
+
+ (./appa.tex
 Appendix A.
-
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/Sa
-mpleProg.java" [9
+(./Code/SampleProg.java [9
 
 
 
 
-])) [10]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
-esis.bbl")
+])) [10] (./AllegThesis.bbl)
 THEPAGE 11
 [11
 
 
 
-]
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
-esis.aux"
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
-t.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\dedicat
-ion.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ack.aux
-")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch01_ov
-erview.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
-latedwork.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
-thodofapproach.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_im
-plementation.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
-nclusion.aux")
-("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\appa.au
-x")) ) 
+] (./AllegThesis.aux (./abstract.aux) (./dedication.aux) (./ack.aux)
+(./ch01_overview.aux) (./ch02_relatedwork.aux) (./ch03_methodofapproach.aux)
+(./ch04_implementation.aux) (./ch05_conclusion.aux) (./appa.aux)) ) 
 Here is how much of TeX's memory you used:
- 4563 strings out of 493922
- 66293 string characters out of 3144896
- 269673 words of memory out of 3000000
- 7742 multiletter control sequences out of 15000+200000
+ 4313 strings out of 493494
+ 56620 string characters out of 3143820
+ 261758 words of memory out of 3000000
+ 7505 multiletter control sequences out of 15000+200000
  12341 words of font info for 46 fonts, out of 3000000 for 9000
- 844 hyphenation exceptions out of 8191
- 32i,11n,40p,742b,1481s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 960 hyphenation exceptions out of 8191
+ 32i,11n,40p,741b,1481s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on AllegThesis.dvi (16 pages, 34872 bytes).
