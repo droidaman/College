@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{AlurDill94}
+Rajeev Alur and David~L. Dill.
+\newblock A theory of timed automata.
+\newblock {\em Theoretical Computer Science}, 126:183--235, 1994.
+
+\bibitem{blum67}
+H.~Blum.
+\newblock A transformation for extracting new descriptors of shape.
+\newblock In W.~Wathen-Dunn, editor, {\em Models for the Perception of Speech
+  and Visual Forms}, pages 362--380. MIT Press, Amsterdam, 1967.
+
+\bibitem{damon:95}
+James~N. Damon.
+\newblock Properties of ridges and cores for two-dimensional images.
+\newblock Technical report, Department of Mathematics, University of North
+  Carolina at Chapel Hill, 1995.
+
+\bibitem{diosan09}
+Laura Dio\c{s}an and Mihai Oltean.
+\newblock Evolutionary design of evolutionary algorithms.
+\newblock {\em Genetic Programming and Evolvable Machines}, 10:263--306, 2009.
+
+\bibitem{Fiori:2013}
+Christophe Fiorio.
+\newblock algorithm2e.sty --- package for algorithms, release 5.0, 2013.
+\newblock \url{http://www.ctan.org/pkg/algorithm2e}. Accessed 9 Sept. 2013.
+
+\bibitem{furst99}
+Jacob Furst.
+\newblock {\em Height Ridges of Oriented Medialness}.
+\newblock Ph. {D.} {T}hesis, University of North Carolina, Dept. of Computer
+  Science, 1999.
+
+\bibitem{griffiths:97}
+David~F. Griffiths and Desmond~J. Higham.
+\newblock {\em Learning {\LaTeX}}.
+\newblock SIAM, Philadephia, 1997.
+
+\bibitem{Heinz:2013}
+Carsten Heinz, Brooks Moses, and Jobst Hoffmann.
+\newblock The listings package, 2013.
+\newblock \url{http://www.ctan.org/tex-archive/macros/latex/contrib/listings/}.
+  Accessed 10 Oct. 2013.
+
+\bibitem{SmithJones86}
+John Smith and Jane Jones.
+\newblock A made-up title of an article in a conference.
+\newblock In Joan Johnson, Sally Simpson, and Dan Douglas, editors, {\em
+  Proceedings of the Third International Conference on Conferences}, pages
+  500--509, Paris, 1986.
+
+\bibitem{zobel:97}
+Justin Zobel.
+\newblock {\em Writing for Computer Science}.
+\newblock Springer-Verlag, 1997.
+
+\end{thebibliography}
