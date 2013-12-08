@@ -1,4 +1,5 @@
-\contentsline {chapter}{List of Figures}{v}
+\contentsline {chapter}{Acknowledgements}{v}
+\contentsline {chapter}{List of Figures}{vii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}
 \contentsline {section}{\numberline {1.2}Current State of the Art}{2}
