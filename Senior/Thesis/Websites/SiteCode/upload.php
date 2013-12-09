@@ -7,8 +7,8 @@
  *******************************/
 
 // Uncomment to turn on debugging
-//error_reporting(E_ALL);
-//ini_set('display_errors', 'On');
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
 
 // Print the PHP max stats for this directory...
 //echo 'upload_max_filesize' . ini_get('upload_max_filesize');
@@ -17,12 +17,53 @@
 
 /*******************************
  *                             *
- *      Misc Functionality     *
+ *     File/Script Imports     *
  *                             *
  *******************************/
 
 // Allow us to connect to the database, IMPORTANT!
 include "scripts/connect.php";
+
+// Provide us with the missing functions!
+include "scripts/dupFindSimple.php";
+
+
+/*******************************
+ *                             *
+ *    Environment Variables    *
+ *                             *
+ *******************************/
+
+// Upload directory information
+$truTarget = "/var/www/srthesis/uploads/";
+$druTarget = "/var/www/srthesis/uploads_reduced/";
+
+// Details about the file being used in the system
+$sFileName = $_FILES['image_file']['name'];
+$sFileType = $_FILES['image_file']['type'];
+$sFileSize = bytesToSize1024($_FILES['image_file']['size'], 1);
+
+
+/*******************************
+ *                             *
+ *      Global Variables       *
+ *                             *
+ *******************************/
+// Global notification control for response to user
+$error = '';
+$trNotice = '';
+$drNotice = '';
+
+// Global filename storage
+$uFileName = '';
+
+
+
+/*******************************
+ *                             *
+ *      Misc Functionality     *
+ *                             *
+ *******************************/
 
 // Converts from bytes to a more managable number
 function bytesToSize1024($bytes, $precision = 2) {
@@ -31,16 +72,8 @@ function bytesToSize1024($bytes, $precision = 2) {
     return @round($bytes / pow(1024, ($i = floor(log($bytes, 1024)))), $precision).' '.$unit[$i];
 }
 
-// Details about the file being used in the system
-$sFileName = $_FILES['image_file']['name'];
-$sFileType = $_FILES['image_file']['type'];
-$sFileSize = bytesToSize1024($_FILES['image_file']['size'], 1);
 
-// Upload directory information
-$truTarget = "/var/www/srthesis/uploads/";
-$druTarget = "/var/www/srthesis/uploads_reduced/";
-
-// Creates a (hopefully) case sensitive alphanumeric image handle for the URL
+// Creates a case sensitive alphanumeric image handle for the URL
 function createImageHandle($length){
     $handle = "";
     $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -74,6 +107,7 @@ function findext($filename)
 	return $exts;
 } 
 
+
 // This function renames the file and returns it with a unique identifier.
 // Filename Sequence:	TTTTTTTTTT-IIIIII.EEE(E)
 //						Timestamp-ImageHandle.Extension
@@ -92,42 +126,6 @@ function renameFile($filename, $imageHandle)
 	return $reName;
 }
 
-/*******************************
- *                             *
- *    Duplication handlers     *
- *                             *
- *******************************/
-
-// Simple Duplicate File Locator
-// Uses an SHA1 File hash to initially check for duplicates
-function simpleDupCheck($fileHash) {
-	// Check for rough matches with the file hash stored in the DB
-	try {
-		$stmt = $GLOBALS["conn"]->prepare('SELECT COUNT(*) FROM `share_tracker` WHERE `uMethod` = \'1\' AND `hash` = :fileHash');
-		$stmt->execute(array(':fileHash'=>$fileHash));
-		$nMatch = $stmt->fetch();
-		$nMatch = $nMatch[0];
-	} catch(PDOException $e) {
-		$error = 'ERROR: ' . $e->getMessage();
-	}
-
-	// Was there a match?
-	if($nMatch == '0')
-	{
-		// No exact match, look for 'close' candidates
-		deepDupCheck();
-	} else {
-		// Found a 100% identical match
-		return true;
-	}
-}
-
-function deepDupCheck() {
-	// Deeper analysis code
-	
-	// Temporary - never finds similar images
-	return false;
-}
 
 /*******************************
  *                             *
@@ -135,24 +133,22 @@ function deepDupCheck() {
  *                             *
  *******************************/
 
-// Error control for user response
-$error = '';
-$notice = '';
-// Globally rename the new upload file.
-$imageHandle = createImageHandle(6);
-$uFileName = renameFile($sFileName, $imageHandle);
-
 // Traditional upload function
 function trUpload()
 {
 	// Allow access to the global (scope) variables
-	global $error, $truTarget, $uFileName;
+	global $trNotice, $error, $truTarget, $uFileName;
+	
+	// Create an image handle for the baseline upload
+	$trImageHandle = createImageHandle(6);
+	// Globally rename the file using this original filename
+	$uFileName = renameFile($GLOBALS["sFileName"], $trImageHandle);
 	
 	// Make sure we aren't accidentally overwriting anything this time.
     if (file_exists($truTarget . $uFileName))
     {
-    	// More than one upload per second? Problem solved. Error just in case though.
-    	$error = '<p>Filename uniqueness not preserved.<br />Please retry or contact the webmaster if this problem persists.</p>';
+    	// Upload will cause more than one file with the same name in the directory? Error.
+    	$error = '<p><strong>ERROR:</strong> Filename uniqueness not preserved.<br />Please try again or contact the webmaster if this problem persists.</p>';
 	} else {
 		// Actually upload the file!
 		if(move_uploaded_file($_FILES['image_file']['tmp_name'], $truTarget . $uFileName))
@@ -160,58 +156,90 @@ function trUpload()
 			// Add the image to the database!
 			try {
 				$stmt = $GLOBALS["conn"]->prepare('INSERT INTO share_tracker (ILookup, IName, directory, uMethod) VALUES (:imageHandle,:imageName,:directory,:uMethod)');
-				$stmt->execute(array(':imageHandle'=>$GLOBALS["imageHandle"],
+				$stmt->execute(array(':imageHandle'=>$trImageHandle,
 									 ':imageName'=>$uFileName,
 									 ':directory'=>'uploads',
 									 ':uMethod'=>'0'));
+				
+				// Report back a success!
+				$trNotice = "<p>Baseline directory upload succeeded! You may view this image <a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$trImageHandle}\">HERE</a>.</p>";
 			} catch(PDOException $e) {
-				$error = 'ERROR: ' . $e->getMessage();
+				$error = '<p><strong>ERROR:</strong> ' . $e->getMessage() . '</p>';
 			}
 
 		} else {
-			$error = '<p><strong>ERROR!</strong> File could not be saved to the server.<br />Please retry or contact the webmaster if this problem persists.</p>';
+			$error = '<p><strong>ERROR:</strong> File could not be saved to the server.<br />Please retry or contact the webmaster if this problem persists.</p>';
 		}
     }
 }
+
 
 // Duplicate reduced upload function
 function drUpload()
 {
 	// Allow access to the global (scope) variables
-	global $notice, $error, $truTarget, $druTarget, $uFileName;
+	global $drNotice, $error, $truTarget, $druTarget, $uFileName;
+	
+	// Generate the 40-bit file hash for dup lookup
+	$shaHash = sha1_file($truTarget . $uFileName);
+
 	
 	// Make sure we aren't accidentally overwriting anything this time.
     if (file_exists($druTarget . $uFileName))
     {
-    	// More than one upload per second? Problem solved. Error just in case though.
-    	$error = '<p>Filename uniqueness not preserved.<br />Please retry or contact the webmaster if this problem persists.</p>';
-	} else {
-		//Creates the 40-bit file hash for dup lookup
-		$shaHash = sha1_file($truTarget . $uFileName);
+    	// Upload will cause more than one file with the same name in the directory? Error.
+    	$error = '<p><strong>ERROR:</strong> Filename uniqueness not preserved.<br />Please try again or contact the webmaster if this problem persists.</p>';	} else {
 
 		// Uniqueness check...
-		if(simpleDupCheck($shaHash))
+		$simpleDupResponse = simpleDupCheck($truTarget . $uFileName, $shaHash);
+		if($simpleDupResponse !== null)
 		{
-			// Exact dup found, respond appropriately
-			$notice = "<p>Image was not added to duplicate reduced directory, file already exists.</p>";
-		} else {
-			// Unique so actually upload the file!
-			if(copy($truTarget . $uFileName, $druTarget . $uFileName))
-			{
-				// Create an image handle for the duplicate reduced link! (Technically a different image)
-				$newiHandle = createImageHandle(6);
-				$notice = "<p>The image was not in the duplicate directory and was added to a separate database.</p>"; //, identical image also accessable here:<br /><a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}\">http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}</a></p>";
-				
+			// Every image gets a new handle, even if not in the reduced folder. (For consistency)
+			$newiHandle = createImageHandle(6);
+
+			// Exact dup found, add to DB and respond appropriately
+			try {
+				$stmt = $GLOBALS["conn"]->prepare('INSERT INTO share_tracker (ILookup, IName, directory, uMethod) VALUES (:imageHandle,:imageName,:directory,:uMethod)');
+				$stmt->execute(array(':imageHandle'=>$newiHandle,
+									 ':imageName'=>$simpleDupResponse,
+									 ':directory'=>'uploads_reduced',
+									 ':uMethod'=>'1'));
+									 
+				$drNotice = "<p><strong>NOTICE:</strong> Image was not added to duplicate reduced directory, file already exists.</p>" .
+							"<br />" .
+							"<p>To share your image, use the following link: " .
+							"<a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}\">http://skynetgds.no-ip.biz/srthesis/irc.php?view={$newiHandle}</a></p>";
+									 
+			} catch(PDOException $e) {
+				$error = '<p><strong>ERROR:</strong> ' . $e->getMessage() . '</p>';
+			}
+
+		// Unique so actually upload the file!
+		} else {			
+			// Create an image handle for the duplicate reduced link
+			$drImageHandle= createImageHandle(6);
+			// Globally rename the file using this original filename
+			$relinkFileName = renameFile($uFileName, $drImageHandle);
+
+			if(copy($truTarget . $uFileName, $druTarget . $relinkFileName))
+			{				
 				// Add the image to the database!
 				try {
 					$stmt = $GLOBALS["conn"]->prepare('INSERT INTO share_tracker (ILookup, IName, directory, uMethod, hash) VALUES (:imageHandle,:imageName,:directory,:uMethod, :shaHash)');
-					$stmt->execute(array(':imageHandle'=>$newiHandle,
-										 ':imageName'=>$uFileName,
+					$stmt->execute(array(':imageHandle'=>$drImageHandle,
+										 ':imageName'=>$relinkFileName,
 										 ':directory'=>'uploads_reduced',
 										 ':uMethod'=>'1',
 										 ':shaHash'=>$shaHash));
+										 
+					$drNotice = "<p><strong>NOTICE:</strong> The image was unique and added to duplicate reduced directory!</p>" .
+							"<br />" .
+							"<p>To share your image, use the following link: " .
+							"<br />" .
+							"<a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$drImageHandle}\">http://skynetgds.no-ip.biz/srthesis/irc.php?view={$drImageHandle}</a></p>";
+
 				} catch(PDOException $e) {
-					$error = 'ERROR: ' . $e->getMessage();
+					$error = '<p><strong>ERROR:</strong> ' . $e->getMessage() . '</p>';
 				}
 			
 			} else {
@@ -221,20 +249,27 @@ function drUpload()
     }
 }
 
-//Call the upload functions.
-trupload();
-drupload();
+// Actually perform the uploads.
+trupload(); // Creates a baseline to compare results to
+drupload(); // Upload method targeted by research
+
+
+/*******************************
+ *                             *
+ *      Response handlers      *
+ *                             *
+ *******************************/
 
 // Give the user some much needed output.
 if(!$error) {
+//Tell the user what has been going on behind the scenes.
 echo <<<EOF
-	<p>Your image has been successfully uploaded to the server.<br /></p>
-	$notice
-	<p>To share your image, use the following link:<br />
-	<a href="http://skynetgds.no-ip.biz/srthesis/irc.php?view={$imageHandle}">http://skynetgds.no-ip.biz/srthesis/irc.php?view={$imageHandle}</a></p>
+	$trNotice
+	$drNotice
 EOF;
 } else {
 	// Something interrupted the process and shouldn't have...
 	echo $error;
 }
+
 ?>

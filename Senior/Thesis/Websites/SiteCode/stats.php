@@ -87,7 +87,7 @@
 		        </article>
 		        <article>
 		          <figure><img src="images/stat.gif" width="32" height="32" alt=""></figure>
-		          <strong>Diretory File Count</strong>
+		          <strong>Directory File Count</strong>
 				  <div><br /><br /><hr /></div>
 		          <p><?php echo "Traditional Upload Count:<br />&emsp;&emsp;" . $dirupld[1] . " Files <br />";
 		          		   echo "Duplicate Reduced Count:<br />&emsp;&emsp;" . $dirupldred[1] . " Files <br />";?></p>
