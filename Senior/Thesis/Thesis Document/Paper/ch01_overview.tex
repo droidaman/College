@@ -20,121 +20,34 @@
 %   * text to change the line lengths.                                     *
 %   ************************************************************************
 
-The purpose of this sample thesis is to show various \LaTeX\ formatting
-commands. Information about content should be obtained through consultation
-with the thesis readers and examination of past senior theses.
-There are no fixed rules governing the number of chapters or their titles---old 
-senior theses and discussions with the thesis readers are the best resources
-for making such decisions.
+Sharing media with the public is becoming a more integral part of social interaction every day. Static images are just one of these many forms of media, and the number of daily uploads to image hosting websites is absolutely staggering. According to a recent survey by All Things Digital, as of May 2013, more than 500 million images are uploaded to image sharing websites each day, and this number is expected to double by the end of 2014 \cite{meek:500}. With figures this large, it immediately becomes apparent that multiple issues come with this trend of increased image sharing. Namely, how much space does this number of images required, and is there a technology available to reduce this requirement. The simple answer is yes, there are tried and tested technologies that will reduce storage costs, but before looking into these technologies, it is important to understand what an image hosting website is and how they function.
 
-Usually, a chapter begins with a paragraph or two that serves as a
-sort of mini-introduction to the chapter. This is followed 
-by numbered sections created with ``\verb$\section{...}$'', 
-``\verb$\subsection{...}$'', etc.
-
-\section{Motivation} \label{sec:motivation}
-The first paragraph in each section is not indented---that is a standard style
-that is enforced by the \LaTeX\ program. It should never be necessary to
-insert commands to force paragraph indentation.
-
-The thesis should avoid the use of second-person pronouns such as ``you''
-and ``your,'' as well as the use of imperative statements (implied
-second-person) such as ``Look
-at \ldots'' or ``Consider the following example \ldots''. 
-First person (``I,'' ``my,'' etc.) is sometimes acceptable, 
-but should be used sparingly. (This is an appropriate topic 
-for discussion with the first reader of the project.) Contractions (``don't'',
-``can't'', etc.) are considered informal and should be avoided. Common
-abbreviations such as ``math'' for ``mathematics'' or ``comp'' for 
-``senior comprehensive project''  are also informal and not appropriate
-in the final thesis.
-
-Figures illustrating complex or hard-to-describe concepts are essential.
-All figures should be fully explained in the text. For example,
-Figure \ref{latexprocess} shows the first step in processing a senior thesis.
-The user files consist of the main file, {\tt AllegThesis.tex}, and zero or
-more additional files ({\tt ch01.tex}, {\tt ch02.tex} in the figure). Not shown
-in the figure are image files, the bibliography, and other included
-components (the ``\ldots etc.\ldots'' on the left side of the figure). 
-Typing the command {\tt pdflatex} with the main file name
-produces a number of additional files, including an {\tt .aux} file (with
-information such a label references and citations),
-a table of contents, or {\tt .toc}, file, a printable {\tt .pdf} file, and
-a number of others, depending on the document.
-
-%   *******************************************************************
-%   * FIGURES ARE PLACED ACCORDING TO A SET OF CONSTRAINTS THAT CAN   *
-%   * BE MANIPULATED TO SOME DEGREE.                                  *
-%   * A SEARCH FOR "controlling latex floats" TURNS UP A NUMBER OF    *
-%   * SITES THAT HAVE USEFUL INFORMATION, FOR EXAMPLE:                *
-%   *                                                                 *
-%   * http://mintaka.sdsu.edu/GF/bibliog/latex/floats.html            *
-%   * http://goo.gl/aC8E8Q                                            *
-%   * http://robjhyndman.com/hyndsight/latex-floats/                  *
-%   *******************************************************************
+\section{Image Hosting Services} \label{sec:imagehostingservices}
+Image hosting services, or image sharing websites are sites that allow users to upload images to the internet and share them publicly with the link they are provided. These image sharing websites mostly operate in the same fashion, but recently a new breed has emerged. As seen in Figure \ref{imageshareprocess}, both submission processes are similar, but both have inherent advantages and disadvantages.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=3.5in]{latexprocess}
-\caption{The first step in creating a thesis document}
-\label{latexprocess}
+\includegraphics[width=4.5in]{imageshareprocess}
+\caption{Various Image Hosting Service Structures}
+\label{imageshareprocess}
 \end{figure}
 
-\section{Current State of the Art}\label{sec:stateofart}
-There are multiple
-ways to create {\it italicized}, {\bf bold-face}, {\tt fixed-width}, and
-{\sf sans-serif} fonts, as well as combinations, e.g., \textit{\textbf{
-bold italic}} or \textit{\textsf{italic sans-serif}}. The \LaTeX\ source
-file for this chapter shows some of the ways to achieve these effects.
-It is customary to use fixed-width font for program constructs, e.g.,
-``In the Java code accompanying the figure, {\tt n} stands for the 
-number of generations to be simulated by the {\tt evolvePopulation()} method.'' 
-Variables in mathematical equations are normally rendered in 
-italics, e.g., ``In the performance equation, {\it cpuTime} is 
-the average time over fifty runs of the program.''
+Looking at the first submission process variant at the top of Figure \ref{imageshareprocess}, a user would like to share an image with the public. The user can upload this image through the internet from any internet connected device, and the image will be stored on a publicly accessible server. From here, any number of people can access this shared image through an internet connected device indefinitely. Nearly all image hosting services operate on this model, some of the more popular services include but are not limited to Flickr, Imgur, Photobucket, Shutterfly, and Instagram.
 
-%It is the privilege of the thesis author (in consultation with the
-%project supervisor and other readers) to decide on the best way to 
-%organize the sections and chapters in the way that makes the most sense.
-%If the introduction begins with a motivating
-%anecdote, perhaps this is best followed by defining a few terms or mentioning
-%some major results that the reader should be aware of right from the 
-%beginning. But 
-It is important to get as quickly as possible to 
-a concise statement of the {\it thesis}---the main question 
-addressed by the project. This might merit a separate
-section of the chapter.
+The second image submission variant shown at the bottom half of Figure \ref{imageshareprocess} is currently only used by one host called Snapchat. With this system, multiple differences are immediately apparent. First, this service model will only accept images from mobile users. It can also be seen in the diagram that when a user uploads an image through the internet, it is no longer accessible long term from a server, but it is in fact only temporarily available for a specified recipient to receive. This service actually allows the uploader to set an expiration time anywhere from 1 second to 10 seconds \cite{snap:support}. After the recipient opens the image and this time period has expired, the image is deleted permanently from the server and no longer accessible to either party.
+
+Both systems have their own inherent benefits, but they also have detriments. Though they reach from the infrastructure needed to support the service all the way out to the end user, this research only focuses on the infrastructure function. In order to realize the application of the proposed research, it is important to understand why such a focused application is required. For the first image hosting variant in Figure \ref{imageshareprocess}, the long term storage of image files raises concern. By storing files for an extended period of time, it is a guarantee that duplicate data will eventually make its way to the storage servers. Determining duplicates and preventing their addition can save not only a considerable amount of space as the amount of redundant data increases, but it can also save a large amount of money when discussing the cost per gigabyte of data storage. This research will not target the application of the temporary system seen at the bottom of the figure as the amount of stored data is minimal due to the rapid turnover of data being housed.
+
+\section{Data Management Technologies} \label{sec:datadeduptech}
+The image hosting services outlined in section \ref{sec:imagehostingservices} utilize numerous technologies to help lessen the load of the files they must store. Though official word and articles discussing the technologies these companies implement are nonexistent, after examining the services several different technologies became immediately apparent. The most prominent method of space reduction is the reduction in size of uploaded images. By reducing the quality of the image by a small percent, these websites are able to significantly reduce the amount of space needed to store the uploaded images. The next most common method of space reduction used is the expiration of uploads. After locating the earliest available images across the websites it was determined that the file expiration can possibly work in one of two ways. The implementation either functions as a countdown from the date of upload or in the other case the countdown begins after the last date the file was accessed. Each time the file is accessed, the timer will reset. Finally, some of these sites also limit the size of the uploaded files and the number of uploads per user. In order to remove these restrictions, many sites also offer paid services which assist with the cost of upkeep. 
+
+\section{Motivation} \label{sec:motivation}
+Summarizing the information presented thus far, image hosting websites clearly require complex infrastructures, not only to allow the sharing of files but to manage the large numbers of submissions. Although the numerous technologies used to lessen the space requirements of the submissions work well, it should be possible to further improve on the system by reducing the number of duplicate submissions. According to a recent survey by All Things Digital, more than 500 million images are uploaded to long-term image sharing websites, and this number is expected to double by the end of 2014 \cite{meek:500}. In addition, a study published by NTP Software found that nearly 20\% of stored data is duplicate \cite{ntps:staledata}. These numbers are staggering, especially when there is a possibility of reducing an additional 100 million images.
+
+To bring the possible savings into light a rough calculation based off of the 2013 average of \$.05 per gigabyte and an assumed image size of 1MB will show that by removing the duplicates a significant amount of money could be saved. More specifically, approximately \$18 million can be saved annually at the current sharing levels. By allowing unregulated user submitted data, it quickly becomes apparent that data redundancy reduction can save a significant amount of storage space and money.
 
 \section{Goals of the Project}\label{sec:goals}
-This section could also be entitled ``Thesis'' or something similar. 
-
-A formal thesis statement should be a 
-%\emph{falsifiable} % COMMENT OUT THINGS THAT YOU MAY LATER WISH TO PUT BACK
-statement about 
-the goal achieved by the project.  For a purely scientific
-project, this is the hypothesis being tested; it should be a
-\emph{falsifiable} statement, i.e., one that can be disproven through
-an appropriate experiment.
-For an applied programming project, it is usually a statement about 
-the feasibility and correctness of the approach used and the advantages it 
-has over other approaches, using suitable metrics.  For a survey or study,
-it is usually a statement regarding the need 
-or usefulness of such a study, its intended audience, and so on.
-
-% COMMENTED OUT NEXT FEW LINES TO SAVE SPACE; MAY PUT THEM BACK LATER
-%Following the concise statement of the thesis, some of the details can be
-%expanded.  
-%It is appropriate to
-%refer to some of the results in the introduction (which may 
-%mean going back and adding them to the introduction once the
-%research is completed). 
-%A senior thesis, or any research paper, is not a mystery 
-%novel---there is no need to keep the reader in suspense about what
-%has been accomplished.
+The purpose of this project is to develop and test a system capable of identifying and reducing the number of duplicate image submissions on an image sharing website. In order to fulfill this goal, an image sharing website will be developed that is capable of accepting images as uploads and providing a link to the user for public access of the image. To develop a functional website it must be able to perform several functions. This website should accept an image file through an online submission form. At this point, it will process the image and match it against the collection of images currently stored on the server. This process will be completed using a series of algorithms and checks outlined in in section \ref{ch:method}. The website will also be developed using PHP, the PHP GD image library, and HTML5 to ensure minimal chance of conflicts between scripts and languages. Using this website, the proposed duplicate image detection tool will be implemented using both original and existing code from other resources and tested thoroughly to assess the effectiveness of using this method of duplicate reduction.
 
 \section{Thesis Outline}\label{sec:outline}
-The introductory chapter usually concludes with a ``road map'' of the upcoming
-chapters, e.g., ``Chapter \ref{ch:relatedwork} reviews a number of past approaches
-to the problem and summarizes their strengths and weaknesses. Chapter 
-\ref{ch:method} outlines the method of approach used to establish the
-results.''
+The remainder of this thesis will discuss the work in further detail in addition to existing formation relating to the topic. First being Chapter \ref{ch:relatedwork}, which discusses related works and existing research that has been completed on the topic of image matching and comparison. Chapter \ref{ch:method} will cover the project details pertaining to the website and supporting infrastructure it will operate on. This will include a brief discussion of the hardware and configuration of the web server in addition to the website design and implementation of the duplicate image detection tool that will be integrated and tested. Chapter \ref{ch:reseval} will then discuss the collected results and the accompanying evaluation of the collected data. This evaluation will include the performance costs of implementing this system over a passive one, which only acts to prevent a specific file from ever being submitted to the server. The evaluation will also include the results of the image de-duplication and a determination of whether such a system is a feasible method of reducing storage requirements. An additional section outlining threats to validity will also be included in this chapter. Finally, Chapter \ref{ch:conclusion} will summarize the research and conclusions completed throughout this Senior Comprehensive Project and inslude possible areas of future work.

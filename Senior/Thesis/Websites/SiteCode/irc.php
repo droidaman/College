@@ -58,6 +58,10 @@
 		<link rel="stylesheet" href="styles/upload.css" type="text/css">
 		<script src="scripts/upload.js"></script>
 		<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+		
+		<script src="scripts/lightbox/jquery-1.10.2.min.js"></script>
+		<script src="scripts/lightbox/lightbox-2.6.min.js"></script>
+		<link href="styles/lightbox.css" rel="stylesheet" />
 	</head>
 	
 	<body>
@@ -115,10 +119,10 @@
 									# If one or more rows were returned...
 									if (count($result)) {
 									    foreach($result as $row) {
-											echo "<br /><img src=\"./" . $row['directory'] . "/" . $row['IName'] .  "\" alt= \"\" width=\"500px\"><br /><br />";
+											echo "<br /><a href=\"" . $row['directory'] . "/" . $row['IName'] .  "\"  data-lightbox=\"lightbox-single\" title=\"Viewing Image: " . $view .  "\"><img src=\"" . $row['directory'] . "/" . $row['IName'] .  "\" alt= \"\" width=\"500px\"></a><br /><br />";
 									    }
 									} else {
-									    echo "<div style=\"text-align:center;\"><br /><img src=\"./images/oops.jpg\" alt=\"\"></div><p style=\"text-transform:none;\"><strong>OOPS! The image you were looking for was not found; Please make sure the URL is correct and try again.<br /><br /></strong></p>";
+									    echo "<div style=\"text-align:center;\"><br /><img src=\"images/oops.jpg\" alt=\"\"></div><p style=\"text-transform:none;\"><strong>OOPS! The image you were looking for was not found; Please make sure the URL is correct and try again.<br /><br /></strong></p>";
 									}
 								} catch(PDOException $e) {
     								echo 'ERROR: ' . $e->getMessage();
@@ -169,7 +173,7 @@
 		                    	</div>
 		                	</form>
 		
-		                	<img id="preview" />
+		                	<img id="preview" alt="" />
 		                
 		            	</div>
 			    	</section>
@@ -215,7 +219,7 @@
 				<!-- Locate the image on the server with the DB entry -->
 				<?php
 					try {
-						$stmt = $conn->prepare('SELECT * FROM share_tracker WHERE uMethod = "1" ORDER BY ID DESC LIMIT 4');
+						$stmt = $conn->prepare('SELECT * FROM `share_tracker` WHERE `uMethod` = "1" AND `hash` IS NOT NULL ORDER BY ID DESC LIMIT 4');
 						$stmt->execute();
 						// Get array containing all of the result rows
 						$result = $stmt->fetchAll();
@@ -225,14 +229,14 @@
 				?>
 
 		      <!-- One Quarter -->
-		      <h1>Latest User Submitted Images</h1>
+			  <h1>Latest User Submitted Images (<a href="view.php">View All Image Submissions</a>)</h1>
 		      <section id="latest" class="last clear">
 		        <article class="one_quarter">
 					<?php
 						// If one or more rows were returned...
 						if (array_key_exists(0, $result)) {
 							$row = $result[0];
-							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./" . $row['directory'] . "/" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
+							echo "<figure><div style=\"height:215px; overflow:hidden;\"><a href=\"./irc.php?view=" . $row['ILookup'] . "\"><img src=\"./thumbnails_reduced/thumb_" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></a></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
 						} else {
 							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./images/not_found.jpg\" width=\"215\" alt=\"\"></div><figcaption>Image Not Available</figcaption></figure>";
 						}
@@ -243,7 +247,7 @@
 						// If one or more rows were returned...
 						if (array_key_exists(1, $result)) {
 							$row = $result[1];
-							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./" . $row['directory'] . "/" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
+							echo "<figure><div style=\"height:215px; overflow:hidden;\"><a href=\"./irc.php?view=" . $row['ILookup'] . "\"><img src=\"./thumbnails_reduced/thumb_" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></a></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
 						} else {
 							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./images/not_found.jpg\" width=\"215\" alt=\"\"></div><figcaption>Image Not Available</figcaption></figure>";
 						}
@@ -254,7 +258,7 @@
 						// If one or more rows were returned...
 						if (array_key_exists(2, $result)) {
 							$row = $result[2];
-							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./" . $row['directory'] . "/" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
+							echo "<figure><div style=\"height:215px; overflow:hidden;\"><a href=\"./irc.php?view=" . $row['ILookup'] . "\"><img src=\"./thumbnails_reduced/thumb_" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></a></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
 						} else {
 							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./images/not_found.jpg\" width=\"215\" alt=\"\"></div><figcaption>Image Not Available</figcaption></figure>";
 						}
@@ -265,7 +269,7 @@
 						// If one or more rows were returned...
 						if (array_key_exists(3, $result)) {
 							$row = $result[3];
-							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./" . $row['directory'] . "/" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
+							echo "<figure><div style=\"height:215px; overflow:hidden;\"><a href=\"./irc.php?view=" . $row['ILookup'] . "\"><img src=\"./thumbnails_reduced/thumb_" . $row['IName'] .  "\" width = \"215px\" alt=\"\"></a></div><figcaption><a href=\"./irc.php?view=" . $row['ILookup'] . "\">View Image</a></figcaption></figure>";
 						} else {
 							echo "<figure><div style=\"height:215px; overflow:hidden;\"><img src=\"./images/not_found.jpg\" width=\"215\" alt=\"\"></div><figcaption>Image Not Available</figcaption></figure>";
 						}

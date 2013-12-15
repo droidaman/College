@@ -56,25 +56,26 @@
 			  </section>
 				
 		      <!-- services area -->
-		      <h1>Related Works</h1>
+		      <h1>Related Documents (Note: LaTex files may be provided upon special request)</h1>
 		      <section id="services" class="clear">
 		        <article>
-		          <figure><img src="images/32x32.gif" width="32" height="32" alt=""></figure>
-		          <strong>Lorum ipsum dolor</strong>
-		          <p>Some content should go here! <a href="#">... and maybe a link?</a></p>
-		          <p class="more"><a href="#">Read More &raquo;</a></p>
+		          <figure><img src="images/document.gif" width="32" height="32" alt=""></figure>
+		          <strong>Formal Statement</strong>
+		          <p>This document outlines a first look into the future research, describes example usage, and motivating factors behind it.</p>
+		          <p class="more"><a href="deliverables/licastb_formal-statement.pdf">View Formal Statement &raquo;</a></p>
 		        </article>
 		        <article>
-		          <figure><img src="images/32x32.gif" width="32" height="32" alt=""></figure>
-		          <strong>Lorum ipsum dolor</strong>
-		          <p>Some content should go here! <a href="#">... and maybe a link?</a></p>
-		          <p class="more"><a href="#">Read More &raquo;</a></p>
+		          <figure><img src="images/document.gif" width="32" height="32" alt=""></figure>
+		          <strong>Proposal Documents</strong>
+		          <p>The thesis proposal roughly outlines an introduction to the area of thesis research, related works, method of approach for the research and accompanying programs, and the overall evaluation strategy. The defense document is the supplementary presentation used to argue the feasability and validity of the proposed area of research.</p>
+		          <p class="more"><a href="deliverables/licastb_thesis-proposal.pdf">View Thesis Proposal &raquo;</a></p>
+		          <p class="more"><a href="deliverables/licastb_thesis-proposal-defense.pdf">View Proposal Defense &raquo;</a></p>
 		        </article>
 		        <article class="last">
-		          <figure><img src="images/32x32.gif" width="32" height="32" alt=""></figure>
-		          <strong>Lorum ipsum dolor</strong>
-		          <p>Some content should go here! <a href="#">... and maybe a link?</a></p>
-		          <p class="more"><a href="#">Read More &raquo;</a></p>
+		          <figure><img src="images/document.gif" width="32" height="32" alt=""></figure>
+		          <strong>Thesis Documents</strong>
+		          <p>This is the deliverable research document being created as a part of the senior thesis research program. Please note this will be a continuous effort over the coming months and will change drastically as time progresses. The thesis defense presentation and accompanying poster will be included at a later time.</p>
+		          <p class="more"><a href="deliverables/licastb_thesis.pdf">View Thesis Paper &raquo;</a></p>
 		        </article>
 		      </section>
 		      <!-- / services area -->

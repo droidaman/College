@@ -127,6 +127,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 .four_quarter{width:960px; float:none; margin-right:0; clear:both;}
 
 .lastbox{margin-right:0;}
+.midbox{margin-bottom:20px;}
 
 /*----------------------------------------------Header-------------------------------------*/
 #header{padding:20px 0;}

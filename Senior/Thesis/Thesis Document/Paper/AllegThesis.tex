@@ -65,6 +65,8 @@
 \usepackage{listings}
 \usepackage[figure]{algorithm2e}
 \usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{update} % only regenerate pdf files when eps file is newer
 
 %   ********************************************************************
 %   * OPTIONAL: IF YOU WANT VERY FINE CONTROL OVER HOW LATEX HYPHENATES*
@@ -100,15 +102,15 @@
 
 \begin{document}
 
-%   ********************************************************************
-%   * FILL IN THE "{...}" BELOW WITH YOUR INFORMATION.                 *
-%   ********************************************************************
+%   ***********************************
+%   *         MY INFORMATION.         *
+%   ***********************************
 
 \thesistitle{Approximate Algorithmic Image Matching to Reduce Online Storage Overhead of User Submitted Images}
 
 \thesisauthor{Braden D. Licastro} \thesisadvisor{Dr. Robert Roos}
 
-\thesisnumber{CS14-11} % SEE PAULINE LANZINE TO GET YOUR REPORT NUMBER!
+\thesisnumber{CS14-11} % REPORT NUMBER PROVIDED BY PAULINE LANZINE!
 
 \thesisreadera{Dr. Gregory Kapfhammer}
 
@@ -207,12 +209,10 @@
 \include{ch02_relatedwork} % Background, literature survey, ...
 
 % ch:method
-\include{ch03_methodofapproach} % Chapter organization is topic-dependent
+\include{ch03_methodofapproach} % Discussion of how the topic was implemented
 
 %ch:implem
-\include{ch04_implementation} % Chapter organization is topic-dependent
-
-% YOU MAY HAVE SEVERAL MORE CHAPTERS, DEPENDING ON TOPIC AND ORGANIZATION
+\include{ch04_resultsevaluation} % Chapter discussing the results and evaluations; inc threat to validity
 
 %ch:conclusion
 \include{ch05_conclusion} % Conclusion/future work

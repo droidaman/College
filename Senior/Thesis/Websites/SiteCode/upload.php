@@ -6,9 +6,9 @@
  *                             *
  *******************************/
 
-// Uncomment to turn on debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 'On');
+// Uncomment to turn on debugging, ignore notices
+//error_reporting(E_ALL & ~E_NOTICE);
+//ini_set('display_errors', 'On');
 
 // Print the PHP max stats for this directory...
 //echo 'upload_max_filesize' . ini_get('upload_max_filesize');
@@ -27,6 +27,9 @@ include "scripts/connect.php";
 // Provide us with the missing functions!
 include "scripts/dupFindSimple.php";
 
+// Provide access to thumbnail creation methods
+include "scripts/thumbnailer.php";
+
 
 /*******************************
  *                             *
@@ -37,11 +40,21 @@ include "scripts/dupFindSimple.php";
 // Upload directory information
 $truTarget = "/var/www/srthesis/uploads/";
 $druTarget = "/var/www/srthesis/uploads_reduced/";
+$publicThumbTarget = "/var/www/srthesis/thumbnails_reduced/";
 
 // Details about the file being used in the system
 $sFileName = $_FILES['image_file']['name'];
 $sFileType = $_FILES['image_file']['type'];
 $sFileSize = bytesToSize1024($_FILES['image_file']['size'], 1);
+
+// Thumbnail function variables.
+// Width for thumbnail images we use for fingerprinting. Default is 150 which works pretty well.
+$thumbWidth = 150;
+// Width for public visible thumbnail (Whatever the <img /> width is.
+$publicThumbSize = 215;
+// Sets how sensitive the fingerprinting will be. 
+// Higher numbers are less sensitive (more likely to match). Floats are allowed.
+$sensitivity = 2;
 
 
 /*******************************
@@ -81,10 +94,90 @@ function createImageHandle($length){
     $codeAlphabet.= "0123456789";
     
     for($i=0;$i<$length;$i++){
-        $handle .= $codeAlphabet[rand(0,strlen($codeAlphabet))];
+        $handle .= $codeAlphabet[mt_rand(0,strlen($codeAlphabet))];
     }
     
     return $handle;
+}
+
+/***********************************************************
+*   Fingerprint (Taken from CatPA PHP GD Image Finder code
+*
+*   This function analyses the filename passed to it and
+*   returns an md5 checksum of the file's histogram.
+************************************************************/
+function createFingerprint($filePathAndName) {
+    // Load the image. Escape out if it's not a valid jpeg.
+    if (!$image = @imagecreatefromjpeg($filePathAndName)) {
+    	// Not a necessary check
+       	// Just in case, we return no match for improper filetypes.
+        return null;
+    }
+
+    // Create thumbnail sized copy for fingerprinting
+    $width = imagesx($image);
+    $height = imagesy($image);
+    $ratio = $GLOBALS["thumbWidth"] / $width;
+    $newwidth = $GLOBALS["thumbWidth"];
+    $newheight = round($height * $ratio); 
+    $smallimage = imagecreatetruecolor($newwidth, $newheight);
+    imagecopyresampled($smallimage, $image, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+    $palette = imagecreatetruecolor(1, 1);
+    $gsimage = imagecreatetruecolor($newwidth, $newheight);
+
+    // Convert each pixel to greyscale, round it off, and add it to the histogram count
+    $numpixels = $newwidth * $newheight;
+    $histogram = array();
+    for ($i = 0; $i < $newwidth; $i++) {
+        for ($j = 0; $j < $newheight; $j++) {
+            $pos = imagecolorat($smallimage, $i, $j);
+            $cols = imagecolorsforindex($smallimage, $pos);
+            $r = $cols['red'];
+            $g = $cols['green'];
+            $b = $cols['blue'];
+            // Convert the colour to greyscale using 30% Red, 59% Blue and 11% Green
+            $greyscale = round(($r * 0.3) + ($g * 0.59) + ($b * 0.11));                 
+            $greyscale++;
+            $value = (round($greyscale / 16) * 16) -1;
+            $histogram[$value]++;
+        }
+    }
+ 
+	// Normalize the histogram by dividing the total of each colour by the total number of pixels
+    $normhist = array();
+    foreach ($histogram as $value => $count) {
+        $normhist[$value] = $count / $numpixels;
+    }
+
+    // Find maximum value (most frequent colour)
+    $max = 0;
+    for ($i=0; $i<255; $i++) {
+        if ($normhist[$i] > $max) {
+            $max = $normhist[$i];
+        }
+    }   
+
+    // Create a string from the histogram (with all possible values)
+    $histstring = "";
+    for ($i = -1; $i <= 255; $i = $i + 16) {
+        $h = ($normhist[$i] / $max) * $GLOBALS["sensitivity"];
+        if ($i < 0) {
+            $index = 0;
+        } else {
+            $index = $i;
+        }
+        $height = round($h);
+        $histstring .= $height;
+    }
+
+    // Destroy all the images that we've created
+    imagedestroy($image);
+    imagedestroy($smallimage);
+    imagedestroy($palette);
+    imagedestroy($gsimage);
+
+    // Generate an md5sum of the histogram values and return it
+    return md5($histstring);
 }
 
 
@@ -182,6 +275,10 @@ function drUpload()
 	
 	// Generate the 40-bit file hash for dup lookup
 	$shaHash = sha1_file($truTarget . $uFileName);
+	
+	// Retrieve the MD5 fingerprint for storage in the database
+	$md5Fingerprint = createFingerprint($truTarget . $uFileName);
+
 
 	
 	// Make sure we aren't accidentally overwriting anything this time.
@@ -191,11 +288,12 @@ function drUpload()
     	$error = '<p><strong>ERROR:</strong> Filename uniqueness not preserved.<br />Please try again or contact the webmaster if this problem persists.</p>';	} else {
 
 		// Uniqueness check...
-		$simpleDupResponse = simpleDupCheck($truTarget . $uFileName, $shaHash);
+		$simpleDupResponse = simpleDupCheck($truTarget . $uFileName, $shaHash, $druTarget, $md5Fingerprint);
 		if($simpleDupResponse !== null)
 		{
 			// Every image gets a new handle, even if not in the reduced folder. (For consistency)
 			$newiHandle = createImageHandle(6);
+			
 
 			// Exact dup found, add to DB and respond appropriately
 			try {
@@ -221,16 +319,21 @@ function drUpload()
 			// Globally rename the file using this original filename
 			$relinkFileName = renameFile($uFileName, $drImageHandle);
 
+			// Copy image to dup reduced and see if success
 			if(copy($truTarget . $uFileName, $druTarget . $relinkFileName))
-			{				
+			{
+				// Create a thumbnail for lightweight public viewing
+				makeThumb($druTarget, $GLOBALS["publicThumbTarget"], $relinkFileName, $GLOBALS["publicThumbSize"]);
+				
 				// Add the image to the database!
 				try {
-					$stmt = $GLOBALS["conn"]->prepare('INSERT INTO share_tracker (ILookup, IName, directory, uMethod, hash) VALUES (:imageHandle,:imageName,:directory,:uMethod, :shaHash)');
+					$stmt = $GLOBALS["conn"]->prepare('INSERT INTO share_tracker (ILookup, IName, directory, uMethod, hash, fingerprint) VALUES (:imageHandle,:imageName,:directory,:uMethod, :shaHash, :fingerprint)');
 					$stmt->execute(array(':imageHandle'=>$drImageHandle,
 										 ':imageName'=>$relinkFileName,
 										 ':directory'=>'uploads_reduced',
 										 ':uMethod'=>'1',
-										 ':shaHash'=>$shaHash));
+										 ':shaHash'=>$shaHash,
+										 ':fingerprint'=>$md5Fingerprint));
 										 
 					$drNotice = "<p><strong>NOTICE:</strong> The image was unique and added to duplicate reduced directory!</p>" .
 							"<br />" .

@@ -1,59 +1,108 @@
 \begin{thebibliography}{10}
 
-\bibitem{AlurDill94}
-Rajeev Alur and David~L. Dill.
-\newblock A theory of timed automata.
-\newblock {\em Theoretical Computer Science}, 126:183--235, 1994.
+\bibitem{about:rename}
+Angela Bradley.
+\newblock {R}enaming {PHP} {U}ploads.
+\newblock \url{http://php.about.com/od/advancedphp/ss/rename_upload.htm}, 2011.
+\newblock [Online; accessed 10-October-2013].
 
-\bibitem{blum67}
-H.~Blum.
-\newblock A transformation for extracting new descriptors of shape.
-\newblock In W.~Wathen-Dunn, editor, {\em Models for the Perception of Speech
-  and Visual Forms}, pages 362--380. MIT Press, Amsterdam, 1967.
+\bibitem{catpa:gdcode}
+CatPa.ws.
+\newblock {PHP} {GD} {D}uplicate {I}mage {F}inder.
+\newblock \url{http://www.catpa.ws/php-duplicate-image-finder/}, 2010.
+\newblock [Online; accessed 13-September-2013].
 
-\bibitem{damon:95}
-James~N. Damon.
-\newblock Properties of ridges and cores for two-dimensional images.
-\newblock Technical report, Department of Mathematics, University of North
-  Carolina at Chapel Hill, 1995.
+\bibitem{dic:com}
+Dictionary.com.
+\newblock {D}efinition of {P}hoto {S}haring.
+\newblock \url{www.dictionary.com}, 2013.
+\newblock [Online; accessed 20-November-2013].
 
-\bibitem{diosan09}
-Laura Dio\c{s}an and Mihai Oltean.
-\newblock Evolutionary design of evolutionary algorithms.
-\newblock {\em Genetic Programming and Evolvable Machines}, 10:263--306, 2009.
+\bibitem{meek:500}
+All~Things Digital.
+\newblock {M}eeker: 500 {M}illion {P}hotos {S}hared {P}er {D}ay and {T}hat's on
+  {T}rack to {D}ouble in 12 {M}onths.
+\newblock
+  \url{http://allthingsd.com/20130529/meeker-500-million-photos-shared-per-day-and-thats-on-track-to-double-in-12-months/},
+  2013.
+\newblock [Online; accessed 20-November-2013].
 
-\bibitem{Fiori:2013}
-Christophe Fiorio.
-\newblock algorithm2e.sty --- package for algorithms, release 5.0, 2013.
-\newblock \url{http://www.ctan.org/pkg/algorithm2e}. Accessed 9 Sept. 2013.
+\bibitem{ubuntu:lampsetup}
+Ubuntu Documentation.
+\newblock {A}pache{M}y{SQLPHP} - {LAMP} {S}erver {S}etup {G}uide.
+\newblock \url{http://php.net/manual/en/ref.image.php}, 2013.
+\newblock [Online; accessed 21-August-2013].
 
-\bibitem{furst99}
-Jacob Furst.
-\newblock {\em Height Ridges of Oriented Medialness}.
-\newblock Ph. {D.} {T}hesis, University of North Carolina, Dept. of Computer
-  Science, 1999.
+\bibitem{Foo:2007}
+Jun~Jie Foo, Justin Zobel, Ranjan Sinha, and S.~M.~M. Tahaghoghi.
+\newblock {D}etection of {N}ear-duplicate {I}mages for {W}eb {S}earch.
+\newblock In {\em Proceedings of the 6th ACM International Conference on Image
+  and Video Retrieval}, CIVR '07, pages 557--564, New York, NY, USA, 2007. ACM.
 
-\bibitem{griffiths:97}
-David~F. Griffiths and Desmond~J. Higham.
-\newblock {\em Learning {\LaTeX}}.
-\newblock SIAM, Philadephia, 1997.
+\bibitem{php:gdimg}
+The~PHP Group.
+\newblock {GD} and {I}mage {F}unctions.
+\newblock \url{http://php.net/manual/en/ref.image.php}, 2013.
+\newblock [Online; accessed 13-October-2013].
 
-\bibitem{Heinz:2013}
-Carsten Heinz, Brooks Moses, and Jobst Hoffmann.
-\newblock The listings package, 2013.
-\newblock \url{http://www.ctan.org/tex-archive/macros/latex/contrib/listings/}.
-  Accessed 10 Oct. 2013.
+\bibitem{php:uploads}
+The~PHP Group.
+\newblock {POST} {M}ethod {U}ploads.
+\newblock
+  \url{http://de.php.net/manual/en/features.file-upload.post-method.php}, 2013.
+\newblock [Online; accessed 09-September-2013].
 
-\bibitem{SmithJones86}
-John Smith and Jane Jones.
-\newblock A made-up title of an article in a conference.
-\newblock In Joan Johnson, Sally Simpson, and Dan Douglas, editors, {\em
-  Proceedings of the Third International Conference on Conferences}, pages
-  500--509, Paris, 1986.
+\bibitem{snap:support}
+Snapchat Inc.
+\newblock {S}napchat {S}upport.
+\newblock \url{http://support.snapchat.com/}, 2013.
+\newblock [Online; accessed 9-December-2013].
 
-\bibitem{zobel:97}
-Justin Zobel.
-\newblock {\em Writing for Computer Science}.
-\newblock Springer-Verlag, 1997.
+\bibitem{Lee:2010}
+David~C. Lee, Qifa Ke, and Michael Isard.
+\newblock {P}artition {M}in-hash for {P}artial {D}uplicate {I}mage {D}iscovery.
+\newblock In {\em Proceedings of the 11th European Conference on Computer
+  Vision: Part I}, ECCV'10, pages 648--662, Berlin, Heidelberg, 2010.
+  Springer-Verlag.
+
+\bibitem{nettuts:pdosqli}
+Dejan Marjanovic.
+\newblock {PDO} vs. {M}y{SQL}i: {W}hich {S}hould {Y}ou {U}se?
+\newblock
+  \url{http://net.tutsplus.com/tutorials/php/pdo-vs-mysqli-which-should-you-use/},
+  2012.
+\newblock [Online; accessed 02-October-2013].
+
+\bibitem{tecnick:testimage}
+TecNick~LTD Nicola~Asuni.
+\newblock {TESTIMAGES}.
+\newblock \url{www.tecnick.com/public/code/cp_dpage.php?aiocp_dp=testimages},
+  2013.
+\newblock [Online; accessed 3-November-2013].
+
+\bibitem{nix:gdsetup}
+nixCraft.
+\newblock {U}buntu {L}inux: {I}nstall or {A}dd {PHP}-{GD} {S}upport to {A}pache
+  {W}eb {S}erver.
+\newblock
+  \url{http://www.cyberciti.biz/faq/ubuntu-linux-install-or-add-php-gd-support-to-apache/},
+  2012.
+\newblock [Online; accessed 30-September-2013].
+
+\bibitem{ntps:staledata}
+NTP Software.
+\newblock {S}urvey {S}ays {N}early {T}wo-{T}hirds of {F}iles on {P}rimary
+  {S}torage {A}re {S}tale.
+\newblock
+  \url{www.ntpsoftware.com/pressroom/survey-says-nearly-two-thirds-files-primary-storage-are-stale},
+  2013.
+\newblock [Online; accessed 31-October-2013].
+
+\bibitem{Srinivasan:2008}
+S~H. Srinivasan and Neela Sawant.
+\newblock {F}inding {N}ear-duplicate {I}mages on the {W}eb {U}sing
+  {F}ingerprints.
+\newblock In {\em Proceedings of the 16th ACM International Conference on
+  Multimedia}, MM '08, pages 881--884, New York, NY, USA, 2008. ACM.
 
 \end{thebibliography}
