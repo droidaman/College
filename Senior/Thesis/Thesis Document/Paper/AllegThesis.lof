@@ -2,8 +2,14 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Various Image Hosting Service Structures}}{2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces How to write algorithms (from )}}{6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces {\tt SampleProg}: A very simple program}}{7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed schema for file uploads}}{9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Successful image upload response.}}{9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Successful image upload response when no duplicate is located.}}{10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Successful image upload response when a duplicate is located.}}{11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Streamlined upload process}}{12}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces What users see when clicking a shared link.}}{12}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces How to write algorithms (from )}}{13}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces {\tt SampleProg}: A very simple program}}{14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
