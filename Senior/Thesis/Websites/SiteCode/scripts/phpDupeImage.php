@@ -36,8 +36,6 @@ class phpDupeImage {
     ******************************************************* */
     function is_unique($filePathAndName, $fingerprint) {
 
-        //$fingerprint = $this->fingerprint($filePathAndName);
-
 		// Check for rough matches with the file hash stored in the DB
 		try {
 			$stmt= $GLOBALS["conn"]->prepare('SELECT * FROM `share_tracker` WHERE `fingerprint` = :fingerprint');

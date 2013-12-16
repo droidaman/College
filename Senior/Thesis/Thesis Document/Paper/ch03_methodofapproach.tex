@@ -8,7 +8,7 @@
 \chapter{Method of Approach} \label{ch:method}
 In order to create an effective image matching algorithm, it was necessary to pull research, knowledge, and pre-existing code from a number of resources in addition to completing original works. Although the research does not target the hardware infrastructure of the network that image sharing sites use, a simple public web server was built and configured. This topic will be briefly discussed in Section \ref To test the proposed image matching method, it was also necessary to build a skeleton that would act as a simple image sharing website. This skeleton will be capable of accepting an image file and returning a link to the user which will allow the submission to be viewed. The site will also allow for the development of the proposed matching function and will provide the necessary functions to accept and handle the output of the research.
 
-\section{Server Configuration}
+\section{Server Configuration} \label{sec:serverconfig}
 In order to implement the website, it is necessary to have an environment capable of running the required processes. To do this, several options were considered. The first option was to run the site on a locally installed Apache web server. After a small amount of testing, this was determined not to be the best option. Due to the lack of a dedicated machine the web server had wildly varying performance due to interference from other processes that could not be closed. This was even a problem when operating on a fixed amount of memory. In addition to this, the XAMPP environment that was tested frequently became momentarily non-responsive with resource hungry processes such as operations performed on large files.
 
 The next alternative was to purchase web space on a shared server. These servers are readily available at minimal cost from dozens of providers such as A Small Orange, BlueHost, and Byethost. After careful consideration several concerns prevented the use of this method. The primary factor was that these servers are shared with numerous users. Due to the nature of this setup, it is unknown how many websites are being hosted by a particular server, and how many concurrent users are accessing these sites at any given time. In addition, it is not possible to set an allotted amount of memory for a particular environment or control what programs are running that may possibly impact the performance of the research.
@@ -23,31 +23,30 @@ The software selection is more straightforward. After selecting to use a Linux o
 
 Upon the completion of the prior configurations, the server was updated and running the latest version of all installed software. To prevent updates from altering the outcomes of the future, a hold was placed on all packages to prevent updates from being installed. In addition to this, the firewall was configured to allow HTTP communication through port 80, which allows interaction through an internet browser with the website hosted on the server. MySQL did not require any setup past the installation of the program and was left alone. At this point, the server configuration was complete and the default Apache "Success" page was displayed when accessing the server showing that everything was working properly.
 
-\section{Website Design}
+\section{Website Design} \label{sec:websitedesign}
 The core of this research hinges on the successful implementation of an image comparison algorithm. In order to do this, a website needed to be developed that acted in a similar manner to an simple image sharing site. In order to do this, a specific demographic of users had been targeted. Due to the code limitations if the PHP GD Duplicate Image Finder written by CatPa \cite{catpa:gdcode}, only jpeg submissions are accepted for the purpose of this research. In addition to this, a 15 MB file size limit is enforced. This is to prevent excessive wait times when transferring the image file to the server during tests run on a large number of files. The website was designed to be lightweight, more specifically it has no extraneous scripts or applets running on the upload page. The purpose of this is to only give processing times relating to the actual upload process and not unessential scripts. Finally, the last restriction placed on the website development is cross browser compatibility. Instead of placing focus on making a website that functions across all common web browsers, it was decided that a focus on the Geko browsers such as Firefox due to the vast array of development tools available for the browser platform. This limitation will also allow for a focused effort in file management on a specific platform and will allow room for further research after the tool has been optimized.
 
-To begin, a database was implemented in such a way that it holds a vast array of information.
+To begin, a database was implemented in such a way that it holds a vast array of information. he image sharing functionality of the website requires several different pieces of information to be stored in a database. The first column of the database houses the identifier for each entry. This is known as the primary key, which is a column in a database where all entries must be unique and the key is used to identify the information in the row. This identifier is used by the website to track the order of the submissions to the server since the date uploaded is not important to the research and will not be tracked. The next column, as seen in Figure \ref{fig:schema} is the {\tt ILookup} column. This is what the website uses to look up each image location on the server when supplied with a URL containing this identification code. This column must always have a value so the {\tt NOT NULL} flag was set. The third column is {\tt IName}, the column that houses the actual file name of the image being stored on the server. This column must also have a value so the {\tt NOT NULL} flag was set. This is concatenated to the end of the {\tt directory} entry which cannot be null, and provides the website with the exact location of the image file on the server with respect to the Linux root directory.
 
-
- to hold a hashed key for each uploaded image and the location of the file on the disk in addition to upload statistics to complete the task. An example of this schema can be seen in figure \ref{fig:schema}.
+Each of the remaining database columns are specific to the image de-duplication scripts. First, the uMethod column is nothing other than a single integer that marks what upload method was used to place the image on the server. If this number is st to "0", the image was uploaded using the non duplicate reducing functions, on the other hand, if this number is set to "1" it is known that the image was uploaded and checked for duplicates before committing to long term storage. Both the hash and fingerprint fields contain information that allows the scripts to rapidly search the database for duplicate files when a new file is uploaded.  Both of these columns are allowed to have a null value. This is allowable due to the fact that non duplicate reduced images will not have any image matching data associated with them. These non duplicate reduced images will be discussed in Section \ref{ch:reseval} when discussing the base case that the results will be compared to. Finally, the last column tracks the total time in milliseconds that it took to upload the image to the server. This is not allowed to be null as both the base case and the duplicate reduced case will require this information. In Section \ref{ch:reseval}, this data will be used to compare the resulting data gathered by uploading images in a traditional manner and using this duplicate reduced function being researched.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=5in]{schema}
+\includegraphics[width=6in]{schema}
 \caption{Proposed schema for file uploads}
 \label{fig:schema}
 \end{figure}
 
-The website will run multiple scripts for each upload. The first script will be a traditional upload method where the user supplies a file, it will be uploaded to the server, and the server will return a unique URL from which to access the image at a later time. During this process, each file will be assigned a new, unique name to prevent collisions upon upload. A SQL {\tt "INSERT"} will then be run on the database for the image and will record the file's location on the server, the file name, the fact it was uploaded using the traditional method, the unique URL to access it from, and an {\tt ID} for each insert into the database. After the completion of the process an {\tt "UPDATE"} will be run on the database entry created by the {\tt "INSERT"} above. The time taken to complete the task will be included in that entry and can be used to analyze the efficiency of both systems upon the completion of the tests outlined in section \ref{sec:evaluate}. This initial upload process can be seen in figure \ref{success_duponly}.
+In order to test the effectiveness of the research being discussed, a base case must be created to compare the results of running the algorithms against. To create this data, the website will perform one function before moving on to the duplicate reduction test. A separate directory was created on the server where every single image sunmission will be place regardless of whether it is duplicate or not. This will mimic the upload process of a non duplicate reducing image sharing website. Each entry into this folder will be placed in the database exactly the same as the duplicate reduced entries are, but will contain no image identification information. This first process will be referenced from henceforth as a traditional upload method. This upload method will be unknown to the user as it will not return a URL allowing access to the image at a later time. During this process, each file will be assigned a new, unique name to prevent collisions upon upload. A SQL {\tt "INSERT"} will then be run on the database for the image and will record the file's location on the server, the file name, the fact it was uploaded using the traditional method, the unique URL to access it from (which will not be given to the user), and an {\tt ID} for each insert into the database. After the completion of the process an {\tt "UPDATE"} will be run on the database entry created by the {\tt "INSERT"} above. The time taken to complete the task will then be included in that entry and can be used to analyze the efficiency of both systems upon the completion of the tests outlined in section \ref{ch:reseval}.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=5in]{success_duponly}
-\caption{Successful image upload response.}
-\label{success_duponly}
-\end{figure}
+After the initial upload completes, a second script will be called. The second script has been designed to operate in two steps. This function will perform mostly the same task as the traditional upload, but will check the image being uploaded for duplicates and handle each case appropriately. First, the image will be matched in the most basic form by hashing the image file using an MD5 file hashing function, after which the resulting hash will be compared to all images in the database using the following SQL Statement: {\tt "SELECT * FROM `share\_tracker` WHERE `uMethod` = '1' AND `hash` = :fileHash'"}. If this statement returns any results relating to a matching hash on a duplicate reduced uploaded image, it has found an exact matching image. 
 
-After the first script completes, a second script will be called. The second script has been designed to operate in two steps, the first of which I have already implemented and tested. This function will perform mostly the same task as the traditional upload script, but will check the image being uploaded for duplicates and handle each case appropriately. First, the image will be matched in the most basic form by hashing the image file using an MD5 file hashing function, after which the resulting hash will be compared to all images in the database. Currently this segment of the code has been tested thoroughly and determined to be successfully identifying duplicates and disallowing them in the duplicate-reduced directory. If a match is not found, the script will continue to the second stage of duplicate finding function. For the time being, this second section of the function always returns no duplicate found to enable testing of only the first stage of identification. When this function is implemented in the future, the image will be taken and converted into a $16\times 16$ black-and-white thumbnail and a histogram will be produced from that image. The server will then look into the database and check whether or not any images uploaded with the duplicate reduced system are similar to the one looking to be uploaded. After the calculation is complete, the resulting upload will be accepted by the function and stored on the servers disk. At this time a SQL {\tt "INSERT"} will then be run on the database for the image and will record the files location on the server, the file name, the fact that it was uploaded using the duplicate-reduced method, the unique URL to access it from, the image's MD5 hashed histogram that is described below, and an {\tt ID} for each insert into the database. After the completion of the process an {\tt "UPDATE"} will be run on the database entry created by the {\tt "INSERT"} above. A view of the functioning duplicate-reduced upload process can be seen in figure \ref{success_nodupfound} when no duplicate image is located.
+In the event where a match is not found, the script will continue to the second stage of duplicate finding function. This function will operate in several different stages. The first stage toward finding an approximate image match is creating a fingerprint of the image file. In order to do this, the script will create a GD image object by using the PHP GD Image Library that was configured on the server in Section \ref{sec:serverconfig}. After the object is created, the GD Library has built in functions that allow the iteration through every pixel in the image and view each pixel's Red, Green, Blue value, or RGB value. These values will then be used to return a fingerprint in the form of an MD5 hash of the color frequency of the image. This color frequency is also known as a color profile. The next step to identifying a duplicate image would be to query the database for any images that have a perfectly matching color profile. This profile will be the same for an image no matter the rotation, size, dimension, or other variation as long as the image color and contrast are left unmodified. At this point, if there is not a matching color profile, it can be said that there is most likely not a matching image on the server and
+the function will return no matches found.
+
+If the color profile does in fact match that of one or more images on the server, the script will then make a $16\times16$ pixel full color copy of the image being uploaded in addition to $16\times16$ copies of each of the images with a matching color profile. This process will also utilize functions provided by the GD Library that will allow pixel by pixel comparison of each image. Due to the nature of re-sizing an image, some colors will be averaged together. This will allow the comparison of both images even if they were different dimensions as the resulting $16\times16$ files will have similar averages after re-sizing if they are in fact a match. Because of a possibility of slight variations in color, this function will not look for exact match, but will allow a set amount of deviation between two thumbnails. To compare the pixels of both images, the RGB values of the corresponding pixels on each image will be analyzed. First, the red value of a pixel will be subtracted from the red value of the corresponding pixel's red value in the other thumbnail. The absolute value of the difference will be recorded. The same process will be completed for the green and blue values of that pixel. Once the difference from that pixel is calculated, the same comparison will be performed on each of the remaining pixels. In order to allow for very slight variations in color with each pixel, the resulting total calculated deviation will be divided by the number of pixels to 'normalize' the result. After that calculation is complete, if the final deviation is less than or equal to the limit set by the website administrator, the function will return that a matching image was found.
+
+If after all of the above processes are completed and no duplicate image is located on the server, the image upload will be accepted by the function and stored on the servers disk. At this time a SQL {\tt "INSERT"} will then be run on the database for the image and will record the files long term location on the server, the file name, the fact that it was uploaded using the duplicate-reduced method, the unique URL to access it from, the image's MD5 hashed histogram that is described below, the thumbnail created for histogram comparison, and an {\tt ID} for each insert into the database. After the completion of the process an {\tt "UPDATE"} will be run on the database entry created by the {\tt "INSERT"} above. A view of the functioning duplicate-reduced upload process can be seen in figure \ref{success_nodupfound} when no duplicate image is located.
 
 \begin{figure}[htbp]
 \centering
@@ -56,18 +55,16 @@ After the first script completes, a second script will be called. The second scr
 \label{success_nodupfound}
 \end{figure}
 
-If the image histogram hash matches the hash on the server, a color profile will be generated in real time for both images and compared pixel by pixel. If there is a match or close match, the script will compare several small, randomly chosen blocks on the images. If these match, then the image is assumed to be a duplicate and a prompt will be displayed to the user showing them the image they provided and the possible match that already exists. If the image is verified a match, the higher of the two resolutions will be kept, and the user will be given a unique link to the image. If the user decides the image is not a duplicate, the system will run an {\tt "INSERT"} on the database as outlined earlier, and it will be added to the database. Following the completion of this process an {\tt "UPDATE"} will be run on the last {\tt "INSERT"} and the time taken to complete the task will be included in that entry. A view of the functioning duplicate-reduced upload process can be seen in figure \ref{success_dupfound} when a duplicate image is located.
+If the image is determined to be a match after the completion of the full image hash function or the completion of the color profile and $16\times16$ pixel by pixel comparison, the submitted image is assumed to be a duplicate and a prompt will be displayed to the user showing them the image they provided and the possible match that already exists. If the image is verified a match, the user will be given a unique link to the image that is already on the server, and the image being uploaded will be discarded as a duplicate. At this time the system will run an {\tt "INSERT"} on the database linking the new identifier to the image already on the server, and it will be added to the database. If the user decides the image is not a duplicate, the system will run an {\tt "INSERT"} statement and it will be added to the database. Following the completion of this process an {\tt "UPDATE"} will be run on the last {\tt "INSERT"} and the time taken to complete the task will be included in that entry. A view of the functioning duplicate-reduced upload process can be seen in figure \ref{success_dupfound} when a duplicate image is located.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=5in]{success_dupfound}
+\includegraphics[width=5.5in]{success_dupfound}
 \caption{Successful image upload response when a duplicate is located.}
 \label{success_dupfound}
 \end{figure}
 
-In the case of requiring duplicate files, where the user decides to upload the image regardless of uniqueness, the script will be able to differentiate between the two images with the unique image ID that is generated at the time of insertion into the database. The closest matching occurrence of an image on the server compared to a new upload will be used in the prompt and displayed to the user. This will prevent frustration with multiple prompts every time more than one duplicate is found.
-
-If an image is indeed found to be duplicate, and the user chooses to use the higher resolution image that is on the server, a unique link will be generated, displayed to the user, and an {\tt "INSERT"} statement will be run containing the same information as the matching file's insert did at the time of upload. This will allow multiple links that point to the same image and the user will be unaware of the system operating in the background which will provide a consistent experience. An outline of this full process can be seen in figure \ref{method-fig1}.
+In the case of requiring duplicate files, where the user decides to upload the image regardless of uniqueness, the script will be able to differentiate between the two images with the unique image ID that is generated at the time of insertion into the database. The closest matching occurrence of an image on the server compared to a new upload will be used in the prompt and displayed to the user. This will prevent frustration with multiple prompts every time more than one duplicate is found. This technique will also allow multiple links that point to the same image while leaving the user unaware of the system operating in the background to provide a consistent experience. An outline of this full process can be seen in figure \ref{method-fig1}.
 
 \begin{figure}[htbp]
 \centering
@@ -80,78 +77,32 @@ When a user accesses the file from the provided link, the system will run a quer
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=5in]{viewimage}
+\includegraphics[width=5.5in]{viewimage}
 \caption{What users see when clicking a shared link.}
 \label{viewimage}
 \end{figure}
 
-\section{Histogram Comparison}
-Algorithm \ref{widgmin} (from ) shows a high-level description of an
-algorithm. There are many options for the display of
-pseudocode; this uses the {\tt algorithm2e} package , 
-but there are a number of others available at the Comprehensive \TeX\ Archive
-Network (\url{ctan.org}). Using any of these
-other packages might require the additon of one or more
-``\verb$\usepackage{...}$'' commands in the main {\tt AllegThesis.tex} file.
+\section{Color Profile and Histogram Comparison} \label{sec:histogram}
+As mentioned in Section \ref{sec:websitedesign}, an image is composed of RGB values associated with every pixel in an image. In order to use these values in an effective manner, a thumbprint of the color profile had to be created. This color profile represents a histogram and allows the visualization of each colors frequency. This section will break down the process of comparing histograms and their accompanying data and explain the reasoning behind the comparison method chosen for this research.
 
-%   *******************************************************************
-%   * SEE CHAPTER ch_01overview.tex FOR INFORMATION ON CONTROLLING    *
-%   * PLACEMENT OF FIGURES.                                           *
-%   *                                                                 *
-%   * THERE ARE MANY DIFFERENT ALGORITHM ENVIRONMENTS. HERE, WE USE   *
-%   * THE "algorithm2e" PACKAGE, BUT YOU SHOULD LOOK TO SEE IF        *
-%   * OTHER PACKAGES BETTER MEET YOUR NEEDS. REGARDLESS OF WHICH      *
-%   * PACKAGE YOU USE, EXPECT TO SPEND TIME READING THE USER MANUAL   *
-%   * AS THERE ARE USUALLY A LARGE NUMBER OF PARAMETERS THAT CAN      *
-%   * SIGNIFICANTLY AFFECT THE FINAL APPEARANCE OF THE ALGORITHM.     *
-%   *******************************************************************
-
-\begin{algorithm}[htbp]
- %\SetLine % For v3.9
- \SetAlgoLined % For previous releases [?]
- \KwData{this text}
- \KwResult{how to write algorithm with \LaTeX2e }
- initialization\;
- \While{not at end of this document}{
-  read current\;
-  \eIf{understand}{
-   go to next section\;
-   current section becomes this one\;
-   }{
-   go back to the beginning of current section\;
-  }
- }
- \caption{How to write algorithms (from )}
-\label{widgmin}
-\end{algorithm}
-
-\section{Experiments}
-
-Figure \ref{javaprog} shows a Java program. There are many, many options for
-providing program listings; only a few of the basic ones are shown
-in the figure. Some thought must be given to making code suitable
-for display in a paper. In particular long lines, tabbed indents, and
-several other practices should be avoided. Figure \ref{javaprog} makes
-use of the {\tt listings} style file .
-
-%   *******************************************************************
-%   * SEE CHAPTER ch_01overview.tex FOR INFORMATION ON CONTROLLING    *
-%   * PLACEMENT OF FIGURES.                                           *
-%   *                                                                 *
-%   * SEE THE MAIN FILE "AllegThesis.tex" FOR THE "\lstset" COMMAND   *
-%   * THAT DEFINES HOW PROGRAM LISTINGS WILL LOOK.                    *
-%   *                                                                 *
-%   * AS WITH EVERYTHING IN LATEX, LOOK AT THE USER MANUAL, SEARCH    *
-%   * FOR EXAMPLES ONLINE, CUSTOMIZE TO GET A PLEASING LOOK.          *
-%   *******************************************************************
-
+As before mentioned, each pixel in an image is composed of an RGB value that allows the storage of the correct mixture of each color in that pixel. This value is separated into three separate ranges of 0-255 values where the higher the number the brighter the color. As seen in Figure \ref{historep}, a histogram has been generated using a popular photo editor by the name of Paint.NET. On the right hand side you can see four different overlaid histograms. The red indicates the frequency of each red value, the lowest of the 0-255 values being at the bottom of the image, and the highest at the top. The green and blue indicate the same for their respective colors. The yellow section of the histogram represents the different shades of black in the image, but we are not concerned with these values as blacks, whites, and grays can be represented by the RGB values. For example $255,255,255$ represents a solid white pixel while $000,000,000$ represents a pure black pixel, thus these colors do not require their own array.
 
 \begin{figure}[htbp]
 \centering
-\lstinputlisting{Code/SampleProgUncommented.java}
-\caption{{\tt SampleProg}: A very simple program}
-\label{javaprog}
+\includegraphics[width=4in]{historep}
+\caption{Visual representation of an images histogram}
+\label{historep}
 \end{figure}
 
-\section{Threats to Validity}
+This collection of values that make up the histogram is where the comparison process begins. For any comparison of data to occur, each pixel's RGB values must be recorded into three arrays of size 256. The index of the red, green, and blue arrays will correlate to the 256 possible colors within the respective color. As a color is encountered, a counter in the code will increment the value by one at that array index. This will allow the tracking of the frequency of each of the RGB values. It does not matter what pixel these are related to as the overall number and frequency of each color is of the only concern.
 
+At this point, every RGB value in the image should be stored within the colors respective array. This is the array of values that can be graphed using a histogram, and the visual of the color profile can be printed out for visual inspection. Since we will be using a function to process the values, the actual generation of said histogram would be unnecessary. These values can be handled and compared in a few ways, but the best method for the purpose of this research much be chosen. This array could be processed using the PHP {\tt serialize()} function and stored in the database for later examination. By doing this, each of the arrays would require separate serialization, and all three would require their own columns. With this method, the array could be pulled from the database and run through the {\tt deserialize()} function to return the array to its original state. This would be beneficial for applications that would require the comparison of each individual array index to another array. Due to the large amount of processing time required to iterate over multiple arrays of size 256, this is not optimal. In addition to this, we are not concerned with calculating the difference in color profiles, but are only concerned with an exact match.
+
+This requirement better lends itself to a different method of histogram value comparison. Due to the fact that we only need to find exact matches and that the system accounts for a possible false positive, hashing the the three arrays will suffice. For this process, the three arrays will be concatenated in the order {\tt Red.Green.Blue}. This will generate one array with 1068 indexes representing every possible RGB value. This value will then be taken and processed with the PHP $md5()$ function which will return a 40 character alphanumeric string representing the array. When an uploads fingerprint is created, the database will be searched for an exact match hash. If a matching hash is found, it is known that a photo with the same color profile is already on the server. In the event of a hash collision where two different histograms have the same resulting hash, the script will be performing a pixel by pixel comparison anyway and will be able to decide that the images aren't unique, so this is not of concern.
+
+Due to the fact that the only images of concern are exact color profile matches, it is not required to store the values of the color profile in a recoverable format. This leads away from storing either a plain text array of values in a database, or storing a serialized version of the array in the database. Because of this, it is acceptable for a 40 character alphanumeric hash to be stored in the database and directly compared to the hash of a newly submitted image in order to detect a possible duplicate image.
+
+\section{Threats to Validity}  \label{sec:threats}
+With any area of research comes inherent shortcomings no matter the care taken to eliminate free variables. By creating a locally hosted server and excluding any extraneous scripts from the website, these variables were controlled to the greatest extent possible. Due to the nature of a publicly hosted web server, there is always a chance of malicious attack which could skew the results on one way or another. As discussed in Chapter \ref{ch:reseval}, four sets of experiments were performed. One test was performed offline and was performed using only a standard test image library with a very specific image alteration to each image. This environment gives the best possible chance of gathering unbiased results. The second test to be performed utilized the same image library, but was run over an internet connection instead of a LAN connection. This allowed for the performance testing over a connection of fluctuating load and speed. An identical set of two experiments were tested using a set of 10 photographs taken around the Allegheny College Campus during the winter months. This would give a collection of unique images, some of which would inherently have similar color profiles due to the reduced color intensity of the winter months. These tests should give an accurate representation of performance in both laboratory conditions, and in a real world application. This also opens the project to uncontrollable variables as discussed that can greatly vary results over a number of trials.
+
+Finally, the last variable that was not able to be determined was a possibility of image corruption. Due to the nature of images, it is possible that minor file corruption can occur on physical media. Since this is nothing more than the loss or incorrect representation of data, an image will still be able to process. In addition, if corruption occurs on a very small number of pixels, it is possible that the image will visually look identical to the original but still differ enough that it will be seen as an original image instead of a duplicate. This corruption can happen due to a momentarily lost connection, a web browser mis handling an HTTP request, or a server side fault. There are currently numerous open bugs in both the PHP language and the Apache server applications, none of which were researched to ensure the proper function of scripts. It was assumed that a functioning script returning expected results during trial runs is a fully operational script when running final tests and analyzing the results.

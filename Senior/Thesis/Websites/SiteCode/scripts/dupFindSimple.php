@@ -18,10 +18,10 @@
  *******************************/
 
 // Allow us to connect to the database, IMPORTANT!
-include "scripts/connect.php";
+include "connect.php";
 
 // Provide us with the missing functions!
-include "scripts/dupFindComplex.php";
+include "dupFindComplex.php";
 
 
 /*******************************
