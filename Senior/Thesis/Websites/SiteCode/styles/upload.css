@@ -1,4 +1,11 @@
-﻿.contr {
+﻿/*-------------------------
+	Upload Form Styles
+--------------------------*/
+
+/*-------------------------
+	General Form Styles
+--------------------------*/
+.contr {
     background-color:#232323;
     padding:10px 0;
     text-align:center;
@@ -64,6 +71,10 @@ input[type=button] {
     width:400px;
 }
 
+
+/*-------------------------
+	Image Detail Styles
+--------------------------*/
 #progress_info {
     font-size:10pt;
     display:none;
@@ -85,6 +96,9 @@ input[type=button] {
     margin-top:10px;
 }
 
+/*-------------------------
+	Progress Bar Styles
+--------------------------*/
 #progress {
     border:1px solid #ccc;
     display:none;
@@ -111,6 +125,9 @@ input[type=button] {
     float:right;
 }
 
+/*-------------------------
+	Response Area Styles
+--------------------------*/
 #upload_response {
     margin-top: 10px;
     padding: 20px;

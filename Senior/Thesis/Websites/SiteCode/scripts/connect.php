@@ -1,14 +1,27 @@
 <?php
-	// Modify these settings to connect to the database properly
-	$dbhost = 'localhost';
-	$user = 'thesisDBusr';
-	$pass = 'Th3s1sDB!';
-	$dbname = 'thesisDB';
+/*******************************
+ *                             *
+ *       Global Variables      *
+ *                             *
+ *******************************/
+$dbhost = 'localhost';
+$user = 'thesisDBusr';
+$pass = 'Th3s1sDB!';
+$dbname = 'thesisDB';
 
-	try {
-		$conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $user, $pass);
-	    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	} catch(PDOException $e) {
-		echo 'ERROR: ' . $e->getMessage();
-	}
+/*******************************
+ *                             *
+ *     Database Connection     *
+ *                             *
+ *******************************/
+try {
+	// Attempt to connect to the database. Uses a PDO for security reasons.
+	$conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $user, $pass);
+	// Set the error reporting mode and restrict errors returned to exceptions only.
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+} catch(PDOException $e) {
+	// An error occured while connecting, display it to help with diagnosis.
+	echo 'ERROR: ' . $e->getMessage();
+}
 ?>

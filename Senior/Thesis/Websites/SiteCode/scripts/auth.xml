@@ -1,20 +1,25 @@
 <?xml version = "1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!-- Access permissions for simple user authentication system. -->
 <SitePermissions>
+	<!-- User Braden Licastro (Owner) -->
 	<login_details>
 		<username>blicastro</username>
 		<password>Gqjv4i</password>
 		<name>Braden</name>
 	</login_details>
+	<!-- User: Bob Roos (Advisor) -->
 	<login_details>
 		<username>rroos</username>
 		<password>tOzbxz</password>
 		<name>Professor Roos</name>
 	</login_details>
+	<!-- User Greg Kapfhammer (Second Reader) -->
 	<login_details>
 		<username>gkapfhammer</username>
 		<password>dNGw3h</password>
 		<name>Professor Kapfhammer</name>
 	</login_details>
+	<!-- User Devin Boyer (Tester) -->
 	<login_details>
 		<username>dboyer</username>
 		<password>m36a3D</password>

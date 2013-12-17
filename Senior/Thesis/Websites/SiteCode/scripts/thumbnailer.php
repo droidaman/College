@@ -4,9 +4,8 @@
  *          Debugging          *
  *                             *
  *******************************/
-
 // Uncomment to turn on debugging
-//error_reporting(E_ALL);
+//error_reporting(E_ALL & ~E_NOTICE);
 //ini_set('display_errors', 'On');
 
 /*******************************
@@ -15,17 +14,30 @@
  *                             *
  *******************************/
 
-// This method has been expanded to allow for any common image filetype except bmp.
-function makeThumb($druTarget, $publicThumbTarget, $filename, $thumbSize){	
-	// Set Filenames
+/**********************************************************
+ *   Function makeThumb(params)							  *
+ *	 													  *
+ *	 Description: Creates a thumbnail of $thumbSize size  *
+ *														  *
+ *   druTarget - Duplicate reduced 						  *
+ *   pubicThumbTarget - Public accessable thumb directory *
+ *   filename - Name of the file to create the thumb from *
+ *   thumbSize - Thumbnail size to create (in px)		  *
+ *														  *
+ *	 Returns: N/A										  *
+ *	 Calls:	  N/A										  *
+ **********************************************************/
+function makeThumb($druTarget, $publicThumbTarget, $filename, $thumbSize) {	
+
+	// Set filenames.
 	$srcFile = $druTarget.$filename;
 	$thumbFile = $publicThumbTarget.'thumb_'.$filename;
 	
-	// Determine the File Type
+	// Determine the file type.
 	$type = substr($filename, strrpos($filename, '.') + 1);
 	
-	// Create the Source Image
-	switch($type){
+	// Create the source image.
+	switch($type) {
 		case 'jpg': case 'jpeg':
 			$src = imagecreatefromjpeg($srcFile);
 			break;
@@ -37,12 +49,12 @@ function makeThumb($druTarget, $publicThumbTarget, $filename, $thumbSize){
 			break;
 	}
 
-	// Determine the Image Dimensions
+	// Determine the image dimensions.
 	$oldW = imagesx($src);
 	$oldH = imagesy($src);
 
-	// Calculate the New Image Dimensions
-	if($oldH > $oldW){
+	// Calculate the new image dimensions.
+	if($oldH > $oldW) {
 		// Portrait
 		$srcX = 0;
 		$srcY = ($oldH / 2) - ($oldW / 2);
@@ -56,14 +68,14 @@ function makeThumb($druTarget, $publicThumbTarget, $filename, $thumbSize){
 		$srcW = $oldH;
 	}
 
-	// Create the new Image
+	// Create the new image.
 	$dst = imagecreatetruecolor($thumbSize, $thumbSize);
 	
-	// Transcribe the Source Image into the New (Square) Image
+	// Transcribe the source image into the new (square) image.
 	imagecopyresampled($dst, $src, 0, 0, $srcX, $srcY, $thumbSize, $thumbSize, $srcW, $srcH);
 	
-	// Save the appropriate image type to the server
-	switch($type){
+	// Save the appropriate image type to the server.
+	switch($type) {
 		case 'jpg': case 'jpeg':
 			imagejpeg($dst, $thumbFile);
 			break;
@@ -75,7 +87,7 @@ function makeThumb($druTarget, $publicThumbTarget, $filename, $thumbSize){
 			break;
 	}
 
-	// Clean up the unnecessary images
+	// Clean up the unnecessary images.
 	imagedestroy($dst);
 	imagedestroy($src);
 }

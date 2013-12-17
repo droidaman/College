@@ -1,3 +1,6 @@
+// Code provided by third party
+// Performs HTML5 upload function with AJAX progress monitoring
+
 // common variables
 var iBytesUploaded = 0;
 var iBytesTotal = 0;
