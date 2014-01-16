@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: AllegThesis.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: AllegThesis.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: dedication.aux
 A level-1 auxiliary file: ack.aux
@@ -12,44 +10,3 @@ A level-1 auxiliary file: ch05_conclusion.aux
 A level-1 auxiliary file: app.aux
 The style file: plain.bst
 Database file #1: Bibdir/myBibtexDB.bib
-You've used 15 entries,
-            2118 wiz_defined-function locations,
-            595 strings with 6948 characters,
-and the built_in function-call counts, 4123 in all, are:
-= -- 432
-> -- 138
-< -- 3
-+ -- 57
-- -- 42
-* -- 169
-:= -- 671
-add.period$ -- 60
-call.type$ -- 15
-change.case$ -- 66
-chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 153
-empty$ -- 382
-format.name$ -- 42
-if$ -- 925
-int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 3
-newline$ -- 90
-num.names$ -- 30
-pop$ -- 114
-preamble$ -- 1
-purify$ -- 51
-quote$ -- 0
-skip$ -- 129
-stack$ -- 0
-substring$ -- 171
-swap$ -- 42
-text.length$ -- 3
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 60
-warning$ -- 0
-while$ -- 39
-width$ -- 17
-write$ -- 188

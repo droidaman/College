@@ -1,5 +1,5 @@
 \contentsline {chapter}{Acknowledgements}{v}
-\contentsline {chapter}{List of Figures}{vii}
+\contentsline {chapter}{List of Figures}{viii}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Image Hosting Services}{1}
 \contentsline {section}{\numberline {1.2}Data Management Technologies}{3}
@@ -19,7 +19,11 @@
 \contentsline {section}{\numberline {5.1}Summary of Results}{18}
 \contentsline {section}{\numberline {5.2}Future Work}{18}
 \contentsline {section}{\numberline {5.3}Conclusion}{18}
-\contentsline {chapter}{\numberline {A}Website Framework Code}{19}
-\contentsline {chapter}{\numberline {B}Duplicate Image Detection Code}{20}
-\contentsline {chapter}{\numberline {C}Miscellaneous Code and Configurations}{21}
-\contentsline {chapter}{Bibliography}{22}
+\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{19}
+\contentsline {section}{\numberline {A.1}Upload Procedures}{19}
+\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{28}
+\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{30}
+\contentsline {chapter}{\numberline {B}Website Framework Code}{34}
+\contentsline {chapter}{\numberline {C}Website Framework Code}{35}
+\contentsline {chapter}{\numberline {D}Miscellaneous Code and Configurations}{36}
+\contentsline {chapter}{Bibliography}{37}
