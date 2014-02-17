@@ -1,13 +1,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Various Image Hosting Service Structures}}{2}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Possible image manipulations}}{6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed schema for file uploads}}{9}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Successful image upload response when no duplicate is located.}}{11}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Successful image upload response when a duplicate is located.}}{12}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Streamlined upload process}}{13}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces What users see when clicking a shared link.}}{13}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Visual representation of an images histogram}}{14}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed schema for file uploads}}{11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Successful image upload response when no duplicate is located.}}{14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Successful image upload response when a duplicate is located.}}{14}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Streamlined upload process}}{15}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces An example of what a user may see when clicking a shared link.}}{15}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Visual representation of an image's histogram}}{16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

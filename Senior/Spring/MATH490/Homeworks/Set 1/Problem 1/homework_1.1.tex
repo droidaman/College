@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\pagestyle{empty}
+
+\setlength{\voffset}{-1in}
+\setlength{\textheight}{10.2in}
+\setlength{\hoffset}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\parindent}{0in}
+
+\usepackage{amsfonts,amsmath,verbatim,amsthm,lastpage}
+
+\begin{document}
+\textbf{Braden Licastro} \hfill \textbf{MATH 490} \hfill \textbf{Computability Theory}
+\vspace{10pt}
+
+\begin{center}
+\textbf{Homework Handout 1\\
+Due Thursday, January 23}
+\end{center}
+\vspace{10pt}
+
+\begin{center}
+NOTE: Only turn in problem 1. Problem 2 kept back temporarily.
+\end{center}
+
+\begin{enumerate}
+\item Carry out the computation of this program (as illustrated in class) with initial configuration $r_1=8$, $r_2=4$, $r_3=2$, $r_i=0$ for $i \geq 4$.
+
+\end{enumerate}
+\textbf{Computation:}
+\begin{table}[h]
+    \begin{tabular}{llllll}
+    \textbf{Step}                  & \textbf{$R_1$} & \textbf{$R_2$} & \textbf{$R_3$} & \textbf{$R_i$ ($i\geq4$)} & \textbf{Next Instruction} \\
+    Initial Configuration & 8   & 4   & 2   & 0          & 1                \\
+    J(1,2,6)              & 8   & 4   & 2   & 0          & 2                \\
+    S(2)                  & 8   & 5   & 2   & 0          & 3                \\
+    S(3)                  & 8   & 5   & 3   & 0          & 4                \\
+    J(1,2,6)              & 8   & 5   & 3   & 0          & 5                \\
+    J(1,1,2)              & 8   & 5   & 3   & 0          & 2                \\
+    S(2)                  & 8   & 6   & 3   & 0          & 3                \\
+    S(3)                  & 8   & 6   & 4   & 0          & 4                \\
+    J(1,2,6)              & 8   & 6   & 4   & 0          & 5                \\
+    J(1,1,2)              & 8   & 6   & 4   & 0          & 2                \\
+    S(2)                  & 8   & 7   & 4   & 0          & 3                \\
+    S(3)                  & 8   & 7   & 5   & 0          & 4                \\
+    J(1,2,6)              & 8   & 7   & 5   & 0          & 5                \\
+    J(1,1,2)              & 8   & 7   & 5   & 0          & 2                \\
+    S(2)                  & 8   & 8   & 5   & 0          & 3                \\
+    S(3)                  & 8   & 8   & 6   & 0          & 4                \\
+    J(1,2,6)              & 8   & 8   & 6   & 0          & 6                \\
+    T(3,1)                & 6   & 8   & 6   & 0          & -Program Halted-               \\
+    \end{tabular}
+\end{table}
+
+Solution: Final value of $R_1$ is $6$
+
+\vfill
+\textbf{Pledge: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_} \hfill Page \thepage\ of \pageref{LastPage}
+\end{document}

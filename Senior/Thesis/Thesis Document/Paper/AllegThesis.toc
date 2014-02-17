@@ -8,22 +8,22 @@
 \contentsline {section}{\numberline {1.5}Thesis Outline}{4}
 \contentsline {chapter}{\numberline {2}Related Work}{5}
 \contentsline {section}{\numberline {2.1}Primary Sources}{5}
-\contentsline {section}{\numberline {2.2}Recent Results}{5}
-\contentsline {chapter}{\numberline {3}Method of Approach}{6}
-\contentsline {section}{\numberline {3.1}Server Configuration}{6}
-\contentsline {section}{\numberline {3.2}Website Design}{8}
-\contentsline {section}{\numberline {3.3}Color Profile and Histogram Comparison}{12}
-\contentsline {section}{\numberline {3.4}Threats to Validity}{15}
-\contentsline {chapter}{\numberline {4}Results and Evaluation}{17}
-\contentsline {chapter}{\numberline {5}Discussion and Future Work}{18}
-\contentsline {section}{\numberline {5.1}Summary of Results}{18}
-\contentsline {section}{\numberline {5.2}Future Work}{18}
-\contentsline {section}{\numberline {5.3}Conclusion}{18}
-\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{19}
-\contentsline {section}{\numberline {A.1}Upload Procedures}{19}
-\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{28}
-\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{30}
-\contentsline {chapter}{\numberline {B}Website Framework Code}{34}
-\contentsline {chapter}{\numberline {C}Website Framework Code}{35}
-\contentsline {chapter}{\numberline {D}Miscellaneous Code and Configurations}{36}
-\contentsline {chapter}{Bibliography}{37}
+\contentsline {section}{\numberline {2.2}Recent Results}{7}
+\contentsline {chapter}{\numberline {3}Method of Approach}{8}
+\contentsline {section}{\numberline {3.1}Server Configuration}{8}
+\contentsline {section}{\numberline {3.2}Website Design}{10}
+\contentsline {section}{\numberline {3.3}Color Profile and Histogram Comparison}{16}
+\contentsline {section}{\numberline {3.4}Threats to Validity}{18}
+\contentsline {chapter}{\numberline {4}Results and Evaluation}{19}
+\contentsline {chapter}{\numberline {5}Discussion and Future Work}{20}
+\contentsline {section}{\numberline {5.1}Summary of Results}{20}
+\contentsline {section}{\numberline {5.2}Future Work}{20}
+\contentsline {section}{\numberline {5.3}Conclusion}{20}
+\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{21}
+\contentsline {section}{\numberline {A.1}Upload Procedures}{21}
+\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{30}
+\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{32}
+\contentsline {chapter}{\numberline {B}Website Framework Code}{36}
+\contentsline {chapter}{\numberline {C}Website Framework Code}{37}
+\contentsline {chapter}{\numberline {D}Miscellaneous Code and Configurations}{38}
+\contentsline {chapter}{Bibliography}{39}
