@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  10 FEB 2014 10:28
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  28 FEB 2014 14:55
 entering extended mode
 **AllegThesis.tex
 
@@ -433,19 +433,19 @@ geshareprocess-eps-converted-to.pdf>] [3]) [4]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
 latedwork.tex"
 Chapter 2.
-<imagesamples.png, id=51, 4117.13156pt x 2599.46156pt>
-File: imagesamples.png Graphic file (type png)
- <use imagesamples.png>
-Package pdftex.def Info: imagesamples.png used on input line 20.
-(pdftex.def)             Requested size: 252.94499pt x 159.68942pt.
-
 [5
 
 
 
 
-] [6 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/ima
-gesamples.png>]) [7]
+] <imagesamples.png, id=58, 4117.13156pt x 2599.46156pt>
+File: imagesamples.png Graphic file (type png)
+
+<use imagesamples.png>
+Package pdftex.def Info: imagesamples.png used on input line 20.
+(pdftex.def)             Requested size: 252.94499pt x 159.68942pt.
+ [6 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/imag
+esamples.png>]) [7]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
 thodofapproach.tex"
 Chapter 3.
@@ -454,21 +454,21 @@ Chapter 3.
 
 
 
-] [9] [10] <schema.pdf, id=74, 487.8225pt x 187.902pt>
+] [9] [10] <schema.pdf, id=76, 487.8225pt x 187.902pt>
 File: schema.pdf Graphic file (type pdf)
  <use schema.pdf>
 Package pdftex.def Info: schema.pdf used on input line 35.
 (pdftex.def)             Requested size: 433.62pt x 167.0258pt.
 
-[11 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/sche
-ma.pdf>] [12] <success_nodupfound.png, id=97, 224.57903pt x 77.14822pt>
+[11] [12 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper
+/schema.pdf>] <success_nodupfound.png, id=99, 224.57903pt x 77.14822pt>
 File: success_nodupfound.png Graphic file (type png)
 
 <use success_nodupfound.png>
 Package pdftex.def Info: success_nodupfound.png used on input line 53.
 (pdftex.def)             Requested size: 397.48499pt x 136.55469pt.
  [13]
-<success_dupfound.png, id=101, 221.8689pt x 71.00528pt>
+<success_dupfound.png, id=103, 221.8689pt x 71.00528pt>
 File: success_dupfound.png Graphic file (type png)
 
 <use success_dupfound.png>
@@ -479,31 +479,23 @@ Package pdftex.def Info: success_dupfound.png used on input line 62.
 pdfTeX warning: pdflatex (file C:/Users/Braden/Documents/College/Senior/Thesis/
 Thesis Document/Paper/upproc.pdf): PDF inclusion: found PDF version <1.7>, but 
 at most version <1.5> allowed
-<upproc.pdf, id=102, 794.97pt x 614.295pt>
+<upproc.pdf, id=104, 794.97pt x 614.295pt>
 File: upproc.pdf Graphic file (type pdf)
  <use upproc.pdf>
 Package pdftex.def Info: upproc.pdf used on input line 71.
 (pdftex.def)             Requested size: 433.62pt x 262.55733pt.
  [14 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/suc
 cess_nodupfound.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Do
-cument/Paper/success_dupfound.png>] <viewimage.png, id=109, 163.3302pt x 63.958
-95pt>
-File: viewimage.png Graphic file (type png)
-
-<use viewimage.png>
-Package pdftex.def Info: viewimage.png used on input line 80.
-(pdftex.def)             Requested size: 397.48499pt x 155.66824pt.
- [15 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/upp
-roc.pdf> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper
-/viewimage.png>]
-<historep.png, id=116, 144.7809pt x 138.5175pt>
+cument/Paper/success_dupfound.png>] [15 <C:/Users/Braden/Documents/College/Seni
+or/Thesis/Thesis Document/Paper/upproc.pdf>] <historep.png, id=116, 144.7809pt 
+x 138.5175pt>
 File: historep.png Graphic file (type png)
- <use historep.png>
-Package pdftex.def Info: historep.png used on input line 92.
+
+<use historep.png>
+Package pdftex.def Info: historep.png used on input line 85.
 (pdftex.def)             Requested size: 289.07999pt x 276.6306pt.
  [16 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/his
-torep.png>]
-[17]) [18]
+torep.png>] [17]) [18]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_re
 sultsevaluation.tex"
 Chapter 4.
@@ -612,26 +604,28 @@ nclusion.aux")
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\app.aux
 ")) ) 
 Here is how much of TeX's memory you used:
- 5720 strings out of 493921
- 84920 string characters out of 3144873
- 376320 words of memory out of 3000000
- 8827 multiletter control sequences out of 15000+200000
+ 5714 strings out of 493921
+ 84825 string characters out of 3144873
+ 376253 words of memory out of 3000000
+ 8822 multiletter control sequences out of 15000+200000
  11133 words of font info for 43 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 42i,6n,40p,2344b,1584s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,6n,40p,2345b,1584s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on AllegThesis.pdf (48 pages, 23169185 bytes).
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on AllegThesis.pdf (48 pages, 22845406 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
+ 241 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 47 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
