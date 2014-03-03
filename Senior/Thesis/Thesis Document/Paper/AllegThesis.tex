@@ -61,13 +61,17 @@
 \usepackage{amssymb}     % more special symbols
 \usepackage{epsfig}      % needed for including figures
 % \usepackage{fancybox}  % --- DISABLED BY RSR, SEP 2013 ---
-%\usepackage{url}
 \usepackage{listings}
+\usepackage{xcolor}
 \usepackage[figure]{algorithm2e}
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \epstopdfsetup{update} % only regenerate pdf files when eps file is newer
 \usepackage[hyphens]{url}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
 
 %   ********************************************************************
 %   * OPTIONAL: IF YOU WANT VERY FINE CONTROL OVER HOW LATEX HYPHENATES*
@@ -181,19 +185,20 @@
 %   * SEE CHAPTER 3 AND APPENDIX A                                     *
 %   ********************************************************************
 
-\lstset{
-  basicstyle=\footnotesize\tt, % the size of the fonts that are used for the code
-  breakatwhitespace=false,     % automatic breaks only happen at whitespace?
-  breaklines=true,             % sets automatic line breaking
-  captionpos=b,                % sets the caption-position to bottom
-  frame=single,                % adds a frame around the code
-  language=Java,               % the language of the code
-  keywordstyle=\bf,
-  showspaces=false,
-  showstringspaces=false,      % underline spaces within strings only?
-  showtabs=false,
-  tabsize=2                    % sets default tabsize to 2 spaces
-}
+%\lstset{
+%  basicstyle=\footnotesize\tt, % the size of the fonts that are used for the code
+%  breakatwhitespace=false,     % automatic breaks only happen at whitespace?
+%  breaklines=true,             % sets automatic line breaking
+%  captionpos=b,                % sets the caption-position to bottom
+%  frame=single,                % adds a frame around the code
+%  language=Java,               % the language of the code
+%  keywordstyle=\bf,
+%  showspaces=false,
+%  showstringspaces=false,      % underline spaces within strings only?
+%  showtabs=false,
+%  tabsize=2                    % sets default tabsize to 2 spaces
+%}
+
 
 %   ********************************************************************
 %   * NOW INCLUDE THE CHAPTER FILES; COMMENT OUT ANY YOU DON'T WANT TO *
