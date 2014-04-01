@@ -1,24 +1,23 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.8.27)  3 MAR 2014 11:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  1 APR 2014 02:55
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
 **AllegThesis.tex
-(./AllegThesis.tex
+
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
+esis.tex"
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
-hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
- czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
-n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
-reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
- sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
-n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
-speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
-lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
-celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, lo
-aded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -33,65 +32,52 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./gatorthesis.sty
+)
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\gatorth
+esis.sty"
 Package: gatorthesis 1997/11/25
 
 Allegheny Thesis Style, $Revision: 1.0 $, by Andrew Thall (athall@allegheny.edu
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-) (./doublespace.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+)
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\doubles
+pace.sty") ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\comment\comment.sty"
 \CommentStream=\write3
 
 Excluding comment 'comment')
 \gator@hour=\count88
 \gator@minute=\count89
 \@shortcaptionsize=\skip43
-
-Margins (in inches):
-\gator@tmp=\count90
-\gator@inches=\count91
-\gator@hundredths=\count92
- textheight = 8.81
- topmargin = 0.0-50
- headheight = 0.14
- headsep = 0.50
- voffset = 0.00
- footskip = 0.57
- textwidth = 6.02
- oddsidemargin = 0.50
- evensidemargin = 0.50
- hoffset = 0.00
- marginparwidth = 0.36
- marginparsep = 0.13
-) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count93
+\inf@bad=\count90
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count94
-\leftroot@=\count95
+\uproot@=\count91
+\leftroot@=\count92
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count96
-\DOTSCASE@=\count97
+\classnum@=\count93
+\DOTSCASE@=\count94
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -100,15 +86,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
 \dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
 \tag@help=\toks15
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
 \andhelp@=\toks16
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -123,47 +109,47 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count105
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -171,35 +157,35 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \epsfxsize=\dimen114
 \epsfysize=\dimen115
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count106
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count103
 \lst@gtempboxa=\box28
 \lst@token=\toks20
-\lst@length=\count107
+\lst@length=\count104
 \lst@currlwidth=\dimen116
-\lst@column=\count108
-\lst@pos=\count109
+\lst@column=\count105
+\lst@pos=\count106
 \lst@lostspace=\dimen117
 \lst@width=\dimen118
-\lst@newlines=\count110
-\lst@lineno=\count111
+\lst@newlines=\count107
+\lst@lineno=\count108
 \lst@maxwidth=\dimen119
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count112
-\lst@skipnumbers=\count113
+\c@lstnumber=\count109
+\lst@skipnumbers=\count110
 \lst@framebox=\box29
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -213,33 +199,23 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Package: algorithm2e 2008/00/00 v3.10 algorithms environments
-\c@AlgoLine=\count114
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count111
 
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 LaTeX Info: Redefining \xspace on input line 40.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
-Package: relsize 2011/09/21 ver 4.0
-
-Examine \normalsize starts \@setfontsize size may be \@xiipt. 
-Examine \small starts \@setfontsize size may be \@xipt. 
-Examine \footnotesize starts \@setfontsize size may be \@xpt. 
-Examine \large starts \@setfontsize size may be \@xivpt. 
-Examine \Large starts \@setfontsize size may be \@xviipt. 
-Examine \LARGE starts \@setfontsize size may be \@xxpt. 
-Examine \scriptsize starts \@setfontsize size may be \@viiipt. 
-Examine \tiny starts \@setfontsize size may be \@vipt. 
-Examine \huge starts \@setfontsize size may be \@xxvpt. 
-Examine \Huge starts \@setfontsize size may be \@xxvpt. )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
 ********************************************************
-Package `algorithm2e' Release 4.01 -- december 14 2009 --
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
 - algorithm2e-announce@lirmm.fr mailing list for announcement about releases
 - algorithm2e-discussion@lirmm.fr mailing list for discussion about package
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
-- Author: Christophe Fiorio (fiorio@lirmm.fr)
+- Author: Christophe Fiorio (cfiorio@um2.fr)
 ********************************************************
 \skiptotal=\skip47
 \skiplinenumber=\skip48
@@ -251,7 +227,7 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \skipalgocfslide=\skip54
 \algowidth=\dimen120
 \inoutsize=\dimen121
-\inoutline=\dimen122
+\inoutindent=\dimen122
 \interspacetitleruled=\dimen123
 \interspacealgoruled=\dimen124
 \interspacetitleboxruled=\dimen125
@@ -259,40 +235,43 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algocf@inputbox=\box31
 \AlCapSkip=\skip55
 \AlCapHSkip=\skip56
+\algoskipindent=\skip57
 \algocf@nlbox=\box32
 \algocf@hangingbox=\box33
-\algocf@capbox=\box34
-\algoheightruledefault=\skip57
-\algoheightrule=\skip58
-\algotitleheightruledefault=\skip59
-\algotitleheightrule=\skip60
-\c@algocfline=\count115
-\c@algocfproc=\count116
-\c@algocf=\count117
-\algocf@algoframe=\box35
-\algocf@algobox=\box36
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+\algocf@untilbox=\box34
+\algocf@skipuntil=\skip58
+\algocf@capbox=\box35
+\algoheightruledefault=\skip59
+\algoheightrule=\skip60
+\algotitleheightruledefault=\skip61
+\algotitleheightrule=\skip62
+\c@algocfline=\count112
+\c@algocfproc=\count113
+\c@algocf=\count114
+\algocf@algoframe=\box36
+\algocf@algobox=\box37
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -301,11 +280,11 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
@@ -318,20 +297,31 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (./AllegThesis.aux
-(./abstract.aux) (./dedication.aux) (./ack.aux) (./ch01_overview.aux)
-(./ch02_relatedwork.aux) (./ch03_methodofapproach.aux)
-(./ch04_resultsevaluation.aux) (./ch05_conclusion.aux) (./app.aux))
-\openout1 = `AllegThesis.aux'.
-
+)
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
+esis.aux"
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
+t.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\dedicat
+ion.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ack.aux
+")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch01_ov
+erview.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
+latedwork.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
+thodofapproach.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_re
+sultsevaluation.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
+nclusion.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\app.aux
+"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
@@ -344,148 +334,143 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
+\scratchcounter=\count115
 \scratchdimen=\dimen126
-\scratchbox=\box37
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\scratchbox=\box38
+\nofMPsegments=\count116
+\nofMParguments=\count117
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count121
+\MPscratchCnt=\count118
 \MPscratchDim=\dimen127
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks22
 )
-\c@lstlisting=\count124
+\c@lstlisting=\count121
 LaTeX Font Info:    Try loading font information for U+msa on input line 136.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 136.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 137.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
  [2]
-\openout2 = `abstract.aux'.
-
- (./abstract.tex
-[3
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
+t.tex" [3
 
 
 ])
-\openout2 = `dedication.aux'.
-
- (./dedication.tex [4
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\dedicat
+ion.tex" [4
 
 
 
 ])
-\openout2 = `ack.aux'.
-
- (./ack.tex) [5
-
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ack.tex
+") [5
 
 
 
 
-] (./AllegThesis.toc [6
+
+]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
+esis.toc" [6
 
 
 
 ])
 \tf@toc=\write4
-\openout4 = `AllegThesis.toc'.
-
  [7]
-(./AllegThesis.lof)
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
+esis.lof")
 \tf@lof=\write5
-\openout5 = `AllegThesis.lof'.
-
  [8
 
 
 ]
-\openout2 = `ch01_overview.aux'.
-
- (./ch01_overview.tex
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch01_ov
+erview.tex"
 Chapter 1.
+[1
+
+
+
+]
 Package epstopdf Info: Source file: <imageshareprocess.eps>
-(epstopdf)                    date: 2013-12-16 16:40:27
+(epstopdf)                    date: 2013-12-14 12:17:34
 (epstopdf)                    size: 198776 bytes
 (epstopdf)             Output file: <imageshareprocess-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-16 16:40:27
+(epstopdf)                    date: 2013-12-14 17:18:25
 (epstopdf)                    size: 129819 bytes
-(epstopdf)             Command: <repstopdf --outfile=imageshareprocess-eps-conv
-erted-to.pdf imageshareprocess.eps>
-(epstopdf)             \includegraphics on input line 30.
+(epstopdf)             Command: <epstopdf --outfile=imageshareprocess-eps-conve
+rted-to.pdf imageshareprocess.eps>
+(epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
-<imageshareprocess-eps-converted-to.pdf, id=32, 578.16pt x 444.4605pt>
+ <imageshareprocess-eps-converted-to.pdf, id=34, 578.16pt x 444.4605pt>
 File: imageshareprocess-eps-converted-to.pdf Graphic file (type pdf)
 
 <use imageshareprocess-eps-converted-to.pdf>
 Package pdftex.def Info: imageshareprocess-eps-converted-to.pdf used on input l
-ine 30.
+ine 32.
 (pdftex.def)             Requested size: 325.215pt x 250.0084pt.
- [1
-
-
-
-] [2 <./imageshareprocess-eps-converted-to.pdf>] [3]) [4]
-\openout2 = `ch02_relatedwork.aux'.
-
- (./ch02_relatedwork.tex
+ [2 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/imag
+eshareprocess-eps-converted-to.pdf>] [3] [4]) [5] [6]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
+latedwork.tex"
 Chapter 2.
-[5
+[7
 
 
 
 
-] <imagesamples.png, id=59, 4117.13156pt x 2599.46156pt>
+] <imagesamples.png, id=67, 4117.13156pt x 2599.46156pt>
 File: imagesamples.png Graphic file (type png)
 
 <use imagesamples.png>
 Package pdftex.def Info: imagesamples.png used on input line 20.
 (pdftex.def)             Requested size: 252.94499pt x 159.68942pt.
- [6 <./imagesamples.png>]) [7]
-\openout2 = `ch03_methodofapproach.aux'.
-
-
-(./ch03_methodofapproach.tex
+ [8 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/imag
+esamples.png>] [9]) [10] [11]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
+thodofapproach.tex"
 Chapter 3.
-[8
+[12
 
 
 
 
-] [9] [10] <schema.pdf, id=77, 487.8225pt x 187.902pt>
+] [13] [14] [15] [16] [17] <schema.pdf, id=103, 487.8225pt x 187.902pt>
 File: schema.pdf Graphic file (type pdf)
- <use schema.pdf>
+
+<use schema.pdf>
 Package pdftex.def Info: schema.pdf used on input line 35.
 (pdftex.def)             Requested size: 433.62pt x 167.0258pt.
-
-[11] [12 <./schema.pdf>]
-<success_nodupfound.png, id=100, 224.57903pt x 77.14822pt>
+ [18 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/sch
+ema.pdf>] [19] [20]
+<success_nodupfound.png, id=127, 224.57903pt x 77.14822pt>
 File: success_nodupfound.png Graphic file (type png)
 
 <use success_nodupfound.png>
 Package pdftex.def Info: success_nodupfound.png used on input line 53.
 (pdftex.def)             Requested size: 397.48499pt x 136.55469pt.
- [13]
-<success_dupfound.png, id=104, 221.8689pt x 71.00528pt>
+ [21 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/suc
+cess_nodupfound.png>]
+<success_dupfound.png, id=132, 221.8689pt x 71.00528pt>
 File: success_dupfound.png Graphic file (type png)
 
 <use success_dupfound.png>
@@ -493,85 +478,153 @@ Package pdftex.def Info: success_dupfound.png used on input line 62.
 (pdftex.def)             Requested size: 397.48499pt x 127.22215pt.
 
 
-pdfTeX warning: pdflatex (file ./upproc.pdf): PDF inclusion: found PDF version 
-<1.7>, but at most version <1.5> allowed
-<upproc.pdf, id=105, 794.97pt x 614.295pt>
+pdfTeX warning: pdflatex (file C:/Users/Braden/Documents/College/Senior/Thesis/
+Thesis Document/Paper/upproc.pdf): PDF inclusion: found PDF version <1.7>, but 
+at most version <1.5> allowed
+<upproc.pdf, id=133, 794.97pt x 614.295pt>
 File: upproc.pdf Graphic file (type pdf)
  <use upproc.pdf>
 Package pdftex.def Info: upproc.pdf used on input line 71.
 (pdftex.def)             Requested size: 433.62pt x 262.55733pt.
- [14 <./success_nodupfound.png> <./success_dupfound.png>] [15 <./upproc.pdf>]
-<historep.png, id=117, 144.7809pt x 138.5175pt>
+ [22 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/suc
+cess_dupfound.png>]
+[23 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/uppr
+oc.pdf>] <historep.png, id=145, 144.7809pt x 138.5175pt>
 File: historep.png Graphic file (type png)
  <use historep.png>
 Package pdftex.def Info: historep.png used on input line 85.
 (pdftex.def)             Requested size: 289.07999pt x 276.6306pt.
- [16 <./historep.png>] [17]) [18]
-\openout2 = `ch04_resultsevaluation.aux'.
 
- (./ch04_resultsevaluation.tex
+[24] [25 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper
+/historep.png>] [26]) [27]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_re
+sultsevaluation.tex"
 Chapter 4.
-) [19
+[28
 
 
 
 
-]
-\openout2 = `ch05_conclusion.aux'.
+] <uploadform.png, id=162, 316.0608pt x 68.6565pt>
+File: uploadform.png Graphic file (type png)
+ <use uploadform.png>
+Package pdftex.def Info: uploadform.png used on input line 20.
+(pdftex.def)             Requested size: 433.62pt x 94.20128pt.
 
- (./ch05_conclusion.tex
+<typewarning.png, id=163, 319.4334pt x 80.9424pt>
+File: typewarning.png Graphic file (type png)
+ <use typewarning.png>
+Package pdftex.def Info: typewarning.png used on input line 27.
+(pdftex.def)             Requested size: 433.62pt x 109.88506pt.
+
+<sizewarning.png, id=164, 319.6743pt x 81.4242pt>
+File: sizewarning.png Graphic file (type png)
+ <use sizewarning.png>
+Package pdftex.def Info: sizewarning.png used on input line 34.
+(pdftex.def)             Requested size: 433.62pt x 110.45216pt.
+
+[29 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/uplo
+adform.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Pa
+per/typewarning.png>] <imageprocessing.png, id=169, 234.3957pt x 95.3964pt>
+File: imageprocessing.png Graphic file (type png)
+
+<use imageprocessing.png>
+Package pdftex.def Info: imageprocessing.png used on input line 43.
+(pdftex.def)             Requested size: 433.62pt x 176.49216pt.
+ [30 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/siz
+ewarning.png>] [31 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
+ment/Paper/imageprocessing.png>]
+<proctimenodup.png, id=176, 195.129pt x 123.0999pt>
+File: proctimenodup.png Graphic file (type png)
+ <use proctimenodup.png>
+Package pdftex.def Info: proctimenodup.png used on input line 57.
+(pdftex.def)             Requested size: 289.07999pt x 182.3728pt.
+
+<proctimemixdup.png, id=177, 195.129pt x 123.0999pt>
+File: proctimemixdup.png Graphic file (type png)
+ <use proctimemixdup.png>
+Package pdftex.def Info: proctimemixdup.png used on input line 64.
+(pdftex.def)             Requested size: 289.07999pt x 182.3728pt.
+
+[32 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/proc
+timenodup.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document
+/Paper/proctimemixdup.png>] [33]
+<smallaverage.png, id=186, 112.2594pt x 107.9232pt>
+File: smallaverage.png Graphic file (type png)
+ <use smallaverage.png>
+Package pdftex.def Info: smallaverage.png used on input line 77.
+(pdftex.def)             Requested size: 180.67499pt x 173.70987pt.
+
+<largeaverage.png, id=187, 112.2594pt x 107.9232pt>
+File: largeaverage.png Graphic file (type png)
+ <use largeaverage.png>
+Package pdftex.def Info: largeaverage.png used on input line 84.
+(pdftex.def)             Requested size: 180.67499pt x 173.70987pt.
+
+[34 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/smal
+laverage.png>] [35 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
+ment/Paper/largeaverage.png>]) [36]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
+nclusion.tex"
 Chapter 5.
-) [20
+) [37
 
 
 
 
 ]
-\openout2 = `app.aux'.
-
- (./app.tex
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\app.tex
+" ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
 File: lstlang2.sty 2004/09/05 1.3 listings language file
 )
 Appendix A.
-(./Code/upload.php [21
+
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/up
+load.php" [38
 
 
 
 
-] [22] [23] [24] [25] [26] [27] [28] [29])
-(./Code/dupFindSimple.php [30] [31]) (./Code/dupFindComplex.php [32])
-(./Code/phpDupeImage.php [33] [34]) [35]
+] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
+[51] [52])
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/du
+pFindSimple.php" [53] [54])
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/du
+pFindComplex.php" [55] [56])
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/ph
+pDupeImage.php" [57] [58] [59] [60]) [61]
 Appendix B.
-[36
+[62
 
 
 ]
 Appendix C.
-[37
+[63
 
 
 ]
 Appendix D.
-) [38
+) [64
 
 
-] (./AllegThesis.bbl
+]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
+esis.bbl"
 Underfull \hbox (badness 1178) in paragraph at lines 10--14
 []\OT1/cmr/m/n/12 Angela Bradley.  Re-nam-ing PHP Up-loads.  $\OT1/cmtt/m/n/12 
-http : / / php . about . com / od /
+http : / / php . about . com / od /$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--35
-\OT1/cmtt/m/n/12 500 -[] million -[] photos -[] shared -[] per -[] day -[] and 
--[] thats -[] on -[] track -[] to -[] double -[]
+$\OT1/cmtt/m/n/12 500 -[] million -[] photos -[] shared -[] per -[] day -[] and
+ -[] thats -[] on -[] track -[] to -[] double -[]$
  []
 
-[39
+[65
 
 
 
@@ -582,8 +635,8 @@ Underfull \hbox (badness 5939) in paragraph at lines 75--81
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--81
-\OT1/cmtt/m/n/12 http : / / net . tutsplus . com / tutorials / php / pdo -[] vs
- -[] mysqli -[] which -[] should -[]
+$\OT1/cmtt/m/n/12 http : / / net . tutsplus . com / tutorials / php / pdo -[] v
+s -[] mysqli -[] which -[] should -[]$
  []
 
 
@@ -593,32 +646,51 @@ pache
  []
 
 )
-THEPAGE 40
-[40] (./AllegThesis.aux (./abstract.aux) (./dedication.aux) (./ack.aux)
-(./ch01_overview.aux) (./ch02_relatedwork.aux) (./ch03_methodofapproach.aux)
-(./ch04_resultsevaluation.aux) (./ch05_conclusion.aux) (./app.aux)) ) 
+THEPAGE 66
+[66]
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
+esis.aux"
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
+t.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\dedicat
+ion.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ack.aux
+")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch01_ov
+erview.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch02_re
+latedwork.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch03_me
+thodofapproach.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_re
+sultsevaluation.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
+nclusion.aux")
+("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\app.aux
+")) ) 
 Here is how much of TeX's memory you used:
- 7909 strings out of 493493
- 114514 string characters out of 3143797
- 573225 words of memory out of 3000000
- 11022 multiletter control sequences out of 15000+200000
+ 8200 strings out of 493921
+ 125648 string characters out of 3144873
+ 539549 words of memory out of 3000000
+ 11294 multiletter control sequences out of 15000+200000
  10488 words of font info for 40 fonts, out of 3000000 for 9000
- 960 hyphenation exceptions out of 8191
- 42i,7n,42p,2345b,3366s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmtt12.pfb>
-Output written on AllegThesis.pdf (48 pages, 22781358 bytes).
+ 844 hyphenation exceptions out of 8191
+ 42i,7n,42p,2345b,3365s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on AllegThesis.pdf (74 pages, 23005721 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 335 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
