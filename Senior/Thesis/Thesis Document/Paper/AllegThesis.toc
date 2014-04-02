@@ -22,8 +22,8 @@
 \contentsline {section}{\numberline {5.2}Future Work}{42}
 \contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{44}
 \contentsline {section}{\numberline {A.1}Upload Procedures}{44}
-\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{61}
-\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{63}
-\contentsline {chapter}{\numberline {B}Website Framework Code}{70}
-\contentsline {chapter}{\numberline {C}Miscellaneous Code and Configurations}{88}
-\contentsline {chapter}{Bibliography}{93}
+\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{62}
+\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{65}
+\contentsline {chapter}{\numberline {B}Website Framework Code}{72}
+\contentsline {chapter}{\numberline {C}Miscellaneous Code and Configurations}{90}
+\contentsline {chapter}{Bibliography}{98}

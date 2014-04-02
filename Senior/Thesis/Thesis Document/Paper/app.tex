@@ -29,21 +29,62 @@
 This appendix contains code relating directly to the uploading and duplicate image detection process. More precisely, the code relating to the exact image matching function is contained within Section \ref{appa:exact} while code relating to the more in-depth approximate duplicate image detection process is in Section \ref{appa:approx}.
 
 \section{Upload Procedures}\label{appa:upload}
+\textbf{File: "upload.php"}
 \lstinputlisting{Code/upload.php}
+\newpage
 
 \section{Exact Duplicate Detection Code}\label{appa:exact}
+\textbf{File: "dupFindSimple.php"}
 \lstinputlisting{Code/dupFindSimple.php}
+\newpage
 
 \section{Approximate Duplicate Detection Code}\label{appa:approx}
+\textbf{File: "dupFindComplex.php"}
 \lstinputlisting{Code/dupFindComplex.php}
+\newpage
+\textbf{File: "phpDupeImage.php"}
 \lstinputlisting{Code/phpDupeImage.php}
+\newpage
 
 \chapter{Website Framework Code}\label{appb:wejbcode}
 This appendix contains code relating to the website function itself. This includes the interactive research center page where the upload form itself was available for use and the image viewing page where image links are processed and presented to the user. All other pages provide only content and additional project information which are not necessary for the project to function. These can be acquired by contacting me at licastb@allegheny.edu and requesting the complete website.
+\textbf{File: "irc.php"}
 \lstinputlisting{Code/irc.php}
+\newpage
+\textbf{File: "view.php"}
 \lstinputlisting{Code/view.php}
+\newpage
 
 \chapter{Miscellaneous Code and Configurations}\label{appc:misccode}
-The code contained within this appendix relates to the miscellaneous website functions not included in the previous appendices. This includes the database connection and thumbnail generation scripts. Note that the website style-sheets, JavaScript libraries, and other features including security, directory and server configurations and other associated materials have not been included. These can be made available by contacting me at licastb@allegheny.edu.
+The code contained within this appendix relates to the miscellaneous website functions not included in the previous appendices. This includes the database, database connection, and thumbnail generation scripts. Note that the website style-sheets, JavaScript libraries, and other features including security, directory and server configurations and other associated materials have not been included. These can be made available by contacting me at licastb@allegheny.edu.
+\textbf{File: "connect.php"}
 \lstinputlisting{Code/connect.php}
+\newpage
+\textbf{File: "thumbnailer.php}
 \lstinputlisting{Code/thumbnailer.php}
+\newpage
+
+\lstset{
+  language        	= sql,
+  basicstyle      	= \footnotesize\tt,   % the size of the fonts that are used for the code
+  breakatwhitespace	= false,			  % automatic breaks only happen at whitespace?
+  breaklines		= true,            	  % sets automatic line breaking
+  captionpos		= b,              	  % sets the caption-position to bottom
+  showspaces		= false,
+  showstringspaces	= false,			  % underline spaces within strings only?
+  showtabs			= false,
+  tabsize			= 2,                   % sets default tabsize to 2 spaces
+  keywordstyle   	= \color{dkblue},
+  stringstyle   	= \color{red},
+  identifierstyle	= \color{dkgreen},
+  commentstyle  	= \color{gray},
+  emph         	    = [1]{php},
+  emphstyle    	    = [1]\color{black},
+  emph         	    = [2]{if,and,or,else},
+  emphstyle    	    = [2]\color{dkyellow},
+  frame				= none
+  }
+
+\textbf{File: "thesisDB.sql"}
+\lstinputlisting{Code/thesisDB.sql}
+\newpage
