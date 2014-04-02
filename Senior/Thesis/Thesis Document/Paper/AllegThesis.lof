@@ -2,22 +2,23 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Various Image Hosting Service Structures}}{2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Possible image manipulations}}{8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Visual example of two basic non-adaptive algorithms.}}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed schema for file uploads}}{18}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Successful image upload response when no duplicate is located.}}{21}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Successful image upload response when a duplicate is located.}}{22}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Streamlined upload process}}{23}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Visual representation of an image's histogram}}{25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Proposed schema for file uploads}}{20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Successful image upload response when no duplicate is located.}}{23}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Successful image upload response when a duplicate is located.}}{24}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Streamlined upload process}}{25}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Visual representation of an image's histogram}}{27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Initial state of the upload form upon page load.}}{29}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Error displayed when a user attempts to upload a non-jpeg file.}}{29}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Error displayed when attempting to upload a jpeg image that is too large.}}{30}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Image processing after upload completes.}}{31}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Processing time on data set without duplicates.}}{32}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Processing time on data set with 20\% duplicate images.}}{32}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Average of 5 tests using different groups of sub 1MB images.}}{34}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Average of 5 tests using different groups of greater than 1MB images.}}{35}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces After re-sizing the image, there has been a complete loss of data.}}{36}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Initial state of the upload form upon page load.}}{31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Error displayed when a user attempts to upload a non-jpeg file.}}{31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Error displayed when attempting to upload a jpeg image that is too large.}}{32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Image processing after upload completes.}}{33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Processing time on data set without duplicates.}}{34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Processing time on data set with 20\% duplicate images.}}{34}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Average of 5 tests using different groups of sub 1MB images.}}{36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Average of 5 tests using different groups of greater than 1MB images.}}{37}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces After re-sizing the image, there has been a complete loss of data.}}{38}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
