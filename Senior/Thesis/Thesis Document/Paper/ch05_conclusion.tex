@@ -8,13 +8,14 @@
 
 \chapter{Discussion and Future Work}\label{ch:conclusion}
 
-Conclusion to be written int he Spring after research and testing concludes.
-
-\section{Summary of Results}
-Coming soon.
+\section{Conclusion}
+As discussed several times previously in this paper, image sharing websites can be extremely costly to operate as the service gains popularity and the number of images uploaded increases. The overall goal of any business owner is to cut costs and increase profits, and this is no different with owners of the image sharing websites in question. Through the use of various technologies including file expiration times, upload size restrictions, and subscription services the costs of running this type of service can be offset. Despite best efforts to reduce costs, further improvements could be implemented including the usage of this system. Although the method researched was unable to completely eliminate the duplicate data being uploaded to a server, it was able to eliminate 80-90\% of duplicates with a minimal number of false positives. As a worst case scenario, even removing a handful of duplicates from servers will leave business owners in a better position than not implementing the system at all. All of this was able to be accomplished with little to no additional effort on the users part, and a minimum additional wait time that was not observed to be more than two seconds in the worst scenario.
 
 \section{Future Work}
-Coming soon.
+In order to further develop a more versatile and accurate system, many improvements can be made. First and foremost, this research is limited strictly to JPEG images due to several code restrictions listed. Several image duplication detection algorithms exist that were discussed in the related works section. These can be used in place of the PHP GD library code based off of the system by CatPa \cite{catpa:gdcode}. In addition, the GD library does allow for additional file types, though the code will need optimized to maintain reasonable performance.
 
-\section{Conclusion}
-Coming soon.
+In addition to adding support for multiple file types, further research and optimization can be performed to increase the detection accuracy of the system developed. When analyzing photographs, the system performed as well as, or better than expected. This system performed exceptionally poorly with computer generated graphics, particularly patterns with a significant. This could be accomplished using other detection techniques, altering this system's settings, or even furthering the detection process by adding a more thorough duplicate searching algorithm. Also, due to the fact that this research targeted only a finite set of image variations and manipulations, there is a need to test the systems accuracy on a wider variety of possible manipulations. This will not only give a better understanding of the overall performance, but it may open additional areas of improvement.
+
+Finally, as discussed in Section \ref{sec:threats}, the sets of test images used in the experimentation and evaluation of this research were not complete enough to guarantee the findings would hold true in real world scenarios. These tests could include larger varieties of images or increased quantities ad would preferably cover a broader spectrum of possibilities allowing for better data to be collected. In addition, during nthe duration of this research, I was unable to locate a combination of files that would result in an MD5 hash collision that could cause false results to be returned. After generating and hashing nearly 300,000 images, each returned a unique file hash. Hash collisions are a known problem, though this scenario was unable to be tested after attempting to intentionally cause this sort of an unlikely event.
+
+In conclusion, as with any type of research, the completion of a project does not signify the end of research on a particular topic, it only opens additional paths for further improvement. In the case of this research, versatility, performance, variance of image manipulations, handling of special situations, and further testing to give a better representation of real world performance are all areas that could benefit from further research.

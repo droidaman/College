@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Processing time on data set with 20\% duplicate images.}}{32}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Average of 5 tests using different groups of sub 1MB images.}}{34}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Average of 5 tests using different groups of greater than 1MB images.}}{35}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.9}{\ignorespaces After re-sizing the image, there has been a complete loss of data.}}{36}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

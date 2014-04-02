@@ -30,9 +30,9 @@ include "scripts/thumbnailer.php";
  *                             *
  *******************************/
 // Upload directory information.
-$truTarget = "/var/www/srthesis/uploads/";
-$druTarget = "/var/www/srthesis/uploads_reduced/";
-$publicThumbTarget = "/var/www/srthesis/thumbnails_reduced/";
+$truTarget = "/var/www/skynetgds/public_html/srthesis/uploads/";
+$druTarget = "/var/www/skynetgds/public_html/srthesis/uploads_reduced/";
+$publicThumbTarget = "/var/www/skynetgds/public_html/srthesis/thumbnails_reduced/";
 
 // Details about the file being used in the system.
 $sFileName = $_FILES['image_file']['name'];
@@ -71,14 +71,14 @@ $uFileName = '';
 /**********************************************************
  *   Function bytesToSize1024(params)                     *
  *                                                        *
- *   Description: Converts from bytes to a more           *
+ *	 Description: Converts from bytes to a more           *
  *                human readable format                   *
  *                                                        *
  *   bytes - The number to be converted                   *
  *   precision - Number of decimal places to round to     *
  *                                                        *
- *   Returns: Number in B, KB, MB, or GB                  *
- *   Calls:   N/A                                         *
+ *	 Returns: Number in B, KB, MB, or GB                  *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function bytesToSize1024($bytes, $precision = 2) {
     $unit = array('B','KB','MB','GB');
@@ -88,13 +88,13 @@ function bytesToSize1024($bytes, $precision = 2) {
 /**********************************************************
  *   Function createImageHandle(param)                    *
  *                                                        *
- *   Description: Creates a case sensitive alphanumeric   *
+ *	 Description: Creates a case sensitive alphanumeric   *
  *                image handle for the URL                *
  *                                                        *
  *   bytes - The number to be converted                   *
  *                                                        *
- *   Returns: $length character alphanumeric string       *
- *   Calls:   N/A                                         *
+ *	 Returns: $length character alphanumeric string       *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function createImageHandle($length){
     $handle = "";
@@ -114,15 +114,15 @@ function createImageHandle($length){
  *             CatPA PHP GD Image Finder code             *
  *   Function createFingerprint(param)                    *
  *                                                        *
- *   Description: Analyses the filename passed to it and  *
+ *	 Description: Analyses the filename passed to it and  *
  *                returns an md5 checksum of the          *
  *                file's histogram                        *
  *                                                        *
  *   filePathAndName - File and location on server the    *
- *                     fingerprint will	be created for    *
+ *                     fingerprint will be created for    *
  *                                                        *
- *   Returns: MD5 hashed histogram of the supplied file   *
- *   Calls:   N/A                                         *
+ *	 Returns: MD5 hashed histogram of the supplied file   *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function createFingerprint($filePathAndName) {
     // Load the image. Escape out if it's not a valid jpeg (can be extended later).
@@ -212,13 +212,13 @@ function createFingerprint($filePathAndName) {
 /**********************************************************
  *   Function findext(param)                              *
  *                                                        *
- *   Description: Separates the extension from the        *
+ *	 Description: Separates the extension from the        *
  *                rest of the filename and returns it     *
  *                                                        *
  *   filename - Filename to be split apart                *
  *                                                        *
- *   Returns: File extension of the supplied file         *
- *   Calls:   N/A                                         *
+ *	 Returns: File extension of the supplied file         *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function findext($filename) 
 {
@@ -235,7 +235,7 @@ function findext($filename)
 /**********************************************************
  *   Function renameFile(param)                           *
  *                                                        *
- *	 Description: File renamed using the below pattern    *
+ *	 Description: File renamed using the below pattern	  *
  *                TTTTTTTTTT-IIIIII.EEE(E)                *
  *                     - where -                          *
  *                Timestamp-ImageHandle.Extension         *
@@ -243,8 +243,8 @@ function findext($filename)
  *   filename - Filename to be renamed                    *
  *   imageHandle - Newly generated image handle           *
  *                                                        *
- *   Returns: New filename with same extension as the old *
- *   Calls:   N/A                                         *
+ *	 Returns: New filename with same extension as the old *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function renameFile($filename, $imageHandle)
 {
@@ -269,15 +269,18 @@ function renameFile($filename, $imageHandle)
 /**********************************************************
  *   Function trUpload()                                  *
  *                                                        *
- *   Description: Traditional upload function             *
+ *	 Description: Traditional upload function             *
  *                                                        *
- *   Returns: N/A                                         *
- *   Calls:   N/A                                         *
+ *	 Returns: N/A                                         *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function trUpload()
 {
+	// Script start time
+	$start_time = MICROTIME(TRUE);
+
 	// Allow access to the global (scope) variables.
-	global $trNotice, $error, $truTarget, $uFileName;
+	global $trNotice, $error, $truTarget, $uFileName, $last_id;
 	
 	// Create an image handle for the baseline upload.
 	$trImageHandle = createImageHandle(6);
@@ -301,6 +304,9 @@ function trUpload()
 									 ':directory'=>'uploads',
 									 ':uMethod'=>'0'));
 				
+				// Get the last INSERT ID
+				$last_id = $GLOBALS["conn"]->lastInsertId(); 
+
 				// Report back a success!
 				$trNotice = "<p>Baseline directory upload succeeded! You may view this image <a href=\"http://skynetgds.no-ip.biz/srthesis/irc.php?view={$trImageHandle}\">HERE</a>.</p>";
 			} catch(PDOException $e) {
@@ -312,20 +318,35 @@ function trUpload()
 			$error = '<p><strong>ERROR:</strong> File could not be saved to the server.<br />Please retry or contact the webmaster if this problem persists.</p>';
 		}
     }
+	// Mark the stop time
+	$time = MICROTIME(TRUE) - $start_time;
+
+	try {
+		// Update the image processing time!
+		$stmt = $GLOBALS["conn"]->prepare('UPDATE share_tracker SET processTime=:procTime WHERE ID=:lastID');
+		$stmt->execute(array(':procTime'=>$time,
+				     ':lastID'=>$last_id));
+	} catch(PDOException $e) {
+		// Or an error...
+		$error = '<p><strong>ERROR:</strong> ' . $e->getMessage() . '</p>';
+	}
 }
 
 /**********************************************************
  *   Function drUpload()                                  *
  *                                                        *
- *   Description: Duplicate reduced upload function       *
+ *	 Description: Duplicate reduced upload function       *
  *                                                        *
- *   Returns: N/A                                         *
- *   Calls:   N/A                                         *
+ *	 Returns: N/A                                         *
+ *	 Calls:	  N/A                                         *
  **********************************************************/
 function drUpload()
 {
+	// Script start time
+	$start_time = MICROTIME(TRUE);
+
 	// Allow access to the global (scope) variables.
-	global $drNotice, $error, $truTarget, $druTarget, $uFileName;
+	global $drNotice, $error, $truTarget, $druTarget, $uFileName, $last_id;
 	
 	// Generate the 40-bit SHA1 file hash for simple dup lookup.
 	$shaHash = sha1_file($truTarget . $uFileName);
@@ -353,6 +374,9 @@ function drUpload()
 									 ':imageName'=>$dupResponse,
 									 ':directory'=>'uploads_reduced',
 									 ':uMethod'=>'1'));
+
+				// Get the last INSERT ID
+				$last_id = $GLOBALS["conn"]->lastInsertId(); 
 
 				// Report back a success!
 				$drNotice = "<p><strong>NOTICE:</strong> Image was not added to duplicate reduced directory, file already exists.</p>" .
@@ -388,6 +412,9 @@ function drUpload()
 										 ':shaHash'=>$shaHash,
 										 ':fingerprint'=>$md5Fingerprint));
 
+					// Get the last INSERT ID
+					$last_id = $GLOBALS["conn"]->lastInsertId();
+
 					// Report a success!
 					$drNotice = "<p><strong>NOTICE:</strong> The image was unique and added to duplicate reduced directory!</p>" .
 							"<br />" .
@@ -405,6 +432,19 @@ function drUpload()
 			}
 		}	
     }
+
+	// Mark the stop time
+	$time = MICROTIME(TRUE) - $start_time;
+
+	try {
+		// Update the image processing time!
+		$stmt = $GLOBALS["conn"]->prepare('UPDATE share_tracker SET processTime=:procTime WHERE ID=:lastID');
+		$stmt->execute(array(':procTime'=>$time,
+				     ':lastID'=>$last_id));
+	} catch(PDOException $e) {
+		// Or an error...
+		$error = '<p><strong>ERROR:</strong> ' . $e->getMessage() . '</p>';
+	}
 }
 
 // Call the upload functions and actually do some work!

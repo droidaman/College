@@ -16,16 +16,13 @@
 \contentsline {chapter}{\numberline {4}Results and Evaluation}{28}
 \contentsline {section}{\numberline {4.1}Functionality}{29}
 \contentsline {section}{\numberline {4.2}Performance}{31}
-\contentsline {section}{\numberline {4.3}Conclusion}{36}
-\contentsline {chapter}{\numberline {5}Discussion and Future Work}{37}
-\contentsline {section}{\numberline {5.1}Summary of Results}{37}
-\contentsline {section}{\numberline {5.2}Future Work}{37}
-\contentsline {section}{\numberline {5.3}Conclusion}{37}
-\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{38}
-\contentsline {section}{\numberline {A.1}Upload Procedures}{38}
-\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{53}
-\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{55}
-\contentsline {chapter}{\numberline {B}Website Framework Code}{62}
-\contentsline {chapter}{\numberline {C}Website Framework Code}{63}
-\contentsline {chapter}{\numberline {D}Miscellaneous Code and Configurations}{64}
-\contentsline {chapter}{Bibliography}{65}
+\contentsline {chapter}{\numberline {5}Discussion and Future Work}{38}
+\contentsline {section}{\numberline {5.1}Conclusion}{38}
+\contentsline {section}{\numberline {5.2}Future Work}{39}
+\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{41}
+\contentsline {section}{\numberline {A.1}Upload Procedures}{41}
+\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{58}
+\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{60}
+\contentsline {chapter}{\numberline {B}Website Framework Code}{67}
+\contentsline {chapter}{\numberline {C}Miscellaneous Code and Configurations}{85}
+\contentsline {chapter}{Bibliography}{90}
