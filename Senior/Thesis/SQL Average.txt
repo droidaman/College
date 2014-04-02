@@ -1,0 +1,2 @@
+Running average upload time:
+SELECT `umethod`, AVG(`processTime`) FROM share_tracker GROUP BY `uMethod`
