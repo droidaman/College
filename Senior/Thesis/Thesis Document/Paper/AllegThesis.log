@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  2 APR 2014 13:13
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.19)  13 APR 2014 21:18
 entering extended mode
 **AllegThesis.tex
 
@@ -549,28 +549,28 @@ Package pdftex.def Info: imageprocessing.png used on input line 43.
  [33 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/siz
 ewarning.png>] [34 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
 ment/Paper/imageprocessing.png>]
-<proctimenodup.png, id=189, 195.129pt x 123.0999pt>
+<proctimenodup.png, id=189, 204.765pt x 123.0999pt>
 File: proctimenodup.png Graphic file (type png)
  <use proctimenodup.png>
 Package pdftex.def Info: proctimenodup.png used on input line 57.
-(pdftex.def)             Requested size: 289.07999pt x 182.3728pt.
+(pdftex.def)             Requested size: 289.07999pt x 173.8pt.
 
-<proctimemixdup.png, id=190, 195.129pt x 123.0999pt>
+<proctimemixdup.png, id=190, 204.765pt x 123.0999pt>
 File: proctimemixdup.png Graphic file (type png)
  <use proctimemixdup.png>
 Package pdftex.def Info: proctimemixdup.png used on input line 64.
-(pdftex.def)             Requested size: 289.07999pt x 182.3728pt.
+(pdftex.def)             Requested size: 289.07999pt x 173.8pt.
 
 [35 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/proc
 timenodup.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document
 /Paper/proctimemixdup.png>] [36]
-<smallaverage.png, id=200, 112.2594pt x 107.9232pt>
+<smallaverage.png, id=198, 112.2594pt x 107.9232pt>
 File: smallaverage.png Graphic file (type png)
  <use smallaverage.png>
 Package pdftex.def Info: smallaverage.png used on input line 77.
 (pdftex.def)             Requested size: 180.67499pt x 173.70987pt.
 
-<largeaverage.png, id=201, 112.2594pt x 107.9232pt>
+<largeaverage.png, id=199, 112.2594pt x 107.9232pt>
 File: largeaverage.png Graphic file (type png)
  <use largeaverage.png>
 Package pdftex.def Info: largeaverage.png used on input line 84.
@@ -579,7 +579,7 @@ Package pdftex.def Info: largeaverage.png used on input line 84.
 [37 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/smal
 laverage.png>] [38 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
 ment/Paper/largeaverage.png>]
-<dataloss.png, id=208, 896.59969pt x 642.14906pt>
+<dataloss.png, id=206, 896.59969pt x 642.14906pt>
 File: dataloss.png Graphic file (type png)
  <use dataloss.png>
 Package pdftex.def Info: dataloss.png used on input line 95.
@@ -718,9 +718,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on AllegThesis.pdf (107 pages, 23599268 bytes).
+Output written on AllegThesis.pdf (107 pages, 23614171 bytes).
 PDF statistics:
- 444 PDF objects out of 1000 (max. 8388607)
+ 442 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
