@@ -188,8 +188,8 @@ Photo sharing is the publishing or transfer of a user's digital photos online, t
 \begin{frame}
 \frametitle{Remembering the Facts}
 \begin{itemize} \itemsep1.5em
-\item 500 Million images shared daily \cite{meek:500}
-\item Daily image shares expected to double in 2014 \cite{meek:500}
+\item 500 Million images are shared daily as of May 2013 \cite{meek:500}
+\item Daily image shares are expected to double in 2014 \cite{meek:500}
 \item Approximately 20\% of stored data is duplicate \cite{ntps:staledata}
 \item Eliminating duplicates can save roughly \$1.8 million annually at current sharing levels\footnotemark
 \end{itemize}
@@ -202,7 +202,7 @@ Photo sharing is the publishing or transfer of a user's digital photos online, t
 \subsection{Goals Revisited}
 
 \begin{frame}
-\frametitle{Goals}
+\frametitle{Goals Reached}
 \begin{block}{Website Creation}
 Created a flexible website framework that was able to imitate an image sharing service.
 \end{block}
@@ -245,8 +245,8 @@ Website generates real time directory file count, directory size, and collects t
 \begin{frame}
 \frametitle{Generation of Comparison Data}
 \begin{itemize} \itemsep1.5em
-\item{Every upload added to baseline directory}
-\item{Only unique images added in duplicate-reduced directory}
+\item{Every upload is added to a baseline directory}
+\item{Only unique images are added to the duplicate-reduced directory}
 \item{Time taken for each upload is recorded in the database}
 \item{Real time directory statistics updated on every page load}
 \end{itemize}
@@ -257,7 +257,8 @@ Website generates real time directory file count, directory size, and collects t
 \begin{frame}
 \frametitle{Test Cases}
 \begin{center}
-All cases are composed of half computer-\\generated, half photographic imagery.\\
+\textbf{All test cases are composed of half computer-\\generated, half photographic imagery.}
+\vspace{.15in}
 
 \begin{enumerate}[I] \itemsep1.5em
 \item{: Small Images \(<1MB\); No Duplicates}
@@ -273,7 +274,7 @@ All cases are composed of half computer-\\generated, half photographic imagery.\
 \begin{frame}
 \frametitle{Performance Calculation}
 \begin{center}
-Using this equation, processing time, directory counts,\\and directory size were calculated.
+\textbf{Using this equation, processing time, directory counts,\\and directory size were calculated.}
 \end{center}
 \begin{figure}
 \begin{equation} \nonumber
@@ -288,7 +289,8 @@ Using this equation, processing time, directory counts,\\and directory size were
 \begin{frame}
 \frametitle{Processing Time}
 \begin{center}
-Additional processing time minimal given a combined \\unique and duplicate image set.
+Additional processing time minimal given a data set containing\\
+unique and duplicate images.
 \end{center}
 \begin{figure}
 \includegraphics[width=3.25in]{proctimemixdup}
@@ -356,13 +358,13 @@ After running tests using an average of 20\% duplicate image data...
 \frametitle{Dimension and Color Profiles}
 \textbf{Resolution causing poor detection:}
 \begin{itemize}
-\item Reducing image size causes data loss. This is greater in larger images leading to poor detection rates and false positives.
+\item Reducing image size causes data loss. Smaller images are impacted more significantly leading to poorer detection rates and false positives.
 \end{itemize}
 
 \textbf{Color profiles and deep scans:}
 \begin{itemize}
 \item Black and white images create frequent opportunity for identical color profiles.
-\item Matching color profiles require further investigation and re-sizing leading to above problem.
+\item Identical color profiles require further investigation and re-sizing leading to above problem.
 \end{itemize}
 \end{frame}
 
@@ -374,7 +376,7 @@ After running tests using an average of 20\% duplicate image data...
 \begin{itemize}
 \item Reducing image size averages neighboring pixels into one destination pixel.
 \item Fine details will be lost in this process, possibly entirely.
-\item Thumbnail analyzed may show false positives  due to this.
+\item Thumbnail analysis may show false positives due to this.
 \item More prevalent with black and white repetitive patterns.
 \end{itemize}
 
@@ -401,9 +403,9 @@ After running tests using an average of 20\% duplicate image data...
 \frametitle{Threats to Validity}
 \textbf{Possible areas of concern needing addressed:}
 \begin{itemize}
-\item Publicly accessible system introduces security vulnerability.
+\item Publicly accessible system introduces security vulnerabilities.
 \item Highly specific image modifications tested and may introduce bias.
-\item Image corruption possible.
+\item Undetected image corruption possible during upload.
 \end{itemize}
 \end{frame}
 
