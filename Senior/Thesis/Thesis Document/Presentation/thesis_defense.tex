@@ -257,14 +257,15 @@ Website generates real time directory file count, directory size, and collects t
 \begin{frame}
 \frametitle{Test Cases}
 \begin{center}
-All cases are composed of half computer-\\generated, half photographic imagery.
-\end{center}
+All cases are composed of half computer-\\generated, half photographic imagery.\\
+
 \begin{enumerate}[I] \itemsep1.5em
 \item{: Small Images \(<1MB\); No Duplicates}
 \item{: Small Images \(<1MB\); 20\% Duplicates}
-\item{: Large Images \(>1MB\); No Duplicates}
-\item{: Large Images \(>1MB\); 20\% Duplicates}
+\item{: Large Images \(>10MB\); No Duplicates}
+\item{: Large Images \(>10MB\); 20\% Duplicates}
 \end{enumerate}
+\end{center}
 \end{frame}
 
 %------------------------------------------------
@@ -283,15 +284,154 @@ Using this equation, processing time, directory counts,\\and directory size were
 \end{frame}
 
 %------------------------------------------------
+
+\begin{frame}
+\frametitle{Processing Time}
+\begin{center}
+Additional processing time minimal given a combined \\unique and duplicate image set.
+\end{center}
+\begin{figure}
+\includegraphics[width=3.25in]{proctimemixdup}
+\caption{Processing time on data set with 20\% duplicate images.}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Processing Time}
+\begin{center}
+Worst case processing time is less than twice the previously observed.
+\end{center}
+\begin{figure}
+\includegraphics[width=3.25in]{proctimenodup}
+\caption{Processing time on data set with no duplicate images.}
+\end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Storage Requirements}
+\begin{center}
+After running tests using an average of 20\% duplicate image data...
+
+\textbf{Storage space was reduced approximately 12\%.}
+\end{center}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Detection Rates}
+\textbf{Identification patterns led to surprising conclusions:}
+\begin{itemize}
+\item Correct identification of 82 of 100 small photographs.
+\item Identification of 91 of 100 large sized photographs.
+\item Surprisingly, only identified 33 of 100 computer generated graphics.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
 \section{Exploration of Inconsistencies} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 \subsection{False Positives}
 
+%------------------------------------------------
+
 \begin{frame}
-\frametitle{Image Matching Demonstration}
+\frametitle{Identification Fault Explored}
+\textbf{Low identification numbers were caused by the following:}
+\begin{itemize}
+\item Large difference in image resolutions.
+\item 50/50 black and white distribution of coloring.
+\item Small thumbnail size.
+\item High detail repetitive patterns.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Dimension and Color Profiles}
+\textbf{Resolution causing poor detection:}
+\begin{itemize}
+\item Reducing image size causes data loss. This is greater in larger images leading to poor detection rates and false positives.
+\end{itemize}
+
+\textbf{Color profiles and deep scans:}
+\begin{itemize}
+\item Black and white images create frequent opportunity for identical color profiles.
+\item Matching color profiles require further investigation and re-sizing leading to above problem.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Further Details on Data Loss}
+\textbf{Data loss through re-sizing:}
+\begin{itemize}
+\item Reducing image size averages neighboring pixels into one destination pixel.
+\item Fine details will be lost in this process, possibly entirely.
+\item Thumbnail analyzed may show false positives  due to this.
+\item More prevalent with black and white repetitive patterns.
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Data Loss Visualized}
+\begin{figure}
+\includegraphics[width=3.25in]{dataloss}
+\caption{Visualized data loss after thumbnail creation of pattern.}
+\end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+\section{Conclusions} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+\subsection{Threats to Validity}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Threats to Validity}
+\textbf{Possible areas of concern needing addressed:}
+\begin{itemize}
+\item Publicly accessible system introduces security vulnerability.
+\item Highly specific image modifications tested and may introduce bias.
+\item Image corruption possible.
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\subsection{Future Work}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Future Work}
+\textbf{Recommended areas of future exploration include:}
+\begin{itemize}
+\item Expansion of file support allowing for bmp, png, gif, etc.
+\item Further optimization of detection accuracy.
+\item Allow for other image manipulations.
+\item Additional testing, possibly live run for real world data.
+\item Determine frequency of hash collisions and impact on results.
+
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Demonstration of Results}
 \centering
 \Large{View the live website...\\
-\href{http://skynetgds.no-ip.biz/srthesis/irc.php}{\beamergotobutton{Demo Login}}}
+\href{http://skynetgds.no-ip.biz/srthesis/irc.php}{\beamergotobutton{System Login}}}
 \end{frame}
 
 %------------------------------------------------
