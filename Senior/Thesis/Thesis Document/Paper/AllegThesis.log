@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.31)  15 APR 2014 17:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.31)  19 APR 2014 22:00
 entering extended mode
 **AllegThesis.tex
 
@@ -481,7 +481,7 @@ ema.pdf>] [22] [23]
 File: success_nodupfound.png Graphic file (type png)
 
 <use success_nodupfound.png>
-Package pdftex.def Info: success_nodupfound.png used on input line 53.
+Package pdftex.def Info: success_nodupfound.png used on input line 57.
 (pdftex.def)             Requested size: 397.48499pt x 136.55469pt.
  [24 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/suc
 cess_nodupfound.png>]
@@ -489,7 +489,7 @@ cess_nodupfound.png>]
 File: success_dupfound.png Graphic file (type png)
 
 <use success_dupfound.png>
-Package pdftex.def Info: success_dupfound.png used on input line 62.
+Package pdftex.def Info: success_dupfound.png used on input line 66.
 (pdftex.def)             Requested size: 397.48499pt x 127.22215pt.
 
 
@@ -499,7 +499,7 @@ at most version <1.5> allowed
 <upproc.pdf, id=147, 794.97pt x 614.295pt>
 File: upproc.pdf Graphic file (type pdf)
  <use upproc.pdf>
-Package pdftex.def Info: upproc.pdf used on input line 71.
+Package pdftex.def Info: upproc.pdf used on input line 75.
 (pdftex.def)             Requested size: 433.62pt x 262.55733pt.
  [25 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/suc
 cess_dupfound.png>]
@@ -507,94 +507,95 @@ cess_dupfound.png>]
 oc.pdf>] <historep.png, id=158, 144.7809pt x 138.5175pt>
 File: historep.png Graphic file (type png)
  <use historep.png>
-Package pdftex.def Info: historep.png used on input line 85.
+Package pdftex.def Info: historep.png used on input line 89.
 (pdftex.def)             Requested size: 289.07999pt x 276.6306pt.
 
 [27] [28 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper
-/historep.png>] [29]) [30]
+/historep.png>] [29]) [30] [31]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch04_re
 sultsevaluation.tex"
 Chapter 4.
-[31
+[32
 
 
 
 
-] <uploadform.png, id=176, 316.0608pt x 68.6565pt>
+] <uploadform.png, id=179, 316.0608pt x 68.6565pt>
 File: uploadform.png Graphic file (type png)
  <use uploadform.png>
 Package pdftex.def Info: uploadform.png used on input line 20.
 (pdftex.def)             Requested size: 433.62pt x 94.20128pt.
 
-<typewarning.png, id=177, 319.4334pt x 80.9424pt>
+<typewarning.png, id=180, 319.4334pt x 80.9424pt>
 File: typewarning.png Graphic file (type png)
  <use typewarning.png>
 Package pdftex.def Info: typewarning.png used on input line 27.
 (pdftex.def)             Requested size: 433.62pt x 109.88506pt.
 
-<sizewarning.png, id=178, 319.6743pt x 81.4242pt>
+<sizewarning.png, id=181, 319.6743pt x 81.4242pt>
 File: sizewarning.png Graphic file (type png)
  <use sizewarning.png>
 Package pdftex.def Info: sizewarning.png used on input line 34.
 (pdftex.def)             Requested size: 433.62pt x 110.45216pt.
 
-[32 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/uplo
+[33 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/uplo
 adform.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Pa
-per/typewarning.png>] <imageprocessing.png, id=182, 234.3957pt x 95.3964pt>
+per/typewarning.png>] <imageprocessing.png, id=185, 234.3957pt x 95.3964pt>
 File: imageprocessing.png Graphic file (type png)
 
 <use imageprocessing.png>
 Package pdftex.def Info: imageprocessing.png used on input line 43.
 (pdftex.def)             Requested size: 433.62pt x 176.49216pt.
- [33 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/siz
-ewarning.png>] [34 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
+ [34 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/siz
+ewarning.png>] [35 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
 ment/Paper/imageprocessing.png>]
-<proctimenodup.png, id=189, 204.765pt x 123.0999pt>
+<proctimenodup.png, id=193, 204.765pt x 123.0999pt>
 File: proctimenodup.png Graphic file (type png)
  <use proctimenodup.png>
 Package pdftex.def Info: proctimenodup.png used on input line 57.
 (pdftex.def)             Requested size: 289.07999pt x 173.8pt.
 
-<proctimemixdup.png, id=190, 204.765pt x 123.0999pt>
+<proctimemixdup.png, id=194, 204.765pt x 123.0999pt>
 File: proctimemixdup.png Graphic file (type png)
  <use proctimemixdup.png>
 Package pdftex.def Info: proctimemixdup.png used on input line 64.
 (pdftex.def)             Requested size: 289.07999pt x 173.8pt.
 
-[35 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/proc
+[36 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/proc
 timenodup.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document
-/Paper/proctimemixdup.png>] [36]
-<smallaverage.png, id=198, 112.2594pt x 107.9232pt>
+/Paper/proctimemixdup.png>] [37]
+<smallaverage.png, id=201, 112.2594pt x 107.9232pt>
 File: smallaverage.png Graphic file (type png)
  <use smallaverage.png>
 Package pdftex.def Info: smallaverage.png used on input line 77.
 (pdftex.def)             Requested size: 180.67499pt x 173.70987pt.
 
-<largeaverage.png, id=199, 112.2594pt x 107.9232pt>
+<largeaverage.png, id=202, 112.2594pt x 107.9232pt>
 File: largeaverage.png Graphic file (type png)
  <use largeaverage.png>
 Package pdftex.def Info: largeaverage.png used on input line 84.
 (pdftex.def)             Requested size: 180.67499pt x 173.70987pt.
 
-[37 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/smal
-laverage.png>] [38 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
+[38] [39 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper
+/smallaverage.png> <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Docu
 ment/Paper/largeaverage.png>]
-<dataloss.png, id=206, 896.59969pt x 642.14906pt>
+<dataloss.png, id=209, 896.59969pt x 642.14906pt>
 File: dataloss.png Graphic file (type png)
  <use dataloss.png>
 Package pdftex.def Info: dataloss.png used on input line 95.
 (pdftex.def)             Requested size: 361.34999pt x 258.79515pt.
- [39 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/dat
-aloss.png>]) [40]
+) [40]
+[41 <C:/Users/Braden/Documents/College/Senior/Thesis/Thesis Document/Paper/data
+loss.png>]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\ch05_co
 nclusion.tex"
 Chapter 5.
-[41
+[42
 
 
 
 
-] [42]) [43]
+] [43]) [44]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\app.tex
 " ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -605,79 +606,79 @@ File: lstlang2.sty 2014/03/04 1.5c listings language file
 Appendix A.
 
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/up
-load.php" [44
+load.php" [45
 
 
 
 
-] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56]
-[57] [58] [59] [60]) [61]
+] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]
+[58] [59] [60] [61]) [62]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/du
-pFindSimple.php" [62] [63]) [64]
+pFindSimple.php" [63] [64]) [65]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/du
-pFindComplex.php" [65]) [66]
+pFindComplex.php" [66]) [67]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/ph
-pDupeImage.php" [67] [68] [69] [70]) [71]
+pDupeImage.php" [68] [69] [70] [71]) [72]
 Appendix B.
 
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/ir
-c.php" [72
+c.php" [73
 
 
-] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83]) [84]
+] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84]) [85]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/vi
-ew.php" [85] [86] [87] [88]) [89]
+ew.php" [86] [87] [88] [89]) [90]
 Appendix C.
 
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/co
-nnect.php" [90
+nnect.php" [91
 
 
-]) [91]
+]) [92]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/th
-umbnailer.php" [92] [93]) [94] [95]
+umbnailer.php" [93] [94]) [95] [96]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\Code/th
-esisDB.sql" [96]) [97])
+esisDB.sql" [97]) [98])
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
 esis.bbl"
-Underfull \hbox (badness 1178) in paragraph at lines 10--14
+Underfull \hbox (badness 10000) in paragraph at lines 10--17
+$\OT1/cmtt/m/n/12 500 -[] million -[] photos -[] shared -[] per -[] day -[] and
+ -[] thats -[] on -[] track -[] to -[] double -[]$
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 26--30
 []\OT1/cmr/m/n/12 Angela Bradley.  Re-nam-ing PHP Up-loads.  $\OT1/cmtt/m/n/12 
 http : / / php . about . com / od /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--41
-$\OT1/cmtt/m/n/12 500 -[] million -[] photos -[] shared -[] per -[] day -[] and
- -[] thats -[] on -[] track -[] to -[] double -[]$
- []
-
-[98
-
-
-
-]
-Underfull \hbox (badness 5939) in paragraph at lines 81--87
+Underfull \hbox (badness 5939) in paragraph at lines 63--69
 []\OT1/cmr/m/n/12 Dejan Mar-janovic.  PDO vs. MySQLi: Which Should You Use?
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 63--69
 $\OT1/cmtt/m/n/12 http : / / net . tutsplus . com / tutorials / php / pdo -[] v
 s -[] mysqli -[] which -[] should -[]$
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 96--103
+Underfull \hbox (badness 1082) in paragraph at lines 71--78
 []\OT1/cmr/m/n/12 nixCraft.  Ubuntu Linux: In-stall or Add PHP-GD Sup-port to A
 pache
  []
 
-)
-THEPAGE 99
-[99]
+[99
+
+
+
+])
+THEPAGE 100
+[100]
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\AllegTh
 esis.aux"
 ("C:\Users\Braden\Documents\College\Senior\Thesis\Thesis Document\Paper\abstrac
@@ -705,7 +706,7 @@ Here is how much of TeX's memory you used:
  12051 multiletter control sequences out of 15000+200000
  10488 words of font info for 40 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 42i,7n,42p,2345b,3367s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,7n,42p,2254b,3367s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C
@@ -718,9 +719,9 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on AllegThesis.pdf (107 pages, 23599690 bytes).
+Output written on AllegThesis.pdf (108 pages, 23599606 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
+ 445 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

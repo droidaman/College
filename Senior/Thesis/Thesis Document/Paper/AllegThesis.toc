@@ -13,17 +13,17 @@
 \contentsline {section}{\numberline {3.1}Server Configuration}{15}
 \contentsline {section}{\numberline {3.2}Website Design}{19}
 \contentsline {section}{\numberline {3.3}Color Profile and Histogram Comparison}{26}
-\contentsline {section}{\numberline {3.4}Threats to Validity}{29}
-\contentsline {chapter}{\numberline {4}Results and Evaluation}{31}
-\contentsline {section}{\numberline {4.1}Functionality}{32}
-\contentsline {section}{\numberline {4.2}Performance}{34}
-\contentsline {chapter}{\numberline {5}Discussion and Future Work}{41}
-\contentsline {section}{\numberline {5.1}Conclusion}{41}
-\contentsline {section}{\numberline {5.2}Future Work}{42}
-\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{44}
-\contentsline {section}{\numberline {A.1}Upload Procedures}{44}
-\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{62}
-\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{65}
-\contentsline {chapter}{\numberline {B}Website Framework Code}{72}
-\contentsline {chapter}{\numberline {C}Miscellaneous Code and Configurations}{90}
-\contentsline {chapter}{Bibliography}{98}
+\contentsline {section}{\numberline {3.4}Threats to Validity}{30}
+\contentsline {chapter}{\numberline {4}Results and Evaluation}{32}
+\contentsline {section}{\numberline {4.1}Functionality}{33}
+\contentsline {section}{\numberline {4.2}Performance}{35}
+\contentsline {chapter}{\numberline {5}Discussion and Future Work}{42}
+\contentsline {section}{\numberline {5.1}Conclusion}{42}
+\contentsline {section}{\numberline {5.2}Future Work}{43}
+\contentsline {chapter}{\numberline {A}Duplicate Image Detection Code}{45}
+\contentsline {section}{\numberline {A.1}Upload Procedures}{45}
+\contentsline {section}{\numberline {A.2}Exact Duplicate Detection Code}{63}
+\contentsline {section}{\numberline {A.3}Approximate Duplicate Detection Code}{66}
+\contentsline {chapter}{\numberline {B}Website Framework Code}{73}
+\contentsline {chapter}{\numberline {C}Miscellaneous Code and Configurations}{91}
+\contentsline {chapter}{Bibliography}{99}

@@ -10,8 +10,3 @@ A level-1 auxiliary file: ch05_conclusion.aux
 A level-1 auxiliary file: app.aux
 The style file: plain.bst
 Database file #1: Bibdir/myBibtexDB.bib
-Repeated entry---line 199 of file Bibdir/myBibtexDB.bib
- : @article{Acharya:2007
- :                      ,
-I'm skipping whatever remains of this entry
-(There was 1 error message)
